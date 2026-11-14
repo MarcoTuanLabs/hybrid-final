@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "complete_rows_checked": 28672,
+  "independent_seeds": {
+    "9b": 256,
+    "27b": 128
+  },
+  "target_counts": {
+    "9b_baseline": 235,
+    "9b_normalized": 361,
+    "9b_n": 512,
+    "27b_baseline": 217,
+    "27b_normalized": 256,
+    "27b_n": 256
+  },
+  "gain9_pp": 24.609375,
+  "ci9_pp": [
+    20.5078125,
+    28.7109375
+  ],
+  "primary27": [
+    {
+      "method": "single_start16",
+      "baseline": "raw_svd",
+      "gain": 0.15234375,
+      "ci97_5_seed_bootstrap": [
+        0.09375,
+        0.21875
+      ],
+      "seed_wins": 27,
+      "seed_losses": 0,
+      "gate": true
+    },
+    {
+      "method": "single_start16",
+      "baseline": "shared_minimal",
+      "gain": 0.16796875,
+      "ci97_5_seed_bootstrap": [
+        0.109375,
+        0.234375
+      ],
+      "seed_wins": 32,
+      "seed_losses": 0,
+      "gate": true
+    }
+  ],
+  "preservation": {
+    "9b_each_arm": "512/512",
+    "27b_each_arm": "256/256",
+    "arms": 3
+  },
+  "total_seconds": {
+    "single_start16": 0.712004625188456,
+    "batched16": 0.910803233326078,
+    "raw_svd": 0.702691676185168,
+    "shared_minimal": 0.6148594415863045,
+    "shared_instrumented": 0.6409093368520189,
+    "native": 0.6116100417457346
+  },
+  "reduction_percent": 21.826735003085997,
+  "ratio": 0.78173264996914,
+  "ratio_ci95": [
+    0.7808342923925248,
+    0.7826603821862007
+  ],
+  "reference_lost_answers": 0,
+  "shared_parity_branches": 1024,
+  "note": "CPU-only analysis of archived score records; no fresh model execution."
+}

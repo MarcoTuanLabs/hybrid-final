@@ -1,0 +1,222 @@
+{
+  "independent_seeds": 128,
+  "cases": 512,
+  "rows": 6144,
+  "aggregate": [
+    {
+      "reader": "single_start16",
+      "target_count": 256,
+      "target_n": 256,
+      "target_rate": 1.0,
+      "mean_target_total_seconds": 0.712004625188456,
+      "mean_target_continuation_seconds": 0.35683902607070195,
+      "mean_target_cpu_seconds": 0.3569474785546717,
+      "mean_target_design_seconds": 0.07105241379304061,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    },
+    {
+      "reader": "batched16",
+      "target_count": 256,
+      "target_n": 256,
+      "target_rate": 1.0,
+      "mean_target_total_seconds": 0.910803233326078,
+      "mean_target_continuation_seconds": 0.555637634208324,
+      "mean_target_cpu_seconds": 0.5558251114882653,
+      "mean_target_design_seconds": 0.27021035594589193,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    },
+    {
+      "reader": "raw_svd",
+      "target_count": 217,
+      "target_n": 256,
+      "target_rate": 0.84765625,
+      "mean_target_total_seconds": 0.702691676185168,
+      "mean_target_continuation_seconds": 0.347526077067414,
+      "mean_target_cpu_seconds": 0.34764251818750536,
+      "mean_target_design_seconds": 0.06284927885099023,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    },
+    {
+      "reader": "shared_minimal",
+      "target_count": 213,
+      "target_n": 256,
+      "target_rate": 0.83203125,
+      "mean_target_total_seconds": 0.6148594415863045,
+      "mean_target_continuation_seconds": 0.25969384246855043,
+      "mean_target_cpu_seconds": 0.2597770220703189,
+      "mean_target_design_seconds": null,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    },
+    {
+      "reader": "shared_instrumented",
+      "target_count": 213,
+      "target_n": 256,
+      "target_rate": 0.83203125,
+      "mean_target_total_seconds": 0.6409093368520189,
+      "mean_target_continuation_seconds": 0.28574373773426487,
+      "mean_target_cpu_seconds": 0.2858390612460905,
+      "mean_target_design_seconds": 0.0011337939959048526,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    },
+    {
+      "reader": "native",
+      "target_count": 0,
+      "target_n": 256,
+      "target_rate": 0.0,
+      "mean_target_total_seconds": 0.6116100417457346,
+      "mean_target_continuation_seconds": 0.2564444426279806,
+      "mean_target_cpu_seconds": 0.2565256326718809,
+      "mean_target_design_seconds": null,
+      "nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      },
+      "unwritten_nuisance_retention": {
+        "count": 256,
+        "n": 256,
+        "rate": 1.0
+      }
+    }
+  ],
+  "primary_contrasts": [
+    {
+      "method": "single_start16",
+      "baseline": "raw_svd",
+      "gain": 0.15234375,
+      "ci97_5_seed_bootstrap": [
+        0.09375,
+        0.21875
+      ],
+      "seed_wins": 27,
+      "seed_losses": 0,
+      "gate": true
+    },
+    {
+      "method": "single_start16",
+      "baseline": "shared_minimal",
+      "gain": 0.16796875,
+      "ci97_5_seed_bootstrap": [
+        0.109375,
+        0.234375
+      ],
+      "seed_wins": 32,
+      "seed_losses": 0,
+      "gate": true
+    }
+  ],
+  "control_preservation": {
+    "loss_seeds": 0,
+    "one_sided_95_exact_loss_upper": 0.023132405251746743,
+    "exact_reference_logits": 0,
+    "exact_reference_caches": 0,
+    "maximum_absolute_logit_error": 1.65625,
+    "maximum_absolute_query_error": 14.953414507028235
+  },
+  "primary_cost": {
+    "candidate_batched16_ratio": 0.78173264996914,
+    "ci95_seed_bootstrap_ratio": [
+      0.7808342923925248,
+      0.7826603821862007
+    ],
+    "speedup": 1.2792097145225754
+  },
+  "gates": {
+    "baseline_gain": true,
+    "target_control": true,
+    "reference_control_preservation": true,
+    "retention": true,
+    "cost": true
+  },
+  "all_primary_gates_pass": true,
+  "failure_rows": 381,
+  "shared_full_parity_pairs": 1024,
+  "bootstrap_draws": 20000,
+  "bootstrap_rng": 20261108021,
+  "cost_scope": "Both prefills, state cloning/writing and synchronized continuation with actual query design and controller work; minimal shared skips forecasts and native uses direct continuation.",
+  "state": "complete_locked_single_start_confirmation",
+  "source_receipt_sha256": "fec47293b0e6a8139ab534839db0deb8166b505efe6deccc1dcdd3f43b330447",
+  "analyzer_sha256": "f414651fdb877afcce44c1e485d56a3219e1f0ef2811c8c2e5fea01ff362eb6e",
+  "elapsed_seconds": 4272.945998739917,
+  "memory": {
+    "allocated_bytes": 53801066496,
+    "reserved_bytes": 54580477952,
+    "peak_allocated_bytes": 54502354432,
+    "peak_reserved_bytes": 54580477952
+  }
+}

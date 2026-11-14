@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "page_count": 4,
+  "author": "Lu-Yen Marco Tuan",
+  "pdf_sha256": "ea797e7cd7103735a792cc873f76ce9d361322347646259b4752a6e65bc2e77a",
+  "no_anonymous_label": true,
+  "no_latex_warnings": true,
+  "visual_review": "All four final rendered pages inspected; figure labels separated; no clipping or overlaps observed.",
+  "references_checked": [
+    "https://arxiv.org/abs/2611.08376",
+    "https://arxiv.org/abs/2609.33093",
+    "https://arxiv.org/abs/2412.06464",
+    "https://arxiv.org/abs/2611.01909",
+    "https://arxiv.org/abs/2309.16042"
+  ]
+}

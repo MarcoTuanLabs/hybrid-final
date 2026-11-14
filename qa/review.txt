@@ -1,0 +1,45 @@
+PRE-PUSH MANUSCRIPT REVIEW — 2026-11-14
+
+Scope: focused positive-result working paper extracted from hybrid-answer-relay.
+Reviewer: AI assistant in the authoring session; not independent human peer review.
+
+PASS — Exactly four PDF pages, including five references; all four final pages
+rendered and visually inspected. No clipped text, overlapping figure labels,
+overfull/underfull boxes, undefined references, or LaTeX warnings.
+
+PASS — Author in visible title block and PDF metadata: Lu-Yen Marco Tuan.
+Affiliation: Department of Cognitive Science, University of California San Diego.
+No anonymous/submission label or implied accepted-proceedings status in the PDF.
+
+PASS — All 28,672 archived score records were used by the independent checker.
+9B: 235/512 to 361/512; paired gain 24.609375 pp, CI [20.5078125, 28.7109375].
+27B: 217/256 to 256/256; paired gain 15.234375 pp, adjusted CI [9.375, 21.875].
+Formats are paired within independent seeds (256 at 9B, 128 at 27B).
+All three preservation arms are complete and retained (512 or 256 per arm).
+
+PASS — Timing uses the final 27B cohort and a four-start, 16-step reference.
+0.910803233326078 s to 0.712004625188456 s: reduction 21.826735003085997%.
+The 95% paired time-ratio interval is [0.7808342923925248, 0.7826603821862007].
+Reference-answer preservation is behavioral, not logit/cache numerical identity.
+The paper identifies included prefill/write/continuation costs and the hardware.
+
+PASS — Readout equations checked against the source manuscript; RMS derivative
+and its parallel/orthogonal scaling verified algebraically. The method uses the
+finite write contrast jointly across shared heads, with native query norm and
+cosine >= 0.5. The paper distinguishes the 9B four-start 80-step reader from the
+27B native-start 16-step solver and its four-start 16-step timing comparator.
+
+PASS — Five bibliographic entries checked against their arXiv records; the
+affiliation's department name checked on the official UC San Diego site.
+
+PASS — Positive-result focus is scoped to controlled synthetic retrieval.
+The complete score grids, including failed target presentations, remain in the
+evidence files; the paper does not imply arbitrary-prompt preservation, transfer
+to natural documents, a universal 100% success rate, or new inference runs.
+
+PASS — Source aggregate Git blob hashes matched the specified source commit.
+Raw rows matched original execution receipts and original archive members;
+archive SHA-256 values matched the source repository's published manifests.
+
+Material limits: this is a self-audit of existing evidence and presentation.
+No new model inference or independent human scientific review was performed.
