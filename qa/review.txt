@@ -1,9 +1,9 @@
-PRE-PUSH MANUSCRIPT REVIEW — 2026-11-14
+PRE-PUSH MANUSCRIPT REVIEW — VERSION 2 — 2026-11-14
 
 Scope: focused positive-result working paper extracted from hybrid-answer-relay.
 Reviewer: AI assistant in the authoring session; not independent human peer review.
 
-PASS — Exactly four PDF pages, including five references; all four final pages
+PASS — Exactly four PDF pages, including seven references; all four final pages
 rendered and visually inspected. No clipped text, overlapping figure labels,
 overfull/underfull boxes, undefined references, or LaTeX warnings.
 
@@ -29,8 +29,17 @@ finite write contrast jointly across shared heads, with native query norm and
 cosine >= 0.5. The paper distinguishes the 9B four-start 80-step reader from the
 27B native-start 16-step solver and its four-start 16-step timing comparator.
 
-PASS — Five bibliographic entries checked against their arXiv records; the
-affiliation's department name checked on the official UC San Diego site.
+PASS — Five original bibliographic entries checked against their arXiv records;
+the added ROME and fast-weight entries checked against the official NeurIPS and
+PMLR proceedings. The affiliation's department name was checked on the official
+UC San Diego site.
+
+PASS — Three editing passes preserved the paper's architecture while improving
+problem framing, definitions, transitions, and sentence-level clarity. Every
+mathematical display and every evidence file is unchanged from version 1.
+The revised method distinguishes conditional local shadow trajectories from
+independently evolving full-model trajectories; the solver comparison specifies
+16 iterations per start. All claims retain their original experimental scope.
 
 PASS — Positive-result focus is scoped to controlled synthetic retrieval.
 The complete score grids, including failed target presentations, remain in the

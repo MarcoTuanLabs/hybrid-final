@@ -2,7 +2,7 @@
   "status": "PASS",
   "page_count": 4,
   "author": "Lu-Yen Marco Tuan",
-  "pdf_sha256": "ea797e7cd7103735a792cc873f76ce9d361322347646259b4752a6e65bc2e77a",
+  "pdf_sha256": "acc5381fadca97d0553be49f538fe41cb27da8fdd0297b135241253797c6cb87",
   "no_anonymous_label": true,
   "no_latex_warnings": true,
   "visual_review": "All four final rendered pages inspected; figure labels separated; no clipping or overlaps observed.",
@@ -11,6 +11,13 @@
     "https://arxiv.org/abs/2609.33093",
     "https://arxiv.org/abs/2412.06464",
     "https://arxiv.org/abs/2611.01909",
-    "https://arxiv.org/abs/2309.16042"
-  ]
+    "https://arxiv.org/abs/2309.16042",
+    "https://papers.nips.cc/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf",
+    "https://proceedings.mlr.press/v139/schlag21a.html"
+  ],
+  "version": 2,
+  "reference_count": 7,
+  "editorial_passes": 3,
+  "displayed_equations_unchanged": 5,
+  "evidence_files_unchanged": true
 }

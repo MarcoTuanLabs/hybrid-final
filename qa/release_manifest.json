@@ -1,22 +1,25 @@
 {
+  "version": 2,
+  "branch": "codex/working-paper-v2",
+  "parent_commit": "9a505a1a8c31b43e8f098fb36a0a522ae7d5c247",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 44,
-      "sha256": "fb3fd2498713d7f8030119b6a84a929bcc6bb57ed94f01d17487dda278c6bd21",
-      "git_blob_sha1": "dfaff5bad78e7739fc59ccff1565fa9c9a391b12"
+      "bytes": 60,
+      "sha256": "47bc32465fa9952dfa9a0c791c10e70f4531d17a792fb9bd8f3626d94a0a6667",
+      "git_blob_sha1": "b527be75a6e3475e258a4fef1a7cb76de49b551c"
     },
     {
       "path": "README.md",
-      "bytes": 4124,
-      "sha256": "95db3f91f5b00ecdf4272cdd52a04480e549b8e6545942a0f26e0327f5ae77d5",
-      "git_blob_sha1": "aaaa3e3243e8559a3aac8bebce0530fca7516eee"
+      "bytes": 4497,
+      "sha256": "b6c68a256af354757bdc47f54468a2f5d840b69521947e47afe5147d8115a3b6",
+      "git_blob_sha1": "ad5c9ad6890b757ef407e32178336b8c9fcbb8db"
     },
     {
       "path": "paper/main.tex",
-      "bytes": 21593,
-      "sha256": "d566ba8a0a6c1163e1d569b06b0724d9ecd56a546eda95de96af196f8701a49d",
-      "git_blob_sha1": "15fcf58c29e5e4fa9a7043f449920d2a989723b1"
+      "bytes": 20949,
+      "sha256": "b383ccab7244c34aa918c0f63bcc270dcc61b1ce68bf1313bc25eb6c41d07b74",
+      "git_blob_sha1": "7f602609e3fb673d96293a825d76319df93be55d"
     },
     {
       "path": "paper/aaai2027.sty",
@@ -56,15 +59,15 @@
     },
     {
       "path": "output/pdf/hybrid_memory_working_paper.pdf",
-      "bytes": 234152,
-      "sha256": "ea797e7cd7103735a792cc873f76ce9d361322347646259b4752a6e65bc2e77a",
-      "git_blob_sha1": "aafca34db8bbd53ba9dbdd06650e1536ae32e8e3"
+      "bytes": 234725,
+      "sha256": "acc5381fadca97d0553be49f538fe41cb27da8fdd0297b135241253797c6cb87",
+      "git_blob_sha1": "8c3816cfbba0a1221b58392ee4263eea804cf8bb"
     },
     {
       "path": "qa/review.txt",
-      "bytes": 2706,
-      "sha256": "175793c19080f5e053c5a510fe71ce0abf9c76413658efa9d3221b5a922d874b",
-      "git_blob_sha1": "319eb14fe83a6f730f71612135515ee39c8ab4b0"
+      "bytes": 3299,
+      "sha256": "247c54999fe1085d5926e717e88057e1f47dc715039ca0f56f37a08bb0f21e72",
+      "git_blob_sha1": "85c8515ac4f8b34e97898462e173fb8149ed13c8"
     },
     {
       "path": "qa/claims_check.json",
@@ -74,9 +77,9 @@
     },
     {
       "path": "qa/pdf_check.json",
-      "bytes": 570,
-      "sha256": "62e58589be6a3088a60efae6c17ac1c80083316652394c1725f4f7aa42dbe222",
-      "git_blob_sha1": "7fa39d62dec4e209264159cf5bab5692beb1277d"
+      "bytes": 866,
+      "sha256": "de07fdfd79718f8a67bd52d6f7b45eaaf6797bc96fb919338f56972ca58c0cde",
+      "git_blob_sha1": "774d6949ea224a34983282a6a6a6d670edfb9c57"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -119,6 +122,12 @@
       "bytes": 4209,
       "sha256": "cd6f1f37cee4ca51883241ee2aac3b3c9217bcb5842bd9c9bfd93bef4e909e0c",
       "git_blob_sha1": "6dc693bda84662e470f461ae23b3a4f4de964105"
+    },
+    {
+      "path": "qa/editorial_revision_v2.txt",
+      "bytes": 3277,
+      "sha256": "5fc9cc8030972f34cf56041d0691ef31c895843e925ba080a89884ae80e7a2f7",
+      "git_blob_sha1": "20caa69fd3d9c21f6f26ca6aa1e23a3bc68e265b"
     }
   ],
   "purpose": "Four-page working paper and archived-evidence verification bundle",

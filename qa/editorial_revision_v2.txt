@@ -1,0 +1,60 @@
+EDITORIAL REVISION RECORD — VERSION 2 — 2026-11-14
+
+Scope
+Retain the four-page working paper's structure and positive controlled results.
+Keep named authorship: Lu-Yen Marco Tuan, Department of Cognitive Science,
+University of California San Diego. Improve clarity through three editing passes.
+
+Pass 1 — Argument and structure
+State the problem in a concrete opening example: an internal memory write can
+leave the answer unchanged. Connect the readout mechanism to the method and then
+to the controlled evidence. State the three contributions explicitly. Separate
+the 9B value-write task from the 27B address-write task. Remove repeated process
+descriptions and make each paragraph advance one main claim.
+
+Pass 2 — Definitions and scientific precision
+Define answer control as the fraction of successful target presentations.
+Explain that 27B shadow recurrences share live incoming activations and isolate
+a conditional local effect. Specify 16 iterations per start in the solver
+comparison. Distinguish preservation of output answers from numerical identity
+of queries or logits. Name the different model-specific baselines in the figure
+caption and abstract. Expand SVD on first use.
+
+Pass 3 — Sentence-level clarity and final fit
+Prefer concrete subjects and active verbs; shorten indirect constructions and
+remove redundant claims. Keep the necessary task, timing, and preservation
+qualifications beside the claims they limit. Check terminology across the
+abstract, method, figure, results, and conclusion. Compile and visually inspect
+all four pages, including seven references.
+
+Writing references consulted
+The following official conference papers informed the problem-to-method-to-
+evidence progression and the placement of definitions. No prose was copied.
+
+Meng et al. (NeurIPS 2022), Locating and Editing Factual Associations in GPT:
+https://papers.nips.cc/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf
+
+Katharopoulos et al. (ICML 2020), Transformers are RNNs: Fast Autoregressive
+Transformers with Linear Attention:
+https://proceedings.mlr.press/v119/katharopoulos20a.html
+
+Schlag et al. (ICML 2021), Linear Transformers Are Secretly Fast Weight Programmers:
+https://proceedings.mlr.press/v139/schlag21a.html
+
+The ROME and fast-weight papers also supply relevant scientific context and
+were added to the bibliography. The revision follows the requested Strunk and
+White principles of direct phrasing, concrete language, and removal of needless
+words; it does not quote their book.
+
+Validation
+- Every displayed equation matches version 1 after whitespace normalization.
+- All evidence files retain their version 1 SHA-256 hashes.
+- The archived-score checker passes on all 28,672 records.
+- Headline gains, preservation counts, uncertainty intervals, and timing agree
+  with the archived analyses; no model experiments were rerun.
+- Exactly four PDF pages, including references; no LaTeX warnings or overfull/
+  underfull boxes; all final rendered pages inspected for clipping and overlap.
+- Formal author and affiliation appear in the title block; author and version
+  appear in PDF metadata. The manuscript is identified as a working paper.
+
+Review type: an assistant self-audit during authoring, not independent peer review.

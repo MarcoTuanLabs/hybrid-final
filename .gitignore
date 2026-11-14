@@ -3,3 +3,4 @@
 *.out
 __pycache__/
 qa/rendered/
+qa/revision_v2/
