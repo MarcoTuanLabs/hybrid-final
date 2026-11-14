@@ -2,7 +2,7 @@
   "status": "PASS",
   "page_count": 4,
   "author": "Lu-Yen Marco Tuan",
-  "pdf_sha256": "acc5381fadca97d0553be49f538fe41cb27da8fdd0297b135241253797c6cb87",
+  "pdf_sha256": "fc474499a76a73c52701e40fbc6af4182c1d7af9e939f3ce70d6e26397640270",
   "no_anonymous_label": true,
   "no_latex_warnings": true,
   "visual_review": "All four final rendered pages inspected; figure labels separated; no clipping or overlaps observed.",
@@ -15,9 +15,11 @@
     "https://papers.nips.cc/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf",
     "https://proceedings.mlr.press/v139/schlag21a.html"
   ],
-  "version": 2,
+  "version": 3,
   "reference_count": 7,
-  "editorial_passes": 3,
-  "displayed_equations_unchanged": 5,
-  "evidence_files_unchanged": true
+  "evidence_files_unchanged": true,
+  "first_person_plural_remaining": 0,
+  "new_symbols_defined_locally": true,
+  "numbered_equation_groups_equivalent_after_notation_alignment": 5,
+  "figure_files_unchanged": true
 }

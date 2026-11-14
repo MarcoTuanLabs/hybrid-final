@@ -4,11 +4,11 @@
 Department of Cognitive Science  
 University of California San Diego
 
-Working paper, **version 2**, November 14, 2026. **Four pages total, including references.**
+Working paper, **version 3**, November 14, 2026. **Four pages total, including references.**
 
 [Read the paper](output/pdf/hybrid_memory_working_paper.pdf) · [LaTeX source](paper/main.tex) · [Pre-push review](qa/review.txt)
 
-Version 2 retains the paper's structure and results, with three editing passes for clarity, sharper definitions of the interventions and comparisons, and expanded context from NeurIPS and ICML papers. See the [editorial revision record](qa/editorial_revision_v2.txt). The default branch is `codex/working-paper-v2`; version 1 remains in the commit history.
+Version 3 uses singular authorship throughout and defines each mathematical symbol at its first use. The notation consistently identifies head and time indices, query-sharing groups, vector dimensions, and the two identity-matrix dimensions. The mathematical method, results, and four-page structure are preserved. See the [version 3 revision record](qa/editorial_revision_v3.txt) and the [earlier clarity revision](qa/editorial_revision_v2.txt). The default branch is `main`; earlier versions remain in the commit history.
 
 This paper presents the positive controlled synthetic-retrieval results from [hybrid-answer-relay](https://github.com/MarcoTuanLabs/hybrid-answer-relay), focusing on normalization-aware readout and the final solver-efficiency confirmation.
 

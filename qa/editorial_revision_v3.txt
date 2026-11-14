@@ -1,0 +1,54 @@
+EDITORIAL REVISION RECORD - VERSION 3 - 2026-11-14
+
+Authorship
+Replace first-person plural pronouns throughout the manuscript: We/we -> I,
+Our/our -> My/my. Check both the LaTeX source and extracted final PDF text.
+Keep Lu-Yen Marco Tuan and the formal UC San Diego affiliation unchanged.
+
+Notation audit
+Equation 1: define h (value head), t (token position), d_k and d_v (key and
+value dimensions), S_{h,t} (real-valued recurrent state), k_{h,t} (key vector),
+v_{h,t} (value vector), alpha_{h,t} (scalar retention gate), beta_{h,t} (scalar
+update gate), and the transpose symbol. State the matrix and vector dimensions.
+
+Equation 2: define Delta S_{h,t} and Delta v_{h,t} as edited-minus-unedited
+state and value differences. Define I_d as the d-by-d identity matrix and use
+I_{d_k} here. Retain the same head/time indexing as in Equation 1.
+
+Equations 3-4: define H as the value heads sharing one query at the current
+layer and position. Explicitly abbreviate S_{h,t} and Delta S_{h,t} as S_h and
+Delta S_h when time is fixed. Define q as a d_k-dimensional query, x as a
+d_v-dimensional read vector, N as headwise RMS normalization, epsilon as its
+numerical stabilizer, the Euclidean norm, and D_h(q) as the normalized read
+difference. Reuse the dimensions already defined for Equation 1.
+
+Equation 5: define q_0 (native query), T (unit-length concatenated target), and
+T_h (its d_v-dimensional headwise block). Define the Euclidean inner product
+and cosine similarity. Sum over the same explicitly defined head set H.
+
+Equation 6: define rho as the normalization denominator and J_N(x) as the
+Jacobian of N at x. Reuse the identity definition with dimension d_v.
+
+Whitening equations: define C as the state Gram matrix and lambda as the ridge
+regularizer. Define matrix trace. Sum over the same head set H and use I_{d_k}
+in the inverse. Replace the literal dimension 128 with d_k and state d_k=128
+in both evaluated models. Display the definitions without splitting a formula
+across pages.
+
+Validation
+- No first-person plural pronouns remain in the source or final PDF text.
+- The five numbered equation groups match version 2 after normalizing the
+  explicit head indices, matrix dimensions, head-set notation, and layout.
+- The whitening formula retains the original numerical denominator, 128.
+- Results and all subsequent sections match version 2 except for pronouns.
+- Evidence and figure hashes are unchanged; the complete archived-score check
+  on 28,672 records remains valid. No new model inference was performed.
+- The final PDF has four pages including seven references, with no LaTeX
+  warnings or overfull/underfull boxes. All four final pages were rendered and
+  visually inspected, including equation alignment and symbol legibility.
+
+Publication
+Version 3 is published on main as the default branch. The version 2 branch
+is removed after main is established; earlier commits remain in the history.
+
+Review type: assistant self-audit during authoring, not independent peer review.

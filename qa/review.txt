@@ -1,4 +1,4 @@
-PRE-PUSH MANUSCRIPT REVIEW — VERSION 2 — 2026-11-14
+PRE-PUSH MANUSCRIPT REVIEW — VERSION 3 — 2026-11-14
 
 Scope: focused positive-result working paper extracted from hybrid-answer-relay.
 Reviewer: AI assistant in the authoring session; not independent human peer review.
@@ -34,12 +34,19 @@ the added ROME and fast-weight entries checked against the official NeurIPS and
 PMLR proceedings. The affiliation's department name was checked on the official
 UC San Diego site.
 
-PASS — Three editing passes preserved the paper's architecture while improving
-problem framing, definitions, transitions, and sentence-level clarity. Every
-mathematical display and every evidence file is unchanged from version 1.
-The revised method distinguishes conditional local shadow trajectories from
-independently evolving full-model trajectories; the solver comparison specifies
-16 iterations per start. All claims retain their original experimental scope.
+PASS — Version 3 replaces all first-person plural pronouns with singular voice.
+Each equation defines new symbols locally. The recurrence uses explicit head
+and time indices, the readout notation explicitly suppresses the current time,
+and all sums use the same defined query-sharing group. Identity matrices are
+dimensioned in key space or value space as appropriate. The norm, inner product,
+cosine similarity, Jacobian, Gram matrix, ridge parameter, and trace are defined.
+
+PASS — All five numbered equation groups are equivalent to version 2 after
+normalizing the explicit indices, identity dimensions, and group notation.
+The whitening denominator is written as d_k with d_k=128, retaining its value.
+Results and later sections are unchanged except for singular authorship. Every
+evidence file and figure retains its version 2 hash; the existing complete-row
+claim check remains applicable. No inference or score-analysis code changed.
 
 PASS — Positive-result focus is scoped to controlled synthetic retrieval.
 The complete score grids, including failed target presentations, remain in the
