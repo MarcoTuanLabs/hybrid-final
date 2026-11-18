@@ -1,0 +1,189 @@
+{
+  "accounting": "Count full layers and partial QKV projections separately for one written request per distinct pair. Repeating each pair without a write doubles the counts. Nominal layer counts omit the internal readout work and final-layer operations that MLX may elide when it evaluates caches lazily.",
+  "distinct_prompt_pairs": 32,
+  "requests_per_arm": 64,
+  "schedules": {
+    "cut": {
+      "additional_partial_qkv_positions": 3254,
+      "complete_mean_s": 0.45502429034240777,
+      "correct": {
+        "nuisance": 16,
+        "nuisance_unwritten": 16,
+        "target": 13,
+        "target_unwritten": 16
+      },
+      "donor_parity": 64,
+      "exact_queries": 64,
+      "exact_tops": 64,
+      "gains_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "losses_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "max_output_logit_abs_diff": 0.0,
+      "max_write_abs_diff": 0.0,
+      "prefill_full_layer_positions": 195240,
+      "prefill_write_mean_s": 0.39748726043399074,
+      "promotion": false,
+      "recipient_slot_parity": 64,
+      "vs_cut": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio": 1.0
+      },
+      "vs_full": {
+        "ci95": [
+          0.9377214779068278,
+          0.9732712203794859
+        ],
+        "ratio": 0.9542246522217556
+      }
+    },
+    "full": {
+      "additional_partial_qkv_positions": 0,
+      "complete_mean_s": 0.4768523735820054,
+      "correct": {
+        "nuisance": 16,
+        "nuisance_unwritten": 16,
+        "target": 13,
+        "target_unwritten": 16
+      },
+      "donor_parity": 64,
+      "exact_queries": 64,
+      "exact_tops": 64,
+      "gains_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "losses_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "max_output_logit_abs_diff": 0.0,
+      "max_write_abs_diff": 0.0,
+      "prefill_full_layer_positions": 208256,
+      "prefill_write_mean_s": 0.4188090487896261,
+      "promotion": false,
+      "recipient_slot_parity": 64,
+      "vs_cut": {
+        "ci95": [
+          1.0274628274840927,
+          1.0664147335434715
+        ],
+        "ratio": 1.0479712483550534
+      },
+      "vs_full": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio": 1.0
+      }
+    },
+    "joint": {
+      "additional_partial_qkv_positions": 0,
+      "complete_mean_s": 0.41505090428108815,
+      "correct": {
+        "nuisance": 16,
+        "nuisance_unwritten": 16,
+        "target": 14,
+        "target_unwritten": 16
+      },
+      "donor_parity": 0,
+      "exact_queries": 0,
+      "exact_tops": 63,
+      "gains_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 1,
+        "target_unwritten": 0
+      },
+      "losses_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "max_output_logit_abs_diff": 3.546875,
+      "max_write_abs_diff": 0.265625,
+      "prefill_full_layer_positions": 208256,
+      "prefill_write_mean_s": 0.357979362606784,
+      "promotion": false,
+      "recipient_slot_parity": 0,
+      "vs_cut": {
+        "ci95": [
+          0.8879523990299673,
+          0.9374140426165638
+        ],
+        "ratio": 0.9121510941069992
+      },
+      "vs_full": {
+        "ci95": [
+          0.8562243702711515,
+          0.8871055120766623
+        ],
+        "ratio": 0.8703970605479453
+      }
+    },
+    "shared": {
+      "additional_partial_qkv_positions": 2148,
+      "complete_mean_s": 0.5850811353120662,
+      "correct": {
+        "nuisance": 16,
+        "nuisance_unwritten": 16,
+        "target": 14,
+        "target_unwritten": 16
+      },
+      "donor_parity": 0,
+      "exact_queries": 0,
+      "exact_tops": 63,
+      "gains_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 1,
+        "target_unwritten": 0
+      },
+      "losses_vs_full": {
+        "nuisance": 0,
+        "nuisance_unwritten": 0,
+        "target": 0,
+        "target_unwritten": 0
+      },
+      "max_output_logit_abs_diff": 3.0,
+      "max_write_abs_diff": 0.28955078125,
+      "prefill_full_layer_positions": 164272,
+      "prefill_write_mean_s": 0.5294083958233387,
+      "promotion": false,
+      "recipient_slot_parity": 0,
+      "vs_cut": {
+        "ci95": [
+          1.2597940466003195,
+          1.3163834818950089
+        ],
+        "ratio": 1.2858239608962196
+      },
+      "vs_full": {
+        "ci95": [
+          1.1957549285347087,
+          1.2607981225262983
+        ],
+        "ratio": 1.2269649219045955
+      }
+    }
+  },
+  "seeds": 8,
+  "suffix_layer_positions_per_32_pairs": 4096
+}

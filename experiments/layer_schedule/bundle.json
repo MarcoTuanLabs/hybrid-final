@@ -1,0 +1,16 @@
+{
+  "parent_release": "40cb39854359f4d244396ea1251898b29175d4dc",
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "model_revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "timing_device": "Local Apple M5 GPU, 4-bit MLX",
+  "paid_gpu_twd": 0,
+  "adaption_credits": 0,
+  "model_manifest": "../read_projection/release.json",
+  "sha256": {
+    "contract.json": "6623332eebf48aabbcfb330dfa647345eeb1a1fbe474c0e9a3e60f3eeaaffbba",
+    "rows.jsonl": "a3263218242822e45bbabe6b71d994314295db082fed596065e93fb9cc360473",
+    "run_schedule.py": "8ae2cf0c676e6f0bd81bd7dad09d92a9824655e4ef9223bc82a055031ec95f64",
+    "score.py": "d7101856d33c14f07db91e1dd5996ab0c0990c82d143f34e7f3d811ff35a4807",
+    "summary.json": "917a1a763fb8d70b072cb0d310724f87285be69ef35d6c6c026fc2f2f8793893"
+  }
+}

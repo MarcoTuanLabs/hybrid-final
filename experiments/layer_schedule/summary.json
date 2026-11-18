@@ -1,0 +1,166 @@
+{
+  "cases": 64,
+  "methods": {
+    "cut": {
+      "correct": {
+        "nuisance": 16,
+        "target": 13,
+        "unwritten_nuisance": 16,
+        "unwritten_target": 16
+      },
+      "cut": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio": 1.0
+      },
+      "full": {
+        "ci95": [
+          0.9436261481806703,
+          0.9735397688907427
+        ],
+        "ratio": 0.9606252921277249
+      },
+      "maximum_absolute_logit_error": 0.0,
+      "mean_s": 0.5784806751798897,
+      "prefill_write_s": 0.5052901816234225,
+      "promotion": false,
+      "same_as_full": {
+        "original": 64,
+        "queries": 64,
+        "top": 64,
+        "write": 64
+      }
+    },
+    "four": {
+      "correct": {
+        "nuisance": 16,
+        "target": 13,
+        "unwritten_nuisance": 16,
+        "unwritten_target": 16
+      },
+      "cut": {
+        "ci95": [
+          0.971254106411802,
+          1.0308560501702482
+        ],
+        "ratio": 0.9997862947096541
+      },
+      "full": {
+        "ci95": [
+          0.9325914490871277,
+          0.9950472765115056
+        ],
+        "ratio": 0.960420001420757
+      },
+      "maximum_absolute_logit_error": 0.0,
+      "mean_s": 0.5783570507992408,
+      "prefill_write_s": 0.5041701243208081,
+      "promotion": false,
+      "same_as_full": {
+        "original": 64,
+        "queries": 64,
+        "top": 64,
+        "write": 64
+      }
+    },
+    "full": {
+      "correct": {
+        "nuisance": 16,
+        "target": 13,
+        "unwritten_nuisance": 16,
+        "unwritten_target": 16
+      },
+      "cut": {
+        "ci95": [
+          1.0271476716030268,
+          1.0597417228507493
+        ],
+        "ratio": 1.0409886229260763
+      },
+      "full": {
+        "ci95": [
+          1.0,
+          1.0
+        ],
+        "ratio": 1.0
+      },
+      "maximum_absolute_logit_error": 0.0,
+      "mean_s": 0.6021918014448602,
+      "prefill_write_s": 0.5289625552977668,
+      "promotion": false,
+      "same_as_full": {
+        "original": 64,
+        "queries": 64,
+        "top": 64,
+        "write": 64
+      }
+    },
+    "lazy": {
+      "correct": {
+        "nuisance": 16,
+        "target": 13,
+        "unwritten_nuisance": 16,
+        "unwritten_target": 16
+      },
+      "cut": {
+        "ci95": [
+          0.960842348912906,
+          1.0101998905989436
+        ],
+        "ratio": 0.9834424613415241
+      },
+      "full": {
+        "ci95": [
+          0.9296611670574395,
+          0.9609377078687503
+        ],
+        "ratio": 0.9447197017170104
+      },
+      "maximum_absolute_logit_error": 0.0,
+      "mean_s": 0.5689024590374174,
+      "prefill_write_s": 0.49627741278891335,
+      "promotion": false,
+      "same_as_full": {
+        "original": 64,
+        "queries": 64,
+        "top": 64,
+        "write": 64
+      }
+    },
+    "one": {
+      "correct": {
+        "nuisance": 16,
+        "target": 13,
+        "unwritten_nuisance": 16,
+        "unwritten_target": 16
+      },
+      "cut": {
+        "ci95": [
+          0.9909147332793029,
+          1.0335481301840144
+        ],
+        "ratio": 1.0110878788343123
+      },
+      "full": {
+        "ci95": [
+          0.947176551998705,
+          0.9979293377081695
+        ],
+        "ratio": 0.9712765889720129
+      },
+      "maximum_absolute_logit_error": 0.0,
+      "mean_s": 0.5848947988142754,
+      "prefill_write_s": 0.509444484303458,
+      "promotion": false,
+      "same_as_full": {
+        "original": 64,
+        "queries": 64,
+        "top": 64,
+        "write": 64
+      }
+    }
+  },
+  "seeds": 8
+}

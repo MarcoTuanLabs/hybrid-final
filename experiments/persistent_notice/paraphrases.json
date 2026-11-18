@@ -1,0 +1,62 @@
+[
+  {
+    "source": "babi",
+    "id": 1583,
+    "alternate": "Which location is Sandra in now?"
+  },
+  {
+    "source": "babi",
+    "id": 1575,
+    "alternate": "Which location is Mary in now?"
+  },
+  {
+    "source": "babi",
+    "id": 1272,
+    "alternate": "Which location is Mary in now?"
+  },
+  {
+    "source": "babi",
+    "id": 415,
+    "alternate": "Which location is Sandra in now?"
+  },
+  {
+    "source": "babi",
+    "id": 134,
+    "alternate": "Which location is John in now?"
+  },
+  {
+    "source": "babi",
+    "id": 288,
+    "alternate": "Which location is Daniel in now?"
+  },
+  {
+    "source": "mquake",
+    "id": 1960,
+    "alternate": "Which language is the official language of the country where Arthurlie F.C. is originated?"
+  },
+  {
+    "source": "mquake",
+    "id": 308,
+    "alternate": "What is the name of the chairperson of the educational institution that Eduardo Saverin attended?"
+  },
+  {
+    "source": "mquake",
+    "id": 2349,
+    "alternate": "What is the continent of origin of the developer of MathML's chairperson?"
+  },
+  {
+    "source": "mquake",
+    "id": 628,
+    "alternate": "To which genre does the work of the creator of Caliban belong?"
+  },
+  {
+    "source": "mquake",
+    "id": 897,
+    "alternate": "Which language can the current Mayor of London speak, write or sign?"
+  },
+  {
+    "source": "mquake",
+    "id": 1273,
+    "alternate": "What is the location of the main office of the employer of the writer of \"The Song of Hiawatha\"?"
+  }
+]

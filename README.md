@@ -19,6 +19,8 @@ The BF16 normalized readers preserve every tested nuisance and unwritten answer.
 
 On 64 new seeds in four-bit Qwen3.5-9B (128 target presentations), the optimized read controlled 99 answers, compared with 68 under the whitened-key baseline. Giving the written heads their unwritten lengths retained 95 of the 99 successful answers. Changing only the lengths controlled 0/128. The full, direction-only and length-only readers each preserved 128/128 nuisance answers. [Head interventions, archived outcomes and seed-level intervals](experiments/read_direction/README.md)
 
+On eight previously used 4-bit development seeds, the 16-step solver controlled 13/16 target answers, four steps controlled 3/16 and one Jacobian step controlled 0/16. Jointly prefilling both prompts saved 13.0% of complete time but changed the write in every request. Interleaving the branches at their original input shape preserved every write, query and top token across 64 requests. Its fastest tested schedule saved 5.5% relative to separate full prefills. [Solver comparison](experiments/jacobian_service/README.md) · [Prefix and batching comparison](experiments/shared_prefill/README.md) · [Layer scheduling](experiments/layer_schedule/README.md)
+
 ## Public cache-transfer experiment
 
 The receiver starts with an old, question-conditioned cache and also receives the donor's attention cache and convolution histories. The encoder projects the donor-minus-recipient recurrent matrix onto the directions read during four known suffix tokens. It sends 3 MiB of recurrent-matrix updates, compared with 48 MiB for an FP32 dense transfer. These sizes exclude the common donor components. The receiver reconstructs a dense state locally.
@@ -27,6 +29,8 @@ On 32 official bAbI test stories and 32 previously unused MQuAKE cases, the proj
 
 On 16 short public development requests, sending a rank-four recurrent update along with changed attention and convolution state required 6.78 MiB per request on average. The complete projected service took 0.843 seconds per request, compared with 0.551 for utf-8 splice and checkpoint reuse. Both figures include generation and actual local socket transfer. [Complete update costs](experiments/update_service/README.md)
 
+I also fitted a shared read basis once, then updated a document before either downstream question was known. On 12 separate development documents it reproduced 19/24 dense answer sequences. Its mean warm time including both future questions was 0.552 seconds versus 0.669 for text splice with a prefix checkpoint over a local 1-Gbit/s emulated link. [Shared-document service and all controls](experiments/shared_read_basis/README.md)
+
 ## Updating a cached conversation before the question
 
 On 34 held-out questions from shortened LongMemEval histories, a per-head correction reproduced the 4-bit 9B full-replay answers apart from one final period. Each method matched 21 reference answers. Counting the original history, insertion and answer, estimated decoder arithmetic fell by 25.3% and measured time by 19.5%. Reusing the old recurrent state also scored 21/34 at nearly the same cost. BM25 scored 19/34 with the lowest computational cost. [Methods, competing results and reproduction](experiments/late_arrival)
@@ -34,6 +38,8 @@ On 34 held-out questions from shortened LongMemEval histories, a per-head correc
 On the 16 shortened 4B development histories, the correction reproduced all 16 full-replay sequences and reduced total elapsed time from 99.36 to 78.38 seconds. Appending each delayed session with its original date was faster still and answered 13/16 correctly, compared with 12/16 for chronological replay and correction. [Append-only comparison](experiments/late_arrival/README.md#appending-a-delayed-dated-session)
 
 A separate balanced MQuAKE-Remastered pilot compared six readers on edited and unaffected single- and multi-hop questions. The conventional scoped reader scored 55/96 and the recurrent-channel contrast scored 54/96. [Per-task results and controls](experiments/remastered_contrast)
+
+On 12 development documents with three-turn conversations, the old cache with a change notice and retrieval answered the changed question correctly in both phrasings on all 12 documents. Adding a rank-four recurrent patch changed no answer's correctness and raised mean cold service time from 1.704 to 1.963 seconds. [Pre-question updates across three turns](experiments/persistent_notice/README.md)
 
 ## Following edits across several facts
 

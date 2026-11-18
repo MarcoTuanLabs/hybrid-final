@@ -1,0 +1,62 @@
+{
+  "seconds": 8.112927500042133,
+  "ids": [
+    [
+      "babi",
+      1283
+    ],
+    [
+      "babi",
+      1797
+    ],
+    [
+      "babi",
+      200
+    ],
+    [
+      "babi",
+      1118
+    ],
+    [
+      "babi",
+      1693
+    ],
+    [
+      "babi",
+      1509
+    ],
+    [
+      "mquake",
+      639
+    ],
+    [
+      "mquake",
+      1693
+    ],
+    [
+      "mquake",
+      2432
+    ],
+    [
+      "mquake",
+      2287
+    ],
+    [
+      "mquake",
+      1217
+    ],
+    [
+      "mquake",
+      1885
+    ]
+  ],
+  "shape": [
+    24,
+    32,
+    128,
+    4
+  ],
+  "bytes_per_basis": 786432,
+  "positions": "four known template-boundary tokens per donor plus the old and new fact prefills",
+  "max_orthogonality_error": 0.0005646944046020508
+}

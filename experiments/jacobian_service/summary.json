@@ -1,0 +1,94 @@
+{
+  "cut_and_full_parity": true,
+  "cut_vs_full_ci95": [
+    0.9577581714719804,
+    0.9955118501927882
+  ],
+  "cut_vs_full_ratio": 0.97696524122488,
+  "gates": {
+    "cut4": false,
+    "cut_jacobian": false,
+    "truncation": false
+  },
+  "identical_write_count": 64,
+  "per_condition": 16,
+  "scores": {
+    "cut16": {
+      "mean_prefill_write_s": 0.45282921356192674,
+      "mean_s": 0.5185502714557515,
+      "mean_suffix_s": 0.06572105789382476,
+      "new_gains": 0,
+      "nuisance": 16,
+      "ratio_ci95": [
+        1.0,
+        1.0
+      ],
+      "ratio_vs_matched": 1.0,
+      "retained": 13,
+      "target": 13,
+      "unwritten": 32
+    },
+    "cut4": {
+      "mean_prefill_write_s": 0.4463607214347576,
+      "mean_s": 0.5106036471843254,
+      "mean_suffix_s": 0.0642429257495678,
+      "new_gains": 0,
+      "nuisance": 16,
+      "ratio_ci95": [
+        0.9607764195021605,
+        1.0103677605482033
+      ],
+      "ratio_vs_matched": 0.9846753059272013,
+      "retained": 3,
+      "target": 3,
+      "unwritten": 32
+    },
+    "cut_jacobian": {
+      "mean_prefill_write_s": 0.4454785397865635,
+      "mean_s": 0.5104347676642647,
+      "mean_suffix_s": 0.06495622787770117,
+      "new_gains": 0,
+      "nuisance": 16,
+      "ratio_ci95": [
+        0.9672337704413699,
+        0.9950435526554323
+      ],
+      "ratio_vs_matched": 0.9843496296536423,
+      "retained": 0,
+      "target": 0,
+      "unwritten": 32
+    },
+    "cut_native": {
+      "mean_prefill_write_s": 0.43981101035751635,
+      "mean_s": 0.4998175397158775,
+      "mean_suffix_s": 0.06000652935836115,
+      "new_gains": 0,
+      "nuisance": 16,
+      "ratio_ci95": [
+        0.9366121970619153,
+        0.9913683801596124
+      ],
+      "ratio_vs_matched": 0.9638748010153679,
+      "retained": 0,
+      "target": 0,
+      "unwritten": 32
+    },
+    "full16": {
+      "mean_prefill_write_s": 0.4659466946559405,
+      "mean_s": 0.5307765819852648,
+      "mean_suffix_s": 0.06482988732932427,
+      "new_gains": 0,
+      "nuisance": 16,
+      "ratio_ci95": [
+        1.004508384110488,
+        1.0441025552225975
+      ],
+      "ratio_vs_matched": 1.023577869307039,
+      "retained": 13,
+      "target": 13,
+      "unwritten": 32
+    }
+  },
+  "seeds": 8,
+  "services": 320
+}

@@ -1,0 +1,13 @@
+{
+  "source_sha256": {
+    "contract.json": "074fda6b966b484ed9a31272ca2f161950c9efb047d7c5da47e647224701d916",
+    "documents.py": "34c5be57b4765d33e19927a6980ae6e25e9ae63ca55e06d5f55e4214f3a6a5e2",
+    "fit.py": "bc6e1bc665606744bdaf4a98056343e25c3f3f411aeffb18ade1695dac2f0aaa",
+    "stream.py": "f046f6998045eb42a0fce23665bbc30097406a8b0182c1478be7fc21362a2e1e",
+    "serve.py": "db8443749fe378bf772ba35edc50e96b09c0096b5d88c1d83aef646ac3a088bb",
+    "score.py": "a8d0f871f3e169627addc187f5425b11b1fce9139248838762203c3b9022e09a"
+  },
+  "local_npz_sha256": "40299a7d5dd0995a3303cacce2de424fe4cc3019f34ae2e315719eddc8af738a",
+  "model_revision": "mlx-community/Qwen3.5-9B-4bit@8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "parent": "40cb39854359f4d244396ea1251898b29175d4dc"
+}

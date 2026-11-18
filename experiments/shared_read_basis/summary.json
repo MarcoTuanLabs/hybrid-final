@@ -1,0 +1,259 @@
+{
+  "amortization": {
+    "documents_to_recover_full_calibration_and_install": 68.97158395104033,
+    "documents_to_recover_one_install": 0.1199451162974309,
+    "mean_s_saved_vs_best": 0.11783201732517523
+  },
+  "answers": 24,
+  "basis_install": {
+    "seconds": 0.014133375021629035,
+    "wire_bytes": 786495
+  },
+  "combined_calibration_seconds": 8.112927500042133,
+  "complete_quality": false,
+  "documents": 12,
+  "fastest_exact_control": "patch_prefix",
+  "gain_vs_zero": 0,
+  "paired_document_bootstrap95": [
+    0.7801171056106987,
+    0.8669258297215107
+  ],
+  "promotion": false,
+  "stats": {
+    "bit1": {
+      "by_source": {
+        "babi": [
+          6,
+          5
+        ],
+        "mquake": [
+          5,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.4944841147613867,
+        "cold_s": 0.7132801251621762,
+        "donor_s": 0.15381539949642806,
+        "net_s": 0.03401284724047097,
+        "ready_cold_s": 0.21879601040078947,
+        "ready_warm_s": 0.06498061090436143,
+        "receiver_s": 0.009568857485040402,
+        "sender_s": 0.02139890617885006,
+        "warm_s": 0.5594647256657481,
+        "wire_bytes": 4211945.666666667
+      },
+      "sequence_matches": 20
+    },
+    "bit2": {
+      "by_source": {
+        "babi": [
+          5,
+          5
+        ],
+        "mquake": [
+          5,
+          2
+        ]
+      },
+      "facts_correct": 17,
+      "mean": {
+        "answers_s": 0.4831739442694622,
+        "cold_s": 0.719421048493435,
+        "donor_s": 0.15480327423817167,
+        "net_s": 0.04657821524112175,
+        "ready_cold_s": 0.2362471042239728,
+        "ready_warm_s": 0.08144382998580113,
+        "receiver_s": 0.007988361234311014,
+        "sender_s": 0.026877253510368366,
+        "warm_s": 0.5646177742552633,
+        "wire_bytes": 5784833.666666667
+      },
+      "sequence_matches": 17
+    },
+    "dense": {
+      "by_source": {
+        "babi": [
+          6,
+          5
+        ],
+        "mquake": [
+          5,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.5100418888226462,
+        "cold_s": 1.1059912255829356,
+        "donor_s": 0.15192715616043037,
+        "net_s": 0.4209579270973336,
+        "ready_cold_s": 0.5959493367602894,
+        "ready_warm_s": 0.444022180599859,
+        "receiver_s": 0.00824492349056527,
+        "sender_s": 0.014819330011960119,
+        "warm_s": 0.9540640694225052,
+        "wire_bytes": 52576065.666666664
+      },
+      "sequence_matches": 24
+    },
+    "patch_full": {
+      "by_source": {
+        "babi": [
+          6,
+          5
+        ],
+        "mquake": [
+          5,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.5080234375879323,
+        "cold_s": 0.6982073509231365,
+        "donor_s": 0,
+        "net_s": 0.0002490692325712492,
+        "ready_cold_s": 0.19018391333520412,
+        "ready_warm_s": 0.19018391333520412,
+        "receiver_s": 0.18988460075343028,
+        "sender_s": 5.024334920259813e-05,
+        "warm_s": 0.6982073509231365,
+        "wire_bytes": 106.16666666666667
+      },
+      "sequence_matches": 23
+    },
+    "patch_prefix": {
+      "by_source": {
+        "babi": [
+          6,
+          5
+        ],
+        "mquake": [
+          5,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.5153146458421057,
+        "cold_s": 0.6693776910930561,
+        "donor_s": 0,
+        "net_s": 0.0003264479067487021,
+        "ready_cold_s": 0.15406304525095038,
+        "ready_warm_s": 0.15406304525095038,
+        "receiver_s": 0.1536662396004734,
+        "sender_s": 7.035774372828503e-05,
+        "warm_s": 0.6693776910930561,
+        "wire_bytes": 106.16666666666667
+      },
+      "sequence_matches": 24
+    },
+    "random": {
+      "by_source": {
+        "babi": [
+          6,
+          4
+        ],
+        "mquake": [
+          4,
+          2
+        ]
+      },
+      "facts_correct": 16,
+      "mean": {
+        "answers_s": 0.511694937410842,
+        "cold_s": 0.7056130348161483,
+        "donor_s": 0.15303076057656048,
+        "net_s": 0.024554239653904613,
+        "ready_cold_s": 0.19391809740530638,
+        "ready_warm_s": 0.0408873368287459,
+        "receiver_s": 0.005517736087009932,
+        "sender_s": 0.010815361087831358,
+        "warm_s": 0.552582274239588,
+        "wire_bytes": 3030705.6666666665
+      },
+      "sequence_matches": 20
+    },
+    "read": {
+      "by_source": {
+        "babi": [
+          6,
+          6
+        ],
+        "mquake": [
+          4,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.5108764445952451,
+        "cold_s": 0.7060332882683724,
+        "donor_s": 0.15448761450049156,
+        "net_s": 0.024546795330631237,
+        "ready_cold_s": 0.19515684367312738,
+        "ready_warm_s": 0.040669229172635823,
+        "receiver_s": 0.005245312495389953,
+        "sender_s": 0.010877121346614635,
+        "warm_s": 0.5515456737678809,
+        "wire_bytes": 3030705.6666666665
+      },
+      "sequence_matches": 19
+    },
+    "svd": {
+      "by_source": {
+        "babi": [
+          6,
+          6
+        ],
+        "mquake": [
+          4,
+          2
+        ]
+      },
+      "facts_correct": 18,
+      "mean": {
+        "answers_s": 0.5132828368223272,
+        "cold_s": 0.708422798566365,
+        "donor_s": 0.15507003817280443,
+        "net_s": 0.024553559089933213,
+        "ready_cold_s": 0.19513996174403778,
+        "ready_warm_s": 0.040069923571233325,
+        "receiver_s": 0.005160239583346993,
+        "sender_s": 0.010356124897953123,
+        "warm_s": 0.5533527603935605,
+        "wire_bytes": 3030705.6666666665
+      },
+      "sequence_matches": 20
+    },
+    "zero": {
+      "by_source": {
+        "babi": [
+          5,
+          5
+        ],
+        "mquake": [
+          4,
+          2
+        ]
+      },
+      "facts_correct": 16,
+      "mean": {
+        "answers_s": 0.5240398437502639,
+        "cold_s": 0.7035733022591254,
+        "donor_s": 0.1539115418175546,
+        "net_s": 0.018265128252096474,
+        "ready_cold_s": 0.17953345850886157,
+        "ready_warm_s": 0.02562191669130698,
+        "receiver_s": 0.0022228820986735323,
+        "sender_s": 0.005133906340536972,
+        "warm_s": 0.5496617604415709,
+        "wire_bytes": 2243441.6666666665
+      },
+      "sequence_matches": 19
+    }
+  },
+  "warm_time_ratio": 0.8239678153408995
+}

@@ -1,0 +1,975 @@
+{
+  "bounded_skipped_documents": 0,
+  "cold_ratio_vs_full": 1.2106047976397134,
+  "documents": 12,
+  "no_extra_unaffected_loss": true,
+  "paired_ratio_ci95": [
+    1.115747139652936,
+    1.3111187940936506
+  ],
+  "paired_vs_notice_retrieval": {
+    "bank_shared": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "mquake",
+          2349
+        ],
+        [
+          "mquake",
+          1273
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            2349
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            2349
+          ],
+          [
+            "mquake",
+            1273
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "bounded16": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "mquake",
+          1273
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            1273
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "checkpoint": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "mquake",
+          1273
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            1273
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "fresh_rag": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "mquake",
+          1273
+        ],
+        [
+          "babi",
+          415
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            1273
+          ],
+          [
+            "babi",
+            415
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            1273
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "full": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "mquake",
+          1273
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "mquake",
+            1273
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "native": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "babi",
+          134
+        ],
+        [
+          "mquake",
+          2349
+        ],
+        [
+          "mquake",
+          628
+        ],
+        [
+          "mquake",
+          308
+        ],
+        [
+          "mquake",
+          897
+        ],
+        [
+          "mquake",
+          1273
+        ],
+        [
+          "babi",
+          1575
+        ],
+        [
+          "babi",
+          1583
+        ],
+        [
+          "babi",
+          1272
+        ],
+        [
+          "babi",
+          415
+        ],
+        [
+          "babi",
+          288
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "babi",
+            134
+          ],
+          [
+            "mquake",
+            2349
+          ],
+          [
+            "mquake",
+            628
+          ],
+          [
+            "mquake",
+            308
+          ],
+          [
+            "mquake",
+            897
+          ],
+          [
+            "mquake",
+            1273
+          ],
+          [
+            "babi",
+            1575
+          ],
+          [
+            "babi",
+            1583
+          ],
+          [
+            "babi",
+            1272
+          ],
+          [
+            "babi",
+            415
+          ],
+          [
+            "babi",
+            288
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "babi",
+            134
+          ],
+          [
+            "mquake",
+            2349
+          ],
+          [
+            "mquake",
+            628
+          ],
+          [
+            "mquake",
+            308
+          ],
+          [
+            "mquake",
+            897
+          ],
+          [
+            "mquake",
+            1273
+          ],
+          [
+            "babi",
+            1575
+          ],
+          [
+            "babi",
+            1583
+          ],
+          [
+            "babi",
+            1272
+          ],
+          [
+            "babi",
+            415
+          ],
+          [
+            "babi",
+            288
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "native_notice_rag": {
+      "joint_losses": [],
+      "joint_wins": [],
+      "losses": [
+        [],
+        [],
+        []
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "old": {
+      "joint_losses": [
+        [
+          "mquake",
+          1960
+        ],
+        [
+          "babi",
+          134
+        ],
+        [
+          "mquake",
+          2349
+        ],
+        [
+          "mquake",
+          628
+        ],
+        [
+          "mquake",
+          308
+        ],
+        [
+          "mquake",
+          897
+        ],
+        [
+          "mquake",
+          1273
+        ],
+        [
+          "babi",
+          1575
+        ],
+        [
+          "babi",
+          1583
+        ],
+        [
+          "babi",
+          1272
+        ],
+        [
+          "babi",
+          415
+        ],
+        [
+          "babi",
+          288
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "babi",
+            134
+          ],
+          [
+            "mquake",
+            2349
+          ],
+          [
+            "mquake",
+            628
+          ],
+          [
+            "mquake",
+            308
+          ],
+          [
+            "mquake",
+            897
+          ],
+          [
+            "mquake",
+            1273
+          ],
+          [
+            "babi",
+            1575
+          ],
+          [
+            "babi",
+            1583
+          ],
+          [
+            "babi",
+            1272
+          ],
+          [
+            "babi",
+            415
+          ],
+          [
+            "babi",
+            288
+          ]
+        ],
+        [],
+        [
+          [
+            "mquake",
+            1960
+          ],
+          [
+            "babi",
+            134
+          ],
+          [
+            "mquake",
+            2349
+          ],
+          [
+            "mquake",
+            628
+          ],
+          [
+            "mquake",
+            308
+          ],
+          [
+            "mquake",
+            897
+          ],
+          [
+            "mquake",
+            1273
+          ],
+          [
+            "babi",
+            1575
+          ],
+          [
+            "babi",
+            1583
+          ],
+          [
+            "babi",
+            1272
+          ],
+          [
+            "babi",
+            415
+          ],
+          [
+            "babi",
+            288
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "old_notice": {
+      "joint_losses": [
+        [
+          "babi",
+          288
+        ]
+      ],
+      "joint_wins": [],
+      "losses": [
+        [
+          [
+            "babi",
+            288
+          ]
+        ],
+        [],
+        [
+          [
+            "babi",
+            288
+          ]
+        ]
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    },
+    "old_notice_rag": {
+      "joint_losses": [],
+      "joint_wins": [],
+      "losses": [
+        [],
+        [],
+        []
+      ],
+      "wins": [
+        [],
+        [],
+        []
+      ]
+    }
+  },
+  "policies": {
+    "bank_shared": {
+      "all_three_correct": 7,
+      "all_three_exact": 10,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          4,
+          2,
+          3
+        ]
+      },
+      "joint_changed": 9,
+      "means": {
+        "complete_cold_s": 1.435080701233043,
+        "complete_warm_s": 0.9641440590009248,
+        "downstream_s": 0.9188065521787697,
+        "old_cache_logical_bytes": 101132970.66666667,
+        "old_setup_s": 0.2704445206521389,
+        "ready_cold_s": 0.2458296284021344,
+        "ready_warm_s": 0.04533750682215517,
+        "wire_bytes": 3030705.6666666665
+      },
+      "turn_accuracy": [
+        10,
+        8,
+        9
+      ],
+      "turn_sequence_matches": [
+        10,
+        10,
+        10
+      ]
+    },
+    "bounded16": {
+      "all_three_correct": 7,
+      "all_three_exact": 12,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          5,
+          2,
+          4
+        ]
+      },
+      "joint_changed": 10,
+      "means": {
+        "complete_cold_s": 1.5752939999122948,
+        "complete_warm_s": 1.2615342082378145,
+        "downstream_s": 1.029466118159083,
+        "old_cache_logical_bytes": 101132970.66666667,
+        "old_setup_s": 0.3137597916744805,
+        "ready_cold_s": 0.2320680900787314,
+        "ready_warm_s": 0.2320680900787314,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        11,
+        8,
+        10
+      ],
+      "turn_sequence_matches": [
+        12,
+        12,
+        12
+      ]
+    },
+    "checkpoint": {
+      "all_three_correct": 7,
+      "all_three_exact": 12,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          5,
+          2,
+          4
+        ]
+      },
+      "joint_changed": 10,
+      "means": {
+        "complete_cold_s": 1.5444930104034331,
+        "complete_warm_s": 1.2144100485893432,
+        "downstream_s": 0.9846982153151961,
+        "old_cache_logical_bytes": 101132970.66666667,
+        "old_setup_s": 0.33008296181408997,
+        "ready_cold_s": 0.22971183327414715,
+        "ready_warm_s": 0.22971183327414715,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        11,
+        8,
+        10
+      ],
+      "turn_sequence_matches": [
+        12,
+        12,
+        12
+      ]
+    },
+    "fresh_rag": {
+      "all_three_correct": 6,
+      "all_three_exact": 1,
+      "by_task": {
+        "babi": [
+          5,
+          6,
+          6
+        ],
+        "mquake": [
+          4,
+          2,
+          4
+        ]
+      },
+      "joint_changed": 9,
+      "means": {
+        "complete_cold_s": 1.3582201737347834,
+        "complete_warm_s": 1.3581520728281855,
+        "downstream_s": 1.1817042464002345,
+        "old_cache_logical_bytes": 0,
+        "old_setup_s": 6.810090659807126e-05,
+        "ready_cold_s": 0.17644782642795084,
+        "ready_warm_s": 0.17644782642795084,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        9,
+        8,
+        10
+      ],
+      "turn_sequence_matches": [
+        1,
+        1,
+        1
+      ]
+    },
+    "full": {
+      "all_three_correct": 7,
+      "all_three_exact": 12,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          5,
+          2,
+          4
+        ]
+      },
+      "joint_changed": 10,
+      "means": {
+        "complete_cold_s": 1.621604319186493,
+        "complete_warm_s": 1.2943241734271094,
+        "downstream_s": 0.983244989416562,
+        "old_cache_logical_bytes": 52953088,
+        "old_setup_s": 0.32728014575938386,
+        "ready_cold_s": 0.3110791840105473,
+        "ready_warm_s": 0.3110791840105473,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        11,
+        8,
+        10
+      ],
+      "turn_sequence_matches": [
+        12,
+        12,
+        12
+      ]
+    },
+    "native": {
+      "all_three_correct": 0,
+      "all_three_exact": 1,
+      "by_task": {
+        "babi": [
+          0,
+          6,
+          0
+        ],
+        "mquake": [
+          0,
+          2,
+          0
+        ]
+      },
+      "joint_changed": 0,
+      "means": {
+        "complete_cold_s": 1.5428160101582762,
+        "complete_warm_s": 1.0039399756351486,
+        "downstream_s": 0.9842938088889545,
+        "old_cache_logical_bytes": 101132970.66666667,
+        "old_setup_s": 0.31429838884893496,
+        "ready_cold_s": 0.24422381242038682,
+        "ready_warm_s": 0.019646166746194165,
+        "wire_bytes": 787286
+      },
+      "turn_accuracy": [
+        0,
+        8,
+        0
+      ],
+      "turn_sequence_matches": [
+        1,
+        10,
+        1
+      ]
+    },
+    "native_notice_rag": {
+      "all_three_correct": 8,
+      "all_three_exact": 7,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          6,
+          2,
+          6
+        ]
+      },
+      "joint_changed": 12,
+      "means": {
+        "complete_cold_s": 1.9631219686804495,
+        "complete_warm_s": 1.4496975904330611,
+        "downstream_s": 1.1741224965080619,
+        "old_cache_logical_bytes": 101132970.66666667,
+        "old_setup_s": 0.2989658610119174,
+        "ready_cold_s": 0.4900336111604702,
+        "ready_warm_s": 0.27557509392499924,
+        "wire_bytes": 787397.5
+      },
+      "turn_accuracy": [
+        12,
+        8,
+        12
+      ],
+      "turn_sequence_matches": [
+        8,
+        7,
+        7
+      ]
+    },
+    "old": {
+      "all_three_correct": 0,
+      "all_three_exact": 0,
+      "by_task": {
+        "babi": [
+          0,
+          6,
+          0
+        ],
+        "mquake": [
+          0,
+          2,
+          0
+        ]
+      },
+      "joint_changed": 0,
+      "means": {
+        "complete_cold_s": 1.248407788341865,
+        "complete_warm_s": 0.95738890641951,
+        "downstream_s": 0.957075594002769,
+        "old_cache_logical_bytes": 52953088,
+        "old_setup_s": 0.2910188819223549,
+        "ready_cold_s": 0.0003133124167410036,
+        "ready_warm_s": 0.0003133124167410036,
+        "wire_bytes": 0
+      },
+      "turn_accuracy": [
+        0,
+        8,
+        0
+      ],
+      "turn_sequence_matches": [
+        0,
+        10,
+        0
+      ]
+    },
+    "old_notice": {
+      "all_three_correct": 7,
+      "all_three_exact": 9,
+      "by_task": {
+        "babi": [
+          5,
+          6,
+          5
+        ],
+        "mquake": [
+          6,
+          2,
+          6
+        ]
+      },
+      "joint_changed": 11,
+      "means": {
+        "complete_cold_s": 1.5447623090876732,
+        "complete_warm_s": 1.2390278821694665,
+        "downstream_s": 0.9771307777652206,
+        "old_cache_logical_bytes": 52953088,
+        "old_setup_s": 0.30573442691820674,
+        "ready_cold_s": 0.2618971044042458,
+        "ready_warm_s": 0.2618971044042458,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        11,
+        8,
+        11
+      ],
+      "turn_sequence_matches": [
+        10,
+        12,
+        9
+      ]
+    },
+    "old_notice_rag": {
+      "all_three_correct": 8,
+      "all_three_exact": 7,
+      "by_task": {
+        "babi": [
+          6,
+          6,
+          6
+        ],
+        "mquake": [
+          6,
+          2,
+          6
+        ]
+      },
+      "joint_changed": 12,
+      "means": {
+        "complete_cold_s": 1.7035308715712745,
+        "complete_warm_s": 1.4015415277293262,
+        "downstream_s": 1.1369942986542203,
+        "old_cache_logical_bytes": 52953088,
+        "old_setup_s": 0.30198934384194825,
+        "ready_cold_s": 0.26454722907510586,
+        "ready_warm_s": 0.26454722907510586,
+        "wire_bytes": 111.5
+      },
+      "turn_accuracy": [
+        12,
+        8,
+        12
+      ],
+      "turn_sequence_matches": [
+        8,
+        7,
+        7
+      ]
+    }
+  },
+  "promotion": false,
+  "required_joint_changed": 14,
+  "turns": 36
+}

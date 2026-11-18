@@ -1,0 +1,233 @@
+{
+  "scope": "Position count for two full-model branch prefills and four suffix tokens. Excludes query design, precision effects, kernel scheduling and branching overhead. This is not a measured FLOP or wall-time reduction.",
+  "distinct_prompt_pairs": 32,
+  "original_positions": 6636,
+  "positions_avoided": 1106,
+  "avoided_fraction": 0.16666666666666666,
+  "rows": [
+    {
+      "seed": 27112000,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 81,
+      "common": 31
+    },
+    {
+      "seed": 27112000,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 81,
+      "common": 39
+    },
+    {
+      "seed": 27112000,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 122,
+      "common": 51
+    },
+    {
+      "seed": 27112000,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 122,
+      "common": 69
+    },
+    {
+      "seed": 27112001,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 81,
+      "common": 30
+    },
+    {
+      "seed": 27112001,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 81,
+      "common": 42
+    },
+    {
+      "seed": 27112001,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 122,
+      "common": 50
+    },
+    {
+      "seed": 27112001,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 122,
+      "common": 77
+    },
+    {
+      "seed": 27112002,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 82,
+      "common": 42
+    },
+    {
+      "seed": 27112002,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 82,
+      "common": 26
+    },
+    {
+      "seed": 27112002,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 123,
+      "common": 77
+    },
+    {
+      "seed": 27112002,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 123,
+      "common": 41
+    },
+    {
+      "seed": 27112003,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 82,
+      "common": 18
+    },
+    {
+      "seed": 27112003,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 82,
+      "common": 36
+    },
+    {
+      "seed": 27112003,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 122,
+      "common": 23
+    },
+    {
+      "seed": 27112003,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 122,
+      "common": 60
+    },
+    {
+      "seed": 27112004,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 81,
+      "common": 18
+    },
+    {
+      "seed": 27112004,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 81,
+      "common": 18
+    },
+    {
+      "seed": 27112004,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 121,
+      "common": 23
+    },
+    {
+      "seed": 27112004,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 121,
+      "common": 23
+    },
+    {
+      "seed": 27112005,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 80,
+      "common": 22
+    },
+    {
+      "seed": 27112005,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 80,
+      "common": 18
+    },
+    {
+      "seed": 27112005,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 121,
+      "common": 32
+    },
+    {
+      "seed": 27112005,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 121,
+      "common": 23
+    },
+    {
+      "seed": 27112006,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 82,
+      "common": 18
+    },
+    {
+      "seed": 27112006,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 82,
+      "common": 18
+    },
+    {
+      "seed": 27112006,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 122,
+      "common": 23
+    },
+    {
+      "seed": 27112006,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 122,
+      "common": 23
+    },
+    {
+      "seed": 27112007,
+      "surface": "table",
+      "nuisance": false,
+      "per_branch_tokens": 83,
+      "common": 18
+    },
+    {
+      "seed": 27112007,
+      "surface": "table",
+      "nuisance": true,
+      "per_branch_tokens": 83,
+      "common": 35
+    },
+    {
+      "seed": 27112007,
+      "surface": "prose",
+      "nuisance": false,
+      "per_branch_tokens": 122,
+      "common": 23
+    },
+    {
+      "seed": 27112007,
+      "surface": "prose",
+      "nuisance": true,
+      "per_branch_tokens": 122,
+      "common": 59
+    }
+  ]
+}
