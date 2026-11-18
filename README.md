@@ -21,6 +21,8 @@ On 64 new seeds in four-bit Qwen3.5-9B (128 target presentations), the optimized
 
 On eight previously used 4-bit development seeds, the 16-step solver controlled 13/16 target answers, four steps controlled 3/16 and one Jacobian step controlled 0/16. Jointly prefilling both prompts saved 13.0% of complete time but changed the write in every request. Interleaving the branches at their original input shape preserved every write, query and top token across 64 requests. Its fastest tested schedule saved 5.5% relative to separate full prefills. [Solver comparison](experiments/jacobian_service/README.md) · [Prefix and batching comparison](experiments/shared_prefill/README.md) · [Layer scheduling](experiments/layer_schedule/README.md)
 
+On 32 fresh four-bit seeds, the normalized reader controlled 57/64 targets, state-Gram whitening controlled 30/64 and four prefix-key covariance controls each scored 0/64. All seven readers preserved 192/192 controls. The comparisons use a single frozen Qwen checkpoint. [Curvature controls and the fixed-backbone comparison](experiments/covariance_read/README.md)
+
 ## Public cache-transfer experiment
 
 The receiver starts with an old, question-conditioned cache and also receives the donor's attention cache and convolution histories. The encoder projects the donor-minus-recipient recurrent matrix onto the directions read during four known suffix tokens. It sends 3 MiB of recurrent-matrix updates, compared with 48 MiB for an FP32 dense transfer. These sizes exclude the common donor components. The receiver reconstructs a dense state locally.
@@ -42,6 +44,10 @@ A separate balanced MQuAKE-Remastered pilot compared six readers on edited and u
 On 12 development documents with three-turn conversations, the old cache with a change notice and retrieval answered the changed question correctly in both phrasings on all 12 documents. Adding a rank-four recurrent patch changed no answer's correctness and raised mean cold service time from 1.704 to 1.963 seconds. [Pre-question updates across three turns](experiments/persistent_notice/README.md)
 
 In HaluMem-Medium, four simulated users yielded 23 delayed-session episodes with a second grounded question. An eight-episode text-only pilot measured how many official answers lexical retrieval could recover after the delayed session arrived. [Delayed dialogue eligibility and measured text controls](experiments/halumem_feasibility/README.md)
+
+On eight delayed HaluMem development sessions, I charged the original ingest, cache update, neural retrieval and two generated answers. The anchor correction answered 5/8 changed and 4/8 other grounded questions. The matched partial replay answered 5/8 and 4/8. [Chronological cache intervention and matched controls](experiments/halumem_bridge/README.md)
+
+On all 23 eligible development sessions, keeping one quarter of each incoming session by normalized shallow-state read change preserved the reference phrase for 7/15 attainable dynamic-update questions. Uniform temporal coverage preserved 9/15, and raw read displacement preserved 8/15. The normalized selector failed the criterion for a generation test. [Quarter-budget update selection](experiments/halumem_sieve/README.md)
 
 ## Following edits across several facts
 

@@ -1,0 +1,20 @@
+{
+  "model": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "retriever": "facebook/contriever-msmarco@abe8c1493371369031bcb1e02acb754cf4e162fa",
+  "dataset": "IAAR-Shanghai/HaluMem@cb04336aa1b732d4b24f5186c552456b4099806e",
+  "paid_twd": 0,
+  "adaption_credits": 0,
+  "sha256": {
+    "contract.json": "4fd1a5104ed8678796ca8f6f3ed58f45df62c79f2f09b34e3125887a73ccd304",
+    "prepare.py": "06d3ce8b9cadba8477172bd71100c43a190da05802b11c3c5f08dc6a912b2538",
+    "shallow.py": "ed22f5940ba97ce457828d2cfe72d67a05a6b835ef73d6d3fd289a0e5aef939c",
+    "dense.py": "a4336aed0b1182c2ea5d879946d5486b02d2f3f738db3abf299217e2c5942faa",
+    "score.py": "1abf7716ddfa294f0202f998e97f1b6bb745a4eabeb308c21a3640372b4e1125",
+    "verify.py": "ee1b2ada3925738803e85e76672147dea14c69db49de57a2958f5a848e418e1a",
+    "shallow_scores.json": "08e874c9fe9fba15cce5edccb2df14ffff896e18b5c8c7f5d0c79950027bb20e",
+    "dense_scores.json": "9c626beb36960ca016db65e40cd0ad94781635f492ad42112d4daaf913d36b1c",
+    "witnesses.json": "3e55599b4f936f7e57bd9dd0a782c85b2da1d9f5dd87dd1e7e497de2d2307c51",
+    "selections.json": "4bb1cae50b61065d1f78e53a454e797d9f53cd82853bb111c8dae78e991e4b16",
+    "summary.json": "efb46e9682019e44b55e6f0771783ece7cd172434a383628602cfba64bef1486"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "attainable": 15,
+  "eligible_users": 4,
+  "methods": {
+    "dense": {
+      "covered": 6,
+      "normalized_losses": 0,
+      "normalized_wins": 1,
+      "selected_tokens": 17780
+    },
+    "idf": {
+      "covered": 7,
+      "normalized_losses": 2,
+      "normalized_wins": 2,
+      "selected_tokens": 17900
+    },
+    "latest": {
+      "covered": 5,
+      "normalized_losses": 1,
+      "normalized_wins": 3,
+      "selected_tokens": 17919
+    },
+    "normalized": {
+      "covered": 7,
+      "normalized_losses": 0,
+      "normalized_wins": 0,
+      "selected_tokens": 17750
+    },
+    "raw": {
+      "covered": 8,
+      "normalized_losses": 1,
+      "normalized_wins": 0,
+      "selected_tokens": 17783
+    },
+    "uniform": {
+      "covered": 9,
+      "normalized_losses": 4,
+      "normalized_wins": 2,
+      "selected_tokens": 17949
+    },
+    "user_recent": {
+      "covered": 1,
+      "normalized_losses": 0,
+      "normalized_wins": 6,
+      "selected_tokens": 17731
+    }
+  },
+  "original_tokens": 73396,
+  "promote": false,
+  "questions": 27,
+  "sessions": 23
+}

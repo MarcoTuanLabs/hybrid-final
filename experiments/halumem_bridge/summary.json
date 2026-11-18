@@ -1,0 +1,609 @@
+{
+  "accuracy_gate": false,
+  "efficiency_gate": false,
+  "episodes": 8,
+  "grading": {
+    "new": 53,
+    "prior": 3,
+    "type": "Reference-based method-blind Codex AI review"
+  },
+  "matched_comparison": {
+    "cold_ratio": 1.0133957668747144,
+    "compute_ratio": 0.9998860528587306,
+    "extra_correct": [
+      0,
+      0
+    ]
+  },
+  "policies": {
+    "bridge": {
+      "bridge_scalar_ops": 393216000,
+      "cold_s": 20.9669988489768,
+      "correct_both": 2,
+      "decoder_positions": 6124.875,
+      "encoder_positions": 7915.75,
+      "exact": [
+        1,
+        1
+      ],
+      "f1": [
+        0.2244986263736264,
+        0.24737237237237236
+      ],
+      "logical_old_cache_bytes": 361889792,
+      "macs": 44278372112384,
+      "online_s": 14.776283869839972,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            0.7965746373342193,
+            0.9348011799528009
+          ],
+          "mean": 0.8669171217394863
+        },
+        "macs": {
+          "ci95_users": [
+            0.7441160069883862,
+            0.7655123956825148
+          ],
+          "mean": 0.7553014207378154
+        }
+      },
+      "search_s": 1.8722320257656975,
+      "semantic": [
+        5,
+        4
+      ],
+      "sequence_matches": [
+        3,
+        3
+      ],
+      "setup_s": 6.190714979136828,
+      "skipped_tokens": 1968,
+      "update_s": 7.700351072853664
+    },
+    "checkpoint": {
+      "bridge_scalar_ops": 0,
+      "cold_s": 24.1857016353606,
+      "correct_both": 2,
+      "decoder_positions": 8103.875,
+      "encoder_positions": 7915.75,
+      "exact": [
+        1,
+        1
+      ],
+      "f1": [
+        0.18878434065934066,
+        0.2448830409356725
+      ],
+      "logical_old_cache_bytes": 181207040,
+      "macs": 58623446079488,
+      "online_s": 19.075014676884166,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0
+        },
+        "macs": {
+          "ci95_users": [
+            1.0,
+            1.0
+          ],
+          "mean": 1.0
+        }
+      },
+      "search_s": 1.6730250938708195,
+      "semantic": [
+        5,
+        4
+      ],
+      "sequence_matches": [
+        8,
+        8
+      ],
+      "setup_s": 5.110686958476435,
+      "skipped_tokens": 0,
+      "update_s": 11.902304723887937
+    },
+    "fresh": {
+      "bridge_scalar_ops": 0,
+      "cold_s": 7.0645235885021975,
+      "correct_both": 2,
+      "decoder_positions": 900.75,
+      "encoder_positions": 7915.75,
+      "exact": [
+        2,
+        1
+      ],
+      "f1": [
+        0.2631578947368421,
+        0.28243243593632916
+      ],
+      "logical_old_cache_bytes": 52854784,
+      "macs": 7056022345728,
+      "online_s": 6.728196448035305,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            0.24696189691738107,
+            0.35162187058665206
+          ],
+          "mean": 0.29209504421296345
+        },
+        "macs": {
+          "ci95_users": [
+            0.11446580297521884,
+            0.12634459184669405
+          ],
+          "mean": 0.12036178044123648
+        }
+      },
+      "search_s": 1.8074801196053158,
+      "semantic": [
+        2,
+        4
+      ],
+      "sequence_matches": [
+        2,
+        2
+      ],
+      "setup_s": 0.33632714046689216,
+      "skipped_tokens": 0,
+      "update_s": 0.0006339637766359374
+    },
+    "notice": {
+      "bridge_scalar_ops": 0,
+      "cold_s": 20.16150801574986,
+      "correct_both": 2,
+      "decoder_positions": 6063,
+      "encoder_positions": 7915.75,
+      "exact": [
+        1,
+        1
+      ],
+      "f1": [
+        0.18857600732600732,
+        0.25219298245614036
+      ],
+      "logical_old_cache_bytes": 124157952,
+      "macs": 44235920570368,
+      "online_s": 14.725332369867829,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            0.7659395383456692,
+            0.8894154318460206
+          ],
+          "mean": 0.8336126989292224
+        },
+        "macs": {
+          "ci95_users": [
+            0.7424307220422047,
+            0.7656656699530958
+          ],
+          "mean": 0.7545772814240255
+        }
+      },
+      "search_s": 1.7424043960199924,
+      "semantic": [
+        5,
+        4
+      ],
+      "sequence_matches": [
+        4,
+        3
+      ],
+      "setup_s": 5.436175645882031,
+      "skipped_tokens": 0,
+      "update_s": 7.653525260495371
+    },
+    "old_rag": {
+      "bridge_scalar_ops": 0,
+      "cold_s": 12.332478317985078,
+      "correct_both": 2,
+      "decoder_positions": 3056.875,
+      "encoder_positions": 7915.75,
+      "exact": [
+        2,
+        1
+      ],
+      "f1": [
+        0.2604166666666667,
+        0.2627713920817369
+      ],
+      "logical_old_cache_bytes": 124157952,
+      "macs": 22343340750848,
+      "online_s": 6.260418593723443,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            3,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            0.44209995855335626,
+            0.5993406803060977
+          ],
+          "mean": 0.5099078167719737
+        },
+        "macs": {
+          "ci95_users": [
+            0.36860077769563754,
+            0.39523315981755036
+          ],
+          "mean": 0.3811331855270413
+        }
+      },
+      "search_s": 1.792149442495429,
+      "semantic": [
+        2,
+        4
+      ],
+      "sequence_matches": [
+        2,
+        2
+      ],
+      "setup_s": 6.072059724261635,
+      "skipped_tokens": 0,
+      "update_s": 0.0007726667245151475
+    },
+    "splice": {
+      "bridge_scalar_ops": 0,
+      "cold_s": 20.68984254161478,
+      "correct_both": 2,
+      "decoder_positions": 6125.5,
+      "encoder_positions": 7915.75,
+      "exact": [
+        1,
+        1
+      ],
+      "f1": [
+        0.22419074460022737,
+        0.24737237237237236
+      ],
+      "logical_old_cache_bytes": 361889792,
+      "macs": 44283418081280,
+      "online_s": 14.858736161375418,
+      "paired": {
+        "checkpoint": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "fresh": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "notice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        },
+        "old_rag": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            3,
+            0
+          ]
+        },
+        "splice": {
+          "losses": [
+            0,
+            0
+          ],
+          "wins": [
+            0,
+            0
+          ]
+        }
+      },
+      "ratios": {
+        "cold_s": {
+          "ci95_users": [
+            0.7710008297630961,
+            0.9189157508680259
+          ],
+          "mean": 0.8554576110111805
+        },
+        "macs": {
+          "ci95_users": [
+            0.7441462306659593,
+            0.765649454966633
+          ],
+          "mean": 0.7553874949834194
+        }
+      },
+      "search_s": 1.7715631558530731,
+      "semantic": [
+        5,
+        4
+      ],
+      "sequence_matches": [
+        3,
+        2
+      ],
+      "setup_s": 5.831106380239362,
+      "skipped_tokens": 1968,
+      "update_s": 7.891565328012803
+    }
+  },
+  "users": 4
+}

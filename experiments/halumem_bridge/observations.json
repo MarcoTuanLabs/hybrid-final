@@ -1,0 +1,4010 @@
+[
+  {
+    "key": [
+      0,
+      49,
+      52
+    ],
+    "arms": {
+      "notice": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 3.384743917034939,
+        "update_s": 5.632528957910836,
+        "search_s": 1.3279656659578905,
+        "cold_s": 11.822527416981757,
+        "online_s": 8.437783499946818,
+        "decoder_macs": 46210697789440,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 6435,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 3507,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 3507,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "760163486fd5",
+          "ebdbb72829ab"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "cfd7c115321c35a587c0d5ea16c002f22423f57117635d62a1221e561a73d4a5"
+        ],
+        "macs": 46984792834048,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 0.1925220830598846,
+        "update_s": 0.00041979202069342136,
+        "search_s": 1.2538472908781841,
+        "cold_s": 4.880561665981077,
+        "online_s": 4.688039582921192,
+        "decoder_macs": 5655590928384,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 801,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "13a139ed32b3",
+          "4d0a3a995108"
+        ],
+        "tokens_hash": [
+          "ece2e55a31cbe65e63c9442a4e77ec5bd017d5ef0536688267313d1de876380c",
+          "9afa606a9754711e2804f7532b0d88b90a8b1a5d7805038684bde2aad6b049b8"
+        ],
+        "macs": 6429685972992,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 3.6250519999302924,
+        "update_s": 5.600031792069785,
+        "search_s": 1.4597048760624602,
+        "cold_s": 12.12426900002174,
+        "online_s": 8.499217000091448,
+        "decoder_macs": 46228836253696,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 6502,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 3574,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 3494,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "760163486fd5",
+          "ebdbb72829ab"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "cfd7c115321c35a587c0d5ea16c002f22423f57117635d62a1221e561a73d4a5"
+        ],
+        "macs": 47002931298304,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 3.67350274999626,
+        "update_s": 5.89557762502227,
+        "search_s": 1.469121165922843,
+        "cold_s": 12.470321833039634,
+        "online_s": 8.796819083043374,
+        "decoder_macs": 46228836253696,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 6502,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 3574,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 3494,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "760163486fd5",
+          "ebdbb72829ab"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "cfd7c115321c35a587c0d5ea16c002f22423f57117635d62a1221e561a73d4a5"
+        ],
+        "macs": 47003324514304,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "checkpoint": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 3.4483531669247895,
+        "update_s": 8.910113000078127,
+        "search_s": 1.5277745830826461,
+        "cold_s": 17.619622207945213,
+        "online_s": 14.171269041020423,
+        "decoder_macs": 60958610292736,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 8519,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 5542,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 3494,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "c9a26ee67c61",
+          "4d0a3a995108"
+        ],
+        "tokens_hash": [
+          "6d29ee8255baf464ca466101440922227b560d2aeed4255eb36abf20e5c3f43c",
+          "9afa606a9754711e2804f7532b0d88b90a8b1a5d7805038684bde2aad6b049b8"
+        ],
+        "macs": 61732705337344,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          1,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              21,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              40,
+              11
+            ],
+            [
+              50,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 3.677173124975525,
+        "update_s": 0.0004514590837061405,
+        "search_s": 1.457119542057626,
+        "cold_s": 6.47508316708263,
+        "online_s": 2.7979100421071053,
+        "decoder_macs": 20692145274880,
+        "encoder_macs": 774095044608,
+        "encoder_positions": 8848,
+        "decoder_positions": 2928,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          1
+        ],
+        "f1": [
+          0.0,
+          1.0
+        ],
+        "blind_ids": [
+          "760163486fd5",
+          "ebdbb72829ab"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "cfd7c115321c35a587c0d5ea16c002f22423f57117635d62a1221e561a73d4a5"
+        ],
+        "macs": 21466240319488,
+        "correct": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      0,
+      60,
+      64
+    ],
+    "arms": {
+      "checkpoint": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 3.4894581669941545,
+        "update_s": 7.0412462500389665,
+        "search_s": 1.2070839588996023,
+        "cold_s": 15.60956479201559,
+        "online_s": 12.120106625021435,
+        "decoder_macs": 50077127081984,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 7037,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4041,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.125,
+          0.0
+        ],
+        "blind_ids": [
+          "64d5ff54359e",
+          "a7dc3f39a66c"
+        ],
+        "tokens_hash": [
+          "8261682788b981fe9b5442a999ef653cf1a6b9656c16f4c249513fa810df0315",
+          "a35e0d610a9389a2b3c98cd4543ce636e1cdfc58cee97bbe65824e65f392fb35"
+        ],
+        "macs": 50680200077312,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 4.687872417038307,
+        "update_s": 3.7927317079156637,
+        "search_s": 1.1466377909528092,
+        "cold_s": 13.655535542056896,
+        "online_s": 8.96766312501859,
+        "decoder_macs": 35950963392512,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 5069,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2073,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.125,
+          0.0
+        ],
+        "blind_ids": [
+          "64d5ff54359e",
+          "a7dc3f39a66c"
+        ],
+        "tokens_hash": [
+          "8261682788b981fe9b5442a999ef653cf1a6b9656c16f4c249513fa810df0315",
+          "a35e0d610a9389a2b3c98cd4543ce636e1cdfc58cee97bbe65824e65f392fb35"
+        ],
+        "macs": 36554036387840,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 4.181216042023152,
+        "update_s": 4.081835875054821,
+        "search_s": 1.212738875998184,
+        "cold_s": 14.755862292018719,
+        "online_s": 10.574646249995567,
+        "decoder_macs": 35854423425024,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 5016,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2006,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 2006,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.08333333333333333,
+          0.0
+        ],
+        "blind_ids": [
+          "99dca8e555e6",
+          "a7dc3f39a66c"
+        ],
+        "tokens_hash": [
+          "afd2401ae96349587e29c712843740ee6693373789fd735dba744749a7f89a45",
+          "a35e0d610a9389a2b3c98cd4543ce636e1cdfc58cee97bbe65824e65f392fb35"
+        ],
+        "macs": 36457496420352,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 5.259545083041303,
+        "update_s": 4.717119249980897,
+        "search_s": 1.4681695000035688,
+        "cold_s": 16.050964333000593,
+        "online_s": 10.79141924995929,
+        "decoder_macs": 35950963392512,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 5069,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2073,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.125,
+          0.0
+        ],
+        "blind_ids": [
+          "64d5ff54359e",
+          "a7dc3f39a66c"
+        ],
+        "tokens_hash": [
+          "8261682788b981fe9b5442a999ef653cf1a6b9656c16f4c249513fa810df0315",
+          "a35e0d610a9389a2b3c98cd4543ce636e1cdfc58cee97bbe65824e65f392fb35"
+        ],
+        "macs": 36554429603840,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 0.2734367079101503,
+        "update_s": 0.0003473340766504407,
+        "search_s": 1.8075143749592826,
+        "cold_s": 7.976076291990466,
+        "online_s": 7.702639584080316,
+        "decoder_macs": 5994125393920,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 845,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "895c4a8e00c6",
+          "5912e5c1fcdb"
+        ],
+        "tokens_hash": [
+          "0e62512f71055bfa9d63c5d9db8ff645d986f816d7e1f081cd3b2c29be540ec6",
+          "59bf881691e2d475007000054ec1bedebd97f4c5bdc3f10047923c36e384c531"
+        ],
+        "macs": 6597198389248,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          0,
+          2
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              40,
+              10
+            ],
+            [
+              60,
+              17
+            ]
+          ],
+          [
+            [
+              0,
+              10
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              60,
+              21
+            ]
+          ]
+        ],
+        "setup_s": 6.673684917041101,
+        "update_s": 0.00029695802368223667,
+        "search_s": 1.6901219580322504,
+        "cold_s": 14.934805709053762,
+        "online_s": 8.261120792012662,
+        "decoder_macs": 21394830393344,
+        "encoder_macs": 603072995328,
+        "encoder_positions": 6904,
+        "decoder_positions": 3016,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "5ddd4cd254ad",
+          "a7dc3f39a66c"
+        ],
+        "tokens_hash": [
+          "beed47e1da1c05b21aafe649f3e7d2d6feacec0c87a6214dc32b90e7401d44e6",
+          "a35e0d610a9389a2b3c98cd4543ce636e1cdfc58cee97bbe65824e65f392fb35"
+        ],
+        "macs": 21997903388672,
+        "correct": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      1,
+      42,
+      46
+    ],
+    "arms": {
+      "old_rag": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 6.698720584041439,
+        "update_s": 0.000700624892488122,
+        "search_s": 2.606294916011393,
+        "cold_s": 13.24156445893459,
+        "online_s": 6.542843874893151,
+        "decoder_macs": 20549783519232,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 2904,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "218d7ffb248a",
+          "7ef3eb61361d"
+        ],
+        "tokens_hash": [
+          "a889996b191e496bfcbb8307b8987050e9173b1ab9c1c7a648fe5e78373579d5",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 21343171080192,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 7.085163499927148,
+        "update_s": 7.633020624984056,
+        "search_s": 2.355531792039983,
+        "cold_s": 21.894918208941817,
+        "online_s": 14.809754709014669,
+        "decoder_macs": 38518509469696,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 5429,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2510,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2430,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.07142857142857142,
+          0.0
+        ],
+        "blind_ids": [
+          "42d3dad3023b",
+          "7ef3eb61361d"
+        ],
+        "tokens_hash": [
+          "b2425c7e16467040dca755e24ba6c515d5ce09c5c10d3ba104ec80625a17a920",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 39312290246656,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 6.232532375026494,
+        "update_s": 6.937422457966022,
+        "search_s": 2.051797082996927,
+        "cold_s": 19.630273208022118,
+        "online_s": 13.397740832995623,
+        "decoder_macs": 38526846828544,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 5430,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2510,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2430,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.06896551724137931,
+          0.0
+        ],
+        "blind_ids": [
+          "519fbdefc2ce",
+          "7ef3eb61361d"
+        ],
+        "tokens_hash": [
+          "bbfdff04dd6ba70d347c694173192ac5c807abf49202d4eb7ab07e0a8ae4467a",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 39320234389504,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "checkpoint": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 5.310746416915208,
+        "update_s": 10.62031254102476,
+        "search_s": 1.7603180828737095,
+        "cold_s": 22.003075874992646,
+        "online_s": 16.692329458077438,
+        "decoder_macs": 52717709950976,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 7399,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4478,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 2430,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.07142857142857142,
+          0.0
+        ],
+        "blind_ids": [
+          "0e7be22d6ca2",
+          "7ef3eb61361d"
+        ],
+        "tokens_hash": [
+          "66225520a6aa4911dc99306fe270b83fe33be8eeec03888f632e4a3280311207",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 53511097511936,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 0.2921757500153035,
+        "update_s": 0.0010315829422324896,
+        "search_s": 2.0450884581077844,
+        "cold_s": 8.636902500060387,
+        "online_s": 8.344726750045083,
+        "decoder_macs": 5574874365952,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 784,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "642a43b56d2a",
+          "4798b44a9548"
+        ],
+        "tokens_hash": [
+          "db7cc067994a32cdc004b12d94c867b98bbea8d14dc20dfb954fc4bf51921222",
+          "1dc0461a3ebbe4b69c7f9835aee73d93b0093ee117a41bb004c06d6891967146"
+        ],
+        "macs": 6368261926912,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          0,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              11,
+              2
+            ],
+            [
+              46,
+              16
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              26,
+              25
+            ],
+            [
+              26,
+              41
+            ]
+          ]
+        ],
+        "setup_s": 5.838761416031048,
+        "update_s": 6.32323479198385,
+        "search_s": 2.1153049170970917,
+        "cold_s": 18.86893350002356,
+        "online_s": 13.030172083992511,
+        "decoder_macs": 38378904092672,
+        "encoder_macs": 793387560960,
+        "encoder_positions": 9066,
+        "decoder_positions": 5364,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2443,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 2443,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.07142857142857142,
+          0.0
+        ],
+        "blind_ids": [
+          "0e7be22d6ca2",
+          "7ef3eb61361d"
+        ],
+        "tokens_hash": [
+          "66225520a6aa4911dc99306fe270b83fe33be8eeec03888f632e4a3280311207",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 39172291653632,
+        "correct": [
+          1,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      1,
+      56,
+      61
+    ],
+    "arms": {
+      "checkpoint": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 5.951314124977216,
+        "update_s": 12.490474667050876,
+        "search_s": 2.3845439999131486,
+        "cold_s": 28.20569691702258,
+        "online_s": 22.254382792045362,
+        "decoder_macs": 57133435387904,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 7997,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4745,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 2697,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.15384615384615385,
+          0.47368421052631576
+        ],
+        "blind_ids": [
+          "1d381f38007b",
+          "142d2d3df701"
+        ],
+        "tokens_hash": [
+          "b349893a0f15aeb7967fce60ebb087f391cdf2517fa856c427db944a716020fc",
+          "908ce545f122f40d3e76cee6425a9a1351eadc793c5116cbd03cee2ed7b950df"
+        ],
+        "macs": 57890416467968,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.92464966699481,
+        "update_s": 8.334274958004244,
+        "search_s": 2.1380759999156,
+        "cold_s": 25.581695332890376,
+        "online_s": 18.657045665895566,
+        "decoder_macs": 42916473405440,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 6029,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2777,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2697,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.15384615384615385,
+          0.4864864864864865
+        ],
+        "blind_ids": [
+          "1d381f38007b",
+          "307d0beca483"
+        ],
+        "tokens_hash": [
+          "b349893a0f15aeb7967fce60ebb087f391cdf2517fa856c427db944a716020fc",
+          "87c386b895083a27ba831d46d611a71293952589ac7b900bb360acb4e19972c4"
+        ],
+        "macs": 43673454485504,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 7.354634999996051,
+        "update_s": 0.0008703749626874924,
+        "search_s": 2.2801722089061514,
+        "cold_s": 15.356310250004753,
+        "online_s": 8.001675250008702,
+        "decoder_macs": 22811416657920,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 3218,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.6206896551724138
+        ],
+        "blind_ids": [
+          "71b1e7e54d38",
+          "b980002501f6"
+        ],
+        "tokens_hash": [
+          "651f9f838845e55090a1ef33ab05b637ea46dcd735332764c063bb87c7c9e2de",
+          "40a36d85931d83b07e08c30541b27cb04ffb9be374ed0596a7cf9fff51fe8e8c"
+        ],
+        "macs": 23568397737984,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 0.48526220791973174,
+        "update_s": 0.0007912090513855219,
+        "search_s": 2.4157373340567574,
+        "cold_s": 7.845071041956544,
+        "online_s": 7.359808834036812,
+        "decoder_macs": 7341695238144,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 1042,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.6206896551724138
+        ],
+        "blind_ids": [
+          "71b1e7e54d38",
+          "b980002501f6"
+        ],
+        "tokens_hash": [
+          "651f9f838845e55090a1ef33ab05b637ea46dcd735332764c063bb87c7c9e2de",
+          "40a36d85931d83b07e08c30541b27cb04ffb9be374ed0596a7cf9fff51fe8e8c"
+        ],
+        "macs": 8098676318208,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.826605542097241,
+        "update_s": 9.958317457931116,
+        "search_s": 2.3011089579667896,
+        "cold_s": 26.779577834066004,
+        "online_s": 19.952972291968763,
+        "decoder_macs": 42795139006464,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 5962,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2710,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 2710,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.15384615384615385,
+          0.47368421052631576
+        ],
+        "blind_ids": [
+          "1d381f38007b",
+          "75bc2c16d961"
+        ],
+        "tokens_hash": [
+          "b349893a0f15aeb7967fce60ebb087f391cdf2517fa856c427db944a716020fc",
+          "544b5b8fdd79f82be844c3b03f97d5c0c9f72c22f4ced06ed7feea3960200a30"
+        ],
+        "macs": 43552120086528,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          2,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              56,
+              7
+            ]
+          ],
+          [
+            [
+              4,
+              1
+            ],
+            [
+              26,
+              1
+            ],
+            [
+              26,
+              7
+            ],
+            [
+              57,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 7.0317359999753535,
+        "update_s": 8.116118957987055,
+        "search_s": 2.9367919570067897,
+        "cold_s": 25.97575054189656,
+        "online_s": 18.944014541921206,
+        "decoder_macs": 42916473405440,
+        "encoder_macs": 756981080064,
+        "encoder_positions": 8644,
+        "decoder_positions": 6029,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2777,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2697,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.15384615384615385,
+          0.4864864864864865
+        ],
+        "blind_ids": [
+          "1d381f38007b",
+          "307d0beca483"
+        ],
+        "tokens_hash": [
+          "b349893a0f15aeb7967fce60ebb087f391cdf2517fa856c427db944a716020fc",
+          "87c386b895083a27ba831d46d611a71293952589ac7b900bb360acb4e19972c4"
+        ],
+        "macs": 43673847701504,
+        "correct": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      2,
+      3,
+      7
+    ],
+    "arms": {
+      "checkpoint": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 5.611637833062559,
+        "update_s": 11.406592666986398,
+        "search_s": 1.3680489170365036,
+        "cold_s": 23.40194391598925,
+        "online_s": 17.79030608292669,
+        "decoder_macs": 55872531398656,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 7829,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4790,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 2742,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.2631578947368421
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "f7c0e204c881"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "7bc68f3c7ecec22b3c5cd1b636ab43719be9181631c5187cc49543700297bda6"
+        ],
+        "macs": 56506447894528,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 5.597978082951158,
+        "update_s": 6.39248637505807,
+        "search_s": 1.3370131240226328,
+        "cold_s": 17.917666374938563,
+        "online_s": 12.319688291987404,
+        "decoder_macs": 41649765548032,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 5861,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2822,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2742,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.2702702702702703
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "84bb9c386c52"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "10bf832ff9148ef83bd8c6559626d27ff94a3a91f954da2afcaa0b26d586f8e6"
+        ],
+        "macs": 42283682043904,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 5.176802292000502,
+        "update_s": 6.621390666929074,
+        "search_s": 1.2299082078970969,
+        "cold_s": 17.405901374993846,
+        "online_s": 12.229099082993343,
+        "decoder_macs": 41476545183744,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 5787,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2755,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 2755,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.3333333333333333
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "b1d17c1099ac"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "b8ee2d32608e9a86769d6a9f9baade46453711201ce5a983e680f5455332bed2"
+        ],
+        "macs": 42110461679616,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 5.74553004198242,
+        "update_s": 6.244477750035003,
+        "search_s": 1.2971015000948682,
+        "cold_s": 17.95121504191775,
+        "online_s": 12.205684999935329,
+        "decoder_macs": 41649765548032,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 5861,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2822,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 2742,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.2702702702702703
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "84bb9c386c52"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "10bf832ff9148ef83bd8c6559626d27ff94a3a91f954da2afcaa0b26d586f8e6"
+        ],
+        "macs": 42284075259904,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 0.375011415919289,
+        "update_s": 0.0004981670062988997,
+        "search_s": 1.884684498887509,
+        "cold_s": 5.761521333013661,
+        "online_s": 5.386509917094372,
+        "decoder_macs": 5995592024064,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 851,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.38461538461538464
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "fadeb5a27e11"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "d17a42d88035e9a72a7e14d0137613b05e63c532c3da32ed41b1edc48fc1c832"
+        ],
+        "macs": 6629508519936,
+        "correct": [
+          1,
+          1
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          7,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        ],
+        "setup_s": 5.228654167032801,
+        "update_s": 0.0012987079098820686,
+        "search_s": 1.3014939579879865,
+        "cold_s": 10.433324791956693,
+        "online_s": 5.204670624923892,
+        "decoder_macs": 21446260817920,
+        "encoder_macs": 633916495872,
+        "encoder_positions": 7275,
+        "decoder_positions": 3028,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          1,
+          0
+        ],
+        "f1": [
+          1.0,
+          0.37037037037037035
+        ],
+        "blind_ids": [
+          "ecdd4a8966a8",
+          "5e36db8601a5"
+        ],
+        "tokens_hash": [
+          "d2c77fa410407bc02420fe32581ab24cc183ae5e15112db0cfc686ee6c879744",
+          "be00ac9c888bd0902ee59fb7b0d5e7d8d05b3959b3f06d0a6730d399b4a67f8b"
+        ],
+        "macs": 22080177313792,
+        "correct": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      2,
+      47,
+      50
+    ],
+    "arms": {
+      "old_rag": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 5.650882667046972,
+        "update_s": 0.0005221249302849174,
+        "search_s": 1.2533209569519386,
+        "cold_s": 9.850373832974583,
+        "online_s": 4.199491165927611,
+        "decoder_macs": 21881864650752,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 3094,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "42288d916f98",
+          "fddebac0a7ba"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14"
+        ],
+        "macs": 22430286397440,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 5.949981749989092,
+        "update_s": 10.167708166060038,
+        "search_s": 1.1635027079610154,
+        "cold_s": 20.30236708302982,
+        "online_s": 14.35238533304073,
+        "decoder_macs": 50758848675840,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 7121,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4026,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 3946,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.2857142857142857,
+          0.0
+        ],
+        "blind_ids": [
+          "7269e7b54b45",
+          "7c13b805e530"
+        ],
+        "tokens_hash": [
+          "5ee654902b8f55d19ec2f741daeed956b2c1d4494fd813b09e11632b58af2f39",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 51307270422528,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "checkpoint": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 5.383591291960329,
+        "update_s": 15.216456374968402,
+        "search_s": 1.2257717500906438,
+        "cold_s": 26.37764874997083,
+        "online_s": 20.994057458010502,
+        "decoder_macs": 65389359005696,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 9119,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 5994,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 3946,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "42288d916f98",
+          "6c426d350157"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "24526d73c78ad87de2f74413105967af63c5080056909ac379dee88f553aed76"
+        ],
+        "macs": 65937780752384,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 6.362512583029456,
+        "update_s": 9.425751708913594,
+        "search_s": 1.1308882080484182,
+        "cold_s": 19.86051274999045,
+        "online_s": 13.498000166960992,
+        "decoder_macs": 50758848675840,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 7121,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4026,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 3946,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.2857142857142857,
+          0.0
+        ],
+        "blind_ids": [
+          "7269e7b54b45",
+          "7c13b805e530"
+        ],
+        "tokens_hash": [
+          "5ee654902b8f55d19ec2f741daeed956b2c1d4494fd813b09e11632b58af2f39",
+          "e57c79aaf235dbf0ab7ef9713deeccc97eed463a9e2b1046a51fae457588de02"
+        ],
+        "macs": 51307663638528,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 4.916098499903455,
+        "update_s": 9.222130667068996,
+        "search_s": 1.056254209135659,
+        "cold_s": 19.59541529195849,
+        "online_s": 14.679316792055033,
+        "decoder_macs": 51052018532352,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 7084,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 3959,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 3959,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "42288d916f98",
+          "6c426d350157"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "24526d73c78ad87de2f74413105967af63c5080056909ac379dee88f553aed76"
+        ],
+        "macs": 51600440279040,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          5,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              47,
+              11
+            ],
+            [
+              47,
+              15
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              44,
+              7
+            ],
+            [
+              44,
+              33
+            ]
+          ]
+        ],
+        "setup_s": 0.25265862501692027,
+        "update_s": 0.00048354105092585087,
+        "search_s": 1.0610258328961208,
+        "cold_s": 5.519858208019286,
+        "online_s": 5.267199583002366,
+        "decoder_macs": 6678295805952,
+        "encoder_macs": 548421746688,
+        "encoder_positions": 6306,
+        "decoder_positions": 949,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "42288d916f98",
+          "6c426d350157"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "24526d73c78ad87de2f74413105967af63c5080056909ac379dee88f553aed76"
+        ],
+        "macs": 7226717552640,
+        "correct": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      3,
+      62,
+      64
+    ],
+    "arms": {
+      "fresh": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 0.35564120893832296,
+        "update_s": 0.0004710000939667225,
+        "search_s": 1.8669267510995269,
+        "cold_s": 8.63495429197792,
+        "online_s": 8.279313083039597,
+        "decoder_macs": 6505273360384,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 916,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.10526315789473684,
+          0.1935483870967742
+        ],
+        "blind_ids": [
+          "0c839492a851",
+          "38ac57b89b6a"
+        ],
+        "tokens_hash": [
+          "933a9a60b7bb5f920ed2a47538d8600a46e20fb507baa9edb6a47e0e69c10922",
+          "b28492770647d6df32b9decdad954e8307249bf343c2f22cbeb1a14c919ca4f6"
+        ],
+        "macs": 7167170885632,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.010037958971225,
+        "update_s": 0.0007937500486150384,
+        "search_s": 1.5230664580594748,
+        "cold_s": 13.546648083953187,
+        "online_s": 7.536610124981962,
+        "decoder_macs": 21850569572352,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 3079,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.08333333333333333,
+          0.1111111111111111
+        ],
+        "blind_ids": [
+          "807020c7a4c5",
+          "e8290815a557"
+        ],
+        "tokens_hash": [
+          "940298154969d4d8dbd3cf21f1c8ce937563dab6c36f18d8dda04486aaa06f16",
+          "ba8c04f25c0669ffb5e97b7122a88d9a37013eff6ecc0691b1f0789e1eca47f5"
+        ],
+        "macs": 22512467097600,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.517553250072524,
+        "update_s": 5.055009249947034,
+        "search_s": 1.713265583035536,
+        "cold_s": 19.726123375003226,
+        "online_s": 13.208570124930702,
+        "decoder_macs": 36538606813184,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 5147,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2073,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.2222222222222222
+        ],
+        "blind_ids": [
+          "c59ec5a47915",
+          "177adaa23d48"
+        ],
+        "tokens_hash": [
+          "db725e50784ae7d44b4cd1655b071cc76328e4d067990ed9dd03ea770ec9a692",
+          "61d1de8f627a98579bcef8db1f4744b4104e457719ce25075b858434d5ddb360"
+        ],
+        "macs": 37200897554432,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.782859958941117,
+        "update_s": 5.897577500087209,
+        "search_s": 1.9966132079716772,
+        "cold_s": 21.209392833989114,
+        "online_s": 14.426532875047997,
+        "decoder_macs": 36531305119744,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 5146,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2073,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.2222222222222222
+        ],
+        "blind_ids": [
+          "c59ec5a47915",
+          "ff8ce442bad9"
+        ],
+        "tokens_hash": [
+          "db725e50784ae7d44b4cd1655b071cc76328e4d067990ed9dd03ea770ec9a692",
+          "bedfd88e83f7bedbba57eff7bff4cfd3605707a3e9a22aeb6fe3c0b3779029e8"
+        ],
+        "macs": 37193202644992,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "checkpoint": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 5.993059583008289,
+        "update_s": 10.214304332970642,
+        "search_s": 1.639824959100224,
+        "cold_s": 24.299321083002724,
+        "online_s": 18.306261499994434,
+        "decoder_macs": 50664770502656,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 7115,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4041,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 1993,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.2222222222222222
+        ],
+        "blind_ids": [
+          "72e1b6f4d6be",
+          "177adaa23d48"
+        ],
+        "tokens_hash": [
+          "8517195139ed4d2242a9334518226d95082ef9a308da22195a1bf69ba77da7c0",
+          "61d1de8f627a98579bcef8db1f4744b4104e457719ce25075b858434d5ddb360"
+        ],
+        "macs": 51326668027904,
+        "correct": [
+          0,
+          1
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          10,
+          0
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              23,
+              24
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              60,
+              0
+            ],
+            [
+              60,
+              1
+            ],
+            [
+              61,
+              0
+            ],
+            [
+              63,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 5.840445125009865,
+        "update_s": 5.371458375011571,
+        "search_s": 1.9643290831008926,
+        "cold_s": 19.760968249989673,
+        "online_s": 13.920523124979809,
+        "decoder_macs": 36367321989120,
+        "encoder_macs": 661897525248,
+        "encoder_positions": 7579,
+        "decoder_positions": 5085,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 2006,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 2006,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.21052631578947367
+        ],
+        "blind_ids": [
+          "bdf75d6485e9",
+          "9595a38b135c"
+        ],
+        "tokens_hash": [
+          "e671ff7276e1757f0c202662b42d17e4f158cc34f2e5e43e4849f95f13e71ae4",
+          "2c3ce594e395d1293c2cc96cc6ed60475ad4736cc9c00913d638e60585498a4f"
+        ],
+        "macs": 37029219514368,
+        "correct": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "key": [
+      3,
+      68,
+      72
+    ],
+    "arms": {
+      "checkpoint": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 5.697335083968937,
+        "update_s": 19.318937957985327,
+        "search_s": 2.2708344999700785,
+        "cold_s": 35.96873954194598,
+        "online_s": 30.27140445797704,
+        "decoder_macs": 70641045471232,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 9816,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 6573,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 181207040,
+        "delayed_model_tokens": 4525,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.16,
+          0.0
+        ],
+        "blind_ids": [
+          "3f3a03bdd8dd",
+          "ed52278b8f06"
+        ],
+        "tokens_hash": [
+          "fa549c70a7fcedc8c194420c945aace67d9c720e32056b47f0be17f05ae5629f",
+          "c03e1561dcec76448a84e04ba23c08fa9b46b146d8ea0f075ce0a54c8b310c3b"
+        ],
+        "macs": 71402252566528,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "notice": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 7.324732332956046,
+        "update_s": 14.017305292072706,
+        "search_s": 2.731625251006335,
+        "cold_s": 32.30287816596683,
+        "online_s": 24.978145833010785,
+        "decoder_macs": 56219335000064,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 7771,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4538,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 4538,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.2,
+          0.0
+        ],
+        "blind_ids": [
+          "3910e9d4c0d2",
+          "0d89196a2102"
+        ],
+        "tokens_hash": [
+          "11b32709a2b11cf977b4f59a68083f570b0351cc5eff6cfbd0b716f8f877179b",
+          "85732ebb4c20aa74763366787bf049cf15e175d288f277687ee2fb71175078d1"
+        ],
+        "macs": 56980542095360,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "bridge": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 7.850176625070162,
+        "update_s": 14.515733415959403,
+        "search_s": 2.606986499973573,
+        "cold_s": 33.806184708024375,
+        "online_s": 25.956008082954213,
+        "decoder_macs": 56128848068608,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 7841,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4605,
+        "bridge_scalar_ops": 393216000,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 4525,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.16,
+          0.0
+        ],
+        "blind_ids": [
+          "93f1cfb17fcc",
+          "8fa49586c56b"
+        ],
+        "tokens_hash": [
+          "315c0e86f6b9bf1ab587fcd40b3285026640da9a89f37f9cb3310ce7cec4cabb",
+          "e4f9158b64ae8b0977287644668b155f02c79a060ecc3175e2ec5cf06b130f17"
+        ],
+        "macs": 56890448379904,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "fresh": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 0.46390912495553493,
+        "update_s": 0.0010290839709341526,
+        "search_s": 2.1250164159573615,
+        "cold_s": 7.261243375018239,
+        "online_s": 6.797334250062704,
+        "decoder_macs": 7169752104960,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 1018,
+        "setup_positions": 41,
+        "setup_macs": 285810950144,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 52854784,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 0,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.06060606060606061
+        ],
+        "blind_ids": [
+          "4378c57b18f1",
+          "f265d7d021e4"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "57781a67f9973c1517904f612b47e16c47fd22a8b448b96be5549480a4982384"
+        ],
+        "macs": 7930959200256,
+        "correct": [
+          0,
+          0
+        ]
+      },
+      "splice": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 6.847924791043624,
+        "update_s": 16.01028966694139,
+        "search_s": 2.879160456941463,
+        "cold_s": 35.09754095796961,
+        "online_s": 28.24961616692599,
+        "decoder_macs": 56171325882368,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 7846,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 4605,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 361889792,
+        "delayed_model_tokens": 4525,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 1968,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.16,
+          0.0
+        ],
+        "blind_ids": [
+          "6eb959ad34c1",
+          "1690881f38ce"
+        ],
+        "tokens_hash": [
+          "fc15cf9e2059878c45a1b471730b16cb6b42c27ad5aa545e14242df7b999f67c",
+          "ee377d634855ad477e4096bc064178cfc10b5795a211c51197f6287146210e14"
+        ],
+        "macs": 56932532977664,
+        "correct": [
+          1,
+          0
+        ]
+      },
+      "old_rag": {
+        "question_indices": [
+          4,
+          1
+        ],
+        "selected": [
+          [
+            [
+              0,
+              2
+            ],
+            [
+              11,
+              3
+            ],
+            [
+              57,
+              13
+            ],
+            [
+              57,
+              41
+            ]
+          ],
+          [
+            [
+              8,
+              41
+            ],
+            [
+              43,
+              6
+            ],
+            [
+              68,
+              9
+            ],
+            [
+              72,
+              1
+            ]
+          ]
+        ],
+        "setup_s": 7.282689374987967,
+        "update_s": 0.0012473339447751641,
+        "search_s": 2.225605541956611,
+        "cold_s": 14.821716249920428,
+        "online_s": 7.5390268749324605,
+        "decoder_macs": 22586875576320,
+        "encoder_macs": 761207095296,
+        "encoder_positions": 8704,
+        "decoder_positions": 3188,
+        "setup_positions": 2217,
+        "setup_macs": 15612783427584,
+        "update_positions": 0,
+        "bridge_scalar_ops": 0,
+        "logical_old_cache_bytes": 124157952,
+        "delayed_model_tokens": 0,
+        "suffix_tokens": 2048,
+        "skipped_tokens": 0,
+        "exact": [
+          0,
+          0
+        ],
+        "f1": [
+          0.0,
+          0.0
+        ],
+        "blind_ids": [
+          "4378c57b18f1",
+          "181e847688cc"
+        ],
+        "tokens_hash": [
+          "0823a6571abb652a4b2f4bc8a74b942a1f8e94d9e5401c0aacbb1d6fc7a40c14",
+          "6d1492c4b741925425c2ea54b16091638a4a10c444a59ee7ebe30969bf2d4aef"
+        ],
+        "macs": 23348082671616,
+        "correct": [
+          0,
+          0
+        ]
+      }
+    }
+  }
+]

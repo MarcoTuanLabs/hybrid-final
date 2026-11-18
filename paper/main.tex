@@ -337,8 +337,15 @@ Linear attention stores associations as fast weights \citep{schlag2021}.
 Gated DeltaNet adds retention and delta-rule correction \citep{yang2025}.
 Attention can carry a retrieved value \citep{afendulev2026,lee2026},
 and recurrent layers can construct its address \citep{zeng2026}.
-Muir trains a matched-filter read gate \citep{gangavarapu2026}.
-I use the model's existing normalization to choose a read query.
+Curvature-conditioned queries learn to attenuate high-variance key directions
+during pretraining \citep{le2026}. Muir learns a matched-filter read
+gate \citep{gangavarapu2026}. I optimize the normalized effect of a given
+write at inference. On 32 fresh seeds in frozen four-bit 9B, this reader
+controlled 57/64 targets and state-Gram whitening controlled 30/64.
+Three contractions of the native query by the prefix-key covariance
+controlled none, even when Equation~\ref{eq:objective} selected the
+strength. Whitening the source key with that covariance also controlled
+none. All seven readers preserved all 192 controls.
 SinkState adapts the SVD rank of recurrent states \citep{jiang2026}.
 My projection targets the directions a known suffix reads.
 ROME edits weights \citep{meng2022}. Paired controls isolate the
@@ -348,7 +355,7 @@ behavioral effect of the runtime write \citep{zhang2024}.
 On both synthetic cohorts, optimizing the change in the normalized read brought more written answers to the output. In the four-bit value-write test, the change in direction carried most of that effect. On public questions, suffix projection reproduced the donor's sequences and text-only repair reduced the cost of answering a repeated question. Generalization
 to new questions about unrestricted conversations remains open.
 
-\begin{thebibliography}{13}
+\begin{thebibliography}{14}
 \bibitem[Afendulev et~al.(2026)]{afendulev2026}
 Afendulev, K.; Dontsov, A.; Tutubalina, E.; and Korznikov, A. 2026.
 What Attention Recalls and Recurrence Controls in Hybrid Language Models.
@@ -371,6 +378,11 @@ Readout. \emph{arXiv:2611.08376}.
 Jiang, H.; Li, W.; Zhou, Z.; Pan, J.; Pandey, S.; and Liu, H. 2026.
 SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM
 Serving. \emph{arXiv:2611.14246}.
+
+\bibitem[Le et~al.(2026)]{le2026}
+Le, D.; Nguyen, T.; Nguyen, C.-D.; and Luu, A.-T. 2026.
+Don't Read Everything: A Curvature-Conditioned Query for Linear
+Attention. \emph{arXiv:2606.01294}.
 
 \bibitem[Lee et~al.(2026)]{lee2026}
 Lee, K.; Park, J.; Kim, S.; and Ko, J. 2026.

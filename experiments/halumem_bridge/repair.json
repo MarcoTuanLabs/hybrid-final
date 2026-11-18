@@ -1,0 +1,1 @@
+{"stage":"first startup, zero timed records","error":"ArraysCache.state includes a nested list and metadata","repair":"Count the resident tensors in ArraysCache.cache as in the published update_service implementation.","scientific_design_changed":false}

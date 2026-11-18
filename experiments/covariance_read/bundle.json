@@ -1,0 +1,19 @@
+{
+  "model_revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "model_files": "../read_projection/release.json",
+  "input_source": "../quantized_write/generator.py",
+  "paid_gpu_twd": 0,
+  "adaption_credits": 0,
+  "source_sha256": {
+    "contract.json": "c5c12c4057a3357b696a47c8bc99166e302f7c301a6ba236a79fe4c5117a4efe",
+    "compare.py": "b632aca011a08df8982f3462bccaccd381f09351f2449198553eb0724397cd25",
+    "score.py": "9c6e4f554e3e371b233c391b9eaf88838ef242eab2687fe3f95132a98a22762c",
+    "split.json": "573725016f6e7d20b1880da9562e108f14d7e5f28bdbce37203fd394c4d61464",
+    "verify_split.py": "2f416a9a38761020bfbf5520c7cae29de38b0050efce3fcb3285c341a17689ce",
+    "method.md": "662a1636b129808bdf3b51dec290ae039e8dc68ca1f21f1974240b8de97ca67d",
+    "dev_rows.jsonl": "0678532c53b433b5dc5222d55580d0965c4227faf5ba6602bc2ecf0122e2cbec",
+    "dev_summary.json": "1c37435576e2b5436f4deae4ea74c2e55dc630185bf2e7bdc20ab4e6ee5ec840",
+    "test_rows.jsonl": "d6f3ce5f3a04755611e178f6baaaeb7450f40e5059d511d95a93877caa9bc550",
+    "test_summary.json": "e3560bbc19d767b7a716b9e7b2c7b030000c80a34fd6532bc7d0938731ced72d"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "confirmation_pass": true,
+  "control_presentations": 192,
+  "development_pass": false,
+  "lambda_histogram": {
+    "0": 510,
+    "0.25": 0,
+    "0.5": 0,
+    "0.75": 0,
+    "1": 2
+  },
+  "methods": {
+    "ccq_half": {
+      "max_degrees": 0.04508479689180571,
+      "median_degrees": 0.02889009265024625,
+      "target": 0,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "ccq_one": {
+      "max_degrees": 0.09017101494359678,
+      "median_degrees": 0.05778060618966632,
+      "target": 0,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "ccq_write": {
+      "max_degrees": 0.06343655917070418,
+      "median_degrees": 0.0,
+      "target": 0,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "key_cov_white": {
+      "max_degrees": 89.99936337382852,
+      "median_degrees": 89.74844238532461,
+      "target": 0,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "native": {
+      "max_degrees": 1.7075472925031877e-06,
+      "median_degrees": 0.0,
+      "target": 0,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "normalized": {
+      "max_degrees": 36.40215436382268,
+      "median_degrees": 25.704269218805642,
+      "target": 57,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    },
+    "state_white": {
+      "max_degrees": 89.9998810333421,
+      "median_degrees": 89.88673166096281,
+      "target": 30,
+      "unwritten_nuisance": 64,
+      "unwritten_target": 64,
+      "written_nuisance": 64
+    }
+  },
+  "paired_normalized": {
+    "ccq_half": {
+      "ci95": [
+        0.78125,
+        0.96875
+      ],
+      "gain": 0.890625,
+      "losses": 0,
+      "wins": 57
+    },
+    "ccq_one": {
+      "ci95": [
+        0.78125,
+        0.96875
+      ],
+      "gain": 0.890625,
+      "losses": 0,
+      "wins": 57
+    },
+    "ccq_write": {
+      "ci95": [
+        0.78125,
+        0.96875
+      ],
+      "gain": 0.890625,
+      "losses": 0,
+      "wins": 57
+    },
+    "key_cov_white": {
+      "ci95": [
+        0.78125,
+        0.96875
+      ],
+      "gain": 0.890625,
+      "losses": 0,
+      "wins": 57
+    },
+    "native": {
+      "ci95": [
+        0.78125,
+        0.96875
+      ],
+      "gain": 0.890625,
+      "losses": 0,
+      "wins": 57
+    },
+    "normalized": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gain": 0.0,
+      "losses": 0,
+      "wins": 0
+    },
+    "state_white": {
+      "ci95": [
+        0.234375,
+        0.609375
+      ],
+      "gain": 0.421875,
+      "losses": 3,
+      "wins": 30
+    }
+  },
+  "phase": "test",
+  "seeds": 32,
+  "targets": 64
+}
