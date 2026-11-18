@@ -1,7 +1,7 @@
 {
-  "version": 10,
+  "version": 11,
   "branch": "main",
-  "parent_commit": "fe2d087e3e14bbc01587871533b5590579b71524",
+  "parent_commit": "ec8c25c33976eb551d7a2a34b01264dc30ac3abc",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 7041,
-      "sha256": "22ff6f31888ee84b2b4134e8d85835a7f1a68eef1c33f17dcf342fc1688c3e20",
-      "git_blob_sha1": "16f909d4ec7a80392c0768e7b74783f329ad4643"
+      "bytes": 7223,
+      "sha256": "c5f7fc78583270e80ca5bb84a5440c6c8c5b3190ba485dcf5713340448dd243e",
+      "git_blob_sha1": "46ede417510a6bbb21ab029831590121036e6d35"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -527,9 +527,9 @@
     },
     {
       "path": "experiments/hoh_boundary/README.md",
-      "bytes": 6858,
-      "sha256": "4fe161e0548fe3222f0d95cc88da8162dcdac2e323e68ab10819cb59d25c3da4",
-      "git_blob_sha1": "b413d40a131dfffa56ac7008e26d3b9e30809818"
+      "bytes": 7098,
+      "sha256": "90f23cc181c3b873957fd0b28435a94cb89ffe4617174a636e96edd7d3739f23",
+      "git_blob_sha1": "20bede64b188ba0cfcde317df5fc59616fbcb466"
     },
     {
       "path": "experiments/hoh_boundary/bench_cpu.py",
@@ -734,6 +734,60 @@
       "bytes": 2563,
       "sha256": "8fdddb3a738f302a3b707eddb4aa539671ed3c920fee87dbe0f20ee9adb68425",
       "git_blob_sha1": "d00b1ec0f98c74dcc9e2921d440ef928fcc36819"
+    },
+    {
+      "path": "experiments/hoh_semantic/README.md",
+      "bytes": 2594,
+      "sha256": "2489f829a89cf0dd5b0a57877494c68009cd4f57a327dde52e5a5ab767b742ce",
+      "git_blob_sha1": "fc2d8c245b9daf964000f747df6c8998c6ef66c1"
+    },
+    {
+      "path": "experiments/hoh_semantic/adjudication.json",
+      "bytes": 7468,
+      "sha256": "10274fcb3cffecd5cadd1456c390c2dc2311cef7d4754b0c8cc5c85c41fb4877",
+      "git_blob_sha1": "c83a76d30accb1c337332171387c51432fd37b40"
+    },
+    {
+      "path": "experiments/hoh_semantic/automatic.json",
+      "bytes": 1297,
+      "sha256": "afad5b382b82d52c8e67bab5db4eecc4d4085f40b5ccbd9bd2989bed94cd9872",
+      "git_blob_sha1": "2d9353e4696404771f6ba73c5dd7c9f48639b8dc"
+    },
+    {
+      "path": "experiments/hoh_semantic/blind.json",
+      "bytes": 24372,
+      "sha256": "f4ac95d38dba8c857433c1d7651f6689b3a978756c63c976168c102384fb93a4",
+      "git_blob_sha1": "c2f24f6252e9cb961553f1f68493944d3b19963f"
+    },
+    {
+      "path": "experiments/hoh_semantic/blind.py",
+      "bytes": 1747,
+      "sha256": "8c78a2c8a8c7c7f70ccc4fc177cba8092ba63812f6a9f70da9ed06a340f9589f",
+      "git_blob_sha1": "8113a5810a88f2db18bae39f33d2b25cf86e1207"
+    },
+    {
+      "path": "experiments/hoh_semantic/linkage.json",
+      "bytes": 48511,
+      "sha256": "00ec6b8d8bfcfee01c315f1a93e685057ec14bdf18734ad7fb654ef41b441a3d",
+      "git_blob_sha1": "acab062a0f21143c457d12ab34f0a6d22807212f"
+    },
+    {
+      "path": "experiments/hoh_semantic/protocol.json",
+      "bytes": 1502,
+      "sha256": "d7c515b71ca5b9d3d2b2c0ddb0afb7b29f73acfd469971596c258f9edfc635f9",
+      "git_blob_sha1": "3ef439fbe04812b9fb85114ba58a98e793318010"
+    },
+    {
+      "path": "experiments/hoh_semantic/score.py",
+      "bytes": 1562,
+      "sha256": "a19619fa2fe4973fb617a638d2cc476bea48108e4b4ef887e269751ce340f4ac",
+      "git_blob_sha1": "8ed8f2df9803809bc07ed2a7d0f07ace6caf78b6"
+    },
+    {
+      "path": "experiments/hoh_semantic/summary.json",
+      "bytes": 553,
+      "sha256": "aee97e423ad0ad086dc2d651cc3fcbb6f2ababfac16fe07b6cd2400b3e0c9da0",
+      "git_blob_sha1": "a11c805036c912d675ab7052376292adbfad9d2c"
     },
     {
       "path": "experiments/hoh_updates/4b_contract.json",
@@ -1565,15 +1619,15 @@
     },
     {
       "path": "output/pdf/hybrid_dai_review.pdf",
-      "bytes": 241790,
-      "sha256": "604e4e3a0233a33a223c2f8b111f01068186b525786e83130b5cbc83c04b6132",
-      "git_blob_sha1": "384f9ce5dc7042c5f91ff04cba3179ffa5190784"
+      "bytes": 241742,
+      "sha256": "601395df6e23505423cfe124e0cb910fd119d4cb8eec19df7e18f136641c608d",
+      "git_blob_sha1": "feec65690db7f856902307c5c81c390c0315035e"
     },
     {
       "path": "output/pdf/hybrid_memory_working_paper.pdf",
-      "bytes": 242046,
-      "sha256": "c44063a0b7ffdc60e13a67f6244b87b8c74ef478440ffe22ca5ee18e8ea00018",
-      "git_blob_sha1": "ce7368323ec4f384e8e0f092523fa67fb6af9606"
+      "bytes": 241974,
+      "sha256": "9530070365c788c51aebd8c904cb4709cd5472cd562965377c986de4270fbc49",
+      "git_blob_sha1": "9ae0ef5d06b498a528f1eb1294f05e09f9c5e176"
     },
     {
       "path": "paper/aaai2027.sty",
@@ -1583,9 +1637,9 @@
     },
     {
       "path": "paper/main.tex",
-      "bytes": 22340,
-      "sha256": "62b75d31e387186096e937f3cd342e07b63469f9fea4dd5fe68d6100efc26427",
-      "git_blob_sha1": "40bf7ca87d4912d723630d7d830aacaacc39ccbd"
+      "bytes": 22244,
+      "sha256": "df2b360eb4b264bd159fca85f10b0844c85042c4f43567fad27d9017f1c58133",
+      "git_blob_sha1": "a59adf8a5958b9b30dd7c37d6ecf555afc61ae7f"
     },
     {
       "path": "qa/claims_check.json",
@@ -1608,8 +1662,8 @@
     {
       "path": "qa/pdf_check.json",
       "bytes": 833,
-      "sha256": "2dae58571509deaed08a64f30a2da269cc82258593918226f700ef6f765d6b24",
-      "git_blob_sha1": "c358a0fc2d85bdecc63298101bde762bdba630ba"
+      "sha256": "e24c1cd2daa7241b16e70c673a8fe865119c66b6e58ed7a80b7607fb1e2c36b3",
+      "git_blob_sha1": "d409ee02207d06f251fdd74eaadb3cdc4eec8951"
     },
     {
       "path": "qa/public_replay.json",
@@ -1619,9 +1673,9 @@
     },
     {
       "path": "qa/review.txt",
-      "bytes": 3745,
-      "sha256": "9bb252e3a4ad68e7ff3440da6ccfcc3b6c613aeb4f2988b51e0baa7ae16592e6",
-      "git_blob_sha1": "9a9c79f57ff879842953469153a4b9e176bd3741"
+      "bytes": 4364,
+      "sha256": "e018054d6f41f75e2930de64215a06ec0837cadc01b9ae022d59214b9e32d3e8",
+      "git_blob_sha1": "c18b99ed0f8d98a1523ec40dc7b20a4d9f2a0862"
     },
     {
       "path": "scripts/build.sh",

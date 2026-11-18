@@ -25,6 +25,8 @@ The CPU rule reread 12 updated passages. It saved 43.5% of positions, estimated 
 
 I also repeated the 9B comparison without retaining any prefix checkpoints. Full rereading took 119.39 seconds and answered 79/96 exactly. Guarded repair took 66.56 seconds and answered 80/96, with 43.0% fewer decoder positions and 44.2% less elapsed time. The program regenerates the complete prompt on a fallback. The experiment uses the same 96 pages as the preceding table. [Protocol for the additional comparison](refresh_without_checkpoints.json) · [Paired results](test_nocache_summary.json)
 
+A post-hoc blinded AI assessment rated the 9B replay answers as semantically adequate on 96/96 pages, and the repairs on 95–96/96. The uncertain response repeated a surname. [Semantic review and all judgments](../hoh_semantic/README.md)
+
 ## Reproduction
 
 The archived predictions and timings rescore with Python 3.11 or later using the standard library. Run from the repository root.

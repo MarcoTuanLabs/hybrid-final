@@ -1,0 +1,46 @@
+{
+  "n": 96,
+  "automatic_literals": 81,
+  "manual_responses": 58,
+  "uncertain": 1,
+  "scores": {
+    "cpu_full": [
+      89,
+      89
+    ],
+    "cpu_guarded_unique": [
+      90,
+      90
+    ],
+    "qwen_prefix": [
+      96,
+      96
+    ],
+    "qwen_guarded_unique": [
+      95,
+      96
+    ],
+    "nocache_full": [
+      96,
+      96
+    ],
+    "nocache_guarded_unique": [
+      95,
+      96
+    ]
+  },
+  "paired_change": {
+    "qwen": [
+      -1,
+      0
+    ],
+    "nocache": [
+      -1,
+      0
+    ],
+    "cpu": [
+      1,
+      1
+    ]
+  }
+}

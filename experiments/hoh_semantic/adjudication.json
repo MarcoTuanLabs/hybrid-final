@@ -1,0 +1,234 @@
+{
+  "01ba641ba3fe": {
+    "judgment": "accept",
+    "reason": "Six is the requested volume count."
+  },
+  "06a533239fcb": {
+    "judgment": "accept",
+    "reason": "Both handicaps and their assignments are explicit."
+  },
+  "070eb7b1332f": {
+    "judgment": "accept",
+    "reason": "All three anchor stores appear."
+  },
+  "0d6322befe73": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "108b6ddc5256": {
+    "judgment": "uncertain",
+    "reason": "The duplicated surname can be read as a stutter or as an unsupported full name."
+  },
+  "11f364e76ad4": {
+    "judgment": "accept",
+    "reason": "Identifies the second match in the wording of the source."
+  },
+  "143782ddb527": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "19110dd189be": {
+    "judgment": "reject",
+    "reason": "Names a sport and omits free-agent status."
+  },
+  "1aa02b01a4c2": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "1eae2a2ae69f": {
+    "judgment": "accept",
+    "reason": "The added modifier is supported."
+  },
+  "1f8b355484ba": {
+    "judgment": "accept",
+    "reason": "Names the prince and jurisdiction, which identify the title."
+  },
+  "20956d262dbd": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "218641deb6ce": {
+    "judgment": "accept",
+    "reason": "Buddhist specifies the requested influence."
+  },
+  "224334cdcd25": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "231e71f541d9": {
+    "judgment": "accept",
+    "reason": "The added count noun preserves the number."
+  },
+  "25ca4e782ab6": {
+    "judgment": "reject",
+    "reason": "Supplies only the outdoor handicap; the user also asks for the arena handicap."
+  },
+  "299bfa3282b3": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "2ce394ff73e7": {
+    "judgment": "accept",
+    "reason": "Free-agent status answers the team question."
+  },
+  "3191c1898c45": {
+    "judgment": "accept",
+    "reason": "Names the same city and state."
+  },
+  "46e1cc7142f6": {
+    "judgment": "accept",
+    "reason": "Free-agent status answers the association question."
+  },
+  "4c655f25385c": {
+    "judgment": "accept",
+    "reason": "The added count noun preserves the capacity."
+  },
+  "4e902690d495": {
+    "judgment": "accept",
+    "reason": "The unique named shoal answers where."
+  },
+  "5f0e6c76b94d": {
+    "judgment": "accept",
+    "reason": "A loss answers the requested match outcome."
+  },
+  "721bcc7ee432": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "7bf71b719a8b": {
+    "judgment": "reject",
+    "reason": "Identifies only the object type. The information about whom the articles feature is missing."
+  },
+  "8221b2ec8894": {
+    "judgment": "reject",
+    "reason": "Drops the lower-bound qualifier and states the rounded threshold as the count."
+  },
+  "854f3ac7a546": {
+    "judgment": "accept",
+    "reason": "The HTML entity represents the ampersand in the same store name."
+  },
+  "860c5ccbc349": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "8769f3588dc4": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "8a97cdca891e": {
+    "judgment": "accept",
+    "reason": "The full name is the supplied service page title."
+  },
+  "8b28a145d640": {
+    "judgment": "accept",
+    "reason": "Retro is the name that the passage explicitly assigns to the format."
+  },
+  "8d0679b37844": {
+    "judgment": "accept",
+    "reason": "The approximation qualifier is in the source."
+  },
+  "92ac47bdc9eb": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "9b10d2d50889": {
+    "judgment": "accept",
+    "reason": "Six is the current count."
+  },
+  "9b67ba3bf31b": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "a03930d719d1": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "a8dd46bf890f": {
+    "judgment": "accept",
+    "reason": "The call sign identifies the station."
+  },
+  "ac29b0ace575": {
+    "judgment": "reject",
+    "reason": "Drops the lower-bound qualifier and states an exact death count."
+  },
+  "aff18fac3ecf": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "b136cbe0dea0": {
+    "judgment": "accept",
+    "reason": "The portfolio matches and cabinet is supported."
+  },
+  "b493de53ebe9": {
+    "judgment": "accept",
+    "reason": "The institution name is in the question; Jatani identifies the campus."
+  },
+  "b5d8444b198c": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "b85fe21e0e5f": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "bce440b80282": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "c030e5ef0878": {
+    "judgment": "accept",
+    "reason": "The person is explicitly requested; party membership is optional."
+  },
+  "c105d03d47d8": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "c183e8497ff6": {
+    "judgment": "accept",
+    "reason": "Gives the programming format itself."
+  },
+  "c1d2f2281781": {
+    "judgment": "accept",
+    "reason": "Gives the programming format itself."
+  },
+  "c7abe1687bcb": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "ceb1196d1215": {
+    "judgment": "accept",
+    "reason": "A loss answers the requested outcome."
+  },
+  "d7271349a20f": {
+    "judgment": "accept",
+    "reason": "The unique named shoal answers where."
+  },
+  "de398abdfaf2": {
+    "judgment": "reject",
+    "reason": "The overall ranking is missing."
+  },
+  "e231de478f53": {
+    "judgment": "reject",
+    "reason": "Names a position rather than addressing current team affiliation."
+  },
+  "e38629a6ff97": {
+    "judgment": "reject",
+    "reason": "The universities ranking is missing."
+  },
+  "e9793816465a": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  },
+  "ea4d0f83fbef": {
+    "judgment": "accept",
+    "reason": "Both rankings are mapped to the correct categories."
+  },
+  "ec2631659431": {
+    "judgment": "accept",
+    "reason": "The model suffix disambiguates the Boeing 737 named in the question."
+  },
+  "fb7d8bf08493": {
+    "judgment": "accept",
+    "reason": "The reference fact is reproduced with surface wording or punctuation differences."
+  }
+}

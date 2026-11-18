@@ -350,18 +350,17 @@ The correction lowered its mean logit error by 19.2\%, just below the
 20\% criterion. BM25 used fewer operations and scored 19/34.
 
 \paragraph{When the same question returns.}
-A service may already have answered the question about an earlier
-passage. I align the two passages and transfer the old answer through
-the edits. I run the reader again if alignment fails or the longer
-answer has more than 1.5 times as many words as the shorter. I fixed
-this text-only rule on 32 HoH-QAs pages and tested it on 96 other
-pages with dated evidence \citep{ouyang2025}. On 4-bit 9B it matched
-80/96 updated answers, compared with 79/96 for exact prefix reuse and
-regeneration. It recovered two answers and lost one. Counting both
-editions, estimated arithmetic fell 28.2\% and elapsed time fell
-from 131.56 to 87.02 seconds. A CPU span reader using the same rule
-scored 77/96 in 2.07 seconds, versus 75/96 in 3.66 seconds for rereading.
-This experiment supplies the page and repeats its question.
+For a repeated question on a known page, I map the old answer through
+the passage edits. I rerun the reader if alignment fails or one answer
+exceeds 1.5 times the other's word count. I fixed this rule on 32
+HoH-QAs pages and tested 96 others \citep{ouyang2025}. On 4-bit 9B,
+repair gained two exact matches and lost one against prefix replay
+(80/96 versus 79/96). Across both editions it cut estimated arithmetic
+by 28.2\% and time from 131.56 to 87.02 seconds. A CPU span reader
+scored 77/96 in 2.07 seconds with repair and 75/96 in 3.66 seconds
+with rereading. A post-hoc AI review blinded to method judged 96/96
+9B rereads and 95--96/96 repairs consistent with the reference fact.
+One repair repeated a surname.
 
 \section{Relation to Prior Work}
 Linear attention stores associations as fast weights \citep{schlag2021}.

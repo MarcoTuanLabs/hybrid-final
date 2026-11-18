@@ -2,8 +2,8 @@
   "named": {
     "file": "output/pdf/hybrid_memory_working_paper.pdf",
     "pages": 4,
-    "bytes": 242046,
-    "sha256": "c44063a0b7ffdc60e13a67f6244b87b8c74ef478440ffe22ca5ee18e8ea00018",
+    "bytes": 241974,
+    "sha256": "9530070365c788c51aebd8c904cb4709cd5472cd562965377c986de4270fbc49",
     "author": "Lu-Yen Marco Tuan",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
@@ -12,8 +12,8 @@
   "review": {
     "file": "output/pdf/hybrid_dai_review.pdf",
     "pages": 4,
-    "bytes": 241790,
-    "sha256": "604e4e3a0233a33a223c2f8b111f01068186b525786e83130b5cbc83c04b6132",
+    "bytes": 241742,
+    "sha256": "601395df6e23505423cfe124e0cb910fd119d4cb8eec19df7e18f136641c608d",
     "author": "",
     "singular_voice_checked": true,
     "numeric_text_checked": true,

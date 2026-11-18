@@ -41,7 +41,7 @@ On 20 DynaQuest pages with changing answers, Qwen3.5-4B answered 28 of 40 dated 
 
 ## Answering the same question after a page changes
 
-On 96 held-out HoH-QAs pages, a text-based update to a saved answer reduced measured Qwen3.5-9B time by 33.9% and estimated arithmetic by 28.2% relative to exact prefix reuse and regeneration. The methods matched 80 and 79 current reference answers, respectively. The faster method recovered two answers and lost one. A CPU span reader using the same rule answered 77/96 in 2.07 seconds, compared with 75/96 in 3.66 seconds for full rereading. Timing includes both editions. [Methods, raw outputs and paired intervals](experiments/hoh_boundary/README.md)
+On 96 held-out HoH-QAs pages, a text-based update to a saved answer reduced measured Qwen3.5-9B time by 33.9% and estimated arithmetic by 28.2% relative to exact prefix reuse and regeneration. The methods matched 80 and 79 current reference answers, respectively. The faster method recovered two answers and lost one. A CPU span reader using the same rule answered 77/96 in 2.07 seconds, compared with 75/96 in 3.66 seconds for full rereading. Timing includes both editions. A post-hoc blinded AI review found that 96/96 rereads and 95–96/96 repaired answers conveyed the requested reference fact. [Methods, raw outputs and paired intervals](experiments/hoh_boundary/README.md) · [Semantic review](experiments/hoh_semantic/README.md)
 
 In a separate 32-question full-bank experiment, the best direct readers answered 23 questions correctly. Neither attention-cache nor recurrent-matrix contrast improved the 22/32 score of the matched expanded-retrieval generator. [Full-bank evaluations](experiments/hoh_updates/README.md)
 
