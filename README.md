@@ -25,6 +25,8 @@ The receiver starts with an old, question-conditioned cache and also receives th
 
 On 32 official bAbI test stories and 32 previously unused MQuAKE cases, the projected update reproduced all 128 dense answer sequences. Equal-size rank-four SVD reproduced 124. Dense transfer and the projection answered 53/64 updated questions correctly. SVD answered 54/64. The preregistered confirmation rule also required halving centered-logit error against each compressed control on both tasks. The strongest comparison gave error ratios of 0.508 on bAbI and 0.378 on MQuAKE. The composite rule therefore failed on bAbI. No system latency, general factual accuracy, or resident-memory advantage is asserted. [Experiment and rerun instructions](experiments/read_projection) · [Held-out scores](evidence/read_projection/test_summary.json) · [Other public-task pilots](evidence/public_diagnostics/README.md)
 
+On 16 short public development requests, sending a rank-four recurrent update along with changed attention and convolution state required 6.78 MiB per request on average. The complete projected service took 0.843 seconds per request, compared with 0.551 for utf-8 splice and checkpoint reuse. Both figures include generation and actual local socket transfer. [Complete update costs](experiments/update_service/README.md)
+
 ## Updating a cached conversation before the question
 
 On 34 held-out questions from shortened LongMemEval histories, a per-head correction reproduced the 4-bit 9B full-replay answers apart from one final period. Each method matched 21 reference answers. Counting the original history, insertion and answer, estimated decoder arithmetic fell by 25.3% and measured time by 19.5%. Reusing the old recurrent state also scored 21/34 at nearly the same cost. BM25 scored 19/34 with the lowest computational cost. [Methods, competing results and reproduction](experiments/late_arrival)
@@ -52,6 +54,8 @@ On the same 32 cold questions, a current-passage likelihood ranker followed by a
 On 32 human-written DiffQG questions adapted for open QA, undoing one edit before scoring an answer span yielded 23 exact answers. A simpler free reader with changed-span suggestions also scored 23. [Independent human-question pilot](experiments/diffqg_hunks/README.md)
 
 On 24 MemConflict requests drawn from eight simulated personas, a speaker-label contrast restricted to the recurrent matrices recovered 10 fully correct answers. A conventional text reader combining session-boundary statements with retrieved witnesses recovered 12. A policy-blind AI reviewer applied the benchmark's semantic criteria. [Conversation methods, prompts and all graded results](experiments/memconflict_witness/README.md)
+
+On the same 24 requests, a follow-up isolated the effect of masking a proposed answer in a firsthand statement. Recurrent-only masking recovered 12/24 fully correct answers. The strongest new comparator, extractive top-eight retrieval, recovered 14/24. [Firsthand-statement retrieval and masking](experiments/claim_access/README.md)
 
 ## Build and verify
 

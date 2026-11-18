@@ -1,0 +1,85 @@
+{
+  "by_policy": {
+    "all_scored": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    },
+    "lexdense": {
+      "observed_example_absent": {
+        "cases": 5,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 3,
+        "fully_correct": 1
+      }
+    },
+    "lm": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    },
+    "matrix_gain": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    },
+    "span": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 2
+      }
+    },
+    "span_quarters": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    },
+    "whole_gain": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    },
+    "wide": {
+      "observed_example_absent": {
+        "cases": 4,
+        "fully_correct": 1
+      },
+      "observed_example_present": {
+        "cases": 4,
+        "fully_correct": 1
+      }
+    }
+  },
+  "scope": "One retrospectively identified earlier statement per static case. Other supporting mentions may exist; the comparison is descriptive."
+}

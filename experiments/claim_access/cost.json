@@ -1,0 +1,64 @@
+{
+  "scope": "Development. Same-prompt generations are reused across arms; per-arm generation durations reflect actually evaluated distinct prompts. Ordinary readers shown with component sums execute formulation, lexical and dense retrieval, and the extractive shortlist once per request. Retrieval seconds include index construction and cross-encoder work. Model loading, benchmark adjudication and filesystem transfers are excluded. Mask-arm timings include shared control paths and are not separately attributable. No end-to-end savings claim.",
+  "n": 24,
+  "methods": {
+    "all_scored": {
+      "generation_positions": 20350,
+      "generation_seconds": 144.0897541650338,
+      "median_generated_request_seconds": 5.722278666042257,
+      "sum_observed_component_seconds": 238.18344945576973,
+      "sum_observed_4b_positions": 24209
+    },
+    "lexdense": {
+      "generation_positions": 15110,
+      "generation_seconds": 139.7753479129169,
+      "median_generated_request_seconds": 6.2170743540045805
+    },
+    "lm": {
+      "generation_positions": 14978,
+      "generation_seconds": 139.0869092082139,
+      "median_generated_request_seconds": 5.452013208530843
+    },
+    "matrix_gain": {
+      "generation_positions": 14987,
+      "generation_seconds": 135.02522849896923,
+      "median_generated_request_seconds": 5.452013208530843
+    },
+    "span": {
+      "generation_positions": 15176,
+      "generation_seconds": 128.08561262628064,
+      "median_generated_request_seconds": 5.291053312481381,
+      "sum_observed_component_seconds": 222.17930791701656,
+      "sum_observed_4b_positions": 19035
+    },
+    "span_quarters": {
+      "generation_positions": 15137,
+      "generation_seconds": 137.0065729159396,
+      "median_generated_request_seconds": 5.646624812507071,
+      "sum_observed_component_seconds": 231.10026820667554,
+      "sum_observed_4b_positions": 18996
+    },
+    "whole_gain": {
+      "generation_positions": 14941,
+      "generation_seconds": 132.75794629007578,
+      "median_generated_request_seconds": 5.436804541503079
+    },
+    "wide": {
+      "generation_positions": 43408,
+      "generation_seconds": 188.62709758384153,
+      "median_generated_request_seconds": 8.16549760394264,
+      "sum_observed_component_seconds": 282.72079287457746,
+      "sum_observed_4b_positions": 47267
+    }
+  },
+  "measured_component_seconds": {
+    "formulations": 79.3529914150713,
+    "retrieval": 14.740703875664622,
+    "all_masking_controls": 211.70844425272662,
+    "unique_free_generation": 961.3610773321707
+  },
+  "actual_4b_positions": {
+    "formulations": 3859,
+    "all_masking_controls": 53995
+  }
+}

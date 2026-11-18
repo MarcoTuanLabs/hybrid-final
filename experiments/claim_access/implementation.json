@@ -1,0 +1,14 @@
+{
+  "witness_outcomes.py": "666cf978bdb7bc94db6946ca135ea2e7678fe5879123f95b839098a9f18aad98",
+  "cost.py": "7dfe48fd6a8738df8b5dd1ace4d965d6f72e48989d47b1c8d8e0486c628c857c",
+  "ranking_diagnostic.py": "dbfcca489d90437b4acc1afbdb02e89cdf103773719b4bc971aa459bf4197b76",
+  "contract.json": "47ebb8d572f084259e908daffbf6314eacff7bc8d4f48ffa3a1a889590399343",
+  "assessment.json": "94dc3f70ce89e9ed71b3b8ea0b3308c55a9ef50712749bd16737c1bac6eb982c",
+  "wide_control.json": "6007f97926ba6349c150fd677ddc618c5be393bcf7c084db6bb269b02d9ab4cb",
+  "formulate.py": "dc8fbbb51a67dfe8591588cb491f1fdbccd53d65b4cb5445d7e944589667ce62",
+  "retrieve.py": "590a404bb4c0beca5a5be1f549e7e2f252173e7e8b60381b14bccc55d536dd19",
+  "support.py": "7e64acc3d0e9a2cfcf88915d65d4b8142a78ddc24e63ee935432f71eae3984c7",
+  "answer.py": "72ea726c92a7c8e3c64e2f4a0db8e966bb10071e90f3bd391030952a8b3bf6b4",
+  "assess.py": "ab41b12710b38da3324f6b8c1be2e23c7fa262679ed0e09a90c60b379d03fd92",
+  "second_judge.py": "93184f19dca3bb6eb168c5a37ea69e3e4f7d25a08cde020a91457b3c3b89cda7"
+}

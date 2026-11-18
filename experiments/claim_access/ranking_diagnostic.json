@@ -1,0 +1,40 @@
+{
+  "selected": {
+    "matrix_gain versus whole_gain": {
+      "equal_prompt": 9,
+      "median_overlap": 0.8181818181818182,
+      "different_prompts": 15
+    },
+    "matrix_gain versus lm": {
+      "equal_prompt": 10,
+      "median_overlap": 0.8181818181818182,
+      "different_prompts": 14
+    },
+    "whole_gain versus lm": {
+      "equal_prompt": 10,
+      "median_overlap": 0.8181818181818182,
+      "different_prompts": 14
+    },
+    "matrix_gain versus span_quarters": {
+      "equal_prompt": 8,
+      "median_overlap": 0.8181818181818182,
+      "different_prompts": 16
+    }
+  },
+  "log_likelihood_changes": {
+    "matrix_gain": {
+      "median": 0.005348771810531616,
+      "median_absolute": 0.10865622758865356,
+      "positive": 160,
+      "zero": 0,
+      "n": 308
+    },
+    "whole_gain": {
+      "median": 4.46047979593277,
+      "median_absolute": 4.46047979593277,
+      "positive": 302,
+      "zero": 0,
+      "n": 308
+    }
+  }
+}

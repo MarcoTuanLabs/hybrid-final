@@ -1,0 +1,146 @@
+{
+  "09a769083e4719fcf9bfa35307e13c9e489cb1001baba290cd4641e99caeb571": {
+    "terms": "married, single, divorced, widowed, engaged, separated, married again, widower, widow, unmarried, cohabiting, divorced again",
+    "question": "What changed in your marital status?",
+    "seconds": 4.055005708010867,
+    "positions": 159
+  },
+  "69902d75ba87da37c4d69a3bf03d90c7d84da67b5f7c40e478223c3a04222c02": {
+    "terms": "yes, no, single, only, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, many, few, none, never, always, sometimes, often, rarely, seldom, occasionally, frequently, regularly, consistently, sporadically, intermittently, continuously, perpetually, constantly,",
+    "question": "Do you have siblings?",
+    "seconds": 6.021214499953203,
+    "positions": 191
+  },
+  "0d81c9f1dad7cb02060dace29460dfeccd947f0990827039ac5ffc25967cf809": {
+    "terms": "when, if, because, whenever, as long as, provided that, unless, while, once, until, after, before",
+    "question": "Under what circumstance do you prefer football?",
+    "seconds": 2.915350875002332,
+    "positions": 157
+  },
+  "020308cc2714f00088a690e84ec63007e8ac7826ee43d9129574c5b574ae7d2e": {
+    "terms": "married, single, divorced, widowed, engaged, separated, married again, widower, widow, unmarried, married off, divorced",
+    "question": "What change occurred in your marital status?",
+    "seconds": 2.997940875007771,
+    "positions": 160
+  },
+  "24d6ad6dd5bdb7c38456774405a1921f5a8ab1742683a537f703affa58cc199a": {
+    "terms": "one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve",
+    "question": "How many siblings do you have?",
+    "seconds": 2.6020940840244293,
+    "positions": 151
+  },
+  "0a82364fcbb107796153ea9d1b8b672bd8dbef8259a03a1a75aa4281e20cb948": {
+    "terms": "morning, evenings, weekends, weekdays, late night, early morning, commute, lunch break, after work, before bed, during travel, anytime",
+    "question": "When do you prefer reading Popular Science?",
+    "seconds": 3.2113044160651043,
+    "positions": 161
+  },
+  "0022fc6db86a72e9596b44b97a3cb4dbfc2adeafd353cd2b59ecb7418fa0bfcb": {
+    "terms": "married, single, divorced, widowed, engaged, separated, married again, widower, widow, unmarried, cohabiting, divorced again",
+    "question": "What change happened to your marital status?",
+    "seconds": 3.1371842079097405,
+    "positions": 162
+  },
+  "04d102b873adc681a7200054b0388ca0d79921aacbba3f41981b8e87d369a9aa": {
+    "terms": "New York, London, Tokyo, Paris, Berlin, Chicago, Sydney, Toronto, Madrid, Rome, Moscow, Beijing",
+    "question": "Where were you born?",
+    "seconds": 2.5244212079560384,
+    "positions": 146
+  },
+  "0477ddfbd634fea626343b499d0b6200ec20126b5d69aeeb93f0bd70c9659d6c": {
+    "terms": "late nights, weekends, after work, during breaks, when bored, for laughs, comedy relief, stress relief, Friday evenings, Sunday mornings, rainy days, late nights",
+    "question": "When do you prefer satirical sitcoms?",
+    "seconds": 3.5921109170885757,
+    "positions": 168
+  },
+  "05608e4255b5b4c531acd6ad84c5223896c87c760037cdc5628252c6ce1917c6": {
+    "terms": "promoted, demoted, transferred, reassigned, changed, updated, revised, modified, altered, shifted, elevated, demoted",
+    "question": "What changed about your job title?",
+    "seconds": 3.0452806670218706,
+    "positions": 157
+  },
+  "06229c42d979200b4191460c40a73b91f83fc694e5a29c9bfc87cde725bc3eca": {
+    "terms": "last year, two years ago, 1990, 1995, 2000, 2005, 2010, 2015, 2020, 2021, 2022, 2023",
+    "question": "When were you born?",
+    "seconds": 5.885191624984145,
+    "positions": 192
+  },
+  "0194037b218634df7993c1ee1a0cfc37dc54dd99900d603df552872e949a7379": {
+    "terms": "always, usually, often, sometimes, rarely, never, morning, afternoon, evening, night, weekend, weekday, summer, winter",
+    "question": "When do you prefer an Iced Americano?",
+    "seconds": 3.135837584035471,
+    "positions": 162
+  },
+  "039f692eee649a33d2977d929b320f90b97825efdd7aa0d33ab1276e82cf2b61": {
+    "terms": "shifted, evolved, transformed, altered, modified, updated, revised, adjusted, adapted, restructured, reorganized, redefined",
+    "question": "What changed about your industry?",
+    "seconds": 2.799541165935807,
+    "positions": 154
+  },
+  "0d56c1e4cac58167d75e10c5b5b8e5703619694cb527c94d0221d3e22d2832b3": {
+    "terms": "Bachelor, Master, PhD, Doctorate, Associate, B.A., M.A., M.S., D.Sc., Honorary, Terminal, Undergraduate, Graduate",
+    "question": "What is your highest academic degree?",
+    "seconds": 3.2145279159303755,
+    "positions": 162
+  },
+  "172df4aab7a011f36883a50dedc728a979c921c7a405fdc4d3926c9b5adaa626": {
+    "terms": "when sunny, if rain stops, when friends play, if court is open, when score is close, if weather is good, when opponent is weak, if match is short, when wind is calm, if grass is dry, when lights are on, if schedule fits",
+    "question": "Under what condition do you prefer tennis?",
+    "seconds": 5.074256583931856,
+    "positions": 185
+  },
+  "0039c663fd6246d81753a02d4deff0e041ce6c7f05dce243194924df8b797d32": {
+    "terms": "married, single, divorced, widowed, engaged, separated, married again, widower, widow, unmarried, married off, divorced",
+    "question": "What change occurred in your marital status?",
+    "seconds": 2.9590368330245838,
+    "positions": 160
+  },
+  "0bc7a22d31d27d1d10eadd83130b7491f9bdd3d903eb5861941bf9e0c2bc6c55": {
+    "terms": "Bachelor's, Master's, PhD, Doctorate, Associate, High school, Diploma, Certificate, Undergraduate, Graduate, Honors, Advanced",
+    "question": "What is your highest educational degree?",
+    "seconds": 3.055205167038366,
+    "positions": 159
+  },
+  "11416cb1d281cd317583efebe2dc1867e19db9177ff63e25a37cfd0b6ec32917": {
+    "terms": "always, sometimes, rarely, never, morning, afternoon, evening, night, cold, hot, spicy, mild, fresh, canned, homemade, store-bought",
+    "question": "When do you prefer vegetable soup?",
+    "seconds": 3.2568411249667406,
+    "positions": 161
+  },
+  "0abad32be1379ac90b04780d2a4cf514839126841e1b62452d4beefd2f6d776c": {
+    "terms": "moved, relocated, transferred, shifted, changed, updated, upgraded, downsized, upsize, relocated, moved out, moved in",
+    "question": "How did your residence change?",
+    "seconds": 2.729521708097309,
+    "positions": 154
+  },
+  "1c07408476e6dec9f072cb841b0b9dea6db0a6affe5f16b0df89bff8bfde4473": {
+    "terms": "Computer science, engineering, business, arts, humanities, biology, chemistry, physics, mathematics, psychology, sociology, law",
+    "question": "What is your major?",
+    "seconds": 2.4328069160692394,
+    "positions": 148
+  },
+  "0990a73271c1508018d536ae163d0f6fc97a3a76c948362068b3c0e154210faa": {
+    "terms": "always, sometimes, rarely, never, weekends, evenings, holidays, mornings, after meals, with dinner, during parties, on Fridays",
+    "question": "When do you prefer red wine?",
+    "seconds": 2.805311333038844,
+    "positions": 155
+  },
+  "00cc8c1e77fea46f49e4996ff887035ebf21469722f772ca53b555ebe0c46bc5": {
+    "terms": "better, worse, improved, declined, stable, same, unchanged, fluctuating, deteriorated, recovered, aggravated, stabilized",
+    "question": "How has your health status changed?",
+    "seconds": 2.6514744160231203,
+    "positions": 155
+  },
+  "047c270119661748929e7e8387cc90b3897a9804ab9f3aa8940e18096eb921eb": {
+    "terms": "New York, London, Tokyo, Paris, Berlin, Chicago, Sydney, Toronto, Madrid, Rome, Moscow, Beijing",
+    "question": "Where were you born?",
+    "seconds": 2.43905020901002,
+    "positions": 146
+  },
+  "002f586c1abe1d4b6b6f6db7216ead7d01effaf132710f12656f7e3b577ac1b1": {
+    "terms": "always, sometimes, rarely, never, weekends, mornings, afternoons, evenings, lunchtime, dinner, breakfast, holidays",
+    "question": "When do you prefer Chicken Nuggets?",
+    "seconds": 2.8124813749454916,
+    "positions": 154
+  }
+}

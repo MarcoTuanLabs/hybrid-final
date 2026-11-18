@@ -1,0 +1,69 @@
+{
+  "scope": "Post-hoc lookup of one directly observed earlier report per already-exposed static question, chosen with reference knowledge. Other statements may support the same answer. The inference pipeline does not read this file.",
+  "rows": [
+    {
+      "case": "69902d75",
+      "one_early_witness": "1/42",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": false,
+      "in_rerank_set": false,
+      "span_rank": null
+    },
+    {
+      "case": "24d6ad6d",
+      "one_early_witness": "3/8",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": true,
+      "in_rerank_set": true,
+      "span_rank": 1
+    },
+    {
+      "case": "04d102b8",
+      "one_early_witness": "1/2",
+      "in_prior_witnesses": true,
+      "in_span_shortlist": true,
+      "in_rerank_set": true,
+      "span_rank": 1
+    },
+    {
+      "case": "06229c42",
+      "one_early_witness": "3/18",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": false,
+      "in_rerank_set": false,
+      "span_rank": null
+    },
+    {
+      "case": "0d56c1e4",
+      "one_early_witness": "9/16",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": true,
+      "in_rerank_set": true,
+      "span_rank": 1
+    },
+    {
+      "case": "0bc7a22d",
+      "one_early_witness": "3/6",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": false,
+      "in_rerank_set": false,
+      "span_rank": null
+    },
+    {
+      "case": "1c074084",
+      "one_early_witness": "3/6",
+      "in_prior_witnesses": false,
+      "in_span_shortlist": false,
+      "in_rerank_set": false,
+      "span_rank": null
+    },
+    {
+      "case": "047c2701",
+      "one_early_witness": "1/0",
+      "in_prior_witnesses": true,
+      "in_span_shortlist": true,
+      "in_rerank_set": true,
+      "span_rank": 1
+    }
+  ]
+}

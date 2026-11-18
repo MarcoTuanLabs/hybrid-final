@@ -1,0 +1,230 @@
+{
+  "best_text_or_whole": "span",
+  "comparisons": {
+    "matrix_gain minus lm": {
+      "ci95": [
+        0,
+        0.125
+      ],
+      "difference": 0.041666666666666664,
+      "gains": 1,
+      "losses": 0
+    },
+    "matrix_gain minus span": {
+      "ci95": [
+        -0.20833333333333331,
+        0
+      ],
+      "difference": -0.08333333333333333,
+      "gains": 1,
+      "losses": 3
+    },
+    "matrix_gain minus whole_gain": {
+      "ci95": [
+        -0.125,
+        0
+      ],
+      "difference": -0.041666666666666664,
+      "gains": 0,
+      "losses": 1
+    },
+    "span minus prior_boundaries_plus_witness": {
+      "ci95": [
+        -0.125,
+        0.29166666666666663
+      ],
+      "difference": 0.08333333333333333,
+      "gains": 4,
+      "losses": 2
+    }
+  },
+  "gates": {
+    "conventional": false,
+    "recurrent": false
+  },
+  "incumbent": "prior_boundaries_plus_witness",
+  "n": 24,
+  "personas": 8,
+  "scores": {
+    "all_scored": {
+      "by_type": {
+        "conditional_conflict": 8,
+        "dynamic_conflict": 3,
+        "static_conflict": 2
+      },
+      "full": 13,
+      "mean": 0.6041666666666666
+    },
+    "lexdense": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 4,
+        "static_conflict": 2
+      },
+      "full": 13,
+      "mean": 0.5833333333333334
+    },
+    "lm": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 3,
+        "static_conflict": 2
+      },
+      "full": 11,
+      "mean": 0.5208333333333334
+    },
+    "matrix_gain": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 3,
+        "static_conflict": 2
+      },
+      "full": 12,
+      "mean": 0.5416666666666666
+    },
+    "prior_boundaries": {
+      "by_type": {
+        "conditional_conflict": 0,
+        "dynamic_conflict": 1,
+        "static_conflict": 1
+      },
+      "full": 2,
+      "mean": 0.1875
+    },
+    "prior_boundaries_plus_witness": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 4,
+        "static_conflict": 1
+      },
+      "full": 12,
+      "mean": 0.5625
+    },
+    "prior_diverse": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 2,
+        "static_conflict": 1
+      },
+      "full": 9,
+      "mean": 0.4166666666666667
+    },
+    "prior_latest_session": {
+      "by_type": {
+        "conditional_conflict": 0,
+        "dynamic_conflict": 3,
+        "static_conflict": 0
+      },
+      "full": 3,
+      "mean": 0.20833333333333334
+    },
+    "prior_ordinary_critique": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 3,
+        "static_conflict": 1
+      },
+      "full": 11,
+      "mean": 0.4791666666666667
+    },
+    "prior_recurrent": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 3,
+        "static_conflict": 1
+      },
+      "full": 10,
+      "mean": 0.4375
+    },
+    "prior_standard": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 2,
+        "static_conflict": 2
+      },
+      "full": 10,
+      "mean": 0.4375
+    },
+    "prior_whole": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 3,
+        "static_conflict": 0
+      },
+      "full": 10,
+      "mean": 0.4583333333333333
+    },
+    "prior_wide": {
+      "by_type": {
+        "conditional_conflict": 5,
+        "dynamic_conflict": 3,
+        "static_conflict": 2
+      },
+      "full": 10,
+      "mean": 0.4375
+    },
+    "prior_wide_typed": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 2,
+        "static_conflict": 2
+      },
+      "full": 11,
+      "mean": 0.5
+    },
+    "prior_witness": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 2,
+        "static_conflict": 1
+      },
+      "full": 9,
+      "mean": 0.4166666666666667
+    },
+    "prior_witness_typed": {
+      "by_type": {
+        "conditional_conflict": 6,
+        "dynamic_conflict": 3,
+        "static_conflict": 1
+      },
+      "full": 10,
+      "mean": 0.4375
+    },
+    "span": {
+      "by_type": {
+        "conditional_conflict": 8,
+        "dynamic_conflict": 3,
+        "static_conflict": 3
+      },
+      "full": 14,
+      "mean": 0.6458333333333334
+    },
+    "span_quarters": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 2,
+        "static_conflict": 2
+      },
+      "full": 11,
+      "mean": 0.5416666666666666
+    },
+    "whole_gain": {
+      "by_type": {
+        "conditional_conflict": 7,
+        "dynamic_conflict": 4,
+        "static_conflict": 2
+      },
+      "full": 13,
+      "mean": 0.5625
+    },
+    "wide": {
+      "by_type": {
+        "conditional_conflict": 8,
+        "dynamic_conflict": 4,
+        "static_conflict": 2
+      },
+      "full": 14,
+      "mean": 0.6041666666666666
+    }
+  }
+}

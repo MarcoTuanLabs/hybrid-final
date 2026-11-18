@@ -1,0 +1,58 @@
+[
+  {
+    "source": "babi",
+    "id": 1079,
+    "old_fact_bytes": 252,
+    "new_fact_bytes": 312,
+    "single_splice_bytes_including_fixed_headers": 76
+  },
+  {
+    "source": "babi",
+    "id": 801,
+    "old_fact_bytes": 181,
+    "new_fact_bytes": 236,
+    "single_splice_bytes_including_fixed_headers": 71
+  },
+  {
+    "source": "babi",
+    "id": 1575,
+    "old_fact_bytes": 115,
+    "new_fact_bytes": 178,
+    "single_splice_bytes_including_fixed_headers": 79
+  },
+  {
+    "source": "babi",
+    "id": 1928,
+    "old_fact_bytes": 116,
+    "new_fact_bytes": 175,
+    "single_splice_bytes_including_fixed_headers": 75
+  },
+  {
+    "source": "mquake",
+    "id": 1426,
+    "old_fact_bytes": 132,
+    "new_fact_bytes": 156,
+    "single_splice_bytes_including_fixed_headers": 120
+  },
+  {
+    "source": "mquake",
+    "id": 394,
+    "old_fact_bytes": 157,
+    "new_fact_bytes": 162,
+    "single_splice_bytes_including_fixed_headers": 125
+  },
+  {
+    "source": "mquake",
+    "id": 2429,
+    "old_fact_bytes": 103,
+    "new_fact_bytes": 112,
+    "single_splice_bytes_including_fixed_headers": 100
+  },
+  {
+    "source": "mquake",
+    "id": 2432,
+    "old_fact_bytes": 205,
+    "new_fact_bytes": 180,
+    "single_splice_bytes_including_fixed_headers": 161
+  }
+]
