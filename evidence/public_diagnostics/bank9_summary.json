@@ -1,0 +1,111 @@
+{
+  "cases_each": 24,
+  "live_generations": 672,
+  "scores": {
+    "babi": {
+      "old": {
+        "changed": 0,
+        "stable": 24,
+        "mean_state_mib": 0.0,
+        "recovered_donor_successes": 0
+      },
+      "all": {
+        "changed": 22,
+        "stable": 23,
+        "mean_state_mib": 57.125,
+        "recovered_donor_successes": 22
+      },
+      "recurrent": {
+        "changed": 5,
+        "stable": 24,
+        "mean_state_mib": 49.125,
+        "recovered_donor_successes": 5
+      },
+      "attention": {
+        "changed": 1,
+        "stable": 24,
+        "mean_state_mib": 8.0,
+        "recovered_donor_successes": 1
+      },
+      "upper_recurrent": {
+        "changed": 5,
+        "stable": 24,
+        "mean_state_mib": 24.5625,
+        "recovered_donor_successes": 5
+      },
+      "rec_convolutions": {
+        "changed": 0,
+        "stable": 24,
+        "mean_state_mib": 1.125,
+        "recovered_donor_successes": 0
+      },
+      "rec_matrices": {
+        "changed": 0,
+        "stable": 24,
+        "mean_state_mib": 48.0,
+        "recovered_donor_successes": 0
+      }
+    },
+    "mquake": {
+      "old": {
+        "changed": 0,
+        "stable": 9,
+        "mean_state_mib": 0.0,
+        "recovered_donor_successes": 0
+      },
+      "all": {
+        "changed": 20,
+        "stable": 10,
+        "mean_state_mib": 57.125,
+        "recovered_donor_successes": 20
+      },
+      "recurrent": {
+        "changed": 5,
+        "stable": 8,
+        "mean_state_mib": 49.125,
+        "recovered_donor_successes": 5
+      },
+      "attention": {
+        "changed": 12,
+        "stable": 10,
+        "mean_state_mib": 8.0,
+        "recovered_donor_successes": 12
+      },
+      "upper_recurrent": {
+        "changed": 5,
+        "stable": 9,
+        "mean_state_mib": 24.5625,
+        "recovered_donor_successes": 5
+      },
+      "rec_convolutions": {
+        "changed": 0,
+        "stable": 9,
+        "mean_state_mib": 1.125,
+        "recovered_donor_successes": 0
+      },
+      "rec_matrices": {
+        "changed": 2,
+        "stable": 9,
+        "mean_state_mib": 48.0,
+        "recovered_donor_successes": 2
+      }
+    }
+  },
+  "access_checks": {
+    "babi": {
+      "comparisons": 96,
+      "different": 0,
+      "note": "MQuAKE parent used batched suffix, current diagnostic uses serial suffix; bAbI parent was also serial."
+    },
+    "mquake": {
+      "comparisons": 96,
+      "different": 1,
+      "note": "MQuAKE parent used batched suffix, current diagnostic uses serial suffix; bAbI parent was also serial."
+    }
+  },
+  "qualifying_components": {
+    "babi": [],
+    "mquake": []
+  },
+  "decision": "no_shared_bank_clears_localization_gate"
+}

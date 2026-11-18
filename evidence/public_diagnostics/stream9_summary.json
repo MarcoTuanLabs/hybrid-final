@@ -1,0 +1,101 @@
+{
+  "phase": "dev",
+  "seeds": 8,
+  "requests": 384,
+  "scores": {
+    "serial_inline": {
+      "target": 14,
+      "control": 48,
+      "mean_s": 0.5402912962363189,
+      "mean_suffix_s": 0.17100391667736403
+    },
+    "batch_staged": {
+      "target": 13,
+      "control": 48,
+      "mean_s": 0.4568804349255515,
+      "mean_suffix_s": 0.08700753845369036
+    },
+    "batch_inline": {
+      "target": 13,
+      "control": 48,
+      "mean_s": 0.41880980544010527,
+      "mean_suffix_s": 0.051075489614959224
+    },
+    "batch_observed": {
+      "target": 13,
+      "control": 48,
+      "mean_s": 0.41832303002956905,
+      "mean_suffix_s": 0.05029613934311783
+    },
+    "batch_white": {
+      "target": 5,
+      "control": 48,
+      "mean_s": 0.41767817842082877,
+      "mean_suffix_s": 0.05093845445480838
+    },
+    "batch_native": {
+      "target": 0,
+      "control": 48,
+      "mean_s": 0.4168389498427132,
+      "mean_suffix_s": 0.04727650778295356
+    }
+  },
+  "paired": {
+    "serial_inline": {
+      "answer_disagreements": 1,
+      "query_disagreements": 64,
+      "wins": 0,
+      "losses": 1,
+      "mean_time_ratio": 0.7751555658170761,
+      "time_ratio_seed_interval": [
+        0.7624897697745217,
+        0.7900530697925787
+      ]
+    },
+    "batch_staged": {
+      "answer_disagreements": 0,
+      "query_disagreements": 0,
+      "wins": 0,
+      "losses": 0,
+      "mean_time_ratio": 0.9166726640600186,
+      "time_ratio_seed_interval": [
+        0.9073731587386856,
+        0.9244396562721127
+      ]
+    },
+    "batch_observed": {
+      "answer_disagreements": 0,
+      "query_disagreements": 42,
+      "wins": 0,
+      "losses": 0,
+      "mean_time_ratio": 1.0011636352187012,
+      "time_ratio_seed_interval": [
+        0.9914593978369686,
+        1.0116964099746524
+      ]
+    },
+    "batch_white": {
+      "answer_disagreements": 10,
+      "query_disagreements": 64,
+      "wins": 9,
+      "losses": 1,
+      "mean_time_ratio": 1.0027093276061367,
+      "time_ratio_seed_interval": [
+        0.9958143256234079,
+        1.012099699585862
+      ]
+    },
+    "batch_native": {
+      "answer_disagreements": 13,
+      "query_disagreements": 64,
+      "wins": 13,
+      "losses": 0,
+      "mean_time_ratio": 1.004728098461374,
+      "time_ratio_seed_interval": [
+        0.9961663354429852,
+        1.0097974123378006
+      ]
+    }
+  },
+  "decision": "do_not_scale_streaming_candidate"
+}

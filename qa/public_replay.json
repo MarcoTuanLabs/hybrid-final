@@ -1,0 +1,11 @@
+{
+  "model_revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "phase": "held-out public runner replay",
+  "cases": 64,
+  "requests": 128,
+  "method_request_rows": 768,
+  "identical_generated_token_sequences": 768,
+  "identical_non_timing_row_fields": 10752,
+  "all_quality_summaries_identical": true,
+  "wall_s": 543.636682915967
+}

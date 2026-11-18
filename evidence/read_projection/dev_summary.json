@@ -1,0 +1,199 @@
+{
+  "phase": "dev",
+  "cases": 48,
+  "real_arms": 576,
+  "stats": {
+    "babi": {
+      "dense": {
+        "changed": 22,
+        "stable": 23,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 48.0,
+        "mean_logit_rmse": 0.0,
+        "max_read_error": null,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "no_matrix": {
+        "changed": 19,
+        "stable": 23,
+        "n": 48,
+        "first_match": 45,
+        "sequence_matches": 45,
+        "charged_matrix_mib": 0.0,
+        "mean_logit_rmse": 0.3151499193607343,
+        "max_read_error": null,
+        "per_role_losses_to_full": {
+          "changed": 3,
+          "stable": 0
+        }
+      },
+      "svd": {
+        "changed": 22,
+        "stable": 23,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.14026261225740336,
+        "max_read_error": 0.6437450647354126,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "row_2bit": {
+        "changed": 22,
+        "stable": 23,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 3.375,
+        "mean_logit_rmse": 0.5864861466651995,
+        "max_read_error": 14.002975463867188,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "raw_queries": {
+        "changed": 22,
+        "stable": 22,
+        "n": 48,
+        "first_match": 47,
+        "sequence_matches": 47,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.09934684540730294,
+        "max_read_error": 2.7237608432769775,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 1
+        }
+      },
+      "transported": {
+        "changed": 22,
+        "stable": 23,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.04849115611847255,
+        "max_read_error": 5.054321832176356e-07,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      }
+    },
+    "mquake": {
+      "dense": {
+        "changed": 20,
+        "stable": 10,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 48.0,
+        "mean_logit_rmse": 0.0,
+        "max_read_error": null,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "no_matrix": {
+        "changed": 18,
+        "stable": 10,
+        "n": 48,
+        "first_match": 44,
+        "sequence_matches": 43,
+        "charged_matrix_mib": 0.0,
+        "mean_logit_rmse": 0.33518960915425716,
+        "max_read_error": null,
+        "per_role_losses_to_full": {
+          "changed": 2,
+          "stable": 0
+        }
+      },
+      "svd": {
+        "changed": 20,
+        "stable": 10,
+        "n": 48,
+        "first_match": 47,
+        "sequence_matches": 47,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.13249919814667735,
+        "max_read_error": 0.6281946301460266,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "row_2bit": {
+        "changed": 20,
+        "stable": 10,
+        "n": 48,
+        "first_match": 45,
+        "sequence_matches": 44,
+        "charged_matrix_mib": 3.375,
+        "mean_logit_rmse": 0.5767768996123802,
+        "max_read_error": 10.434189796447754,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "raw_queries": {
+        "changed": 20,
+        "stable": 10,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.13135925868461115,
+        "max_read_error": 3.4440107345581055,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      },
+      "transported": {
+        "changed": 20,
+        "stable": 10,
+        "n": 48,
+        "first_match": 48,
+        "sequence_matches": 48,
+        "charged_matrix_mib": 3.0,
+        "mean_logit_rmse": 0.04759143517699572,
+        "max_read_error": 5.870564905308129e-07,
+        "per_role_losses_to_full": {
+          "changed": 0,
+          "stable": 0
+        }
+      }
+    }
+  },
+  "gate": {
+    "babi": {
+      "max_error_ratio_to_controls": 0.48809960617942266,
+      "logit_win": true,
+      "first_match": true,
+      "sequence_match": true,
+      "loss_ok": true,
+      "payload": true
+    },
+    "mquake": {
+      "max_error_ratio_to_controls": 0.36229981543410683,
+      "logit_win": true,
+      "first_match": true,
+      "sequence_match": true,
+      "loss_ok": true,
+      "payload": true
+    }
+  },
+  "pooled_gain_over_no_matrix": 5,
+  "decision": "confirm_public_projection"
+}

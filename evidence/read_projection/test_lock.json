@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-18T16:02:52.115184+00:00",
+  "babi_sha256": "9875dfad271cbfa5c49adb5809dd67be3826394a5d4d66dc74cab0c81483e2f8",
+  "babi_split": "official test",
+  "mquake_source": "MQuAKE-CF-3k-v2, independently selected cases",
+  "mquake_excluded_before_question_and_subject_checks": 1570,
+  "input_sha256": "2152a40146ae7da69c40bbacf096310785468bca4dfaee17d0104cc2cf793b92",
+  "label_sha256": "45373d458293b204474f16265f8ea64ae40ee2341f82f65682eb96fd04395cc4",
+  "seed_rule_sha256": "ea225e3bfbc9e221d66c19f04caa7c28201e2852665442a6617b696fbb54f5a6",
+  "dev_result_sha256": "1b9568fa6b6db89afac1a94f15e1f34c8501f92211e6a2c40cf6851caf0082ef"
+}

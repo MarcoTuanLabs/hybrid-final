@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-18T15:58:44.345014+00:00",
+  "script_sha256": "14cfd219b973344385b00c3baac4dac454a0cbf5ee690df23d89f9c1d7e2cf6c",
+  "asset_hashes": {
+    "hybrid-final/research/autoresearch_20261117/babi9/asset.json": "9eefa03732462f4f5b5e127cf324dd576bb1beee671ff9ec330b491e83c53ea9",
+    "hybrid-final/research/autoresearch_20261117/babi9/contract.json": "99fac4842cfebe2c8a6023d808dcf611b1e24e62bf4f175a488dd63cd3d3504c",
+    "hybrid-final/research/autoresearch_20261117/babi9/pairs.py": "9a0fefb846187b1278c588a3b21b0919ca002ed817f6c00e038c6fdb9b4173f0",
+    "hybrid-final/research/autoresearch_20261117/data/MQuAKE-CF-3k-v2.json": "f82091cbb668cef8f2537f79f1768af1840184450b347ff8c344336090ddc71e",
+    "hybrid-final/research/autoresearch_20261117/data/confirmation_bank_reservation.json": "ab65a69cb193e01b3957d61a782966fc996e67ef8386ec9b9c3ac9be3a211207",
+    "hybrid-final/research/autoresearch_20261117/data/split.json": "57c7bec0a63a5ff9d811ac724177234a6658dde6cccf25ad87ef4d63af2b4fa4",
+    "hybrid-final/research/autoresearch_20261117/graph_replication/cohorts.json": "0b947f59fab7e7995d826dfd42e01f20c40e8dee9e1471ee2c27df667b3c41f9",
+    "hybrid-final/research/autoresearch_20261117/read_projection9/dev_inputs.json": "13c8876106b0f9f00305bc2f1005e412c42e971f30df617504246d9a193da226"
+  },
+  "rule": "Apply unchanged after a passing development gate. 32 official bAbI test stories and 32 MQuAKE cases excluded from prior development/training and reserved banks. One updated and one unrelated or stable question each. No additional parameter search."
+}

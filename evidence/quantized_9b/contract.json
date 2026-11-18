@@ -1,0 +1,59 @@
+{
+  "id": "arc9_live",
+  "at": "2026-11-18T14:44:17.778269+00:00",
+  "parent": "solver_arc_live",
+  "model": "mlx-community/Qwen3.5-9B-4bit",
+  "revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "generator": "interpretability/experiments/cache_attribution.py",
+  "seeds": [
+    27112000,
+    27112001,
+    27112002,
+    27112003,
+    27112004,
+    27112005,
+    27112006,
+    27112007,
+    27112008,
+    27112009,
+    27112010,
+    27112011,
+    27112012,
+    27112013,
+    27112014,
+    27112015
+  ],
+  "libs": [
+    "tmp/hybrid-arc/arc.dylib",
+    "tmp/hybrid-subspace-bench/solver.dylib"
+  ],
+  "modes": [
+    "native",
+    "white",
+    "short6",
+    "ref16",
+    "arc6",
+    "ref80"
+  ],
+  "hypothesis": "A six-step projected conjugate line search preserving the full public-task read geometry must also control answers where the runtime write is behaviorally active. Transfer the frozen solver without changes to a live 9B checkpoint and the original 256-coordinate, two-head single-layer value-write intervention, four answer positions. Four-bit MLX weights are distinct from the BF16 9B paper checkpoint. Rebuild genuine base/edited recurrent traces, compare the key-gate forecast to observed state changes, and rerun the original 80-step four-start model-specific reference on the same live matrices.",
+  "scope": "16 new fixed seeds, two surface templates for each, target and nuisance writes, plus both corresponding unwritten controls. Score full-vocabulary top token using the archived renderer and original generator. All six arms produce a real 4-token model rollout per condition. Public MQuAKE was a different 4B task. Timings charge measured preparation, choice and rollout, with component reuse disclosed. Compare fair efficiency only against the same compiled ref16/short6. Original ref80 is the Python behavior reference.",
+  "gate": "32 target presentations: ref80 must gain at least four over native. Arc6 must preserve the number of correct nuisance and unwritten outputs of ref80, come within one target of ref80 and ref16, and exceed whitened-key by at least two. If the gate passes, lock the exact methods on 64 additional fresh seeds. On failure report the unequal strength of the simple controls, retain original paper results, and avoid a larger-model efficacy claim.",
+  "budget": "Live 9B actual model on M5 with 4-bit weights, 768 scored inference endpoints, plus actual base and edited geometry probes. Deadline 2800s after asset verification. No paid resource.",
+  "input_audit": {
+    "existing_input_files": 11,
+    "unique_existing_seed_ids": 404,
+    "overlap": 0
+  },
+  "pins": {
+    "hybrid-final/research/autoresearch_20261117/arc9_live/run.py": "5ef9cf7a835438ab04004d4badd35aa9d38d86e30b58cfbc3a0311d797c613c0",
+    "hybrid-final/research/autoresearch_20261117/arc9_live/score.py": "c0657d15b16ddf64379486239ac316e982f5a5e5a3a6ce9c3ee4ba795a276abf",
+    "hybrid-final/research/autoresearch_20261117/arc9_live/fixture.json": "b650ad75a8faca049c4d6079a9b5a283747189cdffe9ff409d3a79b779d391c9",
+    "hybrid-final/research/autoresearch_20261117/solver_arc_live/summary.json": "5fbe1753e3b9968fd23fb8d99717be8b1c7cc755a490e9e7545aa3929c6cd327",
+    "hybrid-final/research/autoresearch_20261117/solver_factor/archive_dtype/factor.py": "a837396ff3e77985508740386aa8fc665b5870bade4040e343dddb33f610467e",
+    "interpretability/experiments/cache_attribution.py": "37e8099257149c8374d33a76a71083f7f0ca41695182b53b0c6541695fb3faeb",
+    "interpretability/cloud/native_group_reader_math_v1.py": "4096ad9bcf21f6b7b242382536c1e1d8ab0ba5f6eeede1dc3f75b37d5aadbc93",
+    "interpretability/cloud/native_normalized_reader_math_v1.py": "d0418aca3385998d7a761a912faf116fb320224e65b5cfd2e20cc56468f9dd9a",
+    "tmp/hybrid-arc/arc.dylib": "1fbca2e56c38526df8c80d4134f7379cfbd24f495f0765006f40897afc5cefc4",
+    "tmp/hybrid-subspace-bench/solver.dylib": "4be9222dd6cc49f931724b8c0cafb12cc06f19d601342219efce76ef608fa216"
+  }
+}

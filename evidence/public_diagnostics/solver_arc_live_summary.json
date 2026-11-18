@@ -1,0 +1,79 @@
+{
+  "n": 48,
+  "stats": {
+    "direct": {
+      "correct": {
+        "edit": 19,
+        "preservation": 12
+      },
+      "lost": {
+        "edit": 0,
+        "preservation": 0
+      },
+      "changed_text": 1,
+      "mean_s": 2.085413437501605,
+      "median_solver_ms": 0.0
+    },
+    "short6": {
+      "correct": {
+        "edit": 19,
+        "preservation": 12
+      },
+      "lost": {
+        "edit": 0,
+        "preservation": 0
+      },
+      "changed_text": 0,
+      "mean_s": 2.4872054903850462,
+      "median_solver_ms": 5.227148940321058
+    },
+    "ref16": {
+      "correct": {
+        "edit": 19,
+        "preservation": 12
+      },
+      "lost": {
+        "edit": 0,
+        "preservation": 0
+      },
+      "changed_text": 0,
+      "mean_s": 2.4959110217071916,
+      "median_solver_ms": 6.775039015337825
+    },
+    "arc6": {
+      "correct": {
+        "edit": 19,
+        "preservation": 12
+      },
+      "lost": {
+        "edit": 0,
+        "preservation": 0
+      },
+      "changed_text": 1,
+      "mean_s": 2.4711847612973847,
+      "median_solver_ms": 5.623916687909514
+    }
+  },
+  "quality": {
+    "arc6": {
+      "slots": 768,
+      "median": 0.9999999875783037,
+      "q10": 0.9962934832780034,
+      "minimum": 0.8113995585867495
+    },
+    "short6": {
+      "slots": 768,
+      "median": 0.7659186171967857,
+      "q10": 0.5763387128929591,
+      "minimum": 0.2426153210337143
+    }
+  },
+  "paired_solver_ratio": 0.8426210478553867,
+  "complete_service_ratio": 0.9900932925113275,
+  "complete_ratio_interval": [
+    0.9729082629326384,
+    1.0047830295634939
+  ],
+  "decision": "test_behaviorally_active_larger_model",
+  "full_service_advantage": false
+}

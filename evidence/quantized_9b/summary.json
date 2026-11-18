@@ -1,0 +1,81 @@
+{
+  "seeds": 16,
+  "per_condition": 32,
+  "live_full_vocab_rollouts": 768,
+  "scores": {
+    "native": {
+      "target": 0,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 1.5592559066135436e-06,
+      "mean_charged_s": 0.8545941256488732
+    },
+    "white": {
+      "target": 15,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 0.02925100259926694,
+      "mean_charged_s": 1.2664881092823634
+    },
+    "short6": {
+      "target": 13,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 0.0003906426009052666,
+      "mean_charged_s": 1.2379891953023616
+    },
+    "ref16": {
+      "target": 26,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 0.0007198438488558168,
+      "mean_charged_s": 1.2655501706212817
+    },
+    "arc6": {
+      "target": 20,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 0.0003951094095100416,
+      "mean_charged_s": 1.260746030633527
+    },
+    "ref80": {
+      "target": 26,
+      "nuisance": 32,
+      "unwritten_target": 32,
+      "unwritten_nuisance": 32,
+      "mean_design_s": 0.7121962897581398,
+      "mean_charged_s": 1.9264128379127214
+    }
+  },
+  "arc_vs": {
+    "native": {
+      "wins": 20,
+      "losses": 0
+    },
+    "white": {
+      "wins": 10,
+      "losses": 5
+    },
+    "short6": {
+      "wins": 7,
+      "losses": 0
+    },
+    "ref16": {
+      "wins": 0,
+      "losses": 6
+    },
+    "ref80": {
+      "wins": 0,
+      "losses": 6
+    }
+  },
+  "reference_behavior_active": true,
+  "median_max_per_case_forecast_relative": 2.125705978087644e-06,
+  "maximum_forecast_relative": 3.012221693110389e-05,
+  "decision": "do_not_scale_six_step_reader_from_this_transfer"
+}

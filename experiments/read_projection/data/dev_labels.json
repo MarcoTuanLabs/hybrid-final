@@ -1,0 +1,570 @@
+[
+  {
+    "source": "babi",
+    "id": 1771,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 801,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1509,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1252,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 288,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "kitchen"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1118,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1079,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1192,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1693,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1722,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1543,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1283,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 134,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1928,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1176,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1575,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 200,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "kitchen"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1583,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 681,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1797,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1034,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 415,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1230,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1272,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "kitchen"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 394,
+    "updated": [
+      "Mumbai",
+      "Bombay"
+    ],
+    "stable": [
+      "Andrzej Sapkowski"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 459,
+    "updated": [
+      "poetry",
+      "poetic art"
+    ],
+    "stable": [
+      "Italy"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 753,
+    "updated": [
+      "Andrew Holness",
+      "Andrew Michael Holness"
+    ],
+    "stable": [
+      "American football"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 198,
+    "updated": [
+      "Muay Thai",
+      "Muaythai",
+      "Thai boxing"
+    ],
+    "stable": [
+      "English Renaissance theatre"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 628,
+    "updated": [
+      "progressive rock",
+      "symphonic rock",
+      "prog",
+      "classical rock",
+      "prog rock",
+      "prog-rock",
+      "progressive pop"
+    ],
+    "stable": [
+      "Sarbananda Sonowal"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 639,
+    "updated": [
+      "baseball player",
+      "baseballer"
+    ],
+    "stable": [
+      "Lawrence S. Bacow"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 308,
+    "updated": [
+      "Peter Diamandis",
+      "Dr. Peter H. Diamandis",
+      "Peter H. Diamandis",
+      "Dr. Peter Diamandis"
+    ],
+    "stable": [
+      "Sadiq Khan"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 897,
+    "updated": [
+      "Italian",
+      "it",
+      "Italiano",
+      "Italian language"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1426,
+    "updated": [
+      "Bucharest",
+      "Little Paris",
+      "Bucure\u0219ti",
+      "Bucharest, Romania",
+      "Bucuresti",
+      "Bucure\u015fti",
+      "Paris of the East",
+      "\u0411\u0443\u0446\u0443\u0440\u0435\u0219\u0442\u0438"
+    ],
+    "stable": [
+      "Cambridge"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1273,
+    "updated": [
+      "San Francisco",
+      "SF",
+      "Frisco",
+      "SFO",
+      "The City by the Bay",
+      "The Golden City",
+      "Paris of the West",
+      "San Francisco, California",
+      "Baghdad by the Bay",
+      "City and County of San Francisco",
+      "San Fran",
+      "San Francisco County",
+      "San Francisco County, California",
+      "San Francisco, CA"
+    ],
+    "stable": [
+      "association football"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1960,
+    "updated": [
+      "Indonesian",
+      "id",
+      "Bahasa",
+      "bahasa Indonesia",
+      "ind",
+      "Indonesian language"
+    ],
+    "stable": [
+      "Oxford"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1923,
+    "updated": [
+      "Frankfurt",
+      "Frankfurt am Main, Germany",
+      "Frankfurt",
+      "Frankfort-on-the-Main",
+      "Frankfurt (Main)",
+      "Frankfurt, Germany",
+      "Frankfurt/Main",
+      "Kreisfreie Stadt Frankfurt am Main"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1902,
+    "updated": [
+      "Washington, D.C.",
+      "Washington",
+      "The District",
+      "D.C.",
+      "DC",
+      "District of Columbia",
+      "Washington D.C.",
+      "Washington, DC",
+      "US-DC",
+      "Washington DC",
+      "Washington, D.C., U.S.",
+      "Washington, District of Columbia"
+    ],
+    "stable": [
+      "Washington, D.C."
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1885,
+    "updated": [
+      "Harrisville",
+      "Harrisville, West Virginia",
+      "Harrisville, WV"
+    ],
+    "stable": [
+      "United States of America"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1693,
+    "updated": [
+      "Mikhail Gorbachev",
+      "Gorby",
+      "Gorbachev",
+      "Mikhail Gorbachov",
+      "Mikhail Gorbachyov",
+      "M. Gorbachev",
+      "M.S. Gorbachev",
+      "Mikhail Sergeevich Gorbachev",
+      "Mikhail Sergeyevich Gorbachev",
+      "Mikhail Sergeyevich Gorbachyov"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1217,
+    "updated": [
+      "Epworth",
+      "Epworth, Lincolnshire"
+    ],
+    "stable": [
+      "Vince McMahon"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2392,
+    "updated": [
+      "Buenos Aires",
+      "CABA",
+      "Buenos Ayres",
+      "Autonomous City of Buenos Aires",
+      "Ciudad Autonoma de Buenos Aires"
+    ],
+    "stable": [
+      "World Wide Web Consortium"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2349,
+    "updated": [
+      "Asia",
+      "Asian continent"
+    ],
+    "stable": [
+      "Bob Iger"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2661,
+    "updated": [
+      "Beaumont"
+    ],
+    "stable": [
+      "goalkeeper"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2287,
+    "updated": [
+      "Asia",
+      "Asian continent"
+    ],
+    "stable": [
+      "Apple Inc."
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2429,
+    "updated": [
+      "New Delhi",
+      "Nayi Dilli",
+      "NDMC area",
+      "New Delhi Municipal Council Area"
+    ],
+    "stable": [
+      "Henry Ford"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2510,
+    "updated": [
+      "Paris",
+      "Lutetia",
+      "City of Love",
+      "City of Light"
+    ],
+    "stable": [
+      "point guard"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2432,
+    "updated": [
+      "Bondi Junction",
+      "Bondi Junction, New South Wales",
+      "Bondi Junction, New South Wales, Australia"
+    ],
+    "stable": [
+      "The Beatles"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2838,
+    "updated": [
+      "Oceania",
+      "Pacific Islands"
+    ],
+    "stable": [
+      "Brigham Young University"
+    ]
+  }
+]

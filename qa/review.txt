@@ -1,61 +1,12 @@
-PRE-PUSH MANUSCRIPT REVIEW — VERSION 3 — 2026-11-14
+Working-paper release check
+18 November 2026
 
-Scope: focused positive-result working paper extracted from hybrid-answer-relay.
-Reviewer: AI assistant in the authoring session; not independent human peer review.
+Both editions use the AAAI 2027 style and compile from paper/main.tex. Both contain four US-letter pages, including references. I inspected the rendered pages, figure, equation alignment and reference columns. The named PDF identifies Lu-Yen Marco Tuan, Department of Cognitive Science, University of California San Diego. The anonymous PDF contains no author name, affiliation or named-repository link in the text or PDF metadata.
 
-PASS — Exactly four PDF pages, including seven references; all four final pages
-rendered and visually inspected. No clipped text, overlapping figure labels,
-overfull/underfull boxes, undefined references, or LaTeX warnings.
+I recomputed the BF16 synthetic results from the archived complete score rows. The 9B control counts are 235/512 and 361/512. The 27B raw SVD and normalized counts are 217/256 and 256/256. The 27B paired full intervention time ratio is 0.78173265. The 4-bit write-pilot scorer independently reproduces the six method scores from 768 observed endpoints. The sixteen-step and four-start readers gave the same full-vocabulary top token on all 128 conditions.
 
-PASS — Author in visible title block and PDF metadata: Lu-Yen Marco Tuan.
-Affiliation: Department of Cognitive Science, University of California San Diego.
-No anonymous/submission label or implied accepted-proceedings status in the PDF.
+The packaged public-task scorer reproduces the archived development and held-out summaries. In the held-out phase, there are 768 method-by-request rows. All 128 projected sequences match dense transfer, compared with 124 for rank-four SVD, 126 for the raw-query basis and 123 for two-bit rowwise quantization. The tested recurrent payloads are 48 MiB for dense transfer, 3 MiB for each rank-four method and 3.375 MiB for quantization. Dense and projected transfer score 53/64 on updated answers, compared with 54/64 for SVD. The 0.508 bAbI error ratio exceeds the prespecified 0.500 ceiling. The manuscript reports the failed composite gate.
 
-PASS — All 28,672 archived score records were used by the independent checker.
-9B: 235/512 to 361/512; paired gain 24.609375 pp, CI [20.5078125, 28.7109375].
-27B: 217/256 to 256/256; paired gain 15.234375 pp, adjusted CI [9.375, 21.875].
-Formats are paired within independent seeds (256 at 9B, 128 at 27B).
-All three preservation arms are complete and retained (512 or 256 per arm).
+I checked the externally visible files for accidental local absolute paths, credentials and model weights. The official bAbI and MQuAKE sources are identified alongside the derived questions. Quantized write-pilot C++ solvers compile locally and reproduce the tested binary outputs. These are authoring-session checks performed with AI assistance.
 
-PASS — Timing uses the final 27B cohort and a four-start, 16-step reference.
-0.910803233326078 s to 0.712004625188456 s: reduction 21.826735003085997%.
-The 95% paired time-ratio interval is [0.7808342923925248, 0.7826603821862007].
-Reference-answer preservation is behavioral, not logit/cache numerical identity.
-The paper identifies included prefill/write/continuation costs and the hardware.
-
-PASS — Readout equations checked against the source manuscript; RMS derivative
-and its parallel/orthogonal scaling verified algebraically. The method uses the
-finite write contrast jointly across shared heads, with native query norm and
-cosine >= 0.5. The paper distinguishes the 9B four-start 80-step reader from the
-27B native-start 16-step solver and its four-start 16-step timing comparator.
-
-PASS — Five original bibliographic entries checked against their arXiv records;
-the added ROME and fast-weight entries checked against the official NeurIPS and
-PMLR proceedings. The affiliation's department name was checked on the official
-UC San Diego site.
-
-PASS — Version 3 replaces all first-person plural pronouns with singular voice.
-Each equation defines new symbols locally. The recurrence uses explicit head
-and time indices, the readout notation explicitly suppresses the current time,
-and all sums use the same defined query-sharing group. Identity matrices are
-dimensioned in key space or value space as appropriate. The norm, inner product,
-cosine similarity, Jacobian, Gram matrix, ridge parameter, and trace are defined.
-
-PASS — All five numbered equation groups are equivalent to version 2 after
-normalizing the explicit indices, identity dimensions, and group notation.
-The whitening denominator is written as d_k with d_k=128, retaining its value.
-Results and later sections are unchanged except for singular authorship. Every
-evidence file and figure retains its version 2 hash; the existing complete-row
-claim check remains applicable. No inference or score-analysis code changed.
-
-PASS — Positive-result focus is scoped to controlled synthetic retrieval.
-The complete score grids, including failed target presentations, remain in the
-evidence files; the paper does not imply arbitrary-prompt preservation, transfer
-to natural documents, a universal 100% success rate, or new inference runs.
-
-PASS — Source aggregate Git blob hashes matched the specified source commit.
-Raw rows matched original execution receipts and original archive members;
-archive SHA-256 values matched the source repository's published manifests.
-
-Material limits: this is a self-audit of existing evidence and presentation.
-No new model inference or independent human scientific review was performed.
+I ran the standalone public runner on all 64 held-out cases again. All 768 method-by-request token sequences and all recorded non-timing fields agreed with the locked run. The standalone scorer reproduced the complete held-out summary.

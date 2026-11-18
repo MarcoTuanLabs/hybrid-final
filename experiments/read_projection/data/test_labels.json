@@ -1,0 +1,763 @@
+[
+  {
+    "source": "babi",
+    "id": 85,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "kitchen"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 145,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 1,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 35,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 24,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "kitchen"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 91,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 59,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 37,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 186,
+    "updated": [
+      "kitchen"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 3,
+    "updated": [
+      "kitchen"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 171,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 2,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 127,
+    "updated": [
+      "kitchen"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 184,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 165,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 121,
+    "updated": [
+      "hallway"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 58,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 182,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 88,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 50,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 16,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 25,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 185,
+    "updated": [
+      "kitchen"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 27,
+    "updated": [
+      "bathroom"
+    ],
+    "stable": [
+      "office"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 53,
+    "updated": [
+      "garden"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 115,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "bathroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 175,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 74,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 78,
+    "updated": [
+      "bedroom"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 167,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "hallway"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 33,
+    "updated": [
+      "kitchen"
+    ],
+    "stable": [
+      "bedroom"
+    ]
+  },
+  {
+    "source": "babi",
+    "id": 129,
+    "updated": [
+      "office"
+    ],
+    "stable": [
+      "garden"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 970,
+    "updated": [
+      "Muhammadu Buhari",
+      "Baba Buhari",
+      "Baba Buhari Dodar",
+      "HE Muhammadu Buhari",
+      "Sai Baba",
+      "Sai Buhari",
+      "bubu",
+      "PMB"
+    ],
+    "stable": [
+      "Robert A. Heinlein"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 125,
+    "updated": [
+      "Shakespearean comedy"
+    ],
+    "stable": [
+      "DeepMind"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 62,
+    "updated": [
+      "Lawrence",
+      "Lawrence, Kansas",
+      "Lawrence, KS"
+    ],
+    "stable": [
+      "France"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 379,
+    "updated": [
+      "Michael D. Higgins",
+      "Michael Higgins",
+      "Michael Daniel Higgins",
+      "M\u00edche\u00e1l D\u00f3nal \u00d3 hUig\u00ednn",
+      "M\u00edche\u00e1l \u00d3 hUig\u00ednn",
+      "President Higgins",
+      "President Michael D. Higgins",
+      "President Michael Daniel Higgins",
+      "President Michael Higgins"
+    ],
+    "stable": [
+      "Matt Lucas"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1002,
+    "updated": [
+      "Bay City",
+      "Bay City, MI",
+      "Bay City, Michigan"
+    ],
+    "stable": [
+      "Guru Nanak"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 835,
+    "updated": [
+      "William Cavendish, 7th Duke of Devonshire",
+      "Earl of Burlington",
+      "Lord Cavendish of Keighley"
+    ],
+    "stable": [
+      "Emma Watson"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 993,
+    "updated": [
+      "German",
+      "de",
+      "German language"
+    ],
+    "stable": [
+      "United Kingdom"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 420,
+    "updated": [
+      "South America"
+    ],
+    "stable": [
+      "United States of America"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 456,
+    "updated": [
+      "Emmerson Mnangagwa",
+      "Emmerson Dambudzo Mnangagwa",
+      "Emmerson Dambudziko Garwe Mnangagwa"
+    ],
+    "stable": [
+      "Apple Inc."
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 359,
+    "updated": [
+      "Steve Jobs",
+      "Abdul Lateef Jandali",
+      "Steven Jobs",
+      "Steven Paul Jobs"
+    ],
+    "stable": [
+      "John le Carr\u00e9"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 425,
+    "updated": [
+      "United States of America",
+      "the States",
+      "the U.S.",
+      "the United States",
+      "the United States of America",
+      "the US",
+      "the USA",
+      "U. S.",
+      "U. S. A.",
+      "U.S.",
+      "U.S.A.",
+      "US of A",
+      "USA",
+      "America",
+      "United States",
+      "US",
+      "the U.S. of A",
+      "the U.S. of America",
+      "the U.S.A.",
+      "the US of A",
+      "the US of America",
+      "U.S. of America",
+      "US of America"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1735,
+    "updated": [
+      "Edinburgh",
+      "Edina",
+      "Edinburg",
+      "City of Edinburgh",
+      "Modern Athens",
+      "Auld Reekie",
+      "Athens of the North",
+      "D\u00f9n \u00c8ideann",
+      "Edinburgh, Scotland"
+    ],
+    "stable": [
+      "basketball"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1309,
+    "updated": [
+      "Leonardo Muraro"
+    ],
+    "stable": [
+      "right fielder"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1506,
+    "updated": [
+      "Canada",
+      "CA",
+      "CAN",
+      "British North America",
+      "Dominion of Canada"
+    ],
+    "stable": [
+      "Samuel Beckett"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1658,
+    "updated": [
+      "Warsaw",
+      "Warschau",
+      "Varsavia",
+      "Varsovia",
+      "Warsaw, Poland",
+      "Warszawa",
+      "Varshava",
+      "Var\u0161ava",
+      "Varshe",
+      "Vars\u00f3",
+      "Varsovie",
+      "Var\u0161uva"
+    ],
+    "stable": [
+      "Helsinki"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1236,
+    "updated": [
+      "Stirling Silliphanta",
+      "Stirling Dale Silliphant"
+    ],
+    "stable": [
+      "F. Scott Fitzgerald"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2214,
+    "updated": [
+      "Great Britain",
+      "UK",
+      "GB",
+      "Kingdom of Great Britain",
+      "UKGB",
+      "United Kingdom of Great Britain"
+    ],
+    "stable": [
+      "United States of America"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2095,
+    "updated": [
+      "Boris Johnson",
+      "Boris",
+      "Alexander Boris de Pfeffel Johnson",
+      "Bo Jo",
+      "BoJo"
+    ],
+    "stable": [
+      "Christianity"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2097,
+    "updated": [
+      "Epworth",
+      "Epworth, Lincolnshire"
+    ],
+    "stable": [
+      "goalkeeper"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1833,
+    "updated": [
+      "Singapore",
+      "S'pore",
+      "SG",
+      "Garden City",
+      "SIN",
+      "SGP",
+      "sg",
+      "Singapore City",
+      "Lion City",
+      "Republic of Singapore",
+      "\ud83c\uddf8\ud83c\uddec"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2035,
+    "updated": [
+      "Epworth",
+      "Epworth, Lincolnshire"
+    ],
+    "stable": [
+      "Catholic Church"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 1195,
+    "updated": [
+      "Washington, D.C.",
+      "Washington",
+      "The District",
+      "D.C.",
+      "DC",
+      "District of Columbia",
+      "Washington D.C.",
+      "Washington, DC",
+      "US-DC",
+      "Washington DC",
+      "Washington, D.C., U.S.",
+      "Washington, District of Columbia"
+    ],
+    "stable": [
+      "Mark Zuckerberg"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2727,
+    "updated": [
+      "Fenestrelle"
+    ],
+    "stable": [
+      "Microsoft"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2866,
+    "updated": [
+      "Eurasia",
+      "Euroasia"
+    ],
+    "stable": [
+      "Ted Turner"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2712,
+    "updated": [
+      "Motherwell"
+    ],
+    "stable": [
+      "Jigoro Kano"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2453,
+    "updated": [
+      "New Delhi",
+      "Nayi Dilli",
+      "NDMC area",
+      "New Delhi Municipal Council Area"
+    ],
+    "stable": [
+      "Microsoft"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2705,
+    "updated": [
+      "Europe",
+      "European continent",
+      "Old Continent"
+    ],
+    "stable": [
+      "starting pitcher"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2777,
+    "updated": [
+      "Manila",
+      "Pearl of the Orient",
+      "City of Manila",
+      "Queen City of the Pacific and others"
+    ],
+    "stable": [
+      "Moog Music"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2547,
+    "updated": [
+      "Chiavari"
+    ],
+    "stable": [
+      "Catherine Dickens"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2584,
+    "updated": [
+      "New Delhi",
+      "Nayi Dilli",
+      "NDMC area",
+      "New Delhi Municipal Council Area"
+    ],
+    "stable": [
+      "Joseph Smith"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2602,
+    "updated": [
+      "Kigali"
+    ],
+    "stable": [
+      "midfielder"
+    ]
+  },
+  {
+    "source": "mquake",
+    "id": 2735,
+    "updated": [
+      "North America",
+      "NA",
+      "Turtle Island",
+      "North and Central America"
+    ],
+    "stable": [
+      "United States of America"
+    ]
+  }
+]

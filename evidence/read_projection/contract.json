@@ -1,0 +1,37 @@
+{
+  "id": "read_projection9",
+  "parent": "bank9",
+  "at": "2026-11-18T15:57:08.309443+00:00",
+  "pins": {
+    "hybrid-final/research/autoresearch_20261117/read_projection9/dev_inputs.json": "13c8876106b0f9f00305bc2f1005e412c42e971f30df617504246d9a193da226",
+    "hybrid-final/research/autoresearch_20261117/read_projection9/dev_labels.json": "cf60d6cce123f1e2872dc98a6151dcf25791247bf7ea219ea0a814995b613f15",
+    "hybrid-final/research/autoresearch_20261117/read_projection9/experiment.py": "d3608826f0b96270923ec9aa1dfc9a1e84f59772882e40c2faabae343d6221e2",
+    "hybrid-final/research/autoresearch_20261117/read_projection9/codec.py": "f0ce4eb319ade1907225f1a47940b1b69b52c1e10a6b9f1a36cf8af617546b67",
+    "hybrid-final/research/autoresearch_20261117/read_projection9/score.py": "acd03b875e77dca734a4e11ae69106cc222f88f8141278809036031262b8ea37",
+    "hybrid-final/research/autoresearch_20261117/bank9/summary.json": "9b92c929a36dc3369df0c13a7497967dcc8174acdbd2c1611a27804cfe1bf7b7",
+    "hybrid-final/research/autoresearch_20261117/arc9_live/run.py": "5ef9cf7a835438ab04004d4badd35aa9d38d86e30b58cfbc3a0311d797c613c0",
+    "hybrid-final/research/autoresearch_20261117/babi9/run_babi.py": "0178a90abddd7c934d629999b7d16f2ff303879b160fe9ea142fad77e1221aa3",
+    "hybrid-final/research/autoresearch_20261117/src/score_pilot.py": "3abc76b6594137666e57c1760a12ac07dc3e5256aae2344ada23624a76df95d2",
+    "hybrid-final/research/autoresearch_20261117/public9/contract.json": "9650cf57dea97e047851abaeb90caac5bc382eee09cf3afda64e9a95f001b434"
+  },
+  "modes": [
+    "dense",
+    "no_matrix",
+    "svd",
+    "row_2bit",
+    "raw_queries",
+    "transported"
+  ],
+  "hypothesis": "An edit to a recurrent matrix only affects the known fixed suffix through its reads along queries transported backwards by subsequent gated delta updates. Across all layers keep the donor attention and convolution banks and encode the donor-minus-recipient recurrent matrix on at most four transported reads per head. Compare to a rank-four SVD of the same difference, direct query span, zero matrix correction, and packed two-bit rowwise affine quantization with FP16 ranges. All four prefix observations come from the donor only, with no labels or answer tokens. The receiver is always tested by full model inference and subsequent free greedy completion.",
+  "mechanism": "For a value-by-key state, the homogeneous error on a fixed layer trajectory obeys E_t=g_t E_(t-1)(I-beta_t k_t k_t^T). Project the initial error onto the span of (A_1 ... A_t q_t) across the known suffix. The omitted per-head scalar decay does not change a nonzero direction. Every initial-state read in this horizon is preserved in real arithmetic conditional on matching lower-layer inputs. Behavior after the suffix, finite-precision effects, and storage/time tradeoffs are empirical.",
+  "scope": "This is sender-to-receiver synchronization of an existing question-conditioned cache, with the recipient already holding the old cache and the sender computing the four fixed donor suffix observations. Count materialized FP32 basis and coefficient bytes for all 768 heads. Full donor attention and convolution are common side information. Reconstruct a dense state before decode, so this experiment does not reduce persistent inference RAM. It makes no latency or communication superiority claim over sending a final answer to a known question.",
+  "gate": "In each development task require >=95% identical first tokens, >=90% identical full sequences, at most one previously correct answer lost per role, full-vocabulary mean centered-logit RMSE <= half of each of SVD, raw-query projection, and slightly larger 2-bit per-row affine quantization, and <=1/16 original recurrent tensor bytes. Also require >=4 extra correct targeted answers pooled over the no-matrix arm. For a pass, lock the same implementation on 32 previously unused cases per task before consulting test outcomes and apply the same gate.",
+  "budget": "48 public development cases, 96 questions, 576 full candidate generations plus 96 donor trajectory calls. 1800s on local 9B, one technical repair permitted for API or I/O faults. On a pass use official test bAbI and untouched MQuAKE cases, max 2400s. GPUtw and Adaption cost zero.",
+  "prior": [
+    "https://www3.nd.edu/~lemmon/courses/EE60550/lectures/week9.pdf",
+    "https://arxiv.org/abs/2611.14246",
+    "https://arxiv.org/abs/2611.06084",
+    "https://arxiv.org/abs/2609.38166",
+    "https://aclanthology.org/2026.findings-emnlp.2061/"
+  ]
+}

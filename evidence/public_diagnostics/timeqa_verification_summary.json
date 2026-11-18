@@ -1,0 +1,81 @@
+{
+  "n": 32,
+  "pages": 16,
+  "candidate_oracle": 22,
+  "candidate_count": 157,
+  "scores": {
+    "plain": {
+      "exact": 12,
+      "both": 3,
+      "gained": 2,
+      "lost": 3
+    },
+    "whole_date": {
+      "exact": 12,
+      "both": 5,
+      "gained": 3,
+      "lost": 4
+    },
+    "recurrent": {
+      "exact": 11,
+      "both": 4,
+      "gained": 3,
+      "lost": 3
+    },
+    "attention": {
+      "exact": 12,
+      "both": 4,
+      "gained": 1,
+      "lost": 2
+    },
+    "conditional_binding": {
+      "exact": 11,
+      "both": 3,
+      "gained": 0,
+      "lost": 0
+    },
+    "multiple_choice": {
+      "exact": 12,
+      "both": 4,
+      "gained": 4,
+      "lost": 5
+    },
+    "additive": {
+      "exact": 13,
+      "both": 5,
+      "gained": 2,
+      "lost": 4
+    },
+    "excerpt": {
+      "exact": 18,
+      "both": 7,
+      "gained": 2,
+      "lost": 9
+    },
+    "first": {
+      "exact": 12,
+      "both": 3,
+      "gained": 5,
+      "lost": 6
+    },
+    "second": {
+      "exact": 7,
+      "both": 1,
+      "gained": 7,
+      "lost": 3
+    },
+    "reason_excerpt": {
+      "exact": 13,
+      "both": 2,
+      "gained": 2,
+      "lost": 4
+    },
+    "reason_full": {
+      "exact": 15,
+      "both": 5,
+      "gained": 0,
+      "lost": 4
+    }
+  },
+  "decision": "discard_native_verification"
+}

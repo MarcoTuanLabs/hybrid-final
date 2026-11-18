@@ -1,25 +1,22 @@
 {
-  "status": "PASS",
-  "page_count": 4,
-  "author": "Lu-Yen Marco Tuan",
-  "pdf_sha256": "fc474499a76a73c52701e40fbc6af4182c1d7af9e939f3ce70d6e26397640270",
-  "no_anonymous_label": true,
-  "no_latex_warnings": true,
-  "visual_review": "All four final rendered pages inspected; figure labels separated; no clipping or overlaps observed.",
-  "references_checked": [
-    "https://arxiv.org/abs/2611.08376",
-    "https://arxiv.org/abs/2609.33093",
-    "https://arxiv.org/abs/2412.06464",
-    "https://arxiv.org/abs/2611.01909",
-    "https://arxiv.org/abs/2309.16042",
-    "https://papers.nips.cc/paper/2022/file/6f1d43d5a82a37e89b0665b33bf3a182-Paper-Conference.pdf",
-    "https://proceedings.mlr.press/v139/schlag21a.html"
-  ],
-  "version": 3,
-  "reference_count": 7,
-  "evidence_files_unchanged": true,
-  "first_person_plural_remaining": 0,
-  "new_symbols_defined_locally": true,
-  "numbered_equation_groups_equivalent_after_notation_alignment": 5,
-  "figure_files_unchanged": true
+  "named": {
+    "file": "output/pdf/hybrid_memory_working_paper.pdf",
+    "pages": 4,
+    "bytes": 240858,
+    "sha256": "1789df0055ecc3eebabec85368ce58ab6264e9544135d4ca39cd3b1cbdacabeb",
+    "author": "Lu-Yen Marco Tuan",
+    "singular_voice_checked": true,
+    "numeric_text_checked": true,
+    "visual_review": "All four rendered pages inspected for clipping, layout, equations, figure, authorship and references."
+  },
+  "review": {
+    "file": "output/pdf/hybrid_dai_review.pdf",
+    "pages": 4,
+    "bytes": 240466,
+    "sha256": "5f713bccc474b235a3e3dcf5ad7099d2560b90d2df8404d284ca1fcbea4f70a9",
+    "author": "",
+    "singular_voice_checked": true,
+    "numeric_text_checked": true,
+    "visual_review": "All four rendered pages inspected for clipping, layout, equations, figure, authorship and references."
+  }
 }

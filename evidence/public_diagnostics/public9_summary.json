@@ -1,0 +1,114 @@
+{
+  "cases": 24,
+  "generated_answers": 336,
+  "scores": {
+    "normal4": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.5332627144404493
+    },
+    "normal_roll": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.5358599896499072
+    },
+    "white4": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.5343956744109164
+    },
+    "white_roll": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.5422948271928666
+    },
+    "physical": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.5396027508104453
+    },
+    "old_prompt": {
+      "updated": 0,
+      "unrelated": 9,
+      "mean_s": 0.33760626387568965
+    },
+    "new_prompt": {
+      "updated": 20,
+      "unrelated": 10,
+      "mean_s": 0.35723842535177636
+    }
+  },
+  "rolling_vs": {
+    "normal4": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "normal_roll": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "white4": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "white_roll": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "physical": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "old_prompt": {
+      "updated": {
+        "wins": 0,
+        "losses": 0
+      },
+      "unrelated": {
+        "wins": 0,
+        "losses": 0
+      }
+    },
+    "new_prompt": {
+      "updated": {
+        "wins": 0,
+        "losses": 20
+      },
+      "unrelated": {
+        "wins": 1,
+        "losses": 2
+      }
+    }
+  },
+  "decision": "discard_persistent_two_head_public_reader"
+}

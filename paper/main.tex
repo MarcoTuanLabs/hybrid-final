@@ -1,5 +1,9 @@
 \documentclass[letterpaper]{article}
+\ifdefined\NamedWorkingPaper
 \usepackage[preprint]{aaai2027}
+\else
+\usepackage[submission]{aaai2027}
+\fi
 \usepackage{times}
 \usepackage{helvet}
 \usepackage{courier}
@@ -10,72 +14,66 @@
 \urlstyle{rm}
 \frenchspacing
 \setcounter{secnumdepth}{0}
-\pdfinfo{/Title (Normalization-Aware Readout for Targeted Memory Control in Hybrid Language Models) /Author (Lu-Yen Marco Tuan) /Subject (Working paper, version 3, November 14, 2026)}
+\ifdefined\NamedWorkingPaper
+\pdfinfo{/Title (Normalization-Aware Readout for Targeted Memory Control in Hybrid Language Models) /Author (Lu-Yen Marco Tuan)}
+\else
+\pdfinfo{/TemplateVersion (2027.1)}
+\fi
 \title{Normalization-Aware Readout for Targeted Memory Control\\in Hybrid Language Models}
+\ifdefined\NamedWorkingPaper
 \author{Lu-Yen Marco Tuan}
-\affiliations{Department of Cognitive Science\\University of California San Diego\\Working paper, version 3 --- November 14, 2026}
+\affiliations{Department of Cognitive Science\\University of California San Diego\\Working paper --- November 18, 2026}
+\else
+\author{Anonymous submission}
+\affiliations{}
+\fi
 \newcommand{\R}{\mathbb{R}}
 \begin{document}
 \maketitle
-\pagestyle{plain}
-\thispagestyle{plain}
+
 
 \begin{abstract}
-A targeted change to a language model's runtime memory can leave its
-answer unchanged. I study this gap in hybrid language models and
-introduce a readout method that makes specified memory updates more
-likely to control the answer. The method forecasts the edited and
-unedited states, then adjusts the query to increase their read contrast
-after headwise normalization. It optimizes jointly across heads that
-share a query, with model weights held fixed. On independent synthetic
-retrieval cohorts, answer control rises from 45.9\% to 70.5\% in
-Qwen3.5-9B relative to a whitened-key reader, and from 84.8\% to 100\%
-in Qwen3.5-27B relative to a raw singular-value-decomposition (SVD) reader. The method preserves every answer
-in the tested nuisance and unwritten control conditions. A solver
-initialized only from the original query also reduces total intervention
-time by 21.8\% relative to my four-start, 16-step reference, retaining
-all 256 target successes. These results show that normalized readout
-geometry can guide effective, efficient interventions on runtime memory.
+A hybrid language model can retain a new value in memory and still
+give its old answer. I introduce a readout that forecasts how a specified
+write changes the recurrent state, then chooses a query that amplifies
+the change after headwise normalization. The model weights stay fixed.
+On independent synthetic retrieval cohorts, the method raises answer
+control from 45.9\% to 70.5\% in Qwen3.5-9B relative to a whitened-key
+reader and from 84.8\% to 100\% in Qwen3.5-27B relative to a raw
+singular-value-decomposition (SVD) reader. It preserves every tested
+nuisance and unwritten answer. On 27B, starting the solver from the
+model's own query reduces total intervention time by 21.8\% relative
+to four starts and retains all 256 target successes. In a separate 4-bit 9B experiment, I use
+the directions read by a known suffix to encode a recurrent-matrix
+update in 3 MiB instead of 48 MiB. It reproduces all 128 held-out
+answer sequences on paired bAbI and MQuAKE requests. The donor
+attention cache and convolution histories are supplied separately.
 \end{abstract}
 
 \section{Introduction}
-Changing a model's memory does not ensure that the model will use the
-change. Consider a retrieval task in which an internal write transfers
-information associated with a new answer into the recipient's state.
-The recipient may still produce its original answer. I seek a readout that makes a fixed memory write
-affect the output.
+A model can receive a new value in its runtime state and still retrieve
+the value it held before the write. What determines which value reaches
+the output? I hold the write fixed and vary the query that reads it.
 
-I study this question in hybrid language models, which combine
-recurrent linear-attention blocks with full-attention blocks. Their
-native memory consists of the runtime states maintained by these blocks.
-Recurrent blocks compress history into shared states; full-attention
-blocks retain token-indexed caches. These components serve different
-roles in retrieval. Full-attention caches can supply recalled values
-\citep{lee2026}, while recurrent blocks can construct the address used
-by later attention readers \citep{zeng2026}. I test a local write to a
-value-bearing state and a distributed write to an address path.
+Hybrid models combine recurrent layers, which compress history into
+fixed-size states, with full-attention layers, which retain token-indexed
+caches. Attention can supply a recalled value \citep{lee2026}, while
+recurrence can help construct its address \citep{zeng2026}. I test
+a local write to a value and a distributed write to an address.
 
-My approach follows the computation that reads the edited state.
-A large raw response to a write can become small after normalization,
-especially when the change aligns with the unedited read. The useful
-query therefore depends on both the state difference and the background
-state. I forecast these states at each read position and optimize their
-normalized contrast across all heads sharing a query. The query keeps
-its original norm and stays within $60$ degrees of its original direction.
+A write aligned with the background read can produce a large raw
+response but little change after normalization. I therefore optimize
+the normalized contrast across heads sharing a query. I preserve the
+query norm and limit the change in direction to $60$ degrees.
 
-I make three contributions. First, I formulate a readout objective
-that accounts for headwise normalization and shared queries. Second,
-I show that this objective improves answer control over strong simple
-readers on independent Qwen3.5-9B and Qwen3.5-27B retrieval cohorts,
-with the write and available query slots fixed within each model.
-Third, I show that a single native initialization reduces the 27B
-solver's total intervention time while preserving its target successes.
-The donor prompts specify the intended answers, and paired controls
-test whether unaffected answers are preserved.
+I test this objective against simple readers with the same write and
+query budget. I also ask the converse question. Given the queries a model
+will use, how much of a state change must a receiver obtain to reproduce
+the donor's answers?
 
 \section{Task and Controlled Interventions}
 Each independent seed specifies eight animal--letter assignments.
-A recipient prompt asks for one letter; a paired donor prompt specifies
+A recipient prompt asks for one letter. A paired donor prompt specifies
 the intended change. I render each instance as both a table and prose.
 Prompts contain 84--127 tokens, including a fixed chat-template suffix.
 An intervention succeeds when the highest-scoring token in the full
@@ -117,20 +115,10 @@ each model. The 27B results use the final single-start confirmation cohort.}
 \label{tab:design}
 \end{table}
 
-In both models, the write occurs before the four suffix positions.
-All indices are zero-based. I selected the write sites and query
-locations on earlier development inputs and fixed them before
-confirmation. The two models use different write paths
-(Table~\ref{tab:design}); all reader comparisons within a model use
-the same path.
-
-\paragraph{Preservation controls.}
-Each reader is tested in three additional conditions. A nuisance write
-changes unrelated assignments but preserves the queried binding.
-Two unwritten conditions apply the target and nuisance readers without
-transferring the donor state. The desired output in all three conditions
-is the recipient's original answer. These tests measure whether the
-reader preserves answers when the write is irrelevant or absent.
+I fixed all sites on development inputs and wrote before the four suffix
+positions. All indices are zero-based. A nuisance write changes other
+assignments. Two unwritten controls apply the target and nuisance readers
+without a write. All three should return the recipient's original answer.
 
 \section{Normalization-Aware Readout}
 \subsection{Forecasting the State Difference}
@@ -163,18 +151,10 @@ and $I_d$ the $d\times d$ identity matrix. Then
 The convolution determines $\Delta v_{h,t}$. I propagate the state difference
 to each read position and check the forecast against model execution.
 
-The 27B write spans multiple layers, so earlier interventions can alter
-later layers' inputs. At each read layer, I run two shadow recurrences
-from the recipient and edited caches. Both consume the same incoming activations from the live branch. Their difference isolates the effect of that
-layer's initial write conditional on those activations; it is not the
-full difference between two independently evolving model trajectories.
-I check the shadow that matches the live branch against its recurrent
-kernel at every step.
-
-At each allowed position, the solver uses the paired forecast states to
-choose one replacement query. The rest of the model then runs normally.
-This procedure requires neither weight updates nor differentiation
-through the full model.
+For the multilayer 27B write, earlier interventions can change later
+inputs. At each read layer, I advance the recipient and edited shadow
+states with identical activations from the live branch. Their difference
+isolates that layer's initial write along this trajectory.
 
 \subsection{Optimizing the Normalized Contrast}
 The objective measures the write's effect after normalization.
@@ -203,10 +183,7 @@ the target vector $T$ with headwise blocks $T_h\in\R^{d_v}$. I solve
 \end{align}
 The brackets $\langle\cdot,\cdot\rangle$ denote the Euclidean inner
 product, and $\cos(q,q_0)$ is cosine similarity.
-Thus the target direction comes from the write's effect under the
-native query. Query optimization uses internal states, without an
-output-label loss. A single query serves the whole sharing group, so
-I optimize the heads jointly.
+This objective uses internal states and requires no answer labels.
 
 \paragraph{Why normalization changes the objective.}
 Let $\rho=(\|x\|_2^2/d_v+\epsilon)^{1/2}$ be the normalization
@@ -216,11 +193,9 @@ J_N(x)=\rho^{-1}I_{d_v}-\frac{xx^\top}{d_v\rho^3}.
 \end{equation}
 For nonzero $x$, this derivative scales a perturbation parallel to $x$
 by $\epsilon/\rho^3$ and an orthogonal perturbation by $1/\rho$.
-A raw change that enlarges the background read can therefore be
-strongly attenuated. A change that rotates it can survive. Maximizing
-raw response alone misses this distinction. Equation~\ref{eq:objective}
-uses the finite normalized difference and includes the background
-state, rather than relying on the local derivative as an approximation.
+A write that enlarges the background read can therefore have little effect
+after normalization. Equation~\ref{eq:objective} measures the finite
+change, including its direction relative to that background.
 
 \begin{figure*}[t]
 \centering
@@ -265,18 +240,11 @@ normalized solver's angular cap.
 
 
 \section{Independent Confirmation Results}
-I fixed the methods, input generation, exclusions, and analyzers before
-collecting each cohort. I checked seed identifiers and tokenized target
-prompts against earlier inputs. The 9B cohort has 256 independent seeds;
-the final 27B cohort has 128. Each seed contributes two target
-presentations and the three paired preservation conditions.
-
-I average the two formats within each seed and bootstrap paired
-reader differences over seeds with 20,000 replicates. The primary 9B
-comparison uses a 95\% interval. Each of the two primary 27B comparisons
-uses a 97.5\% interval to adjust for their joint test. This grouping
-preserves the dependence between formats and readers. All target
-presentations contribute to the reported rates.
+I fixed methods and analyzers before confirmation and checked seeds and
+tokenized prompts against earlier inputs. I average formats within each
+seed and bootstrap paired reader differences over 20,000 replicates.
+I use a 95\% interval for 9B and a 97.5\% interval for each of two
+primary 27B comparisons.
 
 \paragraph{9B: a local value write controls more answers.}
 The normalized reader controls 361/512 targets (70.51\%), versus
@@ -286,13 +254,9 @@ formats: from 124/256 to 167/256 for tables and from 111/256 to 194/256
 for prose. There are 128 presentation-level wins and two losses.
 With the same write and the native query, control is 0/512.
 
-The normalized reader also exceeds whitened SVD (232/512) and an
-output-aware normalized variant that includes the output gate and
-projection metric (330/512). Adjusting queries at all four allowed
-positions yields 361/512 successes, compared with 82/512 when adjusting
-only the final query: a gain of 54.49 points [49.22, 59.96].
-This last comparison changes the number of query slots from one to
-four. The primary comparison with whitened key holds that budget fixed.
+Whitened SVD controlled 232/512 targets and an output-gate-aware
+variant controlled 330/512. Restricting the normalized reader to the
+last query reduced its successes from 361/512 to 82/512.
 
 \paragraph{27B: a distributed address write controls every target.}
 The native-start, 16-step reader controls 256/256 targets. Raw SVD
@@ -308,8 +272,7 @@ The normalized reader retains 512/512 answers in each 9B preservation
 condition and 256/256 in each 27B condition: 1,536 and 768 control
 presentations in total. The primary baselines also preserve every
 control answer. These counts cover nuisance writes and unwritten
-states in the paired task; they do not measure preservation on
-arbitrary unrelated prompts.
+states in the paired task.
 
 \section{A Simpler Solver at Lower Cost}
 A single native initialization preserves the four-start solver's answer
@@ -322,85 +285,108 @@ a reference-controlled answer; the one-sided 95\% upper bound on the
 seed-loss probability is 2.31\%. The preserved quantity is the output answer; queries and logits
 can differ.
 
-The native start removes SVD, whitening, and alternative-start
-construction. It retains the normalized objective and the same 16
-iterations per start. Its total cost is close to raw SVD's 0.7027 seconds,
-with 15.23 percentage points more answer control. Minimal shared reading
-takes 0.6149 seconds. The normalized reader therefore improves
-control at a total cost near that of raw SVD.
+Timing includes both prefills, cloning, writing, query design, transfers
+and synchronized continuation. I rotate method order. BF16 runs use
+an NVIDIA RTX PRO 6000 Blackwell for 27B and an NVIDIA GB10 for 9B.
 
-\paragraph{Timing protocol.}
-Total time includes both recipient and donor prefills, state cloning
-and writing, and synchronized continuation, including query design,
-transfers, and controller work. Scoring, cache hashing, and trace export
-follow the timer. Method order rotates across cases. Minimal shared
-reading omits unused forecasts and diagnostics; it matches the
-instrumented shared reader's logits, cache digests, and query arrays
-on all 1,024 branches. The 27B measurements use an NVIDIA RTX PRO 6000
-Blackwell Workstation Edition, BF16 inference, PyTorch 2.9.0, and
-Transformers 5.22.1. The 9B confirmation uses NVIDIA GB10 and BF16.
-Timing comparisons are within the same 27B cohort and hardware.
+\paragraph{Transfer to a 4-bit 9B model.}
+On an Apple M5, I tested 16 fresh seeds in both formats using the same
+256-coordinate write. A native-start, 16-step solver and the four-start,
+80-step reference controlled the same 26 of 32 targets. Whitened key
+controlled 15, and the native query controlled none. All four readers
+preserved all 96 control answers. This pilot uses quantized weights
+and a separate cohort from the BF16 comparison.
+
+\section{Encoding the State Change a Suffix Reads}
+A receiver holds an old prefix cache. A sender holds the updated cache
+and can run four known chat-template tokens before the answer begins.
+Both sides use the donor attention cache and convolution histories.
+I vary only the information supplied about the recurrent matrices.
+
+At the prefix boundary, let $E_h$ denote the donor matrix minus the
+recipient matrix for head $h$ at a fixed layer. Let $q_{h,t}$ be its
+native query at suffix position $t$, and define the key-space update
+$P_{h,t}=I_{d_k}-\beta_{h,t}k_{h,t}k_{h,t}^{\top}$. With identical
+incoming activations, the part of the read attributable to $E_h$ is
+\begin{equation}
+\left(\prod_{j=1}^{t}\alpha_{h,j}\right) E_h^{\top} w_{h,t},
+\qquad w_{h,t}=P_{h,1}\cdots P_{h,t}q_{h,t}.
+\end{equation}
+Here $j$ indexes suffix positions. Let $V_h$ contain an orthonormal
+basis for the span of the four transported queries $w_{h,t}$.
+Replacing $E_h$ with $V_hV_h^{\top}E_h$ preserves each of these reads
+in exact arithmetic. The sender transmits $V_h$ and $E_h^{\top}V_h$.
+The receiver reconstructs the dense matrix before generating. Later,
+freely generated tokens provide an empirical test beyond the four
+positions used to construct the basis.
+
+I fixed the codec on 24 bAbI QA1 training stories and 24 MQuAKE
+development cases. I then tested 32 official bAbI test stories and 32
+previously unused MQuAKE-CF-3k-v2 cases, each with an updated and a
+stable or unrelated question \citep{weston2016,zhong2023}. In bAbI,
+two prefixes of the same story give different locations for one person.
+In MQuAKE, the old and updated prompts contain different facts.
+
+On 4-bit Qwen3.5-9B, four FP32 directions per head reduced the recurrent
+update from 48 to 3 MiB. All 128 freely generated token sequences
+matched dense transfer. At the same size, rank-four SVD matched 124
+and projection onto untransported queries matched 126. Rowwise two-bit
+quantization used 3.375 MiB and matched 123. The transported reader
+and dense transfer both answered 53/64 updated questions correctly,
+compared with 54/64 for SVD. The benefit concerns fidelity to the donor.
+
+I also prespecified a twofold reduction in mean centered-logit
+root-mean-square error against each compressed control at the four
+suffix positions. The error ratio to the strongest control was 0.378
+on MQuAKE and 0.508 on bAbI. The latter missed the 0.500 cutoff.
+The byte counts cover the recurrent update only. They exclude the
+shared donor cache components and local dense reconstruction.
 
 \section{Relation to Prior Work}
-\paragraph{Memory updates and retrieval.}
-The fast-weight view of linear attention treats its state as a memory
-that keys and values can update \citep{schlag2021}. Gated DeltaNet adds
-retention to delta-rule updates \citep{yang2025}. Analyses of pretrained
-models separate writing, retention, and access \citep{lee2026} and
-identify recurrent circuits that build retrieval addresses
-\citep{zeng2026}. My method uses these memory paths to test a further
-step: designing a query that makes a specified write affect the answer.
-
-\paragraph{Readout geometry.}
-Muir addresses unequal state-row norms with a trained matched-filter
-read gate and architectural changes \citep{gangavarapu2026}. I use
-the normalization already present in a pretrained model. The optimized
-quantity is the finite read difference caused by a specified write,
-measured jointly over heads sharing a query. All model weights remain
-fixed during the intervention.
-
-\paragraph{Causal interventions and model editing.}
-ROME links causal localization to edits of factual associations in
-model weights \citep{meng2022}. My interventions instead modify
-runtime states and queries for a specified donor--recipient pair.
-Activation-patching results also depend on how interventions and
-measurements are constructed \citep{zhang2024}. I therefore evaluate
-unrestricted output tokens alongside paired preservation conditions.
-The answer comparisons test whether the normalized objective is
-a useful surrogate for behavioral control.
+Linear attention represents associations as fast weights \citep{schlag2021}.
+Gated DeltaNet adds retention and delta-rule correction \citep{yang2025}.
+In pretrained hybrids, attention caches can carry the retrieved value
+when the recurrent state comes from a different prompt
+\citep{afendulev2026,lee2026}. Recurrent layers can also build the query
+used to retrieve that value \citep{zeng2026}. Muir trains a matched-filter read gate
+\citep{gangavarapu2026}. I use a pretrained model's existing
+normalization to choose a read query for a specified write.
+SinkState compresses recurrent states with adaptive low-rank
+approximations \citep{jiang2026}. My codec targets the reads of a
+known suffix. ROME edits factual associations in weights \citep{meng2022}. Paired nuisance and unwritten
+controls test which answer changes the intervention produces
+\citep{zhang2024}.
 
 \section{Discussion and Conclusion}
-A state change becomes useful when the model reads it effectively.
-My results show that accounting for normalization helps design such
-reads. The objective
-uses the write's predicted effect, the background state, and the query
-shared across value heads. On two independent retrieval cohorts, it
-improves answer control while preserving every tested control answer.
-A single native initialization retains the 27B solver's successes
-with 21.8\% less total intervention time.
+The normalized effect of a write depends on the background read and
+the heads that share its query. Accounting for both improves answer
+control on two independent synthetic retrieval cohorts, while a single
+native initialization reduces total intervention time on 27B.
 
-These findings apply to short synthetic dictionaries in two sizes of
-one hybrid model family. The value and address experiments use
-different fixed write paths, so their comparison does not establish
-a scaling law. The donor supplies an explicit desired update, and
-the endpoint is a single output token. Extending the method to natural
-documents requires specifying such writes and measuring their utility
-in that setting. Within the tested scope, normalized read contrast
-provides a practical objective for turning internal state changes
-into answer changes.
+The causal control results use short dictionaries, distinct write paths
+and single-token answers. The public-task result concerns synchronization
+of question-conditioned caches. It preserves the reference output on
+the tested requests. Sender computation, resident memory and performance
+on future questions remain open deployment costs.
 
-\paragraph{Reproducibility.}
-The accompanying artifact contains the source revision, complete score
-rows, original aggregate analyses, and a script that recomputes the
-paired effects and timing ratio. The paper and vector figure can be
-rebuilt without model inference. This working paper analyzes archived experiments.
+\begin{thebibliography}{11}
+\bibitem[Afendulev et~al.(2026)]{afendulev2026}
+Afendulev, K.; Dontsov, A.; Tutubalina, E.; and Korznikov, A. 2026.
+What Attention Recalls and Recurrence Controls in Hybrid Language Models.
+In \emph{Findings of the Association for Computational Linguistics:
+EMNLP 2026}, 43888--43900.
+\url{https://aclanthology.org/2026.findings-emnlp.2061/}.
 
-\begin{thebibliography}{7}
 \bibitem[Gangavarapu et~al.(2026)]{gangavarapu2026}
 Gangavarapu, T.; Tabak, G.; and Schaefer, C.~J.~S. 2026.
 Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter
 Readout. \emph{arXiv:2611.08376}.
 \url{https://arxiv.org/abs/2611.08376}.
+
+\bibitem[Jiang et~al.(2026)]{jiang2026}
+Jiang, H.; Li, W.; Zhou, Z.; Pan, J.; Pandey, S.; and Liu, H. 2026.
+SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM
+Serving. \emph{arXiv:2611.14246}.
 
 \bibitem[Lee et~al.(2026)]{lee2026}
 Lee, K.; Park, J.; Kim, S.; and Ko, J. 2026.
@@ -417,6 +403,11 @@ Schlag, I.; Irie, K.; and Schmidhuber, J. 2021.
 Linear Transformers Are Secretly Fast Weight Programmers.
 In \emph{Proceedings of the 38th International Conference on Machine
 Learning}, 139: 9355--9366.
+
+\bibitem[Weston et~al.(2016)]{weston2016}
+Weston, J.; Bordes, A.; Chopra, S.; Rush, A.~M.; van Merri\"enboer, B.;
+Joulin, A.; and Mikolov, T. 2016. Towards AI-Complete Question
+Answering: A Set of Prerequisite Toy Tasks. In \emph{ICLR}.
 
 \bibitem[Yang et~al.(2025)]{yang2025}
 Yang, S.; Kautz, J.; and Hatamizadeh, A. 2025.
@@ -435,5 +426,9 @@ Zhang, F.; and Nanda, N. 2024.
 Towards Best Practices of Activation Patching in Language Models:
 Metrics and Methods. In \emph{International Conference on Learning
 Representations}. \url{https://arxiv.org/abs/2309.16042}.
+\bibitem[Zhong et~al.(2023)]{zhong2023}
+Zhong, Z.; Wu, Z.; Manning, C.~D.; Potts, C.; and Chen, D. 2023.
+MQuAKE: Assessing Knowledge Editing in Language Models via Multi-Hop
+Questions. In \emph{Proceedings of EMNLP}, 15686--15702.
 \end{thebibliography}
 \end{document}

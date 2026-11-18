@@ -1,0 +1,27 @@
+{
+  "phase": "dev",
+  "existing_traces": 64,
+  "slots": 256,
+  "wall_s": 11.977163499919698,
+  "matched_output_mismatches": 3,
+  "output_coordinates": 32768,
+  "same_backend_initial_coordinate_mismatches": 0,
+  "matched_minimum_cosine": 0.999999995477045,
+  "matched_maximum_objective_relative": 1.7034508790795573e-05,
+  "historical_minimum_cosine": 0.9999999982273909,
+  "historical_maximum_objective_relative": 1.0667525139596167e-05,
+  "historical_query_bf16_mismatches": 3,
+  "historical_matched_dense_bf16_mismatches": 2,
+  "mean_design_ms": {
+    "dense": 7.287817377952403,
+    "thin_svd_dense": 2.350460190427839,
+    "matched": 2.3366719807806176,
+    "thin": 3.011612563568633
+  },
+  "paired_mean_ratio": 1.2888469534189975,
+  "trace_bootstrap_ratio_interval": [
+    1.2698859894889336,
+    1.3053775393734306
+  ],
+  "decision": "discard_full_factor_speed_claim"
+}

@@ -1,0 +1,892 @@
+[
+  {
+    "source": "babi",
+    "id": 1771,
+    "old": [
+      "John went back to the office.",
+      "Mary went back to the kitchen.",
+      "Daniel travelled to the hallway.",
+      "John moved to the garden."
+    ],
+    "new": [
+      "John went back to the office.",
+      "Mary went back to the kitchen.",
+      "Daniel travelled to the hallway.",
+      "John moved to the garden.",
+      "Sandra went back to the bathroom.",
+      "John travelled to the hallway.",
+      "Mary travelled to the hallway.",
+      "Sandra went to the garden."
+    ],
+    "q": "Where is John?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 801,
+    "old": [
+      "Sandra went back to the bathroom.",
+      "Sandra went back to the garden.",
+      "Mary journeyed to the kitchen.",
+      "Daniel moved to the office.",
+      "John moved to the bedroom.",
+      "Daniel moved to the bathroom."
+    ],
+    "new": [
+      "Sandra went back to the bathroom.",
+      "Sandra went back to the garden.",
+      "Mary journeyed to the kitchen.",
+      "Daniel moved to the office.",
+      "John moved to the bedroom.",
+      "Daniel moved to the bathroom.",
+      "Sandra went to the bedroom.",
+      "John moved to the hallway."
+    ],
+    "q": "Where is John?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 1509,
+    "old": [
+      "Daniel moved to the hallway.",
+      "John went back to the garden.",
+      "Mary went back to the garden.",
+      "Mary journeyed to the bedroom.",
+      "Daniel travelled to the garden.",
+      "Sandra travelled to the hallway.",
+      "Mary moved to the hallway.",
+      "John went to the office."
+    ],
+    "new": [
+      "Daniel moved to the hallway.",
+      "John went back to the garden.",
+      "Mary went back to the garden.",
+      "Mary journeyed to the bedroom.",
+      "Daniel travelled to the garden.",
+      "Sandra travelled to the hallway.",
+      "Mary moved to the hallway.",
+      "John went to the office.",
+      "Daniel journeyed to the bedroom.",
+      "Mary went back to the bathroom."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1252,
+    "old": [
+      "Mary went to the kitchen.",
+      "Daniel went back to the bathroom."
+    ],
+    "new": [
+      "Mary went to the kitchen.",
+      "Daniel went back to the bathroom.",
+      "Mary journeyed to the bedroom.",
+      "Sandra went back to the office."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 288,
+    "old": [
+      "John moved to the kitchen.",
+      "Daniel moved to the kitchen.",
+      "Mary journeyed to the office.",
+      "Daniel travelled to the hallway."
+    ],
+    "new": [
+      "John moved to the kitchen.",
+      "Daniel moved to the kitchen.",
+      "Mary journeyed to the office.",
+      "Daniel travelled to the hallway.",
+      "Daniel travelled to the office.",
+      "Daniel journeyed to the garden."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1118,
+    "old": [
+      "Daniel moved to the kitchen.",
+      "Daniel went to the office.",
+      "John moved to the garden.",
+      "Daniel moved to the garden."
+    ],
+    "new": [
+      "Daniel moved to the kitchen.",
+      "Daniel went to the office.",
+      "John moved to the garden.",
+      "Daniel moved to the garden.",
+      "Daniel journeyed to the hallway.",
+      "Mary went to the bedroom."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1079,
+    "old": [
+      "John went back to the bedroom.",
+      "Daniel went to the bathroom.",
+      "John journeyed to the hallway.",
+      "Daniel journeyed to the hallway.",
+      "Mary went back to the bedroom.",
+      "Daniel travelled to the office.",
+      "Sandra journeyed to the kitchen.",
+      "Daniel went back to the kitchen."
+    ],
+    "new": [
+      "John went back to the bedroom.",
+      "Daniel went to the bathroom.",
+      "John journeyed to the hallway.",
+      "Daniel journeyed to the hallway.",
+      "Mary went back to the bedroom.",
+      "Daniel travelled to the office.",
+      "Sandra journeyed to the kitchen.",
+      "Daniel went back to the kitchen.",
+      "Daniel moved to the garden.",
+      "John journeyed to the bathroom."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is Mary?"
+  },
+  {
+    "source": "babi",
+    "id": 1192,
+    "old": [
+      "Mary journeyed to the bathroom.",
+      "Mary moved to the bedroom.",
+      "John journeyed to the garden.",
+      "Sandra went back to the bathroom.",
+      "Daniel journeyed to the kitchen.",
+      "Sandra journeyed to the kitchen.",
+      "Daniel moved to the bathroom.",
+      "Mary travelled to the hallway."
+    ],
+    "new": [
+      "Mary journeyed to the bathroom.",
+      "Mary moved to the bedroom.",
+      "John journeyed to the garden.",
+      "Sandra went back to the bathroom.",
+      "Daniel journeyed to the kitchen.",
+      "Sandra journeyed to the kitchen.",
+      "Daniel moved to the bathroom.",
+      "Mary travelled to the hallway.",
+      "Daniel travelled to the bedroom.",
+      "Mary went to the garden."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1693,
+    "old": [
+      "Daniel journeyed to the garden.",
+      "Sandra moved to the bathroom.",
+      "Mary went back to the bedroom.",
+      "Daniel travelled to the bedroom.",
+      "Mary went to the office.",
+      "John travelled to the bedroom."
+    ],
+    "new": [
+      "Daniel journeyed to the garden.",
+      "Sandra moved to the bathroom.",
+      "Mary went back to the bedroom.",
+      "Daniel travelled to the bedroom.",
+      "Mary went to the office.",
+      "John travelled to the bedroom.",
+      "Daniel went to the office.",
+      "Sandra went back to the garden.",
+      "John journeyed to the office.",
+      "John went back to the hallway."
+    ],
+    "q": "Where is John?",
+    "q_control": "Where is Mary?"
+  },
+  {
+    "source": "babi",
+    "id": 1722,
+    "old": [
+      "John moved to the garden.",
+      "Mary went back to the garden.",
+      "Sandra went back to the hallway.",
+      "Sandra journeyed to the bathroom.",
+      "Sandra travelled to the kitchen.",
+      "Sandra journeyed to the bedroom."
+    ],
+    "new": [
+      "John moved to the garden.",
+      "Mary went back to the garden.",
+      "Sandra went back to the hallway.",
+      "Sandra journeyed to the bathroom.",
+      "Sandra travelled to the kitchen.",
+      "Sandra journeyed to the bedroom.",
+      "Mary journeyed to the office.",
+      "Daniel moved to the garden."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1543,
+    "old": [
+      "Sandra moved to the kitchen.",
+      "John travelled to the kitchen.",
+      "Sandra journeyed to the office.",
+      "Sandra travelled to the bathroom.",
+      "Daniel travelled to the garden.",
+      "John moved to the hallway.",
+      "Daniel went back to the bedroom.",
+      "Sandra went back to the office."
+    ],
+    "new": [
+      "Sandra moved to the kitchen.",
+      "John travelled to the kitchen.",
+      "Sandra journeyed to the office.",
+      "Sandra travelled to the bathroom.",
+      "Daniel travelled to the garden.",
+      "John moved to the hallway.",
+      "Daniel went back to the bedroom.",
+      "Sandra went back to the office.",
+      "Daniel travelled to the hallway.",
+      "Sandra travelled to the bathroom."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1283,
+    "old": [
+      "John travelled to the bedroom.",
+      "John journeyed to the kitchen.",
+      "Sandra moved to the kitchen.",
+      "Mary went back to the garden.",
+      "Sandra went to the bathroom.",
+      "John journeyed to the office."
+    ],
+    "new": [
+      "John travelled to the bedroom.",
+      "John journeyed to the kitchen.",
+      "Sandra moved to the kitchen.",
+      "Mary went back to the garden.",
+      "Sandra went to the bathroom.",
+      "John journeyed to the office.",
+      "Sandra journeyed to the garden.",
+      "Sandra went back to the office."
+    ],
+    "q": "Where is Sandra?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 134,
+    "old": [
+      "John went to the bedroom.",
+      "Daniel journeyed to the bedroom."
+    ],
+    "new": [
+      "John went to the bedroom.",
+      "Daniel journeyed to the bedroom.",
+      "Daniel journeyed to the kitchen.",
+      "Sandra went back to the bedroom.",
+      "Mary journeyed to the hallway.",
+      "Daniel journeyed to the hallway.",
+      "Daniel went to the bedroom.",
+      "Mary journeyed to the garden.",
+      "John went to the office.",
+      "John moved to the hallway."
+    ],
+    "q": "Where is John?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 1928,
+    "old": [
+      "John went to the bathroom.",
+      "John journeyed to the garden.",
+      "Sandra moved to the bedroom.",
+      "John journeyed to the hallway."
+    ],
+    "new": [
+      "John went to the bathroom.",
+      "John journeyed to the garden.",
+      "Sandra moved to the bedroom.",
+      "John journeyed to the hallway.",
+      "John went to the bathroom.",
+      "Daniel journeyed to the garden."
+    ],
+    "q": "Where is John?",
+    "q_control": "Where is Sandra?"
+  },
+  {
+    "source": "babi",
+    "id": 1176,
+    "old": [
+      "Sandra moved to the bedroom.",
+      "John went to the hallway.",
+      "Sandra went to the hallway.",
+      "Sandra journeyed to the garden.",
+      "Mary moved to the office.",
+      "John travelled to the bathroom."
+    ],
+    "new": [
+      "Sandra moved to the bedroom.",
+      "John went to the hallway.",
+      "Sandra went to the hallway.",
+      "Sandra journeyed to the garden.",
+      "Mary moved to the office.",
+      "John travelled to the bathroom.",
+      "Sandra went to the bathroom.",
+      "Sandra journeyed to the office.",
+      "Sandra travelled to the bedroom.",
+      "Daniel travelled to the bedroom."
+    ],
+    "q": "Where is Sandra?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "babi",
+    "id": 1575,
+    "old": [
+      "Daniel went back to the office.",
+      "Sandra moved to the office.",
+      "Mary travelled to the garden.",
+      "Mary went to the kitchen."
+    ],
+    "new": [
+      "Daniel went back to the office.",
+      "Sandra moved to the office.",
+      "Mary travelled to the garden.",
+      "Mary went to the kitchen.",
+      "Mary journeyed to the bedroom.",
+      "Daniel journeyed to the garden."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is Sandra?"
+  },
+  {
+    "source": "babi",
+    "id": 200,
+    "old": [
+      "Mary travelled to the garden.",
+      "Daniel went to the kitchen.",
+      "Sandra went back to the bathroom.",
+      "Sandra moved to the garden.",
+      "John travelled to the office.",
+      "Mary journeyed to the kitchen."
+    ],
+    "new": [
+      "Mary travelled to the garden.",
+      "Daniel went to the kitchen.",
+      "Sandra went back to the bathroom.",
+      "Sandra moved to the garden.",
+      "John travelled to the office.",
+      "Mary journeyed to the kitchen.",
+      "John went back to the bedroom.",
+      "Daniel went back to the bathroom."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is Mary?"
+  },
+  {
+    "source": "babi",
+    "id": 1583,
+    "old": [
+      "Sandra went to the bedroom.",
+      "John journeyed to the bedroom.",
+      "Mary went to the garden.",
+      "Mary went to the bedroom."
+    ],
+    "new": [
+      "Sandra went to the bedroom.",
+      "John journeyed to the bedroom.",
+      "Mary went to the garden.",
+      "Mary went to the bedroom.",
+      "Daniel went to the garden.",
+      "Sandra travelled to the office.",
+      "Sandra journeyed to the garden.",
+      "Daniel went back to the hallway.",
+      "John moved to the bathroom.",
+      "John moved to the garden."
+    ],
+    "q": "Where is Sandra?",
+    "q_control": "Where is Mary?"
+  },
+  {
+    "source": "babi",
+    "id": 681,
+    "old": [
+      "Daniel moved to the hallway.",
+      "Daniel went back to the garden.",
+      "Daniel travelled to the hallway.",
+      "Daniel went to the kitchen.",
+      "Mary travelled to the bedroom.",
+      "Daniel moved to the garden."
+    ],
+    "new": [
+      "Daniel moved to the hallway.",
+      "Daniel went back to the garden.",
+      "Daniel travelled to the hallway.",
+      "Daniel went to the kitchen.",
+      "Mary travelled to the bedroom.",
+      "Daniel moved to the garden.",
+      "Daniel journeyed to the bedroom.",
+      "John travelled to the kitchen."
+    ],
+    "q": "Where is Daniel?",
+    "q_control": "Where is Mary?"
+  },
+  {
+    "source": "babi",
+    "id": 1797,
+    "old": [
+      "Daniel went back to the hallway.",
+      "Mary went to the hallway.",
+      "John went back to the hallway.",
+      "John went to the bedroom."
+    ],
+    "new": [
+      "Daniel went back to the hallway.",
+      "Mary went to the hallway.",
+      "John went back to the hallway.",
+      "John went to the bedroom.",
+      "Daniel moved to the office.",
+      "Daniel journeyed to the hallway.",
+      "John moved to the bathroom.",
+      "Sandra went back to the kitchen.",
+      "John went to the hallway.",
+      "Mary travelled to the garden."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 1034,
+    "old": [
+      "Daniel went back to the office.",
+      "Mary went back to the kitchen."
+    ],
+    "new": [
+      "Daniel went back to the office.",
+      "Mary went back to the kitchen.",
+      "John travelled to the garden.",
+      "Daniel went to the bedroom.",
+      "Daniel journeyed to the kitchen.",
+      "Mary travelled to the hallway.",
+      "Daniel travelled to the bathroom.",
+      "Daniel went to the office."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 415,
+    "old": [
+      "John journeyed to the kitchen.",
+      "Sandra went back to the bedroom.",
+      "John travelled to the bedroom.",
+      "Daniel travelled to the garden."
+    ],
+    "new": [
+      "John journeyed to the kitchen.",
+      "Sandra went back to the bedroom.",
+      "John travelled to the bedroom.",
+      "Daniel travelled to the garden.",
+      "Mary journeyed to the bedroom.",
+      "John went to the garden.",
+      "Mary went to the hallway.",
+      "Sandra went to the hallway.",
+      "John moved to the bedroom.",
+      "John moved to the garden."
+    ],
+    "q": "Where is Sandra?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 1230,
+    "old": [
+      "Mary travelled to the garden.",
+      "Daniel went to the garden."
+    ],
+    "new": [
+      "Mary travelled to the garden.",
+      "Daniel went to the garden.",
+      "John journeyed to the garden.",
+      "Mary journeyed to the office."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is Daniel?"
+  },
+  {
+    "source": "babi",
+    "id": 1272,
+    "old": [
+      "John moved to the office.",
+      "Mary moved to the garden.",
+      "John went back to the kitchen.",
+      "Daniel travelled to the kitchen.",
+      "Sandra travelled to the kitchen.",
+      "Daniel journeyed to the office."
+    ],
+    "new": [
+      "John moved to the office.",
+      "Mary moved to the garden.",
+      "John went back to the kitchen.",
+      "Daniel travelled to the kitchen.",
+      "Sandra travelled to the kitchen.",
+      "Daniel journeyed to the office.",
+      "Mary travelled to the kitchen.",
+      "Daniel went to the garden.",
+      "Mary journeyed to the hallway.",
+      "Mary moved to the office."
+    ],
+    "q": "Where is Mary?",
+    "q_control": "Where is John?"
+  },
+  {
+    "source": "mquake",
+    "id": 394,
+    "old": [
+      "The univeristy where Jason Chaffetz was educated is Brigham Young University.",
+      "The headquarters of Sapienza University of Rome is located in the city of Rome."
+    ],
+    "new": [
+      "The univeristy where Jason Chaffetz was educated is Sapienza University of Rome.",
+      "The headquarters of Sapienza University of Rome is located in the city of Mumbai."
+    ],
+    "q": "In which city is the headquarters of the educational institution where Jason Chaffetz studied located?",
+    "q_control": "Who is the author of The Witcher?"
+  },
+  {
+    "source": "mquake",
+    "id": 459,
+    "old": [
+      "The author of The Witcher is Andrzej Sapkowski."
+    ],
+    "new": [
+      "The author of The Witcher is T. S. Eliot."
+    ],
+    "q": "What genre does \"The Witcher\" belong to?",
+    "q_control": "What is the country of citizenship of Rocco Buttiglione?"
+  },
+  {
+    "source": "mquake",
+    "id": 753,
+    "old": [
+      "Rocco Buttiglione is a citizen of Italy."
+    ],
+    "new": [
+      "Rocco Buttiglione is a citizen of Jamaica."
+    ],
+    "q": "Who is the head of government of the country where Rocco Buttiglione is a citizen?",
+    "q_control": "Which sport is quarterback associated with?"
+  },
+  {
+    "source": "mquake",
+    "id": 198,
+    "old": [
+      "quarterback is associated with the sport of American football."
+    ],
+    "new": [
+      "quarterback is associated with the sport of Muay Thai."
+    ],
+    "q": "Which sport does Devin Gardner play?",
+    "q_control": "What type of music does William Shakespeare play?"
+  },
+  {
+    "source": "mquake",
+    "id": 628,
+    "old": [
+      "The type of music that William Shakespeare plays is English Renaissance theatre."
+    ],
+    "new": [
+      "The type of music that William Shakespeare plays is progressive rock."
+    ],
+    "q": "What genre does the creation of Caliban belong to?",
+    "q_control": "What is the name of the current head of the Assam government?"
+  },
+  {
+    "source": "mquake",
+    "id": 639,
+    "old": [
+      "The name of the current head of the Assam government is Sarbananda Sonowal.",
+      "Scott Morrison works in the field of politician."
+    ],
+    "new": [
+      "The name of the current head of the Assam government is Scott Morrison.",
+      "Scott Morrison works in the field of baseball player."
+    ],
+    "q": "What is the occupation of the head of government of Assam?",
+    "q_control": "Who is the chairperson of Harvard University?"
+  },
+  {
+    "source": "mquake",
+    "id": 308,
+    "old": [
+      "The chairperson of Harvard University is Lawrence S. Bacow."
+    ],
+    "new": [
+      "The chairperson of Harvard University is Peter Diamandis."
+    ],
+    "q": "Who is the chairperson of the institution where Eduardo Saverin was educated?",
+    "q_control": "Who is the Mayor of London?"
+  },
+  {
+    "source": "mquake",
+    "id": 897,
+    "old": [
+      "The Mayor of London is Sadiq Khan.",
+      "Bill Haslam speaks the language of English."
+    ],
+    "new": [
+      "The Mayor of London is Bill Haslam.",
+      "Bill Haslam speaks the language of Italian."
+    ],
+    "q": "What languages are spoken, written or signed by the current Mayor of London?",
+    "q_control": "Which religion is Desmond Connell affiliated with?"
+  },
+  {
+    "source": "mquake",
+    "id": 1426,
+    "old": [
+      "Desmond Connell is affiliated with the religion of Catholic Church.",
+      "African Methodist Episcopal Church was founded by Richard Allen."
+    ],
+    "new": [
+      "Desmond Connell is affiliated with the religion of African Methodist Episcopal Church.",
+      "African Methodist Episcopal Church was founded by Carol I of Romania."
+    ],
+    "q": "What is the place where the founder of the religion associated with Desmond Connell worked?",
+    "q_control": "Which city is the headquarter of Harvard University located in?"
+  },
+  {
+    "source": "mquake",
+    "id": 1273,
+    "old": [
+      "The headquarters of Harvard University is located in the city of Cambridge."
+    ],
+    "new": [
+      "The headquarters of Harvard University is located in the city of San Francisco."
+    ],
+    "q": "Where is the headquarters of the employer of the author of \"The Song of Hiawatha\" located?",
+    "q_control": "Which sport is Arthurlie F.C. associated with?"
+  },
+  {
+    "source": "mquake",
+    "id": 1960,
+    "old": [
+      "Arthurlie F.C. is associated with the sport of association football.",
+      "rugby was created in the country of England."
+    ],
+    "new": [
+      "Arthurlie F.C. is associated with the sport of rugby.",
+      "rugby was created in the country of Indonesia."
+    ],
+    "q": "What is the official language of the country where Arthurlie F.C. originated from?",
+    "q_control": "Which city is the headquarter of University of Oxford located in?"
+  },
+  {
+    "source": "mquake",
+    "id": 1923,
+    "old": [
+      "The headquarters of University of Oxford is located in the city of Oxford."
+    ],
+    "new": [
+      "The headquarters of University of Oxford is located in the city of Frankfurt."
+    ],
+    "q": "What is the location where the employer of the author of \"Seven Pillars of Wisdom\" is headquartered?",
+    "q_control": "Which religion is Guillaume de Rubrouck affiliated with?"
+  },
+  {
+    "source": "mquake",
+    "id": 1902,
+    "old": [
+      "Guillaume de Rubrouck is affiliated with the religion of Catholic Church.",
+      "Christianity was founded by Jesus Christ.",
+      "Noel Pemberton Billing worked in the city of London."
+    ],
+    "new": [
+      "Guillaume de Rubrouck is affiliated with the religion of Christianity.",
+      "Christianity was founded by Noel Pemberton Billing.",
+      "Noel Pemberton Billing worked in the city of Washington, D.C.."
+    ],
+    "q": "Where did the founder of Guillaume de Rubrouck's religion work?",
+    "q_control": "What is the capital of United States of America?"
+  },
+  {
+    "source": "mquake",
+    "id": 1885,
+    "old": [
+      "The capital of United States of America is Washington, D.C.."
+    ],
+    "new": [
+      "The capital of United States of America is Harrisville."
+    ],
+    "q": "What is the capital of the country where the author of \"The Normal Heart\" held citizenship?",
+    "q_control": "Which country was basketball created in?"
+  },
+  {
+    "source": "mquake",
+    "id": 1693,
+    "old": [
+      "basketball was created in the country of United States of America."
+    ],
+    "new": [
+      "basketball was created in the country of Soviet Union."
+    ],
+    "q": "Who is the head of state of the country that Mehmet Okur is from?",
+    "q_control": "Which religion is Joseph de Maistre affiliated with?"
+  },
+  {
+    "source": "mquake",
+    "id": 1217,
+    "old": [
+      "Joseph de Maistre is affiliated with the religion of Catholic Church."
+    ],
+    "new": [
+      "Joseph de Maistre is affiliated with the religion of Methodism."
+    ],
+    "q": "What is the birthplace of the founder of the religion of Joseph de Maistre?",
+    "q_control": "Who was WWE SmackDown created by?"
+  },
+  {
+    "source": "mquake",
+    "id": 2392,
+    "old": [
+      "WWE SmackDown was created by Vince McMahon.",
+      "Camille Cosby is a citizen of United States of America."
+    ],
+    "new": [
+      "WWE SmackDown was created by Bill Cosby.",
+      "Camille Cosby is a citizen of Argentina."
+    ],
+    "q": "What is the capital of the country where the spouse of the creator of WWE SmackDown holds citizenship?",
+    "q_control": "Who is the developer of MathML?"
+  },
+  {
+    "source": "mquake",
+    "id": 2349,
+    "old": [
+      "MathML was developed by World Wide Web Consortium.",
+      "The chairperson of BBC Worldwide is Tony Hall, Baron Hall of Birkenhead.",
+      "Yulia Tymoshenko is a citizen of Ukraine."
+    ],
+    "new": [
+      "MathML was developed by BBC Worldwide.",
+      "The chairperson of BBC Worldwide is Yulia Tymoshenko.",
+      "Yulia Tymoshenko is a citizen of Taiwan."
+    ],
+    "q": "Which continent does the chairperson of the developer of MathML hail from?",
+    "q_control": "Who is the director of American Broadcasting Company?"
+  },
+  {
+    "source": "mquake",
+    "id": 2661,
+    "old": [
+      "The director of American Broadcasting Company is Bob Iger.",
+      "Ernst Heinkel is a citizen of Germany.",
+      "The capital of Tang Empire is Chang'an."
+    ],
+    "new": [
+      "The director of American Broadcasting Company is Ernst Heinkel.",
+      "Ernst Heinkel is a citizen of Tang Empire.",
+      "The capital of Tang Empire is Beaumont."
+    ],
+    "q": "What is the capital of the country where the director or manager of \"Dynasty\"'s original broadcaster holds citizenship?",
+    "q_control": "What position does Andoni Zubizarreta play?"
+  },
+  {
+    "source": "mquake",
+    "id": 2287,
+    "old": [
+      "Andoni Zubizarreta plays the position of goalkeeper.",
+      "second baseman is associated with the sport of baseball.",
+      "petanque was created in the country of France.",
+      "Malta is located in the continent of Europe."
+    ],
+    "new": [
+      "Andoni Zubizarreta plays the position of second baseman.",
+      "second baseman is associated with the sport of petanque.",
+      "petanque was created in the country of Malta.",
+      "Malta is located in the continent of Asia."
+    ],
+    "q": "In which continent was the country where Andoni Zubizarreta's sport originated?",
+    "q_control": "Who is the developer of iPhone 4S?"
+  },
+  {
+    "source": "mquake",
+    "id": 2429,
+    "old": [
+      "iPhone 4S was developed by Apple Inc..",
+      "The chief executive officer of Valve Corporation is Gabe Newell."
+    ],
+    "new": [
+      "iPhone 4S was developed by Valve Corporation.",
+      "The chief executive officer of Valve Corporation is Mukesh Ambani."
+    ],
+    "q": "What is the capital of the country where the chief executive officer of the iPhone 4S developer holds the citizenship?",
+    "q_control": "Who founded Ford Motor Company?"
+  },
+  {
+    "source": "mquake",
+    "id": 2510,
+    "old": [
+      "Ford Motor Company was founded by Henry Ford."
+    ],
+    "new": [
+      "Ford Motor Company was founded by Henri Gr\u00e9goire."
+    ],
+    "q": "What is the capital of the country of citizenship of the founder of the company that manufactured the Ford E-Series?",
+    "q_control": "What position does David Blatt play?"
+  },
+  {
+    "source": "mquake",
+    "id": 2432,
+    "old": [
+      "David Blatt plays the position of point guard.",
+      "defender is associated with the sport of association football.",
+      "baseball was created in the country of United States of America.",
+      "The capital of Japan is Tokyo."
+    ],
+    "new": [
+      "David Blatt plays the position of defender.",
+      "defender is associated with the sport of baseball.",
+      "baseball was created in the country of Japan.",
+      "The capital of Japan is Bondi Junction."
+    ],
+    "q": "What city is the capital of the country where the sport played by David Blatt originated?",
+    "q_control": "Who was Strawberry Fields Forever created by?"
+  },
+  {
+    "source": "mquake",
+    "id": 2838,
+    "old": [
+      "Strawberry Fields Forever was created by The Beatles.",
+      "The director of National Aeronautics and Space Administration is Jim Bridenstine.",
+      "Brian Epstein is a citizen of United Kingdom.",
+      "Italy is located in the continent of Europe."
+    ],
+    "new": [
+      "Strawberry Fields Forever was created by National Aeronautics and Space Administration.",
+      "The director of National Aeronautics and Space Administration is Brian Epstein.",
+      "Brian Epstein is a citizen of Italy.",
+      "Italy is located in the continent of Oceania."
+    ],
+    "q": "What continent is the country where the director/manager of \"Strawberry Fields Forever\" holds a citizenship located in?",
+    "q_control": "Which university was Jason Chaffetz educated at?"
+  }
+]

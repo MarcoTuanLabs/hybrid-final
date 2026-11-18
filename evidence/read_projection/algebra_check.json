@@ -1,0 +1,10 @@
+{
+  "random_trials": 32,
+  "heads": 4,
+  "time_steps": 4,
+  "keys": 13,
+  "values": 17,
+  "maximum_absolute_error": 2.6645352591003757e-15,
+  "untransported_maximum_absolute_error": 3.8631515592769716,
+  "note": "Independent float64 recurrence calculation. No real model outcomes were read."
+}
