@@ -41,6 +41,8 @@ A separate balanced MQuAKE-Remastered pilot compared six readers on edited and u
 
 On 12 development documents with three-turn conversations, the old cache with a change notice and retrieval answered the changed question correctly in both phrasings on all 12 documents. Adding a rank-four recurrent patch changed no answer's correctness and raised mean cold service time from 1.704 to 1.963 seconds. [Pre-question updates across three turns](experiments/persistent_notice/README.md)
 
+In HaluMem-Medium, four simulated users yielded 23 delayed-session episodes with a second grounded question. An eight-episode text-only pilot measured how many official answers lexical retrieval could recover after the delayed session arrived. [Delayed dialogue eligibility and measured text controls](experiments/halumem_feasibility/README.md)
+
 ## Following edits across several facts
 
 On 96 corrected MQuAKE development questions, a supervised text parser followed by Qwen3.5-9B answered 75 correctly. Ranked retrieval answered 63 and an adaptation of G-Walk with semantic relation matching answered 71. Adding recurrent token reads to the text parser also yielded 75. The 4B comparison yielded 69, 55, 61 and 70, respectively. Both readers used the same questions and graph. [Method, archived answers and reproduction](experiments/remastered_paths/README.md)

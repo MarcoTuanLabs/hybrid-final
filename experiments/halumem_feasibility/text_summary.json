@@ -1,0 +1,57 @@
+{
+  "users": 4,
+  "episodes": 8,
+  "questions": 16,
+  "distinct_responses": 25,
+  "methods": {
+    "old": {
+      "exact": [
+        0,
+        2
+      ],
+      "token_f1": [
+        0.03571428571428571,
+        0.3198051948051948
+      ],
+      "semantic_correct": [
+        0,
+        4
+      ],
+      "mean_complete_s": 2.448657499975525,
+      "both_correct": 0
+    },
+    "current": {
+      "exact": [
+        2,
+        2
+      ],
+      "token_f1": [
+        0.25,
+        0.39159982174688057
+      ],
+      "semantic_correct": [
+        2,
+        4
+      ],
+      "mean_complete_s": 2.4489450416440377,
+      "both_correct": 2
+    },
+    "notice": {
+      "exact": [
+        1,
+        2
+      ],
+      "token_f1": [
+        0.125,
+        0.3393939393939394
+      ],
+      "semantic_correct": [
+        1,
+        4
+      ],
+      "mean_complete_s": 2.4881072187417885,
+      "both_correct": 1
+    }
+  },
+  "semantic_evaluator": "Single method-blind Codex AI review against supplied references"
+}

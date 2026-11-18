@@ -1,7 +1,7 @@
 {
-  "version": 15,
+  "version": 16,
   "branch": "main",
-  "parent_commit": "40cb39854359f4d244396ea1251898b29175d4dc",
+  "parent_commit": "7c9f8532db3056090367ac34650e369f3fb808af",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 11007,
-      "sha256": "998d29ac104bc2040bc498601946d1defa7abe92f8f0b9f037f4a411120924e8",
-      "git_blob_sha1": "09715af6a92fba849df1ce3070ed8d21813c0759"
+      "bytes": 11353,
+      "sha256": "ffff32cff9918d1c261a32fd716bf25014e8f393fee93e53a9c22eda7780f2b1",
+      "git_blob_sha1": "758d009f8aad43503695eb6cda1ac6f963135352"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -842,6 +842,102 @@
       "bytes": 2918,
       "sha256": "6a423cfe4abc547abfcff861c75579f488d85c940f57299b5368c6595dbdc9f0",
       "git_blob_sha1": "53dc82657b29d4c15215047596a369eedad82ba1"
+    },
+    {
+      "path": "experiments/halumem_feasibility/README.md",
+      "bytes": 4304,
+      "sha256": "5af13c099e6605e73ba60059afe8d7c1af9e651bc583ef80c7074e177fe3ef34",
+      "git_blob_sha1": "a20f7e30f072a992467c77e7438079051ae68253"
+    },
+    {
+      "path": "experiments/halumem_feasibility/audit.json",
+      "bytes": 6879,
+      "sha256": "6dfdc4f7ddaca987f03ac40f210fbe69ef5342868dc3371e183d2962d93a7718",
+      "git_blob_sha1": "6ddc9eac87edb08b7a18099945faf112ace44da4"
+    },
+    {
+      "path": "experiments/halumem_feasibility/audit.py",
+      "bytes": 4043,
+      "sha256": "10f42e72cb7f19c3fb627d0632142d4122c1feb4fbe75b3058c08154aef863b7",
+      "git_blob_sha1": "390786ed1b2935003ca0890b901ad3dd36f14836"
+    },
+    {
+      "path": "experiments/halumem_feasibility/blind_grades.json",
+      "bytes": 528,
+      "sha256": "31302d6897fa434f1fcb1d2262d43cdff5f5cc8f6faa741711cc208b5bd901ee",
+      "git_blob_sha1": "94083fc402da6e78a322ecb1eb1d2ea29c8b0229"
+    },
+    {
+      "path": "experiments/halumem_feasibility/bundle.json",
+      "bytes": 1679,
+      "sha256": "df1eafe99c978165a732650f741670df4eba83c5eb87090f706de3f0997abbc8",
+      "git_blob_sha1": "fd09f2d0c027053850266b6bc53b885beae524d5"
+    },
+    {
+      "path": "experiments/halumem_feasibility/check_grounding.py",
+      "bytes": 1434,
+      "sha256": "2997f8d0e2858436ee707851c3ca2279de460a4baf2272d7f4e4261ad19bed48",
+      "git_blob_sha1": "2ca1cbacd7b64c76667d982f87c94d05fdaf8d95"
+    },
+    {
+      "path": "experiments/halumem_feasibility/design.json",
+      "bytes": 1688,
+      "sha256": "2d11205fd3e501a192a97062ad8193b4ba837c1a3574d68fec3db63f419bbcba",
+      "git_blob_sha1": "c234c6711c0899cc7c324ac641213d85b178efc8"
+    },
+    {
+      "path": "experiments/halumem_feasibility/fetch_data.py",
+      "bytes": 1199,
+      "sha256": "d96ded4aabc70b79612c31f4fb3c9e01ccf4671984130cb085696eaf5d5a163a",
+      "git_blob_sha1": "2c55dbcd6203de782f0b4350048590571befaf5d"
+    },
+    {
+      "path": "experiments/halumem_feasibility/grade_rule.txt",
+      "bytes": 675,
+      "sha256": "58a70b63ac7710a47c682c863ea1f79bf7b721bf3a902e9ad81038533369267f",
+      "git_blob_sha1": "e0240f4ecc686633130e3c6b3a9124b7c308c78d"
+    },
+    {
+      "path": "experiments/halumem_feasibility/grounding.json",
+      "bytes": 1272,
+      "sha256": "de589962e9bb4ead7764a6bf8efd4e2f14bda1a1ded28bcca1fa4abbd85c3bd0",
+      "git_blob_sha1": "681904103d809dc2cbf51272a9a04fd69430baa5"
+    },
+    {
+      "path": "experiments/halumem_feasibility/observations.json",
+      "bytes": 22144,
+      "sha256": "dd0de4e78c57727c8615b181370cde55d9ebbfda73855fccf79dd6ac736034e1",
+      "git_blob_sha1": "86156290005bdf0b1ad9732d00db769b8f0a770e"
+    },
+    {
+      "path": "experiments/halumem_feasibility/run_text.py",
+      "bytes": 6224,
+      "sha256": "1e83a2a2c93e21c31e842d687d19c460915c8fbba9f8db61cf7984bdc5bbc1c9",
+      "git_blob_sha1": "0bb3a83e424e12100848ab8a6e248ba91f9a1acb"
+    },
+    {
+      "path": "experiments/halumem_feasibility/score_text.py",
+      "bytes": 3135,
+      "sha256": "99959b01faf715f4724949a4bbff318a7b5f6361fa9a339cbbfa91e566618e4e",
+      "git_blob_sha1": "eefe13090f94c764b70caf3d42764e760bba2a14"
+    },
+    {
+      "path": "experiments/halumem_feasibility/service_contract.json",
+      "bytes": 2272,
+      "sha256": "9e32427556cb4fbe84d6b7efa20e84c6ad1ef7623d8c4b7d5a354574f35a47b7",
+      "git_blob_sha1": "6510d2c5d29594dfef8f26e6c4015bd9f12b4f38"
+    },
+    {
+      "path": "experiments/halumem_feasibility/text_summary.json",
+      "bytes": 1006,
+      "sha256": "f9d3b35601ceaf3949188734e68fe09878bbf6dad7742f923c41e62ba557a397",
+      "git_blob_sha1": "74215def05b7b488d24d52e5d8ec4f8fa7d02a57"
+    },
+    {
+      "path": "experiments/halumem_feasibility/verify_archive.py",
+      "bytes": 1523,
+      "sha256": "0846168b8ba047739a01d94ee3191cbb2405ec304aba77ff9e0defd8c9d935a9",
+      "git_blob_sha1": "a654b1b3f85909b67c9b252ca027453ad0fa186f"
     },
     {
       "path": "experiments/hoh_boundary/README.md",

@@ -1,0 +1,24 @@
+{
+  "model_manifest": "../read_projection/release.json",
+  "source_revision": "cb04336aa1b732d4b24f5186c552456b4099806e",
+  "source_dataset": "IAAR-Shanghai/HaluMem",
+  "source_license": "CC BY-NC-ND 4.0",
+  "raw_text_rows_sha256": "e3d0c1c96731039a2d2dd3713ef2e988765790bcf57fb719ad13d5b0b91bd361",
+  "blind_material_sha256": "cb76c86adfd09450128b569cb5d98a2744fd6b169110b1cb52a38e9aecf8b73b",
+  "sha256": {
+    "audit.json": "6dfdc4f7ddaca987f03ac40f210fbe69ef5342868dc3371e183d2962d93a7718",
+    "audit.py": "10f42e72cb7f19c3fb627d0632142d4122c1feb4fbe75b3058c08154aef863b7",
+    "blind_grades.json": "31302d6897fa434f1fcb1d2262d43cdff5f5cc8f6faa741711cc208b5bd901ee",
+    "design.json": "2d11205fd3e501a192a97062ad8193b4ba837c1a3574d68fec3db63f419bbcba",
+    "fetch_data.py": "d96ded4aabc70b79612c31f4fb3c9e01ccf4671984130cb085696eaf5d5a163a",
+    "grade_rule.txt": "58a70b63ac7710a47c682c863ea1f79bf7b721bf3a902e9ad81038533369267f",
+    "observations.json": "dd0de4e78c57727c8615b181370cde55d9ebbfda73855fccf79dd6ac736034e1",
+    "run_text.py": "1e83a2a2c93e21c31e842d687d19c460915c8fbba9f8db61cf7984bdc5bbc1c9",
+    "score_text.py": "99959b01faf715f4724949a4bbff318a7b5f6361fa9a339cbbfa91e566618e4e",
+    "service_contract.json": "9e32427556cb4fbe84d6b7efa20e84c6ad1ef7623d8c4b7d5a354574f35a47b7",
+    "text_summary.json": "f9d3b35601ceaf3949188734e68fe09878bbf6dad7742f923c41e62ba557a397",
+    "check_grounding.py": "2997f8d0e2858436ee707851c3ca2279de460a4baf2272d7f4e4261ad19bed48",
+    "grounding.json": "de589962e9bb4ead7764a6bf8efd4e2f14bda1a1ded28bcca1fa4abbd85c3bd0",
+    "verify_archive.py": "0846168b8ba047739a01d94ee3191cbb2405ec304aba77ff9e0defd8c9d935a9"
+  }
+}

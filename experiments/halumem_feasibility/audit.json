@@ -1,0 +1,405 @@
+{
+  "counts": {
+    "users": 4,
+    "sessions": 277,
+    "dynamic_questions": 39
+  },
+  "unique_earlier_event_pairs": 23,
+  "pairs_with_other_question": 23,
+  "pairs_with_other_grounded_question": 23,
+  "paired_128_token_minimum": 23,
+  "eligible_users": 4,
+  "eligible_min_median_max": [
+    1630,
+    5359,
+    12245
+  ],
+  "input_first_four_digest": "654aaf58177b00121c52094c863af773f6bf7d833d449b1415cf86ac1062326a",
+  "candidate_pairs": [
+    {
+      "user": 0,
+      "event": 26,
+      "question_session": 29,
+      "changed": [
+        6
+      ],
+      "unaffected_evidence_elsewhere": [
+        3,
+        5,
+        7
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 4757
+    },
+    {
+      "user": 0,
+      "event": 49,
+      "question_session": 52,
+      "changed": [
+        1,
+        3
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        4,
+        5
+      ],
+      "other_questions": 4,
+      "intervening_tokens": 4739
+    },
+    {
+      "user": 0,
+      "event": 50,
+      "question_session": 52,
+      "changed": [
+        2
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "other_questions": 5,
+      "intervening_tokens": 2968
+    },
+    {
+      "user": 0,
+      "event": 60,
+      "question_session": 64,
+      "changed": [
+        0
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        3
+      ],
+      "other_questions": 4,
+      "intervening_tokens": 8790
+    },
+    {
+      "user": 1,
+      "event": 42,
+      "question_session": 46,
+      "changed": [
+        0
+      ],
+      "unaffected_evidence_elsewhere": [
+        1,
+        3
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 5755
+    },
+    {
+      "user": 1,
+      "event": 43,
+      "question_session": 46,
+      "changed": [
+        1
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        2,
+        4
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 3960
+    },
+    {
+      "user": 1,
+      "event": 56,
+      "question_session": 61,
+      "changed": [
+        2
+      ],
+      "unaffected_evidence_elsewhere": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 10789
+    },
+    {
+      "user": 1,
+      "event": 57,
+      "question_session": 61,
+      "changed": [
+        3
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        2,
+        6,
+        7
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 8329
+    },
+    {
+      "user": 2,
+      "event": 3,
+      "question_session": 7,
+      "changed": [
+        7
+      ],
+      "unaffected_evidence_elsewhere": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        8,
+        9
+      ],
+      "other_questions": 9,
+      "intervening_tokens": 5864
+    },
+    {
+      "user": 2,
+      "event": 5,
+      "question_session": 7,
+      "changed": [
+        8
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "other_questions": 9,
+      "intervening_tokens": 1630
+    },
+    {
+      "user": 2,
+      "event": 44,
+      "question_session": 50,
+      "changed": [
+        4
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 12245
+    },
+    {
+      "user": 2,
+      "event": 47,
+      "question_session": 50,
+      "changed": [
+        5
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        1,
+        3,
+        4,
+        6
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 5646
+    },
+    {
+      "user": 2,
+      "event": 59,
+      "question_session": 61,
+      "changed": [
+        3
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "other_questions": 9,
+      "intervening_tokens": 2315
+    },
+    {
+      "user": 3,
+      "event": 13,
+      "question_session": 17,
+      "changed": [
+        0
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        3
+      ],
+      "other_questions": 3,
+      "intervening_tokens": 7196
+    },
+    {
+      "user": 3,
+      "event": 20,
+      "question_session": 24,
+      "changed": [
+        0,
+        1
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        3,
+        6
+      ],
+      "other_questions": 6,
+      "intervening_tokens": 6668
+    },
+    {
+      "user": 3,
+      "event": 21,
+      "question_session": 24,
+      "changed": [
+        2
+      ],
+      "unaffected_evidence_elsewhere": [
+        1,
+        4,
+        5
+      ],
+      "other_questions": 7,
+      "intervening_tokens": 4006
+    },
+    {
+      "user": 3,
+      "event": 36,
+      "question_session": 39,
+      "changed": [
+        0,
+        1
+      ],
+      "unaffected_evidence_elsewhere": [
+        2,
+        4,
+        5
+      ],
+      "other_questions": 4,
+      "intervening_tokens": 5196
+    },
+    {
+      "user": 3,
+      "event": 52,
+      "question_session": 55,
+      "changed": [
+        4
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        2,
+        5
+      ],
+      "other_questions": 6,
+      "intervening_tokens": 4594
+    },
+    {
+      "user": 3,
+      "event": 53,
+      "question_session": 55,
+      "changed": [
+        5
+      ],
+      "unaffected_evidence_elsewhere": [
+        3,
+        4
+      ],
+      "other_questions": 6,
+      "intervening_tokens": 2250
+    },
+    {
+      "user": 3,
+      "event": 60,
+      "question_session": 64,
+      "changed": [
+        6,
+        8
+      ],
+      "unaffected_evidence_elsewhere": [
+        3,
+        4,
+        5,
+        9,
+        10,
+        11,
+        12
+      ],
+      "other_questions": 11,
+      "intervening_tokens": 7207
+    },
+    {
+      "user": 3,
+      "event": 62,
+      "question_session": 64,
+      "changed": [
+        10
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12
+      ],
+      "other_questions": 12,
+      "intervening_tokens": 3996
+    },
+    {
+      "user": 3,
+      "event": 61,
+      "question_session": 64,
+      "changed": [
+        12
+      ],
+      "unaffected_evidence_elsewhere": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "other_questions": 12,
+      "intervening_tokens": 5359
+    },
+    {
+      "user": 3,
+      "event": 68,
+      "question_session": 72,
+      "changed": [
+        4
+      ],
+      "unaffected_evidence_elsewhere": [
+        1,
+        3,
+        5,
+        6
+      ],
+      "other_questions": 9,
+      "intervening_tokens": 8127
+    }
+  ]
+}
