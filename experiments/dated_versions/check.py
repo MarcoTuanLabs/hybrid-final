@@ -90,7 +90,22 @@ def main():
     for target,controls,passed in [(stats['attention_skip'],[v for k,v in stats.items() if k!='attention_skip'],base['gate_passed']),
                                  (stats2['score_tangent'],[*stats.values(),*(v for k,v in stats2.items() if k!='score_tangent')],res['gate_passed'])]:
         assert all(target['both']>=v['both']+3 and target['old']>=v['old'] and target['new']>=v['new'] for v in controls)==passed
-    print('Both snapshot experiments verified on all',2*len(gold),'dated questions.')
+    expanded=read(HERE/'version_spans/proposals.json.gz')
+    assert len(expanded)==len(gold) and {r['id'] for r in expanded}==gold.keys()
+    case={}
+    for row in expanded:
+        uid=row['id']
+        matches=[any(marks(x,gold[uid][i])[0] for x in edition['pool']) for i,edition in enumerate(row['editions'])]
+        first=[marks(edition['span'],gold[uid][i])[0] for i,edition in enumerate(row['editions'])]
+        case[uid]=dict(covered=matches,top=first)
+    expected=read(HERE/'version_spans/summary.json')
+    assert case==expected['per_page']
+    assert sum(all(v['covered']) for v in case.values())==expected['both_covered']
+    assert sum(sum(v['covered']) for v in case.values())==expected['covered']
+    assert sum(all(v['top']) for v in case.values())==expected['top_both']
+    assert sum(sum(v['top']) for v in case.values())==expected['top_correct']
+    assert expected['gate']==(expected['both_covered']>=17)
+    print('Snapshot answers and candidate coverage verified on all',2*len(gold),'dated questions.')
 
 
 if __name__=='__main__':

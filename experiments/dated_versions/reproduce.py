@@ -16,6 +16,7 @@ PHASES={
     'probe4b':('asof_attribution/probe.py',['MODEL','4b'],['asof_attribution/4b_rows.jsonl','asof_attribution/4b_receipt.json']),
     'probe9b':('asof_attribution/probe.py',['MODEL','9b'],['asof_attribution/9b_rows.jsonl','asof_attribution/9b_receipt.json']),
     'rank':('asof_revision/rank.py',['MODEL'],['asof_revision/ranked.json','asof_revision/rank_receipt.json']),
+    'expanded-spans':('version_spans/propose.py',['MODEL'],['version_spans/proposals.json','version_spans/receipt.json']),
     'span':('asof_revision/span.py',['MODEL'],['asof_revision/span_answers.json','asof_revision/span_receipt.json']),
     'align':('revision_pairs/align.py',['MODEL'],['revision_pairs/alignment.json','revision_pairs/alignment_receipt.json']),
     'prepare-only':(None,[],[]),
@@ -30,7 +31,7 @@ def main():
         raise SystemExit('Supply the local model directory with --model.')
     dest=a.out.resolve()
     dest.mkdir(parents=True,exist_ok=False)
-    for folder in ['asof_revision','revision_pairs','asof_attribution']:
+    for folder in ['asof_revision','revision_pairs','asof_attribution','version_spans']:
         out=dest/folder;out.mkdir()
         for f in (HERE/folder).iterdir():
             if not f.is_file():continue
@@ -39,7 +40,7 @@ def main():
     for folder,names in [('bridge_reads',['bridge.py','engine.py']),('paired_hops',['run.py'])]:
         (dest/folder).mkdir()
         for name in names:shutil.copyfile(SHARED/folder/name,dest/folder/name)
-    for group in ('asof_revision','revision_pairs','asof_attribution'):
+    for group in ('asof_revision','revision_pairs','asof_attribution','version_spans'):
         for name,sha in json.loads((dest/group/'contract.json').read_text())['pins'].items():
             if hashlib.sha256((dest/group/name).read_bytes()).hexdigest()!=sha:
                 raise ValueError('Frozen input differs: '+group+'/'+name)

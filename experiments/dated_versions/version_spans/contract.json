@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-18T19:01:44.926204+00:00",
+  "hypothesis": "The remaining pages may require independent candidates at each date. Estimate whether an offline ranker could reach the old/new exact target using at most 12 candidates per date. Produce four previous label-blind answers and fill from the top nonduplicate short extractive answers across every infobox row and available paragraph, ordered by RoBERTa start/end log odds vs its no-answer score. No reference string read until the list is frozen.",
+  "gate": "Only run a learned or mechanistic selector if both true answers are available on >=17 of 20 pages, which is necessary for the +3 margin over the current best 14 pairs. Report full-source top extraction and individual candidate availability. This is feasibility, not deployable accuracy.",
+  "model": "deepset/roberta-base-squad2@adc3b06f79f797d1c575d5479d6f5efe54a9e3b4",
+  "budget": "Four CPU threads, 5 minutes, no accelerator rental, 20 exposed pages, one engineering repair.",
+  "pins": {
+    "propose.py": "513c166c1b2da3fd69183336899507ad4231c7b4ad9fdf36205ba8a00c6741e2",
+    "../asof_revision/inputs.json": "4e97b8f049ac035ccba2450be50ee9f945516eae34040a15bd53b4169246eaea",
+    "../revision_pairs/4b_rows.jsonl": "b3c0210736d30468c09aebfca2c912ba32a30dc1aeed7f80479e39954f68d92d"
+  }
+}
