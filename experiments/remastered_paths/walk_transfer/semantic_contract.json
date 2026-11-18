@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-18T17:32:49.114231+00:00",
+  "purpose": "Improve the adapted G-Walk comparison by allowing all free relation phrases, using official unnormalized mean-pooled Contriever, dot-product threshold .845 over bank relation clozes and public four-plus-one demonstrations for generating an unmatched relation question. Reuse earlier identical generated answers. Source model sizes same. No target case IDs, benchmark aliases or gold paths for decisions. This remains a per-question adaptation, not the reference official metric or full pipeline.",
+  "pins": {
+    "semantic_walk.py": "14d15c5c2751a4569b72b96d51a1a276504da9441cb62b993c613af11309e726",
+    "semantic_map.py": "3c0ea9944046655e9e3b91874da4130ee6d4f94b9017941aa87f64948484b78d",
+    "relation2subq_prompt2.txt": "e812e2b8d2c7bf09e0f7681439608bf4bf13bb3f554b879d97adce21da2bc749",
+    "contract.json": "260fd04589f324c04614e9781724271273f098148e8c2f82d76fe2f041504691",
+    "../remastered/contract.json": "697d2220e7609050825a48cfa388e244637161fc0dbd20b696397170b7e38f6f"
+  }
+}

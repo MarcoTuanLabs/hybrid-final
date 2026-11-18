@@ -1,0 +1,5 @@
+{
+  "at": "2026-11-18T17:14:32.352017+00:00",
+  "source_sha256": "12c8bc1fe1a5e6b9edc15e2348898a92b4c6b50f6a0693793239af9c0cf9eee0",
+  "rule": "Two exposed 512 banks; reserve 192 unused root entities then 128 more for validation before sampling up to 1800 training questions. Exclude matching root entities and literal masked question forms across these roles. The only training labels are question spans and ordered Wikidata relation IDs. Use every item in exposed set. Hold the 192-case cohort unopened for a passing reader."
+}

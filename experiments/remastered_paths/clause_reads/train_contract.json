@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-18T17:22:46.404131+00:00",
+  "id": "native_clause_ctc",
+  "hypothesis": "An aligned read of token contributions may help recognize the ordered semantic path. Fix the same two-layer CTC emission network and outward token ordering for every input set. Use separate forced train/validation/entity split. Select checkpoint and greedy or beam decoding on validation only, then compare all six configurations on 48 exposed multi-hop questions. Native transported-write candidate must gain >=3 plans against EACH control and have at least as many validation exacts as the strongest; full QA still required. Include reference from the preceding residual ridge model with 30/48. Reserve untouched.",
+  "budget": "10 min local CPU training with 4 threads, no paid jobs.",
+  "pins": {
+    "train.py": "ce6f920ed5e9c4d5ed91d636315e4d87a5ffc8d1a74154f55326f8e9e3642c2a",
+    "contract.json": "3e123e5c6bbf9094dbf7752f6c9acd99f89687371818d1cb1b1a1084285e9688",
+    "features.py": "ebaac8757362dc2171b67c883079c72f39289aeb71961d63422ad5de624884e2",
+    "../state_parser/items.json": "fc784c585d2a83374a091047755cc1420056489d3c8b6d086a40db31fcdfb3ff",
+    "../state_parser/targets.json": "44b2bd6ab47b85a4bc233372c79bd43b944ea941fc388da0c3c5715a4c414d6a",
+    "../remastered/labels.json": "5d33346bfa72a1448a3ec61cef3ebe7dc19dcd7d029ef79e93c7f7691fc4de5e",
+    "../typed_reads/schema.json": "616aa3e7f5ff2b9c90c4c1ad4bfe7267694681937db851319338ac72220250bc"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "n": 96,
+  "stats": {
+    "adaptive": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "lexical_walk": {
+      "unaffected_single": 14,
+      "total": 69,
+      "edited_multi": 20,
+      "unaffected_multi": 11,
+      "edited_single": 24
+    },
+    "lexical_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "residual_walk": {
+      "unaffected_single": 14,
+      "total": 66,
+      "edited_multi": 18,
+      "unaffected_multi": 10,
+      "edited_single": 24
+    },
+    "residual_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "residual_value_walk": {
+      "unaffected_single": 14,
+      "total": 69,
+      "edited_multi": 20,
+      "unaffected_multi": 11,
+      "edited_single": 24
+    },
+    "residual_value_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "residual_read_walk": {
+      "unaffected_single": 14,
+      "total": 70,
+      "edited_multi": 20,
+      "unaffected_multi": 12,
+      "edited_single": 24
+    },
+    "residual_read_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "raw_alignment_walk": {
+      "unaffected_single": 14,
+      "total": 67,
+      "edited_multi": 19,
+      "unaffected_multi": 10,
+      "edited_single": 24
+    },
+    "raw_alignment_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    },
+    "transport_walk": {
+      "unaffected_single": 14,
+      "total": 68,
+      "edited_multi": 21,
+      "unaffected_multi": 9,
+      "edited_single": 24
+    },
+    "transport_read": {
+      "unaffected_single": 14,
+      "total": 55,
+      "edited_multi": 10,
+      "unaffected_multi": 7,
+      "edited_single": 24
+    }
+  },
+  "promote": false,
+  "score": "Normalized per-question answer exact match on all four 24-question cells. Common development subcalls reused; no per-policy speed interpretation."
+}

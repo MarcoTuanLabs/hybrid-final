@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-18T17:28:45.009594+00:00",
+  "ctc_methods": [
+    "lexical",
+    "residual",
+    "residual_read",
+    "transport"
+  ],
+  "cohort": "All 96 exposed questions, the two same 512-fact banks. Reuse frozen 4B plans with 9B four-bit and 4B BF16 as final readers. All methods get the same estimated root. G-Walk comparator adapts the published natural-language demonstration prefix, greedy decoding, ontology-label matching and same walk. No example ID or gold aliases enter inference.",
+  "purpose": "Cross-size comparative diagnostic. No independent test or novel method promotion based on these results.",
+  "pins": {
+    "run.py": "add12a36fe130ae7c49247ddef4cda76d8df600e1383c0aaf1ba20d080d5e2fd",
+    "subq_breakdown.txt": "7a5e291936b17b13ecfb128696d98f1085f8da12fd499a865b592e96ff645731",
+    "vocabulary.json": "7d735bd7d317caacd07b8046e6a9f0427da7efeeb4486a2eb38feca4b11270b3",
+    "../bridge_reads/engine.py": "f6068086f33947e49d53eb2a080977061c96b9ff359b3b3177726a03f75125c0",
+    "../bridge_reads/bridge.py": "8000e6f424ff0aa43efa8adef8876c7ee86afb7cf7ff48421a5f8cc11c189a27",
+    "../clause_reads/4b_parser_scores.json": "88293549d20dc79e9f0a04e71615a458f5d7ece4f63f14d3ffc62aea4b80f749",
+    "../state_parser/items.json": "fc784c585d2a83374a091047755cc1420056489d3c8b6d086a40db31fcdfb3ff",
+    "../remastered/banks.json": "976b32cec4a9dacaa2ef630e6f98b08a1fa3d4f554c2faaff462f2903520daf7",
+    "../remastered/ranking.json": "3aa4bebad08c5cab219d27b0e25022a231f791e79460b99e155055225a5ea0b7",
+    "../typed_reads/schema.json": "616aa3e7f5ff2b9c90c4c1ad4bfe7267694681937db851319338ac72220250bc",
+    "../remastered/readers.py": "2808af9697354ee93ee67a4e0382ab8805f6ecfee37906b3af55ba9912991637"
+  }
+}

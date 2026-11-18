@@ -29,6 +29,10 @@ On 34 held-out questions from shortened LongMemEval histories, a per-head correc
 
 A separate balanced MQuAKE-Remastered pilot compared six readers on edited and unaffected single- and multi-hop questions. The conventional scoped reader scored 55/96 and the recurrent-channel contrast scored 54/96. [Per-task results and controls](experiments/remastered_contrast)
 
+## Following edits across several facts
+
+On 96 corrected MQuAKE development questions, a supervised text parser followed by Qwen3.5-9B answered 75 correctly. Ranked retrieval answered 63 and an adaptation of G-Walk with semantic relation matching answered 71. Adding recurrent token reads to the text parser also yielded 75. The 4B comparison yielded 69, 55, 61 and 70, respectively. Both readers used the same questions and graph. [Method, archived answers and reproduction](experiments/remastered_paths/README.md)
+
 ## Build and verify
 
 ```sh

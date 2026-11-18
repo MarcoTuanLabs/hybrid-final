@@ -1,0 +1,15 @@
+{
+  "at": "2026-11-18T17:21:18.915010+00:00",
+  "id": "clause_transport",
+  "parent": "state_parser_readout_4b",
+  "hypothesis": "Localize ordered relations using individual observed value writes. Propagate the final native query backward through frozen gates and keys, and measure per-token surviving contributions in the recurrent layer. An aligned sequence decoder may recover relation order lost in a single aggregate state. Compare conventional lexical and matched residual, raw value, actual native token read and untransported endpoint controls. Earlier full-state normalized fit did not beat pooled hidden states. No new data selection.",
+  "model": "interpretability/models/Qwen3.5-4B",
+  "gate": "Algebraic relative endpoint reconstruction error below .04 on every batch; for method with transported weights, >=3 additional correct exposed ordered paths vs best comparator and no lower validation score. Selection on the original 128 validation items only; actual QA and independent cross-model evidence required for a claim.",
+  "pins": {
+    "features.py": "ebaac8757362dc2171b67c883079c72f39289aeb71961d63422ad5de624884e2",
+    "../state_parser/items.json": "fc784c585d2a83374a091047755cc1420056489d3c8b6d086a40db31fcdfb3ff",
+    "../state_parser/targets.json": "44b2bd6ab47b85a4bc233372c79bd43b944ea941fc388da0c3c5715a4c414d6a",
+    "../state_parser/split.json": "08abbcc088470981a22cdbbde03b97910100bcbf734749ef7f606cfcd4fed9a1",
+    "../state_parser/4b_parser_scores.json": "14ca201bb555a159eb42261ce49e286fe41a67274c33d2cbeb75c7b26e437664"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "train": 856,
+    "validation": 128,
+    "exposed": 96
+  },
+  "training_roots": 2186,
+  "reserved_roots": 192,
+  "overlap_train_gold_masked_forms": 0,
+  "span_exact": {
+    "train": 855,
+    "validation": 125,
+    "exposed": 93
+  }
+}

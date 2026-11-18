@@ -1,0 +1,294 @@
+{
+  "4b_instantiations": {
+    "eligible_questions": 11,
+    "distinct_within_question": 17
+  },
+  "4b": {
+    "n": 96,
+    "stats": {
+      "gwalk_prompt": {
+        "unaffected_single": 14,
+        "total": 61,
+        "edited_multi": 15,
+        "unaffected_multi": 8,
+        "edited_single": 24
+      },
+      "lexical": {
+        "unaffected_single": 14,
+        "total": 69,
+        "edited_multi": 20,
+        "unaffected_multi": 11,
+        "edited_single": 24
+      },
+      "residual": {
+        "unaffected_single": 14,
+        "total": 66,
+        "edited_multi": 18,
+        "unaffected_multi": 10,
+        "edited_single": 24
+      },
+      "residual_read": {
+        "unaffected_single": 14,
+        "total": 70,
+        "edited_multi": 20,
+        "unaffected_multi": 12,
+        "edited_single": 24
+      },
+      "transport": {
+        "unaffected_single": 14,
+        "total": 68,
+        "edited_multi": 21,
+        "unaffected_multi": 9,
+        "edited_single": 24
+      },
+      "semantic_gwalk": {
+        "unaffected_single": 13,
+        "total": 61,
+        "edited_multi": 15,
+        "unaffected_multi": 9,
+        "edited_single": 24
+      },
+      "paired_plain": {
+        "unaffected_single": 14,
+        "total": 69,
+        "edited_multi": 20,
+        "unaffected_multi": 11,
+        "edited_single": 24
+      },
+      "paired_whole": {
+        "unaffected_single": 14,
+        "total": 68,
+        "edited_multi": 19,
+        "unaffected_multi": 11,
+        "edited_single": 24
+      },
+      "paired_projected": {
+        "unaffected_single": 14,
+        "total": 69,
+        "edited_multi": 20,
+        "unaffected_multi": 11,
+        "edited_single": 24
+      },
+      "paired_tangent": {
+        "unaffected_single": 14,
+        "total": 69,
+        "edited_multi": 20,
+        "unaffected_multi": 11,
+        "edited_single": 24
+      },
+      "ranked": {
+        "unaffected_single": 14,
+        "total": 55,
+        "edited_multi": 10,
+        "unaffected_multi": 7,
+        "edited_single": 24
+      }
+    },
+    "paired_against_lexical": {
+      "gwalk_prompt": {
+        "won": 3,
+        "lost": 11
+      },
+      "lexical": {
+        "won": 0,
+        "lost": 0
+      },
+      "residual": {
+        "won": 0,
+        "lost": 3
+      },
+      "residual_read": {
+        "won": 2,
+        "lost": 1
+      },
+      "transport": {
+        "won": 2,
+        "lost": 3
+      },
+      "semantic_gwalk": {
+        "won": 2,
+        "lost": 10
+      },
+      "paired_plain": {
+        "won": 0,
+        "lost": 0
+      },
+      "paired_whole": {
+        "won": 0,
+        "lost": 1
+      },
+      "paired_projected": {
+        "won": 0,
+        "lost": 0
+      },
+      "paired_tangent": {
+        "won": 0,
+        "lost": 0
+      },
+      "ranked": {
+        "won": 3,
+        "lost": 17
+      }
+    },
+    "paired_case_resampling": {
+      "ranked": {
+        "won": 17,
+        "lost": 3,
+        "accuracy_difference": 0.14583333333333334,
+        "paired_case_bootstrap_95": [
+          0.0625,
+          0.22916666666666666
+        ]
+      },
+      "residual_read": {
+        "won": 1,
+        "lost": 2,
+        "accuracy_difference": -0.010416666666666666,
+        "paired_case_bootstrap_95": [
+          -0.052083333333333336,
+          0.020833333333333332
+        ]
+      },
+      "semantic_gwalk": {
+        "won": 10,
+        "lost": 2,
+        "accuracy_difference": 0.08333333333333333,
+        "paired_case_bootstrap_95": [
+          0.020833333333333332,
+          0.14583333333333334
+        ]
+      },
+      "transport": {
+        "won": 3,
+        "lost": 2,
+        "accuracy_difference": 0.010416666666666666,
+        "paired_case_bootstrap_95": [
+          -0.03125,
+          0.0625
+        ]
+      }
+    }
+  },
+  "9b": {
+    "n": 96,
+    "stats": {
+      "gwalk_prompt": {
+        "unaffected_single": 17,
+        "total": 66,
+        "edited_multi": 16,
+        "unaffected_multi": 9,
+        "edited_single": 24
+      },
+      "lexical": {
+        "unaffected_single": 17,
+        "total": 75,
+        "edited_multi": 19,
+        "unaffected_multi": 15,
+        "edited_single": 24
+      },
+      "residual": {
+        "unaffected_single": 17,
+        "total": 72,
+        "edited_multi": 17,
+        "unaffected_multi": 14,
+        "edited_single": 24
+      },
+      "residual_read": {
+        "unaffected_single": 17,
+        "total": 75,
+        "edited_multi": 19,
+        "unaffected_multi": 15,
+        "edited_single": 24
+      },
+      "transport": {
+        "unaffected_single": 17,
+        "total": 73,
+        "edited_multi": 20,
+        "unaffected_multi": 12,
+        "edited_single": 24
+      },
+      "semantic_gwalk": {
+        "unaffected_single": 17,
+        "total": 71,
+        "edited_multi": 17,
+        "unaffected_multi": 13,
+        "edited_single": 24
+      },
+      "ranked": {
+        "unaffected_single": 17,
+        "total": 63,
+        "edited_multi": 12,
+        "unaffected_multi": 10,
+        "edited_single": 24
+      }
+    },
+    "paired_against_lexical": {
+      "gwalk_prompt": {
+        "won": 4,
+        "lost": 13
+      },
+      "lexical": {
+        "won": 0,
+        "lost": 0
+      },
+      "residual": {
+        "won": 0,
+        "lost": 3
+      },
+      "residual_read": {
+        "won": 2,
+        "lost": 2
+      },
+      "transport": {
+        "won": 2,
+        "lost": 4
+      },
+      "semantic_gwalk": {
+        "won": 2,
+        "lost": 6
+      },
+      "ranked": {
+        "won": 5,
+        "lost": 17
+      }
+    },
+    "paired_case_resampling": {
+      "ranked": {
+        "won": 17,
+        "lost": 5,
+        "accuracy_difference": 0.125,
+        "paired_case_bootstrap_95": [
+          0.03125,
+          0.21875
+        ]
+      },
+      "residual_read": {
+        "won": 2,
+        "lost": 2,
+        "accuracy_difference": 0.0,
+        "paired_case_bootstrap_95": [
+          -0.041666666666666664,
+          0.041666666666666664
+        ]
+      },
+      "semantic_gwalk": {
+        "won": 6,
+        "lost": 2,
+        "accuracy_difference": 0.041666666666666664,
+        "paired_case_bootstrap_95": [
+          -0.010416666666666666,
+          0.10416666666666667
+        ]
+      },
+      "transport": {
+        "won": 4,
+        "lost": 2,
+        "accuracy_difference": 0.020833333333333332,
+        "paired_case_bootstrap_95": [
+          -0.03125,
+          0.07291666666666667
+        ]
+      }
+    }
+  }
+}

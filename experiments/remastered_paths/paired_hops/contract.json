@@ -1,0 +1,24 @@
+{
+  "at": "2026-11-18T17:31:26.887575+00:00",
+  "hypothesis": "A changed intermediate entity can retain a competing old answer. Only at an unresolved factual hop following a divergent walk, inject a bounded rank-one correction along the first answer-prefix query, removing the radial component of the new-minus-old read. Compare stronger fixed lexical CTC path execution, unprojected whole-logit contrast and rank-one non-tangent adjustment, plus the other frozen CTC/G-Walk walks. Both old and new documents are serving inputs. Ordinary routing handles all 96. Two banks of 512.",
+  "methods": [
+    "plain",
+    "whole",
+    "projected",
+    "tangent"
+  ],
+  "parent": "walk_transfer lexical CTC and read_projection9 normalization-aware cache edits",
+  "gate": "On full exposed 4B, at least three additional edited multi-hop answers vs every control and no loss on edited singles or combined unaffected; otherwise discard. Only run 9B for a passing candidate. No per-policy speed claim from shared subcalls.",
+  "deadline_s": 600,
+  "budget": "10 minutes local 4B and one numerical/shape repair. No paid compute.",
+  "pins": {
+    "run.py": "5d6d9e0bb7dd50988f2e92a01640f3ea24db9f8009b7bcce48f75ae25db31c38",
+    "../clause_reads/4b_parser_scores.json": "88293549d20dc79e9f0a04e71615a458f5d7ece4f63f14d3ffc62aea4b80f749",
+    "../bridge_reads/engine.py": "f6068086f33947e49d53eb2a080977061c96b9ff359b3b3177726a03f75125c0",
+    "../bridge_reads/bridge.py": "8000e6f424ff0aa43efa8adef8876c7ee86afb7cf7ff48421a5f8cc11c189a27",
+    "../state_parser/items.json": "fc784c585d2a83374a091047755cc1420056489d3c8b6d086a40db31fcdfb3ff",
+    "../remastered/banks.json": "976b32cec4a9dacaa2ef630e6f98b08a1fa3d4f554c2faaff462f2903520daf7",
+    "../typed_reads/schema.json": "616aa3e7f5ff2b9c90c4c1ad4bfe7267694681937db851319338ac72220250bc",
+    "../walk_transfer/contract.json": "260fd04589f324c04614e9781724271273f098148e8c2f82d76fe2f041504691"
+  }
+}

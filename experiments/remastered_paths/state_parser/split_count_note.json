@@ -1,0 +1,5 @@
+{
+  "training_unique_root_surface_forms": 361,
+  "clarification": "The training_roots field in original split.json counts candidate roots scanned, including those for which all masked forms were already excluded. This file counts distinct contributing root names.",
+  "n_items": 1080
+}
