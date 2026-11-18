@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-18T16:49:07.276419+00:00",
+  "id": "retention_splice_confirmation",
+  "parent": "suffix_transport/gates",
+  "hypothesis": "The scalar-retention ablation reached 16/16 dense sequences in 4B development. Prospectively test this simpler native correction on 34 unused entries at 9B. Only one FP32 scalar per value head is retained for old suffix; old/new boundary checkpoints plus old end states are also required. Expensive transport arm was discarded.",
+  "revision": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "model": "tmp/hybrid-qwen9-transfer/8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "dataset": "interpretability/runs/utility_pilot_v1/sources/longmemeval_s_cleaned.json",
+  "modes": [
+    "bm25",
+    "gates",
+    "stale",
+    "full"
+  ],
+  "gate": "<=.80 of full exact replay in lifecycle dense-equivalent operation estimate, gold exact and token F1 at least full, plus at least 2 additional dense sequences vs stale or >=20% reduction mean logit error vs stale. BM25 is a separate mandatory practical accuracy/compute comparison; no general win unless both coordinates dominate it. Report observed synchronized times separately.",
+  "cost_scope": "One original memory ingest, retrospective addition, one unseen real benchmark query. Count all actual decoder calls/positions and conventional projection, MLP, causal attention and recurrence dense-equivalent MACs, estimated scalar update cost, and measured device-synchronized wall time independently per arm. 4-bit dequantization and lower-order operations are not hardware counts; startup outside. Each method builds its own old history. Baseline last layer norm and hidden emitted at prefill for all caches; output head only on actual next-token positions.",
+  "budget": "22 min local 9B, 136 actual generations, one implementation-only repair. Frozen before opening reserve.",
+  "pins": {
+    "run.py": "294d9e24d534409275fb51bc7c925ff2cdf4c4bbf774b2391483eb23c7d1b1ed",
+    "score.py": "ee24891b7deaed9bac13ff46be7929a020f5f1082d421ac3aae9313a8270dbe8",
+    "prepare.py": "e2b1f7d6cedfd66321cf4de7b80b3b87c3808f1d51f8eabf5839aa84631ccf30",
+    "../suffix_transport/run.py": "ae6ce09d3ce0993e09c7a8eac704d05687ea153942e13b55236eb5b01545a9c6",
+    "../suffix_transport/split.json": "3dd4367691203bede0e756e37f6729a2ee5ea4d7aa29f0ae73929376d80f67fe",
+    "../suffix_transport/4b_summary.json": "3aa08a68ed4133d1d0e0a0744196c893a8cd166be3a592c7a348c13eed3701f0"
+  }
+}

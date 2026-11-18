@@ -1,0 +1,67 @@
+{
+  "stats": {
+    "bm25": {
+      "exact": 19,
+      "f1": 0.6669340463458111,
+      "exact_sequences": 22,
+      "mean_rmse": 0.5845209351357292,
+      "online_s": 27.140090830856934,
+      "lifecycle_s": 27.40009404195007,
+      "lifecycle_positions": 10878,
+      "lifecycle_dense_equivalent_ops": 152097887748096,
+      "max_saved_retention_bytes": 0
+    },
+    "gates": {
+      "exact": 21,
+      "f1": 0.7262590350825644,
+      "exact_sequences": 33,
+      "mean_rmse": 0.15442224394749193,
+      "online_s": 46.453861167654395,
+      "lifecycle_s": 119.77490612631664,
+      "lifecycle_positions": 50104,
+      "lifecycle_dense_equivalent_ops": 702502476152832,
+      "max_saved_retention_bytes": 3072
+    },
+    "stale": {
+      "exact": 21,
+      "f1": 0.7220573544102955,
+      "exact_sequences": 33,
+      "mean_rmse": 0.1910480495323153,
+      "online_s": 46.70012137212325,
+      "lifecycle_s": 124.49886091228109,
+      "lifecycle_positions": 50103,
+      "lifecycle_dense_equivalent_ops": 702484885143552,
+      "max_saved_retention_bytes": 0
+    },
+    "full": {
+      "exact": 21,
+      "f1": 0.7262590350825644,
+      "exact_sequences": 34,
+      "mean_rmse": 0.0,
+      "online_s": 78.84801883623004,
+      "lifecycle_s": 148.82168200262822,
+      "lifecycle_positions": 66967,
+      "lifecycle_dense_equivalent_ops": 940122651099136,
+      "max_saved_retention_bytes": 0
+    }
+  },
+  "paired": {
+    "lifecycle_time": {
+      "ratio": 0.8048216127822113,
+      "interval": [
+        0.7808595152491922,
+        0.8289964808015156
+      ]
+    },
+    "lifecycle_operations": {
+      "ratio": 0.7472455592166698,
+      "interval": [
+        0.7421676895414798,
+        0.7526496637416273
+      ]
+    }
+  },
+  "passed": false,
+  "n": 34,
+  "grade": "fixed lowercase alphanumeric exact and token F1; bounded knowledge-update histories, not official judge."
+}

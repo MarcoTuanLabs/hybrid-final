@@ -1,0 +1,112 @@
+{
+  "n": 96,
+  "per_cell": 24,
+  "stats": {
+    "all_context": {
+      "cells": {
+        "unaffected_single": 12,
+        "edited_multi": 10,
+        "unaffected_multi": 7,
+        "edited_single": 14
+      },
+      "correct": 43,
+      "positions": 6661,
+      "reader_s": 71.26785212545656,
+      "routes": {
+        "context": 96
+      }
+    },
+    "adaptive": {
+      "cells": {
+        "unaffected_single": 14,
+        "edited_multi": 10,
+        "unaffected_multi": 7,
+        "edited_single": 24
+      },
+      "correct": 55,
+      "positions": 4394,
+      "reader_s": 48.609773381613195,
+      "routes": {
+        "short": 23,
+        "context": 49,
+        "explicit": 24
+      }
+    },
+    "dense": {
+      "cells": {
+        "unaffected_single": 13,
+        "edited_multi": 5,
+        "unaffected_multi": 9,
+        "edited_single": 24
+      },
+      "correct": 51,
+      "positions": 5836,
+      "reader_s": 49.00464554387145,
+      "routes": {
+        "short": 23,
+        "context": 49,
+        "explicit": 24
+      }
+    },
+    "paired": {
+      "cells": {
+        "unaffected_single": 14,
+        "edited_multi": 10,
+        "unaffected_multi": 7,
+        "edited_single": 24
+      },
+      "correct": 55,
+      "positions": 5487,
+      "reader_s": 33.85295400454197,
+      "routes": {
+        "short": 23,
+        "context": 49,
+        "explicit": 24
+      }
+    },
+    "whole": {
+      "cells": {
+        "unaffected_single": 14,
+        "edited_multi": 8,
+        "unaffected_multi": 6,
+        "edited_single": 24
+      },
+      "correct": 52,
+      "positions": 7923,
+      "reader_s": 77.04050942510366,
+      "routes": {
+        "short": 23,
+        "context": 49,
+        "explicit": 24
+      }
+    },
+    "native": {
+      "cells": {
+        "unaffected_single": 14,
+        "edited_multi": 10,
+        "unaffected_multi": 6,
+        "edited_single": 24
+      },
+      "correct": 54,
+      "positions": 7895,
+      "reader_s": 77.97932413208764,
+      "routes": {
+        "short": 23,
+        "context": 49,
+        "explicit": 24
+      }
+    }
+  },
+  "promote": false,
+  "decision": "discard_native_contrast",
+  "retrieval_cost": [
+    {
+      "index_s": 1.8129198340466246,
+      "index_encoder_padded_positions": 8608
+    },
+    {
+      "index_s": 1.6321832919493318,
+      "index_encoder_padded_positions": 8768
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "model": "4b",
+  "summary": {
+    "full": {
+      "exact": 12,
+      "f1": 0.7559523809523809,
+      "same_sequence": 16,
+      "rmse": 0.0,
+      "online_forward": 16123,
+      "lifecycle_forward": 31282,
+      "online_s": 18.088362457114272,
+      "lifecycle_s": 32.485273752128705,
+      "extra_tape_bytes": 0
+    },
+    "stale": {
+      "exact": 10,
+      "f1": 0.6726190476190477,
+      "same_sequence": 14,
+      "rmse": 0.23894205084070563,
+      "online_forward": 8188,
+      "lifecycle_forward": 23347,
+      "online_s": 11.087543086265214,
+      "lifecycle_s": 25.484454381279647,
+      "extra_tape_bytes": 0
+    },
+    "gates": {
+      "exact": 12,
+      "f1": 0.7559523809523809,
+      "same_sequence": 16,
+      "rmse": 0.21590304793789983,
+      "online_forward": 8187,
+      "lifecycle_forward": 23346,
+      "online_s": 11.24223008286208,
+      "lifecycle_s": 25.639141377876513,
+      "extra_tape_bytes": 0
+    },
+    "transport": {
+      "exact": 11,
+      "f1": 0.6934523809523809,
+      "same_sequence": 15,
+      "rmse": 0.20019889948889613,
+      "online_forward": 8188,
+      "lifecycle_forward": 23347,
+      "online_s": 11.500359958969057,
+      "lifecycle_s": 25.89727125398349,
+      "extra_tape_bytes": 804519936
+    },
+    "bm25": {
+      "exact": 13,
+      "f1": 0.8238636363636364,
+      "same_sequence": 12,
+      "rmse": 0.526028947904706,
+      "online_forward": 5355,
+      "lifecycle_forward": 5355,
+      "online_s": 8.988787085167132,
+      "lifecycle_s": 8.988787085167132,
+      "extra_tape_bytes": 0
+    },
+    "last_session": {
+      "exact": 8,
+      "f1": 0.5059523809523809,
+      "same_sequence": 11,
+      "rmse": 0.8525685146450996,
+      "online_forward": 8395,
+      "lifecycle_forward": 8395,
+      "online_s": 11.40780341962818,
+      "lifecycle_s": 11.40780341962818,
+      "extra_tape_bytes": 0
+    }
+  },
+  "promote": false,
+  "decision": "discard_as_accuracy_efficiency_method",
+  "metric": "Normalized exact and token F1 in bounded timestamped workload; not official GPT grader or unmodified full history."
+}

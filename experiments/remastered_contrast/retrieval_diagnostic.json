@@ -1,0 +1,20 @@
+{
+  "columns": [
+    "questions",
+    "exact"
+  ],
+  "by_edit_coverage": {
+    "all": [
+      16,
+      10
+    ],
+    "some": [
+      4,
+      0
+    ],
+    "none": [
+      4,
+      0
+    ]
+  }
+}

@@ -2,21 +2,21 @@
   "named": {
     "file": "output/pdf/hybrid_memory_working_paper.pdf",
     "pages": 4,
-    "bytes": 240858,
-    "sha256": "1789df0055ecc3eebabec85368ce58ab6264e9544135d4ca39cd3b1cbdacabeb",
+    "bytes": 241585,
+    "sha256": "fa5fb581fd7c5e3721ea54150c2d51c39716e2af47d6967288b2ae173b806a12",
     "author": "Lu-Yen Marco Tuan",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "All four rendered pages inspected for clipping, layout, equations, figure, authorship and references."
+    "visual_review": "Rendered and inspected all four pages for authorship, references, equations, figures and clipping."
   },
   "review": {
     "file": "output/pdf/hybrid_dai_review.pdf",
     "pages": 4,
-    "bytes": 240466,
-    "sha256": "5f713bccc474b235a3e3dcf5ad7099d2560b90d2df8404d284ca1fcbea4f70a9",
+    "bytes": 241194,
+    "sha256": "b97ab6965d682c78547bbbceabf76df7a1f59a6906ff81f5f71158bd1aaf807b",
     "author": "",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "All four rendered pages inspected for clipping, layout, equations, figure, authorship and references."
+    "visual_review": "Rendered and inspected all four pages for authorship, references, equations, figures and clipping."
   }
 }

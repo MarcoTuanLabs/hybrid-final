@@ -1,0 +1,31 @@
+{
+  "at": "2026-11-18T16:45:04.054545+00:00",
+  "id": "suffix_transport",
+  "parent": "read_projection9",
+  "hypothesis": "An edit arrives after a suffix has been ingested, before the serving question. Propagate the updated-minus-old warm boundary recurrent state through the saved keys, decay gates and delta-rule write gates of the original suffix. Splice position-corrected attention KV and use common stale terminal convolutions. Compare to strongest same budget stale and scalar decay, ordinary exact checkpoint replay, BM25 and inserted session only. Full model never reruns skipped suffix tokens in approximate arms. Ordinary recurrent dynamics with fixed incoming activations make this homogeneous transport exact only locally. Multilayer warming is approximate.",
+  "dataset": "Official LongMemEval-S knowledge-update entries. Adapted oracle-windowed user history: earlier evidence sessions / insert latest evidence session / first 512 following user tokens. Source annotations simulate an insertion event before question; no labels or evidence annotations consumed at model runtime. 16 hash ordered development cases from 50 eligible; 34 unopened. This is not full-history LongMemEval.",
+  "models": {
+    "4b": "interpretability/models/Qwen3.5-4B",
+    "9b": "tmp/hybrid-qwen9-transfer/8b2b98c00a6b4d291155e4890773ca8f769aee53"
+  },
+  "methods": [
+    "full",
+    "stale",
+    "gates",
+    "transport",
+    "bm25",
+    "last_session"
+  ],
+  "suffix_tokens": 512,
+  "warm_tokens": 16,
+  "gate": "Transport must gain >=2 exact dense sequences over both matched-budget controls, reduce centered error by >=20% vs each, have no token-F1 loss against full replay and save >=20% synchronized update-through-answer time. Also disclose all semantic results, end-to-end with old construction, extra tape, layer-token counts. A win here would require independent larger validation and a separate unbounded accuracy result. No official-grader claim.",
+  "budget": "16 min local, 16 cases, 96 generations. One implementation-only repair; no paid GPU.",
+  "pins": {
+    "run.py": "ae6ce09d3ce0993e09c7a8eac704d05687ea153942e13b55236eb5b01545a9c6",
+    "score.py": "1bf95e98ba04419cf8c76caca9d9e3d9d48c16faa052ae3cff3c054e0022c578",
+    "prepare.py": "515f79e62cabcf456df205eb7cffa0b31007804307fabbeae2cb0f9c4102132d",
+    "inputs.json": "1a74473fe273c34cbb2d9303ca9c91eb11ad3d9de84ff1af1f3455b74645fc22",
+    "labels.json": "09ca04386f29a309d2f9fad9fd38a5faf546062f41d82367897aaed1d3973373",
+    "split.json": "3dd4367691203bede0e756e37f6729a2ee5ea4d7aa29f0ae73929376d80f67fe"
+  }
+}

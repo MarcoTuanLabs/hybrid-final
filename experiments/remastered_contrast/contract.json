@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-18T16:52:26.640549+00:00",
+  "id": "remastered_native_contrast",
+  "source": "henryzhongsc/MQuAKE-Remastered at b54712d4b464d7e2d4edccd4022f95ddbcb719e7, CF3k parquet",
+  "model": "supply via HYBRID_QWEN_WEIGHTS",
+  "retriever": "supply via HYBRID_CONTRIEVER_WEIGHTS",
+  "contriever_sha": "08b88f3a3697877345669405c51a23f53ed90aa2bab441cd7b7b08659925eef8",
+  "hypothesis": "In a hybrid decoder, contrast new recurrent matrices and old matrices before processing an unseen question, keeping attention and convolution fixed in the two model copies. Rescore each answer token by new + (new - counterfactual), constrained to a tenth of best base next-token probability. This tests a specific unrestricted-compute causal-channel addition over ordinary whole-prompt contrast, paired old then new facts, dense and adaptive retrieval. All arms receive exact typed scoped routing except unconditional contextual control.",
+  "modes": [
+    "all_context",
+    "adaptive",
+    "dense",
+    "paired",
+    "whole",
+    "native"
+  ],
+  "protocol": "Two 512-update banks, novel root IDs relative to exposed CF cohorts, 24 separate cases per bank evenly split by edit vs unaffected and 2/3/4 hop length. Each case contributes an atomic question and the first official multihop question. Labels held outside inference. Restored source integrity: omit rewrite/path mismatches before generation. Query indices freshly built with shared Contriever; decoder positions and component wall time reported separately.",
+  "gate": "At least +3/24 edited multihop vs every strong implemented alternative, edited single at least tied and unaffected combined at least tied. No relation to official leaderboard score. On failure do not scale the accuracy candidate. Separate compute target requires full accounting.",
+  "budget": "18 min, 576 independent operating-point requests (direct exact lookup has zero decoder steps). One implementation-only repair.",
+  "pins": {
+    "rank.py": "bf4be7b9fa504b83088346c21871fa812926e25c6b63c203908b5106c2cb2862",
+    "readers.py": "0f0df984fa0fdbf35e75880dcd5c925f2e6f7dcfbaa7d74105fa9a7ab1c818d5",
+    "score.py": "b3780eb48aceea82a03daddbd7753ed851130bc3abfd6e15f404fba9392c0373",
+    "banks.json.gz": "69c386553f82c7f5c6ac66802a6e1d3bf09147a7490c3d196f05d29025b638e3",
+    "decoding_schema.json": "616aa3e7f5ff2b9c90c4c1ad4bfe7267694681937db851319338ac72220250bc",
+    "labels.json": "5d33346bfa72a1448a3ec61cef3ebe7dc19dcd7d029ef79e93c7f7691fc4de5e",
+    "source_check.json": "56077c351dfee9c0c83093666e1fc3453bdcc1ee6f940ad951d404cab0e71d0a",
+    "cohorts.json": "f6cabdcec5d66f27e462c9206931727298760315855a4287f97a16b8faaeaaf2"
+  }
+}

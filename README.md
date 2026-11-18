@@ -23,6 +23,12 @@ The receiver starts with an old, question-conditioned cache and also receives th
 
 On 32 official bAbI test stories and 32 previously unused MQuAKE cases, the projected update reproduced all 128 dense answer sequences. Equal-size rank-four SVD reproduced 124. Dense transfer and the projection answered 53/64 updated questions correctly. SVD answered 54/64. The preregistered confirmation rule also required halving centered-logit error against each compressed control on both tasks. The strongest comparison gave error ratios of 0.508 on bAbI and 0.378 on MQuAKE. The composite rule therefore failed on bAbI. No system latency, general factual accuracy, or resident-memory advantage is asserted. [Experiment and rerun instructions](experiments/read_projection) · [Held-out scores](evidence/read_projection/test_summary.json) · [Other public-task pilots](evidence/public_diagnostics/README.md)
 
+## Updating a cached conversation before the question
+
+On 34 held-out questions from shortened LongMemEval histories, a per-head correction reproduced the 4-bit 9B full-replay answers apart from one final period. Each method matched 21 reference answers. Counting the original history, insertion and answer, estimated decoder arithmetic fell by 25.3% and measured time by 19.5%. Reusing the old recurrent state also scored 21/34 at nearly the same cost. BM25 scored 19/34 with the lowest computational cost. [Methods, competing results and reproduction](experiments/late_arrival)
+
+A separate balanced MQuAKE-Remastered pilot compared six readers on edited and unaffected single- and multi-hop questions. The conventional scoped reader scored 55/96 and the recurrent-channel contrast scored 54/96. [Per-task results and controls](experiments/remastered_contrast)
+
 ## Build and verify
 
 ```sh

@@ -342,34 +342,43 @@ on MQuAKE and 0.508 on bAbI. The latter missed the 0.500 cutoff.
 The byte counts cover the recurrent update only. They exclude the
 shared donor cache components and local dense reconstruction.
 
+\paragraph{An edit before the question.}
+I inserted a delayed session into shortened, timestamped LongMemEval
+histories \citep{wu2025}. I retained the earlier evidence sessions and
+512 subsequent user tokens. After replaying the insertion and 16 of
+those tokens, I scaled each head's state difference by the product of its
+stored retention gates. I added the result to its old final state and
+adjusted the cached attention keys for the insertion.
+
+On 34 held-out questions, this correction and full replay each matched
+21 reference answers. Their outputs differed only by one period.
+Counting the original history, insertion and answer, the correction
+reduced estimated dense-equivalent operations by 25.3\% and measured
+time by 19.5\% on 4-bit 9B. Reusing the old final state also scored
+21/34 at nearly the same cost. The correction reduced its mean logit
+error by 19.2\%, below the prespecified 20\% threshold.
+BM25 retrieval scored 19/34 and used fewer operations than either cache method.
+
 \section{Relation to Prior Work}
-Linear attention represents associations as fast weights \citep{schlag2021}.
+Linear attention stores associations as fast weights \citep{schlag2021}.
 Gated DeltaNet adds retention and delta-rule correction \citep{yang2025}.
-In pretrained hybrids, attention caches can carry the retrieved value
-when the recurrent state comes from a different prompt
-\citep{afendulev2026,lee2026}. Recurrent layers can also build the query
-used to retrieve that value \citep{zeng2026}. Muir trains a matched-filter read gate
-\citep{gangavarapu2026}. I use a pretrained model's existing
-normalization to choose a read query for a specified write.
-SinkState compresses recurrent states with adaptive low-rank
-approximations \citep{jiang2026}. My codec targets the reads of a
-known suffix. ROME edits factual associations in weights \citep{meng2022}. Paired nuisance and unwritten
-controls test which answer changes the intervention produces
-\citep{zhang2024}.
+Attention can carry a retrieved value \citep{afendulev2026,lee2026},
+and recurrent layers can construct its address \citep{zeng2026}.
+Muir trains a matched-filter read gate \citep{gangavarapu2026}.
+I use the model's existing normalization to choose a read query.
+SinkState adapts the SVD rank of recurrent states \citep{jiang2026}.
+My projection targets the directions a known suffix reads.
+ROME edits weights \citep{meng2022}. Paired controls isolate the
+behavioral effect of the runtime write \citep{zhang2024}.
 
 \section{Discussion and Conclusion}
-The normalized effect of a write depends on the background read and
-the heads that share its query. Accounting for both improves answer
-control on two independent synthetic retrieval cohorts, while a single
-native initialization reduces total intervention time on 27B.
+The background read and the heads that share a query determine how a
+write survives normalization. Accounting for both improves answer
+control on two synthetic cohorts. The public experiments establish
+fidelity to a reference computation on bounded histories. Their short
+answers and fixed update locations limit conclusions about open-ended chats.
 
-The causal control results use short dictionaries, distinct write paths
-and single-token answers. The public-task result concerns synchronization
-of question-conditioned caches. It preserves the reference output on
-the tested requests. Sender computation, resident memory and performance
-on future questions remain open deployment costs.
-
-\begin{thebibliography}{11}
+\begin{thebibliography}{12}
 \bibitem[Afendulev et~al.(2026)]{afendulev2026}
 Afendulev, K.; Dontsov, A.; Tutubalina, E.; and Korznikov, A. 2026.
 What Attention Recalls and Recurrence Controls in Hybrid Language Models.
@@ -408,6 +417,11 @@ Learning}, 139: 9355--9366.
 Weston, J.; Bordes, A.; Chopra, S.; Rush, A.~M.; van Merri\"enboer, B.;
 Joulin, A.; and Mikolov, T. 2016. Towards AI-Complete Question
 Answering: A Set of Prerequisite Toy Tasks. In \emph{ICLR}.
+
+\bibitem[Wu et~al.(2025)]{wu2025}
+Wu, D.; Wang, H.; Yu, W.; Zhang, Y.; Chang, K.-W.; and Yu, D. 2025.
+LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory.
+In \emph{International Conference on Learning Representations}.
 
 \bibitem[Yang et~al.(2025)]{yang2025}
 Yang, S.; Kautz, J.; and Hatamizadeh, A. 2025.

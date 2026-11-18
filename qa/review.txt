@@ -10,3 +10,6 @@ The packaged public-task scorer reproduces the archived development and held-out
 I checked the externally visible files for accidental local absolute paths, credentials and model weights. The official bAbI and MQuAKE sources are identified alongside the derived questions. Quantized write-pilot C++ solvers compile locally and reproduce the tested binary outputs. These are authoring-session checks performed with AI assistance.
 
 I ran the standalone public runner on all 64 held-out cases again. All 768 method-by-request token sequences and all recorded non-timing fields agreed with the locked run. The standalone scorer reproduced the complete held-out summary.
+
+Late-arriving history update, checked 18 November 2026.
+Both PDFs were rebuilt and rendered after adding the 9B bounded LongMemEval experiment. Both have four pages. The named author and affiliation, anonymous edition, singular voice, original headline results, new cost ratios and attributions were checked. The two online scorers reproduced the archived development and held-out summaries from 232 raw rows. The packaged preparation code recreated the question IDs, original input bytes and evaluation labels. The 9B held-out run used four independently measured serving methods. The scalar correction missed its registered advantage over the cheap stale-state control.
