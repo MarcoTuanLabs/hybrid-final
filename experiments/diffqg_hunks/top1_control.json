@@ -1,0 +1,4 @@
+{
+  "reason": "Search located the labeled forward source first on all 32 development questions before QA inference. Include ordinary extraction and free generation on the first document, as well as multiple-document controls. The reader receives only retrieval results and the requested year.",
+  "timing": "Added before any development answer predictions."
+}

@@ -45,6 +45,10 @@ On 96 held-out HoH-QAs pages, a text-based update to a saved answer reduced meas
 
 In a separate 32-question full-bank experiment, the best direct readers answered 23 questions correctly. Neither attention-cache nor recurrent-matrix contrast improved the 22/32 score of the matched expanded-retrieval generator. [Full-bank evaluations](experiments/hoh_updates/README.md)
 
+On the same 32 cold questions, a current-passage likelihood ranker followed by a span reader answered 25/32 exactly. It ranked the labeled source first on 30/32 requests. Adding a recurrent-matrix contrast to cross-edition cards yielded 15/32 with free generation. [Cold retrieval and answer comparison](experiments/hoh_inverse/README.md)
+
+On 32 human-written DiffQG questions adapted for open QA, undoing one edit before scoring an answer span yielded 23 exact answers. A simpler free reader with changed-span suggestions also scored 23. [Independent human-question pilot](experiments/diffqg_hunks/README.md)
+
 ## Build and verify
 
 ```sh

@@ -1,0 +1,28 @@
+{
+  "n": 32,
+  "literal_pairs": 26,
+  "reviewed_pairs": 55,
+  "decisions": {
+    "reject": 14,
+    "accept": 35,
+    "uncertain": 6
+  },
+  "range": {
+    "expanded_open": [
+      25,
+      27
+    ],
+    "upr_open": [
+      26,
+      30
+    ],
+    "recurrent_open": [
+      26,
+      27
+    ],
+    "upr_top1_extractive": [
+      29,
+      29
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "source": "https://storage.googleapis.com/gresearch/diffqg/gold_annotations.jsonl",
+  "sha256": "4883c090e66838e46abdac2707be7953d2628e1d5d03ebea0c54d7a9a3e5f5d1",
+  "paper": "https://aclanthology.org/2023.eacl-main.225/",
+  "task": "Cold open QA on human-written DiffQG questions, adapted from the source question-generation task. Index the complete released before/after contexts from positive and negative examples by topic, dates and plain text. Strip the supplied focal-sentence separators before indexing. Do not pass the gold noun phrase, focal sentences or seed question to retrieval, reading or edit localization. Use only strictly forward-year records. All readers receive the question and requested snapshot year. Search over the complete forward corpus and use entries from the requested edition for the primary as-of experiment; retain unfiltered source ranks for comparison.",
+  "select": "One nonempty expert question per Wikipedia topic. Exclude the schema-preview topic Rose Bowl (stadium) and titles used in prior HoH or DynaQuest evaluation. Hash-order topics using diffqg-hunks-v1; first 32 development, next 96 holdout, remaining for possible calibration. Hash-order eligible questions within each topic. No selection by observed response, string length, difficulty, or whether the gold span appears in the changed hunk. Only development labels materialized. Apply the forward-year restriction before forming topics or question hashes.",
+  "gate": "Against every conventional control, at least three additional exact answers on 32 topics and no F1 loss to promote. A held-out large accuracy result requires at least eight additional exact answers on 96, nonnegative F1 difference and a paired exact-match interval excluding zero. Do not open confirmation if pilot does not qualify. Efficiency result independent of cold QA.",
+  "budget": "Local data preparation only until the current registered HoH intervention finishes."
+}

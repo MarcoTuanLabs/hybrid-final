@@ -1,0 +1,6 @@
+{
+  "at": "2026-11-18T20:05:09.811048+00:00",
+  "source_census": "447 of 759 questions are oriented strictly forward. The source also treats earlier Wikipedia editions as targets. A target-year decrease would make the description of an earlier base false.",
+  "previous_contract": "403df681c5ecee3712dde735476b81f668d65ae47011e2622b30db1197b75e7d",
+  "change": "Rebuild the corpus and splits before any pilot predictions using only pairs with target_year greater than base_year. Give every method the requested snapshot year and also retain full-bank retrieval for diagnostics. No page hint; query remains new. Do not claim this is the 111971-pair HoH user-question-only task."
+}

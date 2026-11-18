@@ -1,0 +1,4 @@
+{
+ "role":"Additional ordinary control. The six-source union contains the labeled evidence for all 32 development questions. A source row's current snapshot date can differ from another row's, so a strong model should also see the six dates. Freeze before scoring any proposed ranking or open-answer outputs. Do not change the candidate.",
+ "test":"Three ordinary Qwen4B prompts, using exactly the same six current passages and no generated fact cards: top-three existing expanded-current prompt as in answer.py, all six without dates, all six with snapshot dates. Compare absolute EM and F1 on identical questions. Also inspect the best current span inside all six as a diagnostic ceiling. Thirty minutes locally, no paid credits. Six-source controls join the best practical baseline for promotion."
+}

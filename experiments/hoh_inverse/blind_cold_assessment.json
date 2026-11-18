@@ -1,0 +1,222 @@
+{
+  "090f17899e57": {
+    "decision": "reject",
+    "reason": "Different count."
+  },
+  "0c98bc206cc3": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "1025b18797cd": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "16e34c33f598": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "1a5fd04dec8a": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "1c7cc30ed762": {
+    "decision": "uncertain",
+    "reason": "Includes the reference value for one film among several. The standalone question omits the film."
+  },
+  "225016105713": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "22a09b4e2408": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "285109eb694a": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "314108b05186": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "394b81cb232e": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "409a44c42814": {
+    "decision": "reject",
+    "reason": "Abstains from giving the year."
+  },
+  "41f3fb3b23c1": {
+    "decision": "uncertain",
+    "reason": "Includes the reference rank but lists alternatives for an unspecified university."
+  },
+  "4339997b598a": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "443c4bdee274": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "4644ffbb4c37": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "4853464d6d33": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "4ad6ebe5de6f": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "50e0c93cc05c": {
+    "decision": "uncertain",
+    "reason": "Includes the reference person among partners at several firms. The question omits the firm."
+  },
+  "5957468a3e74": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "5ad4070b848f": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "5dec1932fc7b": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "620612890833": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "634a671c5699": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "68873c0c6d7b": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "6a231bf0d47f": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "70be99e6a9f8": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "857c2805af8b": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "8cb6a5d612b7": {
+    "decision": "uncertain",
+    "reason": "Year matches. The source excerpt does not verify both added museum names."
+  },
+  "8ffe8ae20286": {
+    "decision": "reject",
+    "reason": "States 59 first and contradicts its own answer."
+  },
+  "93612d9e90e3": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "963500fe308e": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "9cbb10190fe4": {
+    "decision": "reject",
+    "reason": "No 54% or matching target in the truncated reply."
+  },
+  "9f6e9fbf0772": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "a22f826692f3": {
+    "decision": "reject",
+    "reason": "Disclaims the location; the venue string is quoted without answering."
+  },
+  "a772b0a08759": {
+    "decision": "reject",
+    "reason": "Omits the municipality population."
+  },
+  "abbae42eaa5c": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "abe0dea80a45": {
+    "decision": "reject",
+    "reason": "55% conflicts with 54%."
+  },
+  "ac69f60ef0f1": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "adc320e4c4d2": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "b180c0ce6cbc": {
+    "decision": "reject",
+    "reason": "States 59 first and contradicts its own answer."
+  },
+  "bb14d0acaf58": {
+    "decision": "reject",
+    "reason": "Wrong count."
+  },
+  "c40973fb7aba": {
+    "decision": "uncertain",
+    "reason": "Includes the reference person, plus a partner from another firm. The question omits the firm."
+  },
+  "c7f9b5d6bc4e": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "c8de248f24f1": {
+    "decision": "reject",
+    "reason": "Wrong rank."
+  },
+  "ca8a02158bda": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "d78842980496": {
+    "decision": "reject",
+    "reason": "No listed count matches the reference."
+  },
+  "d98def7c318f": {
+    "decision": "reject",
+    "reason": "Wrong percentage."
+  },
+  "e176c75662bb": {
+    "decision": "reject",
+    "reason": "Uses an older, less informative gross."
+  },
+  "e622cf17553f": {
+    "decision": "reject",
+    "reason": "No listed rank matches the reference."
+  },
+  "f10400452565": {
+    "decision": "uncertain",
+    "reason": "Year matches. The source excerpt does not verify both added museum names."
+  },
+  "f4b433ab79ee": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "f559e0b7d7e1": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "f98a9ba629b4": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  },
+  "fa8ef14c7299": {
+    "decision": "accept",
+    "reason": "Expresses all requested facts, with equivalent wording."
+  }
+}

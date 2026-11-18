@@ -1,7 +1,7 @@
 {
-  "version": 11,
+  "version": 12,
   "branch": "main",
-  "parent_commit": "ec8c25c33976eb551d7a2a34b01264dc30ac3abc",
+  "parent_commit": "e75e5bb80e99c044ac7b9ea1d9f0a03049c704da",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 7223,
-      "sha256": "c5f7fc78583270e80ca5bb84a5440c6c8c5b3190ba485dcf5713340448dd243e",
-      "git_blob_sha1": "46ede417510a6bbb21ab029831590121036e6d35"
+      "bytes": 7834,
+      "sha256": "221fceb04cfba0552c659002f29a44b143998659f94dd66239768ccaa958c41d",
+      "git_blob_sha1": "10d3cc3072449cf9fa29cacef43233cdd397e6b8"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -526,6 +526,156 @@
       "git_blob_sha1": "406d4a5eb40d74bef88937983167ec80f3cc54ba"
     },
     {
+      "path": "experiments/diffqg_hunks/README.md",
+      "bytes": 4180,
+      "sha256": "2919810597b1dd9eaba06ebcdb6fc114a2f8aefc3a6cc9ab9622c72856f90d79",
+      "git_blob_sha1": "d0a2511498bd0c8fc0d7fa23b62c85c87174c30d"
+    },
+    {
+      "path": "experiments/diffqg_hunks/answer.py",
+      "bytes": 2844,
+      "sha256": "a700942f4e5e0d651f41c2c7df8e6a029f4161bc153d4224980ba19d39bb0ea6",
+      "git_blob_sha1": "7ee04181ce6eb72f616a9879d8d16cfc42f8a6b9"
+    },
+    {
+      "path": "experiments/diffqg_hunks/contract.json",
+      "bytes": 2897,
+      "sha256": "b1e5a850cfdbb895ebff1b666a8ec1984302a6232fe1195d329f5aef56190eb9",
+      "git_blob_sha1": "d237c396e5e25f7a4bb7f463bfc72839466d9fa6"
+    },
+    {
+      "path": "experiments/diffqg_hunks/edits.py",
+      "bytes": 1707,
+      "sha256": "12c27c51cb11385ee7ef5f5c098149d4b4a75739838c1e0c3de0299e483c3863",
+      "git_blob_sha1": "62ec8d7b86a1fa0c4202e58bc34a44db69f50114"
+    },
+    {
+      "path": "experiments/diffqg_hunks/index_receipt.json",
+      "bytes": 176,
+      "sha256": "17581f993d9d5597be3a731c926854ae256eec40f9f15f0caf930fccf93d931b",
+      "git_blob_sha1": "6abd87612a86d2be0e3e46c9dc5702185df0140b"
+    },
+    {
+      "path": "experiments/diffqg_hunks/labels.json",
+      "bytes": 6917,
+      "sha256": "d8656cf5e7ebeca78dd93db9d28cccb71cd963d73c24fadb98080670c5096f73",
+      "git_blob_sha1": "c829e85418a07a11325d6546e061ec5720b30ba6"
+    },
+    {
+      "path": "experiments/diffqg_hunks/lock.json",
+      "bytes": 1487,
+      "sha256": "3a0b4a0472e233b14a591b9d1359248a9fcd96f1a2901e4b8a2a7654f831c245",
+      "git_blob_sha1": "300cb13bdadf8b42a0744286ad75848a68b23e97"
+    },
+    {
+      "path": "experiments/diffqg_hunks/open_rows.jsonl",
+      "bytes": 16481,
+      "sha256": "315b0986697b94e999c3ef3fd7d607ab35039bb0980dc370e63cf496c08a1571",
+      "git_blob_sha1": "5171bb14e14aaca584d6780a2691cbd2b2d1f44a"
+    },
+    {
+      "path": "experiments/diffqg_hunks/prep_receipt.json",
+      "bytes": 88,
+      "sha256": "9a1e34b69fc1e5356fb9d08b0803020a7a01be602df0f41b93108af1faa64700",
+      "git_blob_sha1": "1b07512f0d68513ffa38a7c39669302d22369e83"
+    },
+    {
+      "path": "experiments/diffqg_hunks/prepare.py",
+      "bytes": 2413,
+      "sha256": "3019f1fe01c306fbfb0e81c58cc4a9472cf4d8f9e60c6786a6dfd6015fbd63e8",
+      "git_blob_sha1": "893e2da14c4ed85e73979cdeb5783794268819c4"
+    },
+    {
+      "path": "experiments/diffqg_hunks/prior_subscription_title_hashes.json",
+      "bytes": 8963,
+      "sha256": "a1c9b7fb38e824957dd12bcadf10917ed9faa2274577c29b971861addb3762c9",
+      "git_blob_sha1": "d55825c34d53a1d409aaee795b23d360e90f6b58"
+    },
+    {
+      "path": "experiments/diffqg_hunks/questions.json",
+      "bytes": 5859,
+      "sha256": "29ac10355075222913f19d44234ff04fc8b3174eead3e50b4e7a23070ddb42ee",
+      "git_blob_sha1": "bb4bdb87919f0b24ee5abdc64f3606a0833a3f2e"
+    },
+    {
+      "path": "experiments/diffqg_hunks/ranks.json",
+      "bytes": 53109,
+      "sha256": "eeeb978a2088ea602b5285bdb8cb95f42ed14782ccb4f6265d32c0cb1f4bff3c",
+      "git_blob_sha1": "f8a1bff249488b8a7316d0aa0a5ee0474ae7e0d5"
+    },
+    {
+      "path": "experiments/diffqg_hunks/read.py",
+      "bytes": 5581,
+      "sha256": "8da517175f76edec413ffd22ad1ab234ecf817083dd8c796c4355f55b3df9c45",
+      "git_blob_sha1": "e0910e6ff9ab01757c3673767649400ae20ca6fb"
+    },
+    {
+      "path": "experiments/diffqg_hunks/retrieve.py",
+      "bytes": 2218,
+      "sha256": "cde12fdbc175b54f748bab1ca67f279859a0064e52cce757d832483204e9577f",
+      "git_blob_sha1": "5c71a47a4e144df379d0a8512f40979adbe915a9"
+    },
+    {
+      "path": "experiments/diffqg_hunks/rule_details.json",
+      "bytes": 717,
+      "sha256": "6c996288dfef9673205f64f3e8c5ac512493c13e8d6ec2d40e013b798761be0a",
+      "git_blob_sha1": "5c8b89a5fe78ec088500e9ecd17c5ca4eb6178f3"
+    },
+    {
+      "path": "experiments/diffqg_hunks/schema_correction.json",
+      "bytes": 680,
+      "sha256": "48870f198f8f179fc71dba24e5cc35cf6e93e01b2d8bd830aec68b44cd6db20e",
+      "git_blob_sha1": "9dd281feb1a9258bda960fea6e4d29d6e59b53af"
+    },
+    {
+      "path": "experiments/diffqg_hunks/score.py",
+      "bytes": 3204,
+      "sha256": "519b0fb3567034f0fc3ec8292f91d778b0ff8b67e86a854fa72dc399b55cefd0",
+      "git_blob_sha1": "937744266500b0a6b9a2e0d19015c447f070f381"
+    },
+    {
+      "path": "experiments/diffqg_hunks/selection.json",
+      "bytes": 1951,
+      "sha256": "5ab4475a88114a490e081599db87e0de6684c6a1dcf8cc31312e79d7d1fd2702",
+      "git_blob_sha1": "b63b456a57f3ccecc446b30e1134c2c5097276b9"
+    },
+    {
+      "path": "experiments/diffqg_hunks/span_rows.jsonl.gz",
+      "bytes": 63232,
+      "sha256": "2af3136033249d0ef4e561583e30f4b6e6f4af6dc0eb3ffc6106c2a0daf1bef9",
+      "git_blob_sha1": "bb701b6e61ba74414226173409af10439839c229"
+    },
+    {
+      "path": "experiments/diffqg_hunks/split.json",
+      "bytes": 3589,
+      "sha256": "3481aa46034d3246dadf5bda61c46899fc659daddc1f0fd90dd9ccb9064a2fde",
+      "git_blob_sha1": "b520e84dca138bad8fe2e275ef3f0314c1bca139"
+    },
+    {
+      "path": "experiments/diffqg_hunks/summary.json",
+      "bytes": 2505,
+      "sha256": "a019e9dca7f107326650abb8c0e62acd79cbccebcfadff02460fa8e39ea77ae3",
+      "git_blob_sha1": "91f135ac9c3b6b326f43cf978e1ab417fe4c8dad"
+    },
+    {
+      "path": "experiments/diffqg_hunks/superseded_lock.json",
+      "bytes": 938,
+      "sha256": "573e33e5232842b70df23af2218d5cca3c716fdf010fd0bfeab14c73671c073b",
+      "git_blob_sha1": "e92c1ba9bc1cca752bc29a6a9aa2c282b4bf1833"
+    },
+    {
+      "path": "experiments/diffqg_hunks/top1_control.json",
+      "bytes": 360,
+      "sha256": "918da421963d32069f8daea348ce9fe326aa950103c61b634536baaa73524086",
+      "git_blob_sha1": "7505e419cc594ccc2017c2e301d0d6072dfd1405"
+    },
+    {
+      "path": "experiments/diffqg_hunks/top1_reference_review.json",
+      "bytes": 2918,
+      "sha256": "6a423cfe4abc547abfcff861c75579f488d85c940f57299b5368c6595dbdc9f0",
+      "git_blob_sha1": "53dc82657b29d4c15215047596a369eedad82ba1"
+    },
+    {
       "path": "experiments/hoh_boundary/README.md",
       "bytes": 7098,
       "sha256": "90f23cc181c3b873957fd0b28435a94cb89ffe4617174a636e96edd7d3739f23",
@@ -668,6 +818,228 @@
       "bytes": 2023,
       "sha256": "3cf075a9702554dd6d7d4d045e03e07b2912c8879e8218c7a16ccede5653fa36",
       "git_blob_sha1": "66c6f5534015979b915b83a4da89da254017a4b4"
+    },
+    {
+      "path": "experiments/hoh_inverse/README.md",
+      "bytes": 5275,
+      "sha256": "c20b38c1fb5ef25d5e4a25459b45d37574761a215cbaf87f599d11b06bfa650a",
+      "git_blob_sha1": "0d131234a4ca37e8df5b3a61abeeae0c2b25991d"
+    },
+    {
+      "path": "experiments/hoh_inverse/additional_comparator.json",
+      "bytes": 452,
+      "sha256": "85b7268323b0306627b5a422f4f8d8d54887233935713fdfb5bd2e06aefab0b7",
+      "git_blob_sha1": "7526e1feb59275ca12decdc854df1ccef52e9d1a"
+    },
+    {
+      "path": "experiments/hoh_inverse/answer.py",
+      "bytes": 3952,
+      "sha256": "614a26238c2be6e4ca53af646d6d671fe268ad6d043fa29c0522c07e5d2d022f",
+      "git_blob_sha1": "f4745938491b7a3671bf50c213faddb83a195002"
+    },
+    {
+      "path": "experiments/hoh_inverse/answers.jsonl",
+      "bytes": 105062,
+      "sha256": "0f23cb6e28a84c0cd260c58cf2697ee26d600b5e178e0646fb5b6dc8b0e87a16",
+      "git_blob_sha1": "a4217ddbccd4e1cca0265cbba0b1be70b76e64df"
+    },
+    {
+      "path": "experiments/hoh_inverse/blind_cold.py",
+      "bytes": 1562,
+      "sha256": "87390e64c23f28929e6fd0ca3c5cd7bb05adefc5a758ddc8ce4fc06172e810cf",
+      "git_blob_sha1": "977518b5ffe484c8f669c5f8a1736f61ed8d44db"
+    },
+    {
+      "path": "experiments/hoh_inverse/blind_cold_assessment.json",
+      "bytes": 6661,
+      "sha256": "b731a2e071f0c8e5fba037ad8c4c8aff8d8ea86bf984a6a36608584a0d911aab",
+      "git_blob_sha1": "75793b6b07ff56482e76bbd2b18c296a71aaac6d"
+    },
+    {
+      "path": "experiments/hoh_inverse/blind_cold_links.json",
+      "bytes": 7235,
+      "sha256": "ce16f1173186f356c6596d759379431031191dac35374927f666d27ec55d584d",
+      "git_blob_sha1": "6dca2db26d2620fcdc4e73ea66a03a1525a5cf35"
+    },
+    {
+      "path": "experiments/hoh_inverse/blind_cold_literals.json",
+      "bytes": 471,
+      "sha256": "8ea0e531f1525463e488e7f95669d3874d582242c33a87f831887fe74d035e1e",
+      "git_blob_sha1": "713a61cb296cb7aba332691a7d336841be7b0eef"
+    },
+    {
+      "path": "experiments/hoh_inverse/card_embedding_time.json",
+      "bytes": 32,
+      "sha256": "05a4c0e2b1876329d360f8db4d7f5b1c357585b094eba370aae175734242d7ab",
+      "git_blob_sha1": "0521a7596d2ee657f459b5f650182a20581420dd"
+    },
+    {
+      "path": "experiments/hoh_inverse/card_similarity.json",
+      "bytes": 27301,
+      "sha256": "93e6dd1264d7635bdb86ef0be8a62269e0975f502e8afb2a5018dee3f5c82977",
+      "git_blob_sha1": "0f92baa51d520d62071017ea734e63da98230e46"
+    },
+    {
+      "path": "experiments/hoh_inverse/cards.jsonl",
+      "bytes": 124500,
+      "sha256": "a7e0e46136f73c26934bb57f93c00ba10db48434c3b1b35b527fa02ec51c2e84",
+      "git_blob_sha1": "7a830c04dd4cb9502002ddb75b4ccb6edd176b6a"
+    },
+    {
+      "path": "experiments/hoh_inverse/cards.py",
+      "bytes": 2554,
+      "sha256": "b8bfbe7e952225ad48164c91b9731c731f6950670d1f14eb12f290128e37b134",
+      "git_blob_sha1": "224442c01ad3506d9dc40a21e4aab159d4649660"
+    },
+    {
+      "path": "experiments/hoh_inverse/check_null.py",
+      "bytes": 996,
+      "sha256": "6d5c39e8fbaa66a3b6ad3efc448bb226a95c6da4c5e4ec26736dbf631a727d7d",
+      "git_blob_sha1": "49fe97ec6e9affcfd33d96e42a18d4c7c00aa8e8"
+    },
+    {
+      "path": "experiments/hoh_inverse/cold_semantic_summary.json",
+      "bytes": 353,
+      "sha256": "c3b2ce2131440585cfd48d9a9ddfd82cd52926da2f693514645d90ae9e12050a",
+      "git_blob_sha1": "e680ae7caedfd18aa571ab0010a0170cafb1a381"
+    },
+    {
+      "path": "experiments/hoh_inverse/contract.json",
+      "bytes": 3008,
+      "sha256": "f79a972e4a0b5c9984770ea9c594140fce4fd11a2671faf6acc937b776f23e8e",
+      "git_blob_sha1": "e37c6c759211b8e8fcc76f5718dac26fd9367d68"
+    },
+    {
+      "path": "experiments/hoh_inverse/date_answers.jsonl",
+      "bytes": 8754,
+      "sha256": "f063641e5e731046dd759d3b930330637220fed598c662105b04efbfc83b5e22",
+      "git_blob_sha1": "b3d66456dd9ec87c5bc5551fc013b2242d0315f6"
+    },
+    {
+      "path": "experiments/hoh_inverse/date_control.json",
+      "bytes": 803,
+      "sha256": "cf01b2a22754760a3b6d8f58fd6b0dab074af56c434e94d3f026f46c7482254e",
+      "git_blob_sha1": "b94a5fe4f8fe27681a89f746ebb598437acdc1af"
+    },
+    {
+      "path": "experiments/hoh_inverse/date_control.py",
+      "bytes": 1673,
+      "sha256": "cd81ae43024c8ad3f873bf4af9cf66875440f176769a67ded2af2e6b084356ae",
+      "git_blob_sha1": "e0858642c23d4c0b5043d2612d736f08bde34e2f"
+    },
+    {
+      "path": "experiments/hoh_inverse/diagnose.py",
+      "bytes": 1982,
+      "sha256": "a736db8c25f4854906ee5b615bb49ba0ad8c80471645bf957e2d3612b8915cc3",
+      "git_blob_sha1": "ec768bbb3a1e098149580478dab7f5af5029c758"
+    },
+    {
+      "path": "experiments/hoh_inverse/earlier_evaluation_files.json",
+      "bytes": 441,
+      "sha256": "8178fd181e74b66ffa787b9df0d12f858914ea130fb4b0ce57d1ef8c90d2d03c",
+      "git_blob_sha1": "b868a374ec7321aa48c31022a2fe49af3243d15e"
+    },
+    {
+      "path": "experiments/hoh_inverse/evaluation_files.json",
+      "bytes": 628,
+      "sha256": "804bbff19e4aaebfaa87f51acef462814d6180618ec00c05054ebf43ff836cd1",
+      "git_blob_sha1": "813d1465d7101d20d4de5d88f9bf98c5da473bd7"
+    },
+    {
+      "path": "experiments/hoh_inverse/likelihood.py",
+      "bytes": 2914,
+      "sha256": "73f9d0228e670adf96d3b85ad120f346f67dc64d65926429b20adf580441c7b6",
+      "git_blob_sha1": "6b1f4f55fe495545756dd74f7e1b5dd76cd3f589"
+    },
+    {
+      "path": "experiments/hoh_inverse/likelihoods.jsonl",
+      "bytes": 56222,
+      "sha256": "c3d7fd0e63555333f367fb7da94f7c2a5138bd4df6f2aeb68be624b89d737c47",
+      "git_blob_sha1": "8e4507e08eb6525a80bb61d90c4731f449806c11"
+    },
+    {
+      "path": "experiments/hoh_inverse/null_control.json",
+      "bytes": 381,
+      "sha256": "077e0afea163b469d0f95a8c54d7da2f5e1bbed94cd303c15a38dcf92c4a34ba",
+      "git_blob_sha1": "4107c61e2d5636343f6ae6821881f5046870d79f"
+    },
+    {
+      "path": "experiments/hoh_inverse/pool_ids.json",
+      "bytes": 35971,
+      "sha256": "23860fd91cd926146e16e245313a8e54f76582c943fe48f8baebd872e43dfc1e",
+      "git_blob_sha1": "4801a98e2ccdc1f27fd0f27b0868228ccc388286"
+    },
+    {
+      "path": "experiments/hoh_inverse/query.py",
+      "bytes": 1294,
+      "sha256": "86cf3777b464afd12a1d74673fd28996f7c93e0c25ea75d319ea9991bb02c8e2",
+      "git_blob_sha1": "70996fac6df4f5c1cd68cf5ea592dd82f9915a22"
+    },
+    {
+      "path": "experiments/hoh_inverse/reader.py",
+      "bytes": 2224,
+      "sha256": "3b12d2af46be61346e4addf4e2f44f150f4943511c1a195e09951cabde7a97ca",
+      "git_blob_sha1": "97aeff5147e3ce495232c308dec18c879ca51182"
+    },
+    {
+      "path": "experiments/hoh_inverse/relevance.json",
+      "bytes": 1545,
+      "sha256": "7212a24afe2820768726672c6a865407ba9e367385cf0e753a14f2682c109660",
+      "git_blob_sha1": "51135e6d608f46221718043704958dfabcbd6d53"
+    },
+    {
+      "path": "experiments/hoh_inverse/rewrites.json",
+      "bytes": 8272,
+      "sha256": "520b1f364ef58087ef0b19278beabe76d13775d4664c52ba5d4c932f970f7cec",
+      "git_blob_sha1": "8a3fbee5df568ea44dbc6bbb73e27c206009a24f"
+    },
+    {
+      "path": "experiments/hoh_inverse/score_cold_semantic.py",
+      "bytes": 1113,
+      "sha256": "024ea5afd13a4d3114090a29f0fd109f3999c8798391db427d988239281eb212",
+      "git_blob_sha1": "d51796fdcec130849ccc0bca30e0a88abf557ea9"
+    },
+    {
+      "path": "experiments/hoh_inverse/score_inverse.py",
+      "bytes": 4936,
+      "sha256": "fd67f28782badcde738d2a2531ced9fd67e3e89708836b15d278ff4647675de9",
+      "git_blob_sha1": "1ce9880b8bb48481ccdcbc2bffd2af87f727955a"
+    },
+    {
+      "path": "experiments/hoh_inverse/search.py",
+      "bytes": 4307,
+      "sha256": "9cf3840a9cb9aa7ae84b7d32caa1078d79b52214efe6492bf48171209b68901d",
+      "git_blob_sha1": "847c28d1f02d589eb7ec477661657f1c635c7d17"
+    },
+    {
+      "path": "experiments/hoh_inverse/search_time.json",
+      "bytes": 50,
+      "sha256": "d61566914e4e322884466e0f8ae0c62cbf31552318a6002f97ea3cac8894df3d",
+      "git_blob_sha1": "617872401c64b8365a62d7f27475a4055d060f50"
+    },
+    {
+      "path": "experiments/hoh_inverse/semantic_scope.json",
+      "bytes": 967,
+      "sha256": "cf380f83108bfbc2743e8c915af973bdef2aa2f4517cccd0558a82b463f777fa",
+      "git_blob_sha1": "04796f0358b404e820b116540a3d40e46e648272"
+    },
+    {
+      "path": "experiments/hoh_inverse/source_lock.json",
+      "bytes": 420,
+      "sha256": "99fad7c7b10a3bbb89a71f2d4a50cd2e18c41eb55bdf8495c6354ea4e27d0064",
+      "git_blob_sha1": "692822c1dad9407115cc277d04c792291e99686c"
+    },
+    {
+      "path": "experiments/hoh_inverse/spans.json",
+      "bytes": 31076,
+      "sha256": "86c0b1f1071400c93756f8833a42a414be2d02731b1c8ad4ac7bd3a656380bfc",
+      "git_blob_sha1": "b8cc108f1225c9b3483657f102d5ebba2383d0f8"
+    },
+    {
+      "path": "experiments/hoh_inverse/summary.json",
+      "bytes": 3512,
+      "sha256": "9341074c06449eb25381056cc7df9581360f48a278b465ca447dda3c7e03bd64",
+      "git_blob_sha1": "684631b48fa5a3dbf57b20b09bca952790ef8ec8"
     },
     {
       "path": "experiments/hoh_refresh/README.md",

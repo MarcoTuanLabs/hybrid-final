@@ -1,0 +1,4 @@
+{
+  "reason": "An ordinary query-likelihood ranker placed the labeled source first on 30/32. The archived independent current-only extractor already supplies answers for every source. Report its output on that top document and include it among practical baselines before making any promotion decision.",
+  "note": "Added after source-ranking diagnostics and before final complete candidate or dated-control scores. No weights or candidates changed."
+}

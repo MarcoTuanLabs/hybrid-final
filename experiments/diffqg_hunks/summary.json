@@ -1,0 +1,136 @@
+{
+  "n": 32,
+  "metrics": {
+    "span_current": {
+      "em": 22,
+      "f1": 0.8485863095238095
+    },
+    "span_whole": {
+      "em": 22,
+      "f1": 0.8634672619047619
+    },
+    "span_rollback": {
+      "em": 23,
+      "f1": 0.8843005952380952
+    },
+    "span_symmetric": {
+      "em": 22,
+      "f1": 0.8485863095238095
+    },
+    "span_changed": {
+      "em": 20,
+      "f1": 0.8431230228105228
+    },
+    "open_current_1": {
+      "em": 20,
+      "f1": 0.8450351731601732
+    },
+    "open_current_3": {
+      "em": 22,
+      "f1": 0.8794903013653014
+    },
+    "open_current_6": {
+      "em": 21,
+      "f1": 0.8690736346986347
+    },
+    "open_paired_3": {
+      "em": 21,
+      "f1": 0.8599941724941725
+    },
+    "open_current_hint": {
+      "em": 21,
+      "f1": 0.8565736346986347
+    },
+    "open_changed_hint": {
+      "em": 23,
+      "f1": 0.8802478771228771
+    },
+    "open_whole_hint": {
+      "em": 22,
+      "f1": 0.8594145437895437
+    },
+    "open_rollback_hint": {
+      "em": 23,
+      "f1": 0.8802478771228771
+    },
+    "open_symmetric_hint": {
+      "em": 21,
+      "f1": 0.8575351731601731
+    },
+    "span_top1": {
+      "em": 22,
+      "f1": 0.8485863095238095
+    }
+  },
+  "controls": [
+    "span_top1",
+    "open_current_1",
+    "span_current",
+    "span_changed",
+    "span_whole",
+    "open_current_3",
+    "open_current_6",
+    "open_paired_3",
+    "open_current_hint",
+    "open_changed_hint",
+    "open_whole_hint"
+  ],
+  "best_control_em": 23,
+  "best_control_f1": 0.8802478771228771,
+  "gates": {
+    "span_rollback": false,
+    "span_symmetric": false,
+    "open_rollback_hint": false,
+    "open_symmetric_hint": false
+  },
+  "source_recall_top_1_3_6": {
+    "main": [
+      32,
+      32,
+      32
+    ],
+    "all_years": [
+      32,
+      32,
+      32
+    ],
+    "dense": [
+      32,
+      32,
+      32
+    ],
+    "lexical": [
+      32,
+      32,
+      32
+    ]
+  },
+  "span_oracle": 31,
+  "paired": {
+    "span_symmetric": {
+      "base": "span_current",
+      "gains": 0,
+      "losses": 0
+    },
+    "open_symmetric_hint": {
+      "base": "open_current_hint",
+      "gains": 0,
+      "losses": 0
+    },
+    "span_rollback": {
+      "base": "span_whole",
+      "gains": 1,
+      "losses": 0
+    },
+    "open_rollback_hint": {
+      "base": "open_whole_hint",
+      "gains": 1,
+      "losses": 0
+    }
+  },
+  "encoder_passages": 1150,
+  "encoder_seconds": 46.15613004285842,
+  "open_calls": 197,
+  "open_positions": 121961,
+  "open_seconds": 431.8876402518945
+}

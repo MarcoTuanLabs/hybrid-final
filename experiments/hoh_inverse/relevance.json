@@ -1,0 +1,65 @@
+{
+  "n": 32,
+  "features": {
+    "upr": {
+      "auc": 0.98125,
+      "page_paired_auc_ci": [
+        0.95,
+        1.0
+      ],
+      "strict_top1": 30,
+      "median_source": -0.5170786082744598,
+      "median_per_query_others": -3.382888698577881,
+      "median_max_absolute_score": 3.781287670135498
+    },
+    "paired": {
+      "auc": 0.975,
+      "page_paired_auc_ci": [
+        0.94375,
+        1.0
+      ],
+      "strict_top1": 29,
+      "median_source": -0.5994821190834045,
+      "median_per_query_others": -3.5044371128082275,
+      "median_max_absolute_score": 3.9103697538375854
+    },
+    "whole_gain": {
+      "auc": 0.6625,
+      "page_paired_auc_ci": [
+        0.55625,
+        0.7625
+      ],
+      "strict_top1": 10,
+      "median_source": 0.05871036648750305,
+      "median_per_query_others": -0.02145650386810303,
+      "median_max_absolute_score": 0.2537902295589447
+    },
+    "recurrent_gain": {
+      "auc": 0.625,
+      "page_paired_auc_ci": [
+        0.5125,
+        0.7375
+      ],
+      "strict_top1": 9,
+      "median_source": -0.015955299139022827,
+      "median_per_query_others": -0.05155349969863891,
+      "median_max_absolute_score": 0.2100459337234497
+    }
+  },
+  "paired_differences": {
+    "paired minus upr": {
+      "auc_difference": -0.006249999999999999,
+      "ci95": [
+        -0.031249999999999993,
+        0.012499999999999997
+      ]
+    },
+    "recurrent_gain minus whole_gain": {
+      "auc_difference": -0.0375,
+      "ci95": [
+        -0.1375,
+        0.06874999999999999
+      ]
+    }
+  }
+}

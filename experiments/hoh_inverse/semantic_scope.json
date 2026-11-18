@@ -1,0 +1,6 @@
+{
+  "role": "Post-hoc descriptive ceiling diagnostic. Assess how many facts a conventional reader already recovers on the 32 exposed cold questions. Keep registered exact/F1 gates unchanged.",
+  "methods": ["expanded_open","upr_open","recurrent_open","upr_top1_extractive"],
+  "assessor": "One AI editorial reviewer with reference, actual labeled evidence and question. Hide policies, scores, model and rank. Automatically accept identical normalized case/whitespace; manually inspect all other distinct case/response pairs. Accept complete requested facts and equivalent names/numbers, reject incompatible/unsupported or incomplete facts, mark ambiguous scope/reference uncertain. Keep strict and permissive counts.",
+  "scope": "Frozen before looking at the complete aggregate answers. Selecting these methods reflects the exposed result that ordinary query likelihood finds 30/32 labeled sources first. No alternative output chosen or generated from the audit."
+}

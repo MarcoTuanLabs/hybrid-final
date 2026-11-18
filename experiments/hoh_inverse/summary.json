@@ -1,0 +1,194 @@
+{
+  "n": 32,
+  "measures": {
+    "expanded_open": {
+      "em": 3,
+      "f1": 0.4003193303836686,
+      "stale": 0
+    },
+    "upr_open": {
+      "em": 3,
+      "f1": 0.4159469614418127,
+      "stale": 0
+    },
+    "hypothetical_open": {
+      "em": 11,
+      "f1": 0.5754366987179487,
+      "stale": 0
+    },
+    "hypothetical_copy": {
+      "em": 7,
+      "f1": 0.3481322496947497,
+      "stale": 0
+    },
+    "paired_open": {
+      "em": 16,
+      "f1": 0.6876954003598741,
+      "stale": 0
+    },
+    "paired_copy": {
+      "em": 17,
+      "f1": 0.6587388306138307,
+      "stale": 0
+    },
+    "whole_open": {
+      "em": 16,
+      "f1": 0.6784806567701305,
+      "stale": 0
+    },
+    "whole_copy": {
+      "em": 18,
+      "f1": 0.6899888306138307,
+      "stale": 0
+    },
+    "recurrent_open": {
+      "em": 15,
+      "f1": 0.6439956671220973,
+      "stale": 0
+    },
+    "recurrent_copy": {
+      "em": 18,
+      "f1": 0.6899888306138307,
+      "stale": 0
+    },
+    "all_six": {
+      "em": 3,
+      "f1": 0.38454162518450274,
+      "stale": 0
+    },
+    "all_six_dated": {
+      "em": 20,
+      "f1": 0.7901143790849673,
+      "stale": 0
+    },
+    "expanded_extractive": {
+      "em": 23,
+      "f1": 0.8397215937657114,
+      "stale": 0
+    },
+    "upr_top1_extractive": {
+      "em": 25,
+      "f1": 0.8897215937657114,
+      "stale": 0
+    }
+  },
+  "previous_open_best": 23,
+  "best_control_em": 25,
+  "best_control_f1": 0.8897215937657114,
+  "retrieval_top1_top3_top6": {
+    "expanded": [
+      25,
+      29,
+      32
+    ],
+    "upr": [
+      30,
+      32,
+      32
+    ],
+    "hypothetical": [
+      27,
+      30,
+      32
+    ],
+    "paired": [
+      26,
+      31,
+      32
+    ],
+    "whole": [
+      26,
+      30,
+      32
+    ],
+    "recurrent": [
+      26,
+      30,
+      32
+    ]
+  },
+  "additional_source_slots": 66,
+  "card_coverage": {
+    "current": {
+      "valid": 192,
+      "source_cards": 192,
+      "any_exact": 7,
+      "labeled_source_exact": 7
+    },
+    "paired": {
+      "valid": 192,
+      "source_cards": 192,
+      "any_exact": 19,
+      "labeled_source_exact": 19
+    }
+  },
+  "gate": {
+    "paired_open": false,
+    "paired_copy": false,
+    "whole_open": false,
+    "whole_copy": false,
+    "recurrent_open": false,
+    "recurrent_copy": false
+  },
+  "paired": {
+    "paired_open": {
+      "base": "hypothetical_open",
+      "gain": 8,
+      "loss": 3,
+      "changed_text": 19
+    },
+    "paired_copy": {
+      "base": "hypothetical_copy",
+      "gain": 12,
+      "loss": 2,
+      "changed_text": 24
+    },
+    "whole_open": {
+      "base": "paired_open",
+      "gain": 1,
+      "loss": 1,
+      "changed_text": 5
+    },
+    "whole_copy": {
+      "base": "paired_copy",
+      "gain": 1,
+      "loss": 0,
+      "changed_text": 4
+    },
+    "recurrent_open": {
+      "base": "paired_open",
+      "gain": 1,
+      "loss": 2,
+      "changed_text": 7
+    },
+    "recurrent_copy": {
+      "base": "paired_copy",
+      "gain": 1,
+      "loss": 0,
+      "changed_text": 4
+    }
+  },
+  "total_matched_answer_calls": 157,
+  "model_usage": {
+    "query": {
+      "seconds": 73.39590941625647,
+      "positions": 2688
+    },
+    "cards": {
+      "seconds": 1111.9333276750986,
+      "positions": 56906
+    },
+    "likelihood": {
+      "seconds": 374.4920834969962,
+      "positions": 67630
+    },
+    "answers": {
+      "seconds": 466.6850503742462,
+      "positions": 49067
+    },
+    "date_control": {
+      "seconds": 128.1501418738626,
+      "positions": 23715
+    }
+  }
+}

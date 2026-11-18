@@ -1,0 +1,69 @@
+{
+  "role": "Post-hoc, unblinded descriptive review of the ten exact misses of the ordinary rank-one extractive reader. One AI assessor. All 32 and all errors remain in the registered comparison.",
+  "exact": 22,
+  "clear_equivalents": 7,
+  "partial": 1,
+  "incorrect": 2,
+  "cases": {
+    "0d3d86b611259748bd6a258cf28569782a2d4c1e7b8c64b6b1c2c4b187a30ee3": {
+      "answer": "#17 Ford of Matt Kenseth",
+      "reference": "the #17 Ford",
+      "assessment": "equivalent",
+      "reason": "Identifies the car and adds its driver."
+    },
+    "1dcccfd01c1fb84ded34f2535ace09be7daef29a07e82dfa2693009a539c425e": {
+      "answer": "2003",
+      "reference": "the middle of model year 2003",
+      "assessment": "partial",
+      "reason": "Supplies the year and omits the specified mid-model-year point."
+    },
+    "03ad18a5867e4206053cd2ec28f2f144b149a1a663e0c6dcb136e2622cca1994": {
+      "answer": "Ronald McDonald",
+      "reference": "Ronald McDonald's",
+      "assessment": "equivalent",
+      "reason": "Names the character; the reference uses the possessive."
+    },
+    "27ca6be950953a8d2e520af856e59b8fe1a05cb1378cef2c42539f5dfdb9bbca": {
+      "answer": "James Lindsay, 24th Earl of Crawford Reverend Thomas Martin Lindsay",
+      "reference": "James Lindsay",
+      "assessment": "incorrect",
+      "reason": "Spans multiple people and the wrong Earl."
+    },
+    "6004ce88209474882ac16390ed735e3276ae644f68a0ec4a7612d7ae211be0b7": {
+      "answer": "son",
+      "reference": "son of Dan Evans",
+      "assessment": "equivalent",
+      "reason": "The question names Dan Evans and asks for the relationship."
+    },
+    "8e1c304b00678820f0456c1a1e80f777874173d5706717e60ab2a20a8e4c5bce": {
+      "answer": "husband Woodrow",
+      "reference": "Woodrow",
+      "assessment": "equivalent",
+      "reason": "Names Woodrow with a supporting descriptor."
+    },
+    "1225c638158dabf540771ee0bd5fe1faacca035dd15d92c188c59f9055c8f0b7": {
+      "answer": "Marcel, a capucin monkey",
+      "reference": "a capucin monkey",
+      "assessment": "equivalent",
+      "reason": "Includes the animal type and its name."
+    },
+    "0ae02bf990cbd26ce8894b41cc6d3fdb9a60453fe5d46e2c1abff8f6468d2c8d": {
+      "answer": "4,000",
+      "reference": "all of Elisabeth's children",
+      "assessment": "incorrect",
+      "reason": "Reports the number of other campers instead of which children attended."
+    },
+    "46211e3f0c8adbf656b65412f729abacf0cc41625c20082dafbc935a4ffc5592": {
+      "answer": "fourth studio album",
+      "reference": "his planned fourth studio album",
+      "assessment": "equivalent",
+      "reason": "The question already says the release was planned."
+    },
+    "3b47ff540c9ccd7cb86d4b5f159ad9af458724f8352485d134afd67e4efe43b6": {
+      "answer": "Mordecai",
+      "reference": "her cousin Mordecai",
+      "assessment": "equivalent",
+      "reason": "Identifies the person asked for."
+    }
+  }
+}
