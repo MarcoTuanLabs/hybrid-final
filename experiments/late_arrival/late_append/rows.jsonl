@@ -1,0 +1,64 @@
+{"id": "031748ae", "mode": "append", "text": "4; 5", "seq": [19, 26, 220, 20], "positions": 1545, "ingest_s": 0.8507976250257343, "update_answer_s": 3.7602872499264777}
+{"id": "031748ae", "mode": "full", "text": "4", "seq": [19], "positions": 2053, "ingest_s": 2.3582872910192236, "update_answer_s": 3.0608667919877917}
+{"id": "031748ae", "mode": "dated_append", "text": "4; 5", "seq": [19, 26, 220, 20], "positions": 1564, "ingest_s": 2.9003658749861643, "update_answer_s": 2.1283174579730257}
+{"id": "031748ae", "mode": "gates", "text": "4", "seq": [19], "positions": 1557, "ingest_s": 2.9209013340296224, "update_answer_s": 2.0358798330416903}
+{"id": "08e075c7", "mode": "dated_append", "text": "9 months", "seq": [24, 3818], "positions": 1742, "ingest_s": 2.504471083986573, "update_answer_s": 2.0986620829207823}
+{"id": "08e075c7", "mode": "full", "text": "9 months", "seq": [24, 3818], "positions": 2234, "ingest_s": 2.511552208918147, "update_answer_s": 3.1722397500416264}
+{"id": "08e075c7", "mode": "gates", "text": "9 months", "seq": [24, 3818], "positions": 1738, "ingest_s": 2.7411417909897864, "update_answer_s": 1.9456391249550506}
+{"id": "08e075c7", "mode": "append", "text": "9 months", "seq": [24, 3818], "positions": 1723, "ingest_s": 2.719283416052349, "update_answer_s": 2.0381299590226263}
+{"id": "0ddfec37", "mode": "append", "text": "15", "seq": [16, 20], "positions": 1351, "ingest_s": 2.742973875021562, "update_answer_s": 1.6062591670779511}
+{"id": "0ddfec37", "mode": "full", "text": "15", "seq": [16, 20], "positions": 1862, "ingest_s": 2.7206699169473723, "update_answer_s": 2.845920457970351}
+{"id": "0ddfec37", "mode": "dated_append", "text": "15", "seq": [16, 20], "positions": 1370, "ingest_s": 2.9062226249370724, "update_answer_s": 1.5113980000605807}
+{"id": "0ddfec37", "mode": "gates", "text": "15", "seq": [16, 20], "positions": 1366, "ingest_s": 3.1268050420330837, "update_answer_s": 1.5564147499389946}
+{"id": "59524333", "mode": "dated_append", "text": "6:00 pm", "seq": [21, 25, 15, 15, 8569], "positions": 1258, "ingest_s": 2.652905125054531, "update_answer_s": 1.7726440000114962}
+{"id": "59524333", "mode": "gates", "text": "6:00 pm", "seq": [21, 25, 15, 15, 8569], "positions": 1254, "ingest_s": 2.8283044169656932, "update_answer_s": 1.7130661249393597}
+{"id": "59524333", "mode": "append", "text": "6:00 pm", "seq": [21, 25, 15, 15, 8569], "positions": 1239, "ingest_s": 2.6436469999607652, "update_answer_s": 1.7248764169635251}
+{"id": "59524333", "mode": "full", "text": "6:00 pm", "seq": [21, 25, 15, 15, 8569], "positions": 1750, "ingest_s": 2.693756959051825, "update_answer_s": 3.342833583941683}
+{"id": "618f13b2", "mode": "gates", "text": "6", "seq": [21], "positions": 1546, "ingest_s": 3.1986980410292745, "update_answer_s": 1.410678582964465}
+{"id": "618f13b2", "mode": "dated_append", "text": "Six", "seq": [40087], "positions": 1550, "ingest_s": 3.4253026250516996, "update_answer_s": 1.6999857500195503}
+{"id": "618f13b2", "mode": "full", "text": "6", "seq": [21], "positions": 2042, "ingest_s": 3.0414927089586854, "update_answer_s": 3.222530332976021}
+{"id": "618f13b2", "mode": "append", "text": "Six", "seq": [40087], "positions": 1531, "ingest_s": 2.852213375037536, "update_answer_s": 1.5003429589560255}
+{"id": "69fee5aa", "mode": "gates", "text": "38", "seq": [18, 23], "positions": 1415, "ingest_s": 2.9929272501030937, "update_answer_s": 1.601459333091043}
+{"id": "69fee5aa", "mode": "dated_append", "text": "38", "seq": [18, 23], "positions": 1419, "ingest_s": 2.8437918750569224, "update_answer_s": 1.5902126249857247}
+{"id": "69fee5aa", "mode": "append", "text": "38", "seq": [18, 23], "positions": 1400, "ingest_s": 2.556005083024502, "update_answer_s": 1.5798660409636796}
+{"id": "69fee5aa", "mode": "full", "text": "38", "seq": [18, 23], "positions": 1911, "ingest_s": 2.744559249957092, "update_answer_s": 2.9718652500305325}
+{"id": "6a27ffc2", "mode": "dated_append", "text": "30", "seq": [18, 15], "positions": 1557, "ingest_s": 2.734045375022106, "update_answer_s": 2.010629374999553}
+{"id": "6a27ffc2", "mode": "append", "text": "30", "seq": [18, 15], "positions": 1538, "ingest_s": 2.6975783749949187, "update_answer_s": 1.8166047499980778}
+{"id": "6a27ffc2", "mode": "gates", "text": "30", "seq": [18, 15], "positions": 1553, "ingest_s": 2.956347708008252, "update_answer_s": 1.9646202499279752}
+{"id": "6a27ffc2", "mode": "full", "text": "30", "seq": [18, 15], "positions": 2049, "ingest_s": 2.6405008749570698, "update_answer_s": 3.4800807499559596}
+{"id": "2133c1b5", "mode": "gates", "text": "3 months", "seq": [18, 3818], "positions": 1622, "ingest_s": 3.4889816670911387, "update_answer_s": 2.3085079579614103}
+{"id": "2133c1b5", "mode": "full", "text": "3 months", "seq": [18, 3818], "positions": 2118, "ingest_s": 3.1091267919400707, "update_answer_s": 3.7514921670081094}
+{"id": "2133c1b5", "mode": "dated_append", "text": "3 months", "seq": [18, 3818], "positions": 1626, "ingest_s": 3.1337930420413613, "update_answer_s": 2.1740547080989927}
+{"id": "2133c1b5", "mode": "append", "text": "3 months", "seq": [18, 3818], "positions": 1607, "ingest_s": 2.999959374894388, "update_answer_s": 2.0300902909366414}
+{"id": "c4ea545c", "mode": "gates", "text": "No", "seq": [2665], "positions": 1401, "ingest_s": 3.3868952090851963, "update_answer_s": 1.8430180420400575}
+{"id": "c4ea545c", "mode": "append", "text": "Yes", "seq": [9175], "positions": 1386, "ingest_s": 3.013470125035383, "update_answer_s": 1.8456184169044718}
+{"id": "c4ea545c", "mode": "dated_append", "text": "Yes", "seq": [9175], "positions": 1405, "ingest_s": 3.0409638748969883, "update_answer_s": 1.836576999980025}
+{"id": "c4ea545c", "mode": "full", "text": "No", "seq": [2665], "positions": 1897, "ingest_s": 2.667424875078723, "update_answer_s": 3.6082032499834895}
+{"id": "71315a70", "mode": "dated_append", "text": "10-12 hours", "seq": [16, 15, 12, 16, 17, 3979], "positions": 1493, "ingest_s": 3.1379066659137607, "update_answer_s": 2.576874249964021}
+{"id": "71315a70", "mode": "full", "text": "10-12 hours", "seq": [16, 15, 12, 16, 17, 3979], "positions": 1985, "ingest_s": 3.2913815419888124, "update_answer_s": 4.240822083083913}
+{"id": "71315a70", "mode": "gates", "text": "10-12 hours", "seq": [16, 15, 12, 16, 17, 3979], "positions": 1489, "ingest_s": 3.243928916985169, "update_answer_s": 2.5676721250638366}
+{"id": "71315a70", "mode": "append", "text": "10-12 hours", "seq": [16, 15, 12, 16, 17, 3979], "positions": 1474, "ingest_s": 3.233337500016205, "update_answer_s": 2.518552958033979}
+{"id": "10e09553", "mode": "full", "text": "7", "seq": [22], "positions": 1765, "ingest_s": 2.9238167500589043, "update_answer_s": 2.7790130840148777}
+{"id": "10e09553", "mode": "gates", "text": "7", "seq": [22], "positions": 1269, "ingest_s": 2.452204834087752, "update_answer_s": 1.1641032079933211}
+{"id": "10e09553", "mode": "dated_append", "text": "7", "seq": [22], "positions": 1273, "ingest_s": 2.5027365839341655, "update_answer_s": 1.1985887499758974}
+{"id": "10e09553", "mode": "append", "text": "7", "seq": [22], "positions": 1254, "ingest_s": 2.717120209010318, "update_answer_s": 1.0819309999933466}
+{"id": "ed4ddc30", "mode": "append", "text": "20", "seq": [17, 15], "positions": 1387, "ingest_s": 2.8171006670454517, "update_answer_s": 1.560238791978918}
+{"id": "ed4ddc30", "mode": "gates", "text": "20", "seq": [17, 15], "positions": 1402, "ingest_s": 3.038902166998014, "update_answer_s": 1.646484125056304}
+{"id": "ed4ddc30", "mode": "dated_append", "text": "20", "seq": [17, 15], "positions": 1406, "ingest_s": 2.8183538749581203, "update_answer_s": 1.66237120795995}
+{"id": "ed4ddc30", "mode": "full", "text": "20", "seq": [17, 15], "positions": 1898, "ingest_s": 3.7078590829623863, "update_answer_s": 3.442863834090531}
+{"id": "dfde3500", "mode": "full", "text": "Wednesday", "seq": [39181], "positions": 1759, "ingest_s": 2.7246548329712823, "update_answer_s": 3.161577416001819}
+{"id": "dfde3500", "mode": "dated_append", "text": "Wednesday", "seq": [39181], "positions": 1267, "ingest_s": 2.6869323749560863, "update_answer_s": 1.5381478330818936}
+{"id": "dfde3500", "mode": "gates", "text": "Wednesday", "seq": [39181], "positions": 1263, "ingest_s": 2.890028541092761, "update_answer_s": 1.561508790939115}
+{"id": "dfde3500", "mode": "append", "text": "Wednesday", "seq": [39181], "positions": 1248, "ingest_s": 2.6229477080050856, "update_answer_s": 1.5202399999834597}
+{"id": "a1eacc2a", "mode": "full", "text": "7", "seq": [22], "positions": 2047, "ingest_s": 2.9864098329562694, "update_answer_s": 3.126601458992809}
+{"id": "a1eacc2a", "mode": "gates", "text": "7", "seq": [22], "positions": 1551, "ingest_s": 3.330616750055924, "update_answer_s": 1.9578351669479162}
+{"id": "a1eacc2a", "mode": "append", "text": "7", "seq": [22], "positions": 1536, "ingest_s": 3.150851249927655, "update_answer_s": 1.9267087089829147}
+{"id": "a1eacc2a", "mode": "dated_append", "text": "7", "seq": [22], "positions": 1555, "ingest_s": 3.1687296249438077, "update_answer_s": 1.9498820829903707}
+{"id": "7e974930", "mode": "full", "text": "$420", "seq": [3, 19, 17, 15], "positions": 1954, "ingest_s": 2.91944450000301, "update_answer_s": 3.7841248750919476}
+{"id": "7e974930", "mode": "dated_append", "text": "$420", "seq": [3, 19, 17, 15], "positions": 1462, "ingest_s": 2.931063791969791, "update_answer_s": 2.275529042002745}
+{"id": "7e974930", "mode": "gates", "text": "$420", "seq": [3, 19, 17, 15], "positions": 1458, "ingest_s": 3.175174667034298, "update_answer_s": 2.315992457908578}
+{"id": "7e974930", "mode": "append", "text": "$420", "seq": [3, 19, 17, 15], "positions": 1443, "ingest_s": 3.0330635419813916, "update_answer_s": 2.2055987919447944}
+{"id": "9ea5eabc", "mode": "full", "text": "Paris", "seq": [57590], "positions": 1958, "ingest_s": 3.1050149159273133, "update_answer_s": 3.226802624994889}
+{"id": "9ea5eabc", "mode": "append", "text": "Hawaii", "seq": [39, 68547], "positions": 1448, "ingest_s": 2.9983758749440312, "update_answer_s": 1.9822419580304995}
+{"id": "9ea5eabc", "mode": "gates", "text": "Paris", "seq": [57590], "positions": 1462, "ingest_s": 3.33526429196354, "update_answer_s": 1.6754571249475703}
+{"id": "9ea5eabc", "mode": "dated_append", "text": "Hawaii", "seq": [39, 68547], "positions": 1467, "ingest_s": 3.0194539999356493, "update_answer_s": 1.812002458027564}

@@ -1,0 +1,22 @@
+{
+  "at": "2026-11-18T18:22:05.276458+00:00",
+  "model": "interpretability/models/Qwen3.5-4B",
+  "purpose": "A deployed history can accept the delayed session as an append-only dated message. Test whether chronological memory repair helps against this cheaper baseline on all 16 existing development queries. Both use the full original 512-token suffix and the same dated late entry. Run exact replay, scalar repair, blind append and explicitly dated append. Independent lifecycle per policy, deterministic within-question random order. Gold scoring after execution.",
+  "modes": [
+    "full",
+    "gates",
+    "append",
+    "dated_append"
+  ],
+  "deadline_s": 600,
+  "gate": "Keep investigating chronological repair only if gold exact and token F1 match replay, at least two more correctly answered than each append variant, and complete lifecycle positions <=.80 of exact replay. Do not promote on score computed against false time ordering alone. No held-out evidence.",
+  "pins": {
+    "run.py": "044dfbeb236f32c96b7f5c3550daa7288700c08b997f02f48fdf4f79525634f8",
+    "../suffix_transport/inputs.json": "1a74473fe273c34cbb2d9303ca9c91eb11ad3d9de84ff1af1f3455b74645fc22",
+    "../suffix_transport/labels.json": "09ca04386f29a309d2f9fad9fd38a5faf546062f41d82367897aaed1d3973373",
+    "../suffix_transport/run.py": "ae6ce09d3ce0993e09c7a8eac704d05687ea153942e13b55236eb5b01545a9c6",
+    "../retention_splice/run.py": "294d9e24d534409275fb51bc7c925ff2cdf4c4bbf774b2391483eb23c7d1b1ed",
+    "score.py": "8cbbde86f26c2a65855de4fad5c6f7ead280acc5bf38419fb4f026e3b18b641a"
+  },
+  "resource_repair": "Restart every policy and question with the same bounded 128-token history prefill and a 64 MiB free-array cache. End-of-query logits and decoding remain identical code. The full-prefill attempt was interrupted during local swap growth and is excluded from timing."
+}

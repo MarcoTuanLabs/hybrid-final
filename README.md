@@ -27,6 +27,8 @@ On 32 official bAbI test stories and 32 previously unused MQuAKE cases, the proj
 
 On 34 held-out questions from shortened LongMemEval histories, a per-head correction reproduced the 4-bit 9B full-replay answers apart from one final period. Each method matched 21 reference answers. Counting the original history, insertion and answer, estimated decoder arithmetic fell by 25.3% and measured time by 19.5%. Reusing the old recurrent state also scored 21/34 at nearly the same cost. BM25 scored 19/34 with the lowest computational cost. [Methods, competing results and reproduction](experiments/late_arrival)
 
+On the 16 shortened 4B development histories, the correction reproduced all 16 full-replay sequences and reduced total elapsed time from 99.36 to 78.38 seconds. Appending each delayed session with its original date was faster still and answered 13/16 correctly, compared with 12/16 for chronological replay and correction. [Append-only comparison](experiments/late_arrival/README.md#appending-a-delayed-dated-session)
+
 A separate balanced MQuAKE-Remastered pilot compared six readers on edited and unaffected single- and multi-hop questions. The conventional scoped reader scored 55/96 and the recurrent-channel contrast scored 54/96. [Per-task results and controls](experiments/remastered_contrast)
 
 ## Following edits across several facts

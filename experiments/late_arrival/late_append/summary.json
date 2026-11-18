@@ -1,0 +1,34 @@
+{
+  "n": 16,
+  "stats": {
+    "full": {
+      "exact": 12,
+      "token_f1": 0.7559523809523809,
+      "exact_sequences": 16,
+      "positions": 31282,
+      "lifecycle_s": 99.36379004386254
+    },
+    "gates": {
+      "exact": 12,
+      "token_f1": 0.7559523809523809,
+      "exact_sequences": 16,
+      "positions": 23346,
+      "lifecycle_s": 78.37545962526929
+    },
+    "append": {
+      "exact": 13,
+      "token_f1": 0.8238636363636364,
+      "exact_sequences": 12,
+      "positions": 23110,
+      "lifecycle_s": 74.34631245967466
+    },
+    "dated_append": {
+      "exact": 13,
+      "token_f1": 0.8238636363636364,
+      "exact_sequences": 12,
+      "positions": 23414,
+      "lifecycle_s": 76.24291504069697
+    }
+  },
+  "gate_passed": false
+}

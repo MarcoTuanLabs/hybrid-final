@@ -41,3 +41,25 @@ For fresh inference, supply the official cleaned JSON file and the pinned local 
 python experiments/late_arrival/reproduce.py 4b --dataset /path/to/longmemeval_s_cleaned.json --model /path/to/Qwen3.5-4B --out /path/to/new-4b-run
 python experiments/late_arrival/reproduce.py 9b --dataset /path/to/longmemeval_s_cleaned.json --model /path/to/Qwen3.5-9B-4bit --out /path/to/new-9b-run
 ```
+
+## Appending a delayed dated session
+
+A 4B development experiment compared chronological cache repair with appending a delayed session to the existing cache. All four methods used the same 16 questions, dated user turns and 512-token suffix. Each policy built its own cache. The dated-append variant explicitly told the model to place the late record according to its date. Gold answers were scored after generation. [Frozen comparison](late_append/contract.json) · [Question-level outputs and timing](late_append/rows.jsonl)
+
+| Update policy | Correct / 16 | Token F1 | Exact replay sequences / 16 | Full-model positions | Lifecycle seconds |
+|---|---:|---:|---:|---:|---:|
+| Replay in chronological order | 12 | 0.756 | 16 | 31,282 | 99.36 |
+| Per-head retention correction | 12 | 0.756 | 16 | 23,346 | 78.38 |
+| Append using the recorded date | 13 | 0.824 | 12 | 23,110 | 74.35 |
+| Append with an explicit timeline instruction | 13 | 0.824 | 12 | 23,414 | 76.24 |
+
+The retention correction used 25.4% fewer model positions than full replay. It reproduced 16 complete replay sequences. Directly appending the dated text recovered 13 reference answers. The registered accuracy criterion required two additional correct answers over each append policy. The correction missed that criterion.
+
+All policies used a 128-token maximum history prefill and a 64 MiB allocator free-cache limit. This complete rerun followed memory pressure during an initial bulk-prefill attempt. The timings include history ingest, the late update and one answer. The 4B cases are the original development questions. [Full scores](late_append/summary.json)
+
+The following commands replay the scores and run fresh 4B inference.
+
+```sh
+python experiments/late_arrival/late_append/score.py
+python experiments/late_arrival/reproduce.py append --dataset /path/to/longmemeval_s_cleaned.json --model /path/to/Qwen3.5-4B --out /path/to/new-append-run
+```
