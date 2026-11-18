@@ -1,0 +1,105 @@
+{
+  "phase": "test",
+  "seeds": 64,
+  "per_condition": 128,
+  "scored_paths": 2048,
+  "scores": {
+    "unwritten": {
+      "target": 0,
+      "nuisance": 128,
+      "target_recipient": 128,
+      "median_target_margin": -12.625
+    },
+    "full": {
+      "target": 99,
+      "nuisance": 128,
+      "target_recipient": 29,
+      "median_target_margin": 2.25
+    },
+    "native_written": {
+      "target": 0,
+      "nuisance": 128,
+      "target_recipient": 128,
+      "median_target_margin": -6.8125
+    },
+    "native_unwritten": {
+      "target": 0,
+      "nuisance": 128,
+      "target_recipient": 128,
+      "median_target_margin": -9.15625
+    },
+    "white_written": {
+      "target": 68,
+      "nuisance": 128,
+      "target_recipient": 60,
+      "median_target_margin": 0.25
+    },
+    "direction": {
+      "target": 95,
+      "nuisance": 128,
+      "target_recipient": 33,
+      "median_target_margin": 1.875
+    },
+    "magnitude": {
+      "target": 0,
+      "nuisance": 128,
+      "target_recipient": 128,
+      "median_target_margin": -12.6875
+    },
+    "reset": {
+      "target": 0,
+      "nuisance": 128,
+      "target_recipient": 128,
+      "median_target_margin": -12.625
+    }
+  },
+  "paired": {
+    "direction minus magnitude": {
+      "difference": 0.7421875,
+      "ci95": [
+        0.640625,
+        0.8359375
+      ],
+      "gains": 95,
+      "losses": 0
+    },
+    "direction minus full": {
+      "difference": -0.03125,
+      "ci95": [
+        -0.0625,
+        -0.0078125
+      ],
+      "gains": 0,
+      "losses": 4
+    },
+    "full minus white_written": {
+      "difference": 0.2421875,
+      "ci95": [
+        0.1328125,
+        0.34375
+      ],
+      "gains": 38,
+      "losses": 7
+    },
+    "magnitude minus reset": {
+      "difference": 0,
+      "ci95": [
+        0,
+        0
+      ],
+      "gains": 0,
+      "losses": 0
+    }
+  },
+  "full_successes_retained_by_direction": 95,
+  "nuisance_checks": true,
+  "unwritten_recipient": 256,
+  "unwritten_n": 256,
+  "max_reset_error_all_vocab": 0.0,
+  "native_mean_angle_median_degrees": 19.014898415421367,
+  "optimized_mean_angle_median_degrees": 89.92945012234817,
+  "target_angular_energy_fraction_median": 0.99892266663301,
+  "target_angular_energy_fraction_min": 0.9965402784322799,
+  "seconds": 663.8250745064579,
+  "gate": true
+}

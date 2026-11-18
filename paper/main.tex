@@ -37,17 +37,13 @@ A hybrid language model can retain a new value in memory and still
 give its old answer. I introduce a readout that forecasts how a specified
 write changes the recurrent state, then chooses a query that amplifies
 the change after headwise normalization. The model weights stay fixed.
-On independent synthetic retrieval cohorts, the method raises answer
+On independent synthetic retrieval cohorts, the readout raises answer
 control from 45.9\% to 70.5\% in Qwen3.5-9B relative to a whitened-key
 reader and from 84.8\% to 100\% in Qwen3.5-27B relative to a raw
 singular-value-decomposition (SVD) reader. It preserves every tested
 nuisance and unwritten answer. On 27B, starting the solver from the
 model's own query reduces total intervention time by 21.8\% relative
-to four starts and retains all 256 target successes. In a separate 4-bit 9B experiment, I use
-the directions read by a known suffix to encode a recurrent-matrix
-update in 3 MiB instead of 48 MiB. It reproduces all 128 held-out
-answer sequences on paired bAbI and MQuAKE requests. The donor
-attention cache and convolution histories are supplied separately.
+to four starts and retains all 256 target successes. On 64 new seeds in four-bit 9B, keeping only the change in read direction preserves 95 of 99 successful target answers. Changing only the read lengths controls none.
 \end{abstract}
 
 \section{Introduction}
@@ -66,8 +62,7 @@ response but little change after normalization. I therefore optimize
 the normalized contrast across heads sharing a query. I preserve the
 query norm and limit the change in direction to $60$ degrees.
 
-I compare readers at the same write and query budget. I then ask how much
-of a state update a receiver needs to reproduce the donor's answers.
+I compare queries at a fixed write budget, test which part of the read carries the edit, and measure the cost of reusing a cache or a saved answer.
 
 \section{Task and Controlled Interventions}
 Each independent seed specifies eight animal--letter assignments.
@@ -78,14 +73,14 @@ An intervention succeeds when the highest-scoring token in the full
 vocabulary is the donor's intended letter. I score this token immediately
 after the suffix. I report \emph{answer control} as the fraction of successful target presentations.
 
-\paragraph{9B: change a stored value.}
+\paragraph{Changing a stored value in 9B.}
 The donor exchanges two dictionary assignments, changing the requested
 value. I copy its newest convolution-value slot into the recipient at
 layer 28, heads 28 and 29, for a total of 256 scalar coordinates. The
 recipient keeps its own prompt. One shared query can change at each of
 the final four prompt positions.
 
-\paragraph{27B: redirect the retrieval address.}
+\paragraph{Redirecting a retrieval address in 27B.}
 The donor keeps the dictionary fixed and asks about another key. I
 copy nine recurrent/convolution groups into the recipient, writing
 465,408 coordinates. Queries can change at four positions in four
@@ -209,8 +204,7 @@ answer. Table and prose presentations are paired within each seed.}
 
 \subsection{Solvers and Baselines}
 The 9B solver uses four starts and 80 projected-gradient iterations.
-At each iteration, it compares seven candidate step sizes with the
-current point. The starts are the native direction, a leading singular
+Each iteration tests seven step sizes. The starts are the native direction, a leading singular
 vector of the concatenated state differences, and two whitened
 directions. The final 27B solver starts only from the native query and
 runs for 16 iterations. Both use Equation~\ref{eq:objective}, the same
@@ -243,11 +237,11 @@ and prompts, and averaged formats within seed. I bootstrapped paired
 differences 20,000 times, using 95\% intervals for 9B and 97.5\%
 intervals for the two primary 27B comparisons.
 
-\paragraph{9B: a local value write controls more answers.}
+\paragraph{A local value write controls more 9B answers.}
 The normalized reader controls 361/512 targets (70.51\%), versus
 235/512 (45.90\%) for whitened key. The paired gain is 24.61 percentage
 points, with a 95\% interval of [20.51, 28.71]. Control improves in both
-formats: from 124/256 to 167/256 for tables and from 111/256 to 194/256
+formats, from 124/256 to 167/256 for tables and from 111/256 to 194/256
 for prose. There are 128 presentation-level wins and two losses.
 With the same write and the native query, control is 0/512.
 
@@ -255,7 +249,7 @@ Whitened SVD controlled 232/512 targets and an output-gate-aware
 variant controlled 330/512. Restricting the normalized reader to the
 last query reduced its successes from 361/512 to 82/512.
 
-\paragraph{27B: a distributed address write controls every target.}
+\paragraph{A distributed address write controls every 27B target.}
 The native-start, 16-step reader controls 256/256 targets. Raw SVD
 controls 217/256 (84.77\%) and minimal shared reading controls 213/256
 (83.20\%). The paired gains are 15.23 points [9.38, 21.88] and 16.80
@@ -265,32 +259,25 @@ The normalized reader improves on 27 seeds relative to raw SVD and
 either comparison (Figure~\ref{fig:results}).
 
 \paragraph{All tested control answers are preserved.}
-The normalized reader retains 512/512 answers in each 9B preservation
-condition and 256/256 in each 27B condition: 1,536 and 768 control
-presentations in total. The primary baselines also preserve every
-control answer. These counts cover nuisance writes and unwritten
-states in the paired task.
+All primary readers preserve the recipient answer on every nuisance and unwritten control, across 1,536 presentations in 9B and 768 in 27B.
 
 \section{A Simpler Solver at Lower Cost}
 On 27B, one native start and four batched starts each control 256/256
 targets after 16 iterations. Mean total intervention time falls from 0.9108 to
 0.7120 seconds, a 21.83\% reduction. The paired seed-bootstrap time
 ratio is 0.7817, with a 95\% interval of [0.7808, 0.7827]. No seed loses
-a reference-controlled answer; the one-sided 95\% upper bound on the
-seed-loss probability is 2.31\%. The preserved quantity is the output answer; queries and logits
-can differ.
+an answer that the four-start solver controls. The one-sided 95\% upper bound on the
+seed-loss probability is 2.31\%.
 
 Timing includes both prefills, cloning, writing, query design, transfers
 and synchronized continuation. I rotate method order. BF16 runs use
 an NVIDIA RTX PRO 6000 Blackwell for 27B and an NVIDIA GB10 for 9B.
 
-\paragraph{Transfer to a 4-bit 9B model.}
-On an Apple M5, I tested 16 fresh seeds in both formats using the same
-256-coordinate write. A native-start, 16-step solver and the four-start,
-80-step reference controlled the same 26 of 32 targets. Whitened key
-controlled 15, and the native query controlled none. All four readers
-preserved all 96 control answers. This pilot uses quantized weights
-and a separate cohort from the BF16 comparison.
+\paragraph{Which part of the read carries the write?}
+On an Apple M5, single- and four-start solvers controlled the same 26/32 development targets in four-bit 9B, versus 15 for whitened key and zero for the native query. All preserved 96/96 controls.
+
+To separate direction from length \citep{aparin2026}, I measured both head reads before RMS normalization at all four suffix positions. I held the optimized query fixed and exchanged the written and unwritten directions or lengths head by head.
+On 64 new seeds (128 targets), the complete read controlled 99 answers, compared with 68 for whitened key. Direction alone retained 95 of the 99 successes and added none. Length alone controlled none. Restoring both complete reads reproduced every unwritten vocabulary logit on all 256 target and nuisance presentations. I averaged the angle between written and unwritten reads over heads and positions. Its median rose from 19 degrees with the native query to 90 degrees with the optimized query.
 
 \section{Encoding the State Change a Suffix Reads}
 A receiver holds an old prefix cache. A sender holds the updated cache
@@ -307,20 +294,16 @@ incoming activations, the part of the read attributable to $E_h$ is
 \left(\prod_{j=1}^{t}\alpha_{h,j}\right) E_h^{\top} w_{h,t},
 \qquad w_{h,t}=P_{h,1}\cdots P_{h,t}q_{h,t}.
 \end{equation}
-Here $j$ indexes suffix positions. Let $V_h$ contain an orthonormal
-basis for the span of the four transported queries $w_{h,t}$.
+Here $j$ indexes suffix positions. The vector $w_{h,t}$ transports the suffix query back to the prefix boundary. Let the columns of $V_h$ form an orthonormal
+basis for the span of these four vectors.
 Replacing $E_h$ with $V_hV_h^{\top}E_h$ preserves each of these reads
 in exact arithmetic. The sender transmits $V_h$ and $E_h^{\top}V_h$.
-The receiver reconstructs the dense matrix before generating. Later,
-freely generated tokens provide an empirical test beyond the four
-positions used to construct the basis.
+The receiver reconstructs the dense matrix and generates freely beyond the four known positions.
 
 I fixed the codec on 24 bAbI QA1 training stories and 24 MQuAKE
 development cases. I then tested 32 official bAbI test stories and 32
 previously unused MQuAKE-CF-3k-v2 cases, each with an updated and a
-stable or unrelated question \citep{weston2016,zhong2023}. In bAbI,
-two prefixes of the same story give different locations for one person.
-In MQuAKE, the old and updated prompts contain different facts.
+stable or unrelated question \citep{weston2016,zhong2023}. The updates change one character's location in bAbI and replace facts in MQuAKE.
 
 On 4-bit Qwen3.5-9B, four FP32 directions per head reduced the recurrent
 update from 48 to 3 MiB. All 128 freely generated token sequences
@@ -337,21 +320,8 @@ on MQuAKE and 0.508 on bAbI. The latter missed the 0.500 cutoff.
 The byte counts cover the recurrent update only. They exclude the
 shared donor cache components and local dense reconstruction.
 
-\paragraph{An edit before the question.}
-I inserted a delayed session before a 512-token suffix in shortened
-LongMemEval histories \citep{wu2025}. I replayed the insertion and
-16 suffix tokens, scaled each head's state difference by its remaining
-retention gates, and shifted the cached attention keys. On 34 held-out
-questions, this correction and full replay each scored 21/34 on 4-bit
-9B. Their outputs differed by one period. Including history ingestion,
-the correction cut estimated arithmetic by 25.3\% and elapsed time by
-19.5\%. Reusing the old final state also scored 21/34 at similar cost.
-The correction lowered its mean logit error by 19.2\%, just below the
-20\% criterion. BM25 used fewer operations and scored 19/34.
-
 \paragraph{When the same question returns.}
-For a repeated question on a known page, I map the old answer through
-the passage edits. I rerun the reader if alignment fails or one answer
+I tested a separate text-only update for repeated questions on a known page. It maps the saved answer through the passage edits. I rerun the reader if alignment fails or one answer
 exceeds 1.5 times the other's word count. I fixed this rule on 32
 HoH-QAs pages and tested 96 others \citep{ouyang2025}. On 4-bit 9B,
 repair gained two exact matches and lost one against prefix replay
@@ -375,10 +345,7 @@ ROME edits weights \citep{meng2022}. Paired controls isolate the
 behavioral effect of the runtime write \citep{zhang2024}.
 
 \section{Discussion and Conclusion}
-The background read and the heads that share a query determine how a
-write survives normalization. Accounting for both improves answer
-control on two synthetic cohorts. The public tasks show where a state update preserves a reference
-computation and where updating a saved answer suffices. Generalization
+On both synthetic cohorts, optimizing the change in the normalized read brought more written answers to the output. In the four-bit value-write test, the change in direction carried most of that effect. On public questions, suffix projection reproduced the donor's sequences and text-only repair reduced the cost of answering a repeated question. Generalization
 to new questions about unrestricted conversations remains open.
 
 \begin{thebibliography}{13}
@@ -388,6 +355,11 @@ What Attention Recalls and Recurrence Controls in Hybrid Language Models.
 In \emph{Findings of the Association for Computational Linguistics:
 EMNLP 2026}, 43888--43900.
 \url{https://aclanthology.org/2026.findings-emnlp.2061/}.
+
+\bibitem[Aparin and Gaintseva(2026)]{aparin2026}
+Aparin, G.; and Gaintseva, T. 2026. A Geometric Account of
+Activation Steering through Angle-Norm Decomposition.
+\emph{arXiv:2606.06735}.
 
 \bibitem[Gangavarapu et~al.(2026)]{gangavarapu2026}
 Gangavarapu, T.; Tabak, G.; and Schaefer, C.~J.~S. 2026.
@@ -426,11 +398,6 @@ Learning}, 139: 9355--9366.
 Weston, J.; Bordes, A.; Chopra, S.; Rush, A.~M.; van Merri\"enboer, B.;
 Joulin, A.; and Mikolov, T. 2016. Towards AI-Complete Question
 Answering: A Set of Prerequisite Toy Tasks. In \emph{ICLR}.
-
-\bibitem[Wu et~al.(2025)]{wu2025}
-Wu, D.; Wang, H.; Yu, W.; Zhang, Y.; Chang, K.-W.; and Yu, D. 2025.
-LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory.
-In \emph{International Conference on Learning Representations}.
 
 \bibitem[Yang et~al.(2025)]{yang2025}
 Yang, S.; Kautz, J.; and Hatamizadeh, A. 2025.

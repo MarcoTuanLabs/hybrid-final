@@ -1,0 +1,9 @@
+{
+  "process": "A single AI assessor viewed one question, its official category and reference, and all distinct generated answer strings in hashed order. Running scores and policy names were hidden. Case/whitespace duplicates received one grade. Additional controls were merged under the same hash and received the same grade whenever their text matched. No gold-answer or grade fields were available to the generation programs.",
+  "examples_of_grading": [
+    "For a requested transition between cities, a correct destination alone received half credit. An explicit departure from the source city's named neighborhood and arrival at the target city received full credit. The neighborhood's location was verified from the allowed dialogue.",
+    "For stable facts, a response that explicitly designated the benchmark's distractor as correct received zero even if it acknowledged that the true answer had been mentioned earlier. Recognizing a conflict is a separate upstream metric.",
+    "For conditional questions, a clear equivalent condition received one. Merely mentioning a related activity while denying or omitting the requested condition received zero. Ambiguous conditions have no partial-credit class under the upstream rubric."
+  ],
+  "limitation": "Judgment is semantically interpretive. The assessor was the AI assistant conducting the experiment, knew the research hypotheses, and was blinded at the response level. No independent human labels or inter-rater statistic."
+}

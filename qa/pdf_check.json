@@ -2,21 +2,21 @@
   "named": {
     "file": "output/pdf/hybrid_memory_working_paper.pdf",
     "pages": 4,
-    "bytes": 241974,
-    "sha256": "9530070365c788c51aebd8c904cb4709cd5472cd562965377c986de4270fbc49",
+    "bytes": 241782,
+    "sha256": "4de75dca9f4e1ebbc6ef50aa8e3495c78856a13fdad1bd8fc0bdd56aa0f99de5",
     "author": "Lu-Yen Marco Tuan",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Rendered and inspected all four pages, including the repeated-question result, references and equations."
+    "visual_review": "Rendered and inspected all four pages, including the 9B head interventions, repeated-question result, equations, figure and references."
   },
   "review": {
     "file": "output/pdf/hybrid_dai_review.pdf",
     "pages": 4,
-    "bytes": 241742,
-    "sha256": "601395df6e23505423cfe124e0cb910fd119d4cb8eec19df7e18f136641c608d",
+    "bytes": 241500,
+    "sha256": "d75c596111413bb9f0c980134f63e25c41825781899d06ca24c4fceeb14c4f9d",
     "author": "",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Rendered and inspected all four pages, including the repeated-question result, references and equations."
+    "visual_review": "Rendered and inspected all four pages, including the 9B head interventions, repeated-question result, equations, figure and references."
   }
 }

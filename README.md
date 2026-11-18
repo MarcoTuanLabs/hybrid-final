@@ -17,6 +17,8 @@ Four-page working paper for the AAAI 2027 Deployable AI Workshop format, Novembe
 
 The BF16 normalized readers preserve every tested nuisance and unwritten answer. The 27B timing comparison uses the same set of 256 successful target presentations. In the small 4-bit pilot the native-start reader and the original four-start reference returned the same top token on all 128 conditions. [BF16 archived score check](scripts/check_claims.py) · [4-bit pilot](evidence/quantized_9b)
 
+On 64 new seeds in four-bit Qwen3.5-9B (128 target presentations), the optimized read controlled 99 answers, compared with 68 under the whitened-key baseline. Giving the written heads their unwritten lengths retained 95 of the 99 successful answers. Changing only the lengths controlled 0/128. The full, direction-only and length-only readers each preserved 128/128 nuisance answers. [Head interventions, archived outcomes and seed-level intervals](experiments/read_direction/README.md)
+
 ## Public cache-transfer experiment
 
 The receiver starts with an old, question-conditioned cache and also receives the donor's attention cache and convolution histories. The encoder projects the donor-minus-recipient recurrent matrix onto the directions read during four known suffix tokens. It sends 3 MiB of recurrent-matrix updates, compared with 48 MiB for an FP32 dense transfer. These sizes exclude the common donor components. The receiver reconstructs a dense state locally.
@@ -48,6 +50,8 @@ In a separate 32-question full-bank experiment, the best direct readers answered
 On the same 32 cold questions, a current-passage likelihood ranker followed by a span reader answered 25/32 exactly. It ranked the labeled source first on 30/32 requests. Adding a recurrent-matrix contrast to cross-edition cards yielded 15/32 with free generation. [Cold retrieval and answer comparison](experiments/hoh_inverse/README.md)
 
 On 32 human-written DiffQG questions adapted for open QA, undoing one edit before scoring an answer span yielded 23 exact answers. A simpler free reader with changed-span suggestions also scored 23. [Independent human-question pilot](experiments/diffqg_hunks/README.md)
+
+On 24 MemConflict requests drawn from eight simulated personas, a speaker-label contrast restricted to the recurrent matrices recovered 10 fully correct answers. A conventional text reader combining session-boundary statements with retrieved witnesses recovered 12. A policy-blind AI reviewer applied the benchmark's semantic criteria. [Conversation methods, prompts and all graded results](experiments/memconflict_witness/README.md)
 
 ## Build and verify
 

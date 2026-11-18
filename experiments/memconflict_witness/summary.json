@@ -1,0 +1,282 @@
+{
+  "latest_positions": 105450,
+  "latest_seconds": 183.20839312521275,
+  "boundary_positions": 176940,
+  "boundary_seconds": 582.5602983349236,
+  "n": 24,
+  "personas": 8,
+  "distinct_answers": 178,
+  "scores": {
+    "boundaries": {
+      "full": 2,
+      "mean": 0.1875,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 1,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 0,
+          "mean": 0.0
+        }
+      }
+    },
+    "boundaries_plus_witness": {
+      "full": 12,
+      "mean": 0.5625,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 4,
+          "mean": 0.6875
+        },
+        "conditional_conflict": {
+          "full": 7,
+          "mean": 0.875
+        }
+      }
+    },
+    "diverse": {
+      "full": 9,
+      "mean": 0.4166666666666667,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 2,
+          "mean": 0.375
+        },
+        "conditional_conflict": {
+          "full": 6,
+          "mean": 0.75
+        }
+      }
+    },
+    "latest_session": {
+      "full": 3,
+      "mean": 0.20833333333333334,
+      "by_type": {
+        "static_conflict": {
+          "full": 0,
+          "mean": 0.0
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.625
+        },
+        "conditional_conflict": {
+          "full": 0,
+          "mean": 0.0
+        }
+      }
+    },
+    "ordinary_critique": {
+      "full": 11,
+      "mean": 0.4791666666666667,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 7,
+          "mean": 0.875
+        }
+      }
+    },
+    "recurrent": {
+      "full": 10,
+      "mean": 0.4375,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 6,
+          "mean": 0.75
+        }
+      }
+    },
+    "standard": {
+      "full": 10,
+      "mean": 0.4375,
+      "by_type": {
+        "static_conflict": {
+          "full": 2,
+          "mean": 0.25
+        },
+        "dynamic_conflict": {
+          "full": 2,
+          "mean": 0.3125
+        },
+        "conditional_conflict": {
+          "full": 6,
+          "mean": 0.75
+        }
+      }
+    },
+    "whole": {
+      "full": 10,
+      "mean": 0.4583333333333333,
+      "by_type": {
+        "static_conflict": {
+          "full": 0,
+          "mean": 0.0625
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 7,
+          "mean": 0.875
+        }
+      }
+    },
+    "wide": {
+      "full": 10,
+      "mean": 0.4375,
+      "by_type": {
+        "static_conflict": {
+          "full": 2,
+          "mean": 0.25
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 5,
+          "mean": 0.625
+        }
+      }
+    },
+    "wide_typed": {
+      "full": 11,
+      "mean": 0.5,
+      "by_type": {
+        "static_conflict": {
+          "full": 2,
+          "mean": 0.25
+        },
+        "dynamic_conflict": {
+          "full": 2,
+          "mean": 0.375
+        },
+        "conditional_conflict": {
+          "full": 7,
+          "mean": 0.875
+        }
+      }
+    },
+    "witness": {
+      "full": 9,
+      "mean": 0.4166666666666667,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 2,
+          "mean": 0.375
+        },
+        "conditional_conflict": {
+          "full": 6,
+          "mean": 0.75
+        }
+      }
+    },
+    "witness_typed": {
+      "full": 10,
+      "mean": 0.4375,
+      "by_type": {
+        "static_conflict": {
+          "full": 1,
+          "mean": 0.125
+        },
+        "dynamic_conflict": {
+          "full": 3,
+          "mean": 0.4375
+        },
+        "conditional_conflict": {
+          "full": 6,
+          "mean": 0.75
+        }
+      }
+    }
+  },
+  "paired": {
+    "witness minus diverse": {
+      "fraction": 0.0,
+      "persona_bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "full_gains": 0,
+      "full_losses": 0,
+      "grade_changes": 0,
+      "different_answers": 9
+    },
+    "whole minus witness_typed": {
+      "fraction": 0.0,
+      "persona_bootstrap95": [
+        -0.125,
+        0.125
+      ],
+      "full_gains": 1,
+      "full_losses": 1,
+      "grade_changes": 2,
+      "different_answers": 14
+    },
+    "recurrent minus whole": {
+      "fraction": 0.0,
+      "persona_bootstrap95": [
+        -0.125,
+        0.125
+      ],
+      "full_gains": 1,
+      "full_losses": 1,
+      "grade_changes": 2,
+      "different_answers": 13
+    },
+    "recurrent minus ordinary_critique": {
+      "fraction": -0.041666666666666664,
+      "persona_bootstrap95": [
+        -0.125,
+        0.0
+      ],
+      "full_gains": 0,
+      "full_losses": 1,
+      "grade_changes": 1,
+      "different_answers": 17
+    }
+  },
+  "gate": {
+    "witness": false,
+    "whole": false,
+    "recurrent": false
+  },
+  "positions": 377115,
+  "seconds": 967.5405113735469,
+  "generator": "Qwen3.5-4B BF16",
+  "judge": "One policy-blind AI editorial assessment using the official category-specific answer criteria."
+}

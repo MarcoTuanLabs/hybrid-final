@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/TaoZhen1110/MemConflict/blob/ec51d5d36e87f7665d1337f3a88cbde95fc2a964/Data/Step4_4.jsonl",
+  "source_sha256": "8ef9ec8589eccb86f63ab3a819a9180217405351a8d5846866721ea74babe092",
+  "schema_preview_persona": "3c2e5fe5-a0fc-7e3c-b05c-7104ad748705",
+  "population": "Public simulated, English, multi-session dialogue. Include one medium dynamic, one hard static and one hard conditional free question per selected persona. Exclude easy dynamic yes/no questions by official difficulty before seeing any predictions. Hash-order eligible personas using the prefix mem-witness-1/person and eligible questions using mem-witness-1/q. First 8 personas (24 questions) for development, next 16 (48 questions) for possible prospective transfer, remaining 5 for diagnostics. Results are macro scores for this balanced mix, not a published leaderboard number.",
+  "serving": "Only the literal question, current session date and raw dialogue turns up to and including the query session. The simulated assistant may repeat a previous user claim. Ordinary speaker and session date are legal inputs. The system must infer question intent, never receives benchmark conflict category, the fixed profile, session type, oracle facts, outlines, gold question-level answers, evidence labels or any future sessions. No other user's dialogue.",
+  "hash_selection": "One question per type, without conditioning on its answer, content, start or end position, or whether retrieval succeeds.",
+  "rationale": "HoH has underspecified page-free questions; many DiffQG exact errors amount to named-entity boundaries. This benchmark gives a real query within its own stream, and competing values have different meanings. Tests whether evidence selection and use change a substantive answer, following the official semantic task."
+}

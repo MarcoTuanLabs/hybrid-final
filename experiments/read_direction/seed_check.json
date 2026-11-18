@@ -1,0 +1,25 @@
+{
+  "prior_files": [
+    {
+      "source": "evidence/9b_rows.jsonl.gz",
+      "prior_seeds": 256,
+      "overlap": 0
+    },
+    {
+      "source": "evidence/27b_rows.jsonl.gz",
+      "prior_seeds": 128,
+      "overlap": 0
+    },
+    {
+      "source": "evidence/quantized_9b/rows.jsonl.gz",
+      "prior_seeds": 16,
+      "overlap": 0
+    }
+  ],
+  "unique_prior_ids": 400,
+  "test_seeds": [
+    96374120,
+    96374183
+  ],
+  "new_seeds": 64
+}
