@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-18T18:42:29.633803+00:00",
+  "parent": "late_append_blind_4b",
+  "hypothesis": "Query-date readout from a single cached mixed-version history can improve by canceling all of the superseded span\u2019s recurrent transition. Propagate an alternate initial state through the original later keys, writes and retention. Distinguish cancellation of value writes from cancellation of both forgetting and writing. At answer time suppress attention to the superseded source span. Challenge with two real Wikipedia revisions per page, both queried in the same mixed cache. Date-aware text extraction and a full snapshot are competitive practical controls.",
+  "candidate": "attention_skip",
+  "methods": [
+    "all",
+    "attention",
+    "values",
+    "skip",
+    "attention_values",
+    "attention_skip",
+    "snapshot",
+    "extractive_span",
+    "field"
+  ],
+  "gate": "On all 20 exposed pages, candidate must gain >=3 fully correct old/new answer pairs vs each control AND have no fewer individual exact answers in either edition. Only then advance to the sealed 48-page cohort and larger model. Compare official DynaQuest normalizer and plain exact; measured time is shared instrumentation only. No speed claim.",
+  "cost_scope": "Counts base decoder positions and additional recurrent layer-token operations; all methods share prefix preparation and each reader actually generates. Separate strong per-edition snapshot cache can be built at write time, and the extractive model also gets the right date.",
+  "deadline_s": 900,
+  "budget": "One local 4B 20-page pilot, 280 generations; one implementation repair. Query order of revisions is alternated by page. No benchmark item dropped. No paid compute.",
+  "pins": {
+    "run.py": "033328d5910df9875ee60120e5c0b3a11dbf0033ad394f091bf319c9c0bb0605",
+    "rank.py": "dba98d0035e4bcd842881038cf3eac324442ee1b6ce38dbb14e19002cfd0ae40",
+    "ranked.json": "45d618863964a84230513254f44b908130f20a8fd41279f17bb632cac1f4e4b0",
+    "data_contract.json": "5e5922c1bb6135a584f4c461fb1d91cc83fff8602d9f0d3e937fd6527c8281ad",
+    "split.json": "1682fb80e7da512dcb4c37a87f4edc499139aa69859ad4cbb9fc78bf2312ef85",
+    "../bridge_reads/engine.py": "f6068086f33947e49d53eb2a080977061c96b9ff359b3b3177726a03f75125c0",
+    "span.py": "f9ca4965611b4ca9901a8b39d955159c41aacca7ffacf94c83d1d8519e627917"
+  }
+}

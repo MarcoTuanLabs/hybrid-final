@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-18T18:55:17.353285+00:00",
+  "purpose": "Mechanistic diagnostic on all 20 existing dev pages after open-answer candidate ceiling of 16. Compare the log odds of the two published answers under actual equal-format, date-free old and new single-snapshot prompts. The two answers enter teacher forcing only; no claim of deployable open QA. Evaluate open greedy answers from both prompt endpoints as controls. Compute all 8 combinations of frozen full-attention KV, recurrent convolution history and recurrent matrices; average all six marginal orderings for exact three-feature Shapley decomposition. Attention donor determines its own positions, so attribution includes positional offsets and is conditional on these two specific cache realizations.",
+  "gate": "Consider a next native intervention only if >=4 of the 6 pages missed by the prior 4B mixed baseline have positive total paired gap >.05 nats/token AND positive recurrent contribution >.05; report the same counts for attention and convolution, medians, sign-exact full forced-choice per edition, and outcomes on all 20. If the same signal is stronger in attention, retain attention as the main comparison. Do not infer open-answer gain from forced-choice margins.",
+  "budget": "Local Qwen3.5-4B, 20 pages, 160 cache combinations, 40 free generations, 12 minutes maximum, one engineering repair. No reserve access and no paid compute.",
+  "deadline_s": 720,
+  "pins": {
+    "probe.py": "f0fb6990e7a4a114dd5b18d35cf4bfc6b766f077d1ccfd76cb2ed9355aa93af3",
+    "../revision_pairs/paired.py": "1357ad7ee18002f99b4b6c608be9175f5d9d13ef1da6b9e3e2d5585c6fd64737",
+    "../asof_revision/ranked.json": "45d618863964a84230513254f44b908130f20a8fd41279f17bb632cac1f4e4b0",
+    "../asof_revision/labels.json": "1a7c51ea0938f8ad796b0c823efadfe43bea27821fffd00fc732cf0c6d042afb",
+    "../asof_revision/4b_summary.json": "7887c4da48d8384d299921e99f444699301180e3e6a0b5b768450e42b16818f4",
+    "../bridge_reads/engine.py": "f6068086f33947e49d53eb2a080977061c96b9ff359b3b3177726a03f75125c0",
+    "../bridge_reads/bridge.py": "8000e6f424ff0aa43efa8adef8876c7ee86afb7cf7ff48421a5f8cc11c189a27"
+  }
+}

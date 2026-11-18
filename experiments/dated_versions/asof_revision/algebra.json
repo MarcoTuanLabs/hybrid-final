@@ -1,0 +1,8 @@
+{
+  "cases": 12,
+  "max_absolute_state_error": {
+    "skip": 2.384185791015625e-07,
+    "values": 2.980232238769531e-07
+  },
+  "condition": "Fixed observed keys, values and retention; includes prefix, internal and suffix deletions, grouped as well as ungrouped heads."
+}

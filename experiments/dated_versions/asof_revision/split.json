@@ -1,0 +1,309 @@
+{
+ "archives": {
+  "2024-08-16_2024-09-01.json": "cbf5c723026c11e676ba4a700ec398084b529472736d42a0a2aa7c9a1f84d51d",
+  "2024-09-01_2024-09-16.json": "9afb1342a882dbc524b775ac58289c663a690c9f24ee3c5a48b679e965a729cb",
+  "2024-09-16_2024-10-01.json": "4a61785b4d1882c03b76feca16ebf983721848f2e4d0e254644f803e4f2ad8fb",
+  "2024-10-01_2024-10-16.json": "03c5fcb4618984210067b8540f8c0f7c80cefcaa5022f6b06c1ce81130ecc1d0",
+  "2024-10-16_2024-11-01.json": "5f55d4b322b3b7ef593aa5fa12e4c35fd0013843f9caa4f55350fb3ac1ff9375",
+  "2024-11-01_2024-11-16.json": "37f04ad7ea64f95f68a0db807772b3cdbb4ff408f5efec598bf49e63bc270606",
+  "2024-11-16_2024-12-01.json": "c3b09d528bf1c15e0bf0f6387cc08204a95dd9680dcf6147a5de096ed0241bc4",
+  "2024-12-01_2024-12-16.json": "eed0108eb227c8edd5e2ad99b7cc2d5fe1a04ee140d4826d7457f84a3f85b60c",
+  "2024-12-16_2025-01-01.json": "a32b1c24da4d2bb458a86decf2c4629f28c2de50fca7bdcc4f0444ea6594fc55"
+ },
+ "missing_revision_pairs": 568,
+ "eligible_questions": 2127,
+ "eligible_pages": 1854,
+ "eligible_development": 20,
+ "reserved": [
+  {
+   "page_hash": "4b74afde0f1653f16d6107d4d5f6bb64c9e4f93354aec75d2b7539d716173929",
+   "question_hash": "01eaa31c6a34e6afd81f173a560b1a3f17577376f6a543b7ce5da8af91d368cd",
+   "old_rev": 1259695198,
+   "new_rev": 1264035642
+  },
+  {
+   "page_hash": "9c913b212a76e74f2f14a7f8079dc2843f7af080e0520ee0fac484adadd894b5",
+   "question_hash": "01ee8825df07a3d503b18266ec2224408469a29c29a70926fc8fd898bb0293a4",
+   "old_rev": 1250970361,
+   "new_rev": 1252900371
+  },
+  {
+   "page_hash": "1fa2646c5e1217f7c6094852fbfca7cfa63b05f545b7c85272dcaf1a14d6b035",
+   "question_hash": "01f1c5bb657cf5fdea7dae98b55e5d109cd155c5d69aee744730155a1f4bb09d",
+   "old_rev": 1251118401,
+   "new_rev": 1254638874
+  },
+  {
+   "page_hash": "18bfa96f7e49aeb78bbc776559afec9d0118bdcab2c04e9a51ed104b9f258960",
+   "question_hash": "0211a81fab7a0e1239a5f5f1a230d3dedda447ffb068a0da8876e49459c5c0b8",
+   "old_rev": 1247790836,
+   "new_rev": 1260147420
+  },
+  {
+   "page_hash": "3b40d0e616ecc49d283a314a053d3d2e829ef771e0c89594d9bf6cc8e411e2cc",
+   "question_hash": "021f57def050bcd9d331206c0fc43bc73b1b10454a2d9c45f396a7d97dbb5e3f",
+   "old_rev": 1248375696,
+   "new_rev": 1259873611
+  },
+  {
+   "page_hash": "707d12ce7b8a0d33a9d9634371617ae495ca1129cd792e75da824e88e07c9d9d",
+   "question_hash": "02629d65f63fe3d1eab202a8a904b54e6b84149079dc4c35dd2d474c750510e3",
+   "old_rev": 1251960606,
+   "new_rev": 1254756687
+  },
+  {
+   "page_hash": "71b299d1cac67f0076de94b0c2bd5abbed9d42ca6c5e6125cd4e3e2f346cfdcf",
+   "question_hash": "026d020f98eff7e5506193c83f737d11a83335736e9ff0d4f9b9eb5bd5919db0",
+   "old_rev": 1254639621,
+   "new_rev": 1256162394
+  },
+  {
+   "page_hash": "59b11050eb20deb76b594ae1989a52119e8007680b2573d1bb3e76eb5073d6d5",
+   "question_hash": "02955c136ea36fb0b2d44123bd2166265ad9ef997d29f47830f468ec7f61b01c",
+   "old_rev": 1254025975,
+   "new_rev": 1254963116
+  },
+  {
+   "page_hash": "abcf6111755773d10af8d8d01ebab7027b7ecbe1f1970cf3de42c321238c033a",
+   "question_hash": "02bb544ae770e5141a3943c21aa7021673ac4425115fd9925a6503e02bb05fad",
+   "old_rev": 1249415918,
+   "new_rev": 1258163920
+  },
+  {
+   "page_hash": "cb81a3764d0f28bb4adabdcfb2e0591f39444c37b59f88b65063f58721538737",
+   "question_hash": "02c01b00abf7e668a0631df0a48be97963c6d1a37863abaa5e38ce94b92d3c30",
+   "old_rev": 1247440750,
+   "new_rev": 1265526909
+  },
+  {
+   "page_hash": "ff61d465a543948c7367709aac3aa09cb34980ba2effe1e1ebbf44bd36e44f8e",
+   "question_hash": "02cff30b577ff91b8b51b8d7626a0f04e862671bec97c2708b20ddeec32cee38",
+   "old_rev": 1254559569,
+   "new_rev": 1257463302
+  },
+  {
+   "page_hash": "9d341fb242f091603e2eadde711befd440b33ee6953eb5a46f6f67df82f2b9b1",
+   "question_hash": "02d5058efd742644c49c1337d868ac5a2da4df88b951ce2c14fa741c58687fb2",
+   "old_rev": 1250676592,
+   "new_rev": 1256297567
+  },
+  {
+   "page_hash": "52c48f0fb06c7ab9a7642aa1bad14590aa8f744bec627b3094640b4ea1ae057a",
+   "question_hash": "02d5129966cf36aa879aa4cdc5bbab019ad363830cf5db312faa8bc0ad8afe05",
+   "old_rev": 1249510358,
+   "new_rev": 1256916377
+  },
+  {
+   "page_hash": "92d882f46f3f43f21bd4b4dc382c00b33e1aff44f44e6d8d267b752b703b3973",
+   "question_hash": "02f316b5fffa16122265b7103fb11aa53c5dac39c109da3a278e43cb427e0917",
+   "old_rev": 1254416137,
+   "new_rev": 1266121458
+  },
+  {
+   "page_hash": "6a9106d076f63eb41d1192bdf2541fee400aa15240c74cea1ca0eafbb9ed59d3",
+   "question_hash": "030213a1b3b7b1d46f966cfc48195f7e9db13a7184a6528b772f2019062bc163",
+   "old_rev": 1245005501,
+   "new_rev": 1255667898
+  },
+  {
+   "page_hash": "a5ce4cecba2cdf551f0a3e3fa46bc1de52e4ce520ee7226c486e83e8c59a4ea6",
+   "question_hash": "0328baa7da71412f4743dc86db26d3b37c9183811704b9b2faa5637746abdc56",
+   "old_rev": 1243138309,
+   "new_rev": 1245381915
+  },
+  {
+   "page_hash": "40ed6614cc11eed458c634b71e9875c23fea5e3bd4e4d868b546417423b207e8",
+   "question_hash": "0346a81cd6c918b29763f69f3ebb796326fce5a5afc1305a0a0b77b4bcbae3e1",
+   "old_rev": 1250951689,
+   "new_rev": 1260358364
+  },
+  {
+   "page_hash": "2b0d7a00b1151f14665185138df91af756c205fe48653720494a0312b757a58d",
+   "question_hash": "0369810289b2fe5dcef41014cee946bfa27dbdce3222e773d97243b600e3188c",
+   "old_rev": 1247252253,
+   "new_rev": 1255101382
+  },
+  {
+   "page_hash": "ef4e8d29c5fa3520e7bdc25bf4f5e2b9b6470a0a0bca8fc78b4aed245b767835",
+   "question_hash": "037c4e461f364f94b3c826a26316a8133d6da7b5f71a2c32bbdd35e4a80ca1a8",
+   "old_rev": 1247172915,
+   "new_rev": 1253721195
+  },
+  {
+   "page_hash": "35608870f875854babac9a881977a176bfe0aa985f6b08e3596f05129eb345b4",
+   "question_hash": "043f0358d1f18c1e1f41cb70e718e63be0a1352ca618106eb328f68af1209cb9",
+   "old_rev": 1242360173,
+   "new_rev": 1264685841
+  },
+  {
+   "page_hash": "9f1d89664015d05c5f4c0013e2fe44c8f4440e07a48960b781967ee455ca977e",
+   "question_hash": "0466a6d2d907df68b3496520b8ee04e612ba1178937bea8b0605599f3b5c16aa",
+   "old_rev": 1252609139,
+   "new_rev": 1257308927
+  },
+  {
+   "page_hash": "e4d2a9bb5124b96751ac91cd96237785aabba26c1f732e646ae69693e84a4700",
+   "question_hash": "047b467f183b10a47724e2638d7fec9c435966cbff3195a3aeb18f825917f3c5",
+   "old_rev": 1257599828,
+   "new_rev": 1265584058
+  },
+  {
+   "page_hash": "6633110dda9cd48ddd136111942300557a00ab7b06a0e9efb8a2afd1869a392c",
+   "question_hash": "048863e7c459c6998de5cec92721d361a435fee62c0c6bd728930dbbc1dc87da",
+   "old_rev": 1242351657,
+   "new_rev": 1256679700
+  },
+  {
+   "page_hash": "f43154a32dde39a38a8e4eee813a1d943bab6d64e173c479699060a6e14b8b04",
+   "question_hash": "049ae7b39ba7cd4c97073881e8511eccb3455630327a6c8ca2044a22d9663ee5",
+   "old_rev": 1244985659,
+   "new_rev": 1253946102
+  },
+  {
+   "page_hash": "805ea0e4dbdabda592c0bf417b8b2e773136f929fcc8913b19dff11d7f927698",
+   "question_hash": "049d9342f0259e7795a3709f830dc00960788ff24dddacd9448fbee91b79e5a6",
+   "old_rev": 1254368458,
+   "new_rev": 1266496700
+  },
+  {
+   "page_hash": "5531408e915dcf44101cf37b7c825a04cdf60132fa3d0b967575a603269dec7e",
+   "question_hash": "04a20f4cf64bcfe22635013c2fcc32b6b2950fa9d4a6b85b3c2730dafebf19a6",
+   "old_rev": 1243340475,
+   "new_rev": 1260462105
+  },
+  {
+   "page_hash": "d9ffb50a664b503de9763d3fd6941baa9a4d4aaedb421c0435dbb482927ec5f0",
+   "question_hash": "04c74b2220276bf42084c7ef5371ea3e0b107fd073db44a4559275bc3cc1c701",
+   "old_rev": 1253554785,
+   "new_rev": 1265947625
+  },
+  {
+   "page_hash": "8ec62d52f5a7f88efebc70c43bdf78e1a5224309bf7505a2791af4b32c33c34e",
+   "question_hash": "04cf766f3881eca9bf8b99875f8d1b91ec4e42507c6ce9b44664ada5cbeb4d08",
+   "old_rev": 1249848596,
+   "new_rev": 1253640679
+  },
+  {
+   "page_hash": "8f5160d5aa5324f9f93b1b7a19eb3636edc460b0809036985fed5c462c6c9f04",
+   "question_hash": "04fa14d8af6b0493a6e0603928e3b4994ee4d13cfcaf234addcbe002034cccfa",
+   "old_rev": 1241137057,
+   "new_rev": 1250479710
+  },
+  {
+   "page_hash": "14199f16ab5577167e5fa1a303ff6aa3de1896c9acf81fef6c8ba62af9155cf7",
+   "question_hash": "050cc7eb0eee334156833d55778a9fa6986b1b7bcf40a29f6e2c8598dc6488e3",
+   "old_rev": 1245432542,
+   "new_rev": 1247548134
+  },
+  {
+   "page_hash": "21fc4c7dcff913a03a2bcbbabc45fcbb07ec56bdab899f3721f6285c45a91d40",
+   "question_hash": "051e655e0a841639880381d44c841a69b1a4529cad3d3031d534d85397a21fa1",
+   "old_rev": 1247705889,
+   "new_rev": 1259949852
+  },
+  {
+   "page_hash": "f69b0e4053e53beb254c903dafb98cfdb401911ca9f29738e7e012820deb7368",
+   "question_hash": "05316d194fabdcd40cf6f1e88d1da753b537e1fdf118128d729345dbd19bb33d",
+   "old_rev": 1248518804,
+   "new_rev": 1249665815
+  },
+  {
+   "page_hash": "8868d8305c89400a7bbbde4c4bbd9dde8988f0a8e65b3033d5e2c9b6bb9f3cfb",
+   "question_hash": "053313400daf5f0dcb40450b7baf1d99b8579364ef54e7568e40d7b4e81b7421",
+   "old_rev": 1242686792,
+   "new_rev": 1250888966
+  },
+  {
+   "page_hash": "89d523901d8d8f0f9b8ef3211bbb2da914b7e9870d748a7cb9010179cfa2b2d2",
+   "question_hash": "05590dd7aa51579279729ab377c206661d9e09951ce6435a31a69b1b2beb0719",
+   "old_rev": 1253685231,
+   "new_rev": 1263873181
+  },
+  {
+   "page_hash": "a44d9d8c80fbcdeb08ac1473092c7e8a0bd8933e34affbec02ab20ca7eeea55c",
+   "question_hash": "057f41c13d33b850bd73866cc0bafa11a0750189477a73d097587f71c66d8fae",
+   "old_rev": 1254455179,
+   "new_rev": 1257039733
+  },
+  {
+   "page_hash": "a5be484a16028345ecaaf36d221a51402d6fbde72275522de0b31f61975afb45",
+   "question_hash": "058504f5496a56ff206c4d976d46a33f7532028d3854d9a244f7e04a8640ce58",
+   "old_rev": 1244307967,
+   "new_rev": 1259240689
+  },
+  {
+   "page_hash": "30fe8297f1faa1cedd065782583d357f2774408c19d62fb20d29524ab177205d",
+   "question_hash": "0596cd98dd5e2378b3755e468a2a2c0a6fc2ea5a9f85207a279145e765fb30a1",
+   "old_rev": 1243343122,
+   "new_rev": 1254165226
+  },
+  {
+   "page_hash": "f7e0495641c344e2b315de77bc6d000c07b0f36dffc554bcff2a59727aa341fb",
+   "question_hash": "05a2c489d893e8ab6fd8e735e9f25d8117a22762074887126544dcfc5f88a2c4",
+   "old_rev": 1249444160,
+   "new_rev": 1259862319
+  },
+  {
+   "page_hash": "6c00879c126b866ae8c3145e3d6d0518d9f8da2059ac84858811b6067dbb59d1",
+   "question_hash": "05c34eeb8cacdc2a41d733b5508389450725018e166bb23f93e0499a8e672390",
+   "old_rev": 1244719653,
+   "new_rev": 1247416213
+  },
+  {
+   "page_hash": "bb2b8bb6153506e86a8d8dac9b7d92974ce4988fac047e25bdf3f31d4fa0c49d",
+   "question_hash": "05cf40e16f73970acbf4a60ea0dc9b319792e28f0a05d6c77b243744d1057fe5",
+   "old_rev": 1251275062,
+   "new_rev": 1259867610
+  },
+  {
+   "page_hash": "efb433194c8a5ac2692631539d1ff9085b09eddc6c5ffa75de796fecb5a99503",
+   "question_hash": "05e857d7c8c6abb55f040412ad9f3a5ca686d915aba2cf5553efc9455e279e7a",
+   "old_rev": 1242917556,
+   "new_rev": 1243499027
+  },
+  {
+   "page_hash": "3c2125379c1b93f0fd6c1e47bf4b9ac2c1106e0d0cd1b9e2a923b4a699db5e26",
+   "question_hash": "05f15c45bc3e4c53cafadb8c290b14555fb6e3df6fce53fe4bd3aa7cc511224b",
+   "old_rev": 1250498745,
+   "new_rev": 1257299931
+  },
+  {
+   "page_hash": "9c7585a6d573f6ef40a3260270b917ad1cf08eb330c970e4866fee6cee063578",
+   "question_hash": "05fc533f2ed385fbdb65609736bf763aaf5f8fc9ebec707f13cfe20cc2287dfb",
+   "old_rev": 1245515643,
+   "new_rev": 1266279581
+  },
+  {
+   "page_hash": "bb8b2ba817fe4ec75ddbab230128fccf94daa1183087f0013ae3329712491a58",
+   "question_hash": "060d4e3affbf677675cbdb84b726a1ec7456511883a93f1af2ebed2f8ccfe2d4",
+   "old_rev": 1245457569,
+   "new_rev": 1259934830
+  },
+  {
+   "page_hash": "6b7ddec1986a6df231e8cf8e56dd4856cfe861d292ed5313a59b5016d3ad07f5",
+   "question_hash": "064f7534a1483dc4d495225d4bd635fc2b788e1aa2fbaf6f9b3642fb1c224a2b",
+   "old_rev": 1243348455,
+   "new_rev": 1259105666
+  },
+  {
+   "page_hash": "e66e5bd08218a8cfd254c81d4e4427af2f16484f812a55fa6e784f5e0df1c865",
+   "question_hash": "06608153289626915fe046169d1a48a613a9bee5c9c63a2e9b5beea9eff70148",
+   "old_rev": 1256726700,
+   "new_rev": 1259657440
+  },
+  {
+   "page_hash": "fa4cbc90885e20c6f7f472ac129336a18f9942dbb72b6c1c8f5b0e0de0a672fc",
+   "question_hash": "06750b385828c3260843c478eef841d96cc70940c879d81c4ea8ce349d032114",
+   "old_rev": 1246703096,
+   "new_rev": 1249961001
+  },
+  {
+   "page_hash": "4dce9d804194e8f2db38529186cb3c645b0138cb90b57de3f1b809bcf2cbd810",
+   "question_hash": "06a0e6c4f7d02f98cdf7bf2958eb4e6fffd9ecdd8d4aa948bc768f6ace242414",
+   "old_rev": 1253939198,
+   "new_rev": 1260238391
+  }
+ ],
+ "missing_tables": 0,
+ "empty_articles": 0
+}

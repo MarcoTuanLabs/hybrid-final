@@ -1,0 +1,97 @@
+{
+  "pages": 20,
+  "queries": 40,
+  "stats": {
+    "all": {
+      "old": 14,
+      "new": 14,
+      "both": 14,
+      "plain_exact": 28,
+      "correct": 28,
+      "mean_f1": 0.7846645021645021
+    },
+    "snapshot": {
+      "old": 12,
+      "new": 13,
+      "both": 12,
+      "plain_exact": 25,
+      "correct": 25,
+      "mean_f1": 0.7263311688311689
+    },
+    "span": {
+      "old": 8,
+      "new": 12,
+      "both": 6,
+      "plain_exact": 20,
+      "correct": 20,
+      "mean_f1": 0.5562745098039216
+    },
+    "joint_prompt": {
+      "old": 11,
+      "new": 13,
+      "both": 11,
+      "plain_exact": 24,
+      "correct": 24,
+      "mean_f1": 0.7268867243867243
+    },
+    "aligned_snapshot": {
+      "old": 12,
+      "new": 14,
+      "both": 11,
+      "plain_exact": 26,
+      "correct": 26,
+      "mean_f1": 0.7656168831168831
+    },
+    "aligned_field": {
+      "old": 11,
+      "new": 13,
+      "both": 11,
+      "plain_exact": 24,
+      "correct": 24,
+      "mean_f1": 0.6857142857142857
+    },
+    "score_vote": {
+      "old": 13,
+      "new": 14,
+      "both": 13,
+      "plain_exact": 27,
+      "correct": 27,
+      "mean_f1": 0.7739502164502164
+    },
+    "score_plain": {
+      "old": 13,
+      "new": 14,
+      "both": 12,
+      "plain_exact": 27,
+      "correct": 27,
+      "mean_f1": 0.7781168831168832
+    },
+    "score_whole": {
+      "old": 13,
+      "new": 14,
+      "both": 12,
+      "plain_exact": 27,
+      "correct": 27,
+      "mean_f1": 0.7763311688311688
+    },
+    "score_raw": {
+      "old": 14,
+      "new": 14,
+      "both": 13,
+      "plain_exact": 28,
+      "correct": 28,
+      "mean_f1": 0.7888311688311689
+    },
+    "score_tangent": {
+      "old": 13,
+      "new": 14,
+      "both": 12,
+      "plain_exact": 27,
+      "correct": 27,
+      "mean_f1": 0.7781168831168832
+    }
+  },
+  "eligible_pool_ceiling_pairs": 16,
+  "eligible_pool_ceiling_individual": 34,
+  "gate_passed": false
+}

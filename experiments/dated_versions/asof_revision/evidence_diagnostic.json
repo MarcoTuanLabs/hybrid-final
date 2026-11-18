@@ -1,0 +1,253 @@
+{
+  "n": 40,
+  "counts": {
+    "source_span": 36,
+    "top5_span": 32,
+    "top5_complete_cell": 22,
+    "source_both": 18,
+    "top5_both": 16
+  },
+  "per_page": {
+    "003797f5447171a7acb7d4c4199367bb86978a623ac4f13e03667897c5f4f456": [
+      {
+        "in_source": false,
+        "in_top5": false,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": false,
+        "in_top5": false,
+        "top5_complete_cell": false
+      }
+    ],
+    "004438473717676af3b0e7b1f084596db124286587241a5d840184885267cae9": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      }
+    ],
+    "004a6668ede606023a3ec9d39718c6f6eae63f67cf1f4c3e4b25bbb4bfb8c853": [
+      {
+        "in_source": true,
+        "in_top5": false,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": false,
+        "top5_complete_cell": false
+      }
+    ],
+    "004d30f8b1bfe840e744e714664aaa54de03bdb4a7ea06e866dfd41ec04290ae": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00551e11b629bd5ebaff872467d53313bff05c77fd7513c0e7ca1ea659c769d0": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "0056e05b3b06ff11d5d4f934049673ef7d1b393f6b9b33c9090338b106880077": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      }
+    ],
+    "0072715087ad1818a878733bbce1facc039ded2ef4d49184c61bb1211d297c03": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "008af471740760db38ed8aa4d6d4797fb5199bf5cf4069ee82d7ebf9d775c533": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00da117115a010e65bd1163a9f1acc96d37837c1e2479c1cc0387417907f1c61": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00ddc1a217a83452ad81467964adff5258fd10cf30de966fdf99edb37a4c0a06": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00e5325f3e8337792cecf83d2d29cf2dbad646a827496f9c0917e3b3924ec168": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      }
+    ],
+    "00e88249fc00474408c70c150c762256fff9bd804b81593d12fd41e247740b95": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00f54f8f36e9c29493d7594e4cc76e946eb03169892843942f7acca07863403e": [
+      {
+        "in_source": true,
+        "in_top5": false,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": false,
+        "top5_complete_cell": false
+      }
+    ],
+    "00f8c3a859e66583a4695cfbf3134b84567884d89d1d3a2fbeebe26565e0173d": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "00fdc0c8a62b241079efbe5283a927a560eecdb50d228bfff4620aeb68781f61": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "0110937fca5a28cf82f266bef07fe53aa191f1bbd04e0608fe9bec63836976ac": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ],
+    "013929ac58624a56c808867be80cddf4bb0ad33abdcb476644f871fcef25988e": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      }
+    ],
+    "0190d8ad0d3ad1a3dde8c9d869e0084c0fe453197add0a8cae772341c7b7cf1b": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      }
+    ],
+    "01c984804b19de2444dc286dbdbd45e6d4e46622f8164171f9aae3e287557621": [
+      {
+        "in_source": false,
+        "in_top5": false,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": false,
+        "in_top5": false,
+        "top5_complete_cell": false
+      }
+    ],
+    "01e1fccac8d5d4592c041b1f34cab9c8ea93771348f979fd51e1816011769470": [
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": false
+      },
+      {
+        "in_source": true,
+        "in_top5": true,
+        "top5_complete_cell": true
+      }
+    ]
+  },
+  "metric": "Whole-word normalized reference occurs in an individual source paragraph or row. Multiword aliases absent from the gold string are not counted. Diagnostic only."
+}

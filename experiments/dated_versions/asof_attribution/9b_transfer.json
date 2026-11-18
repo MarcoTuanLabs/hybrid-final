@@ -1,0 +1,13 @@
+{
+  "at": "2026-11-18T18:57:23.693358+00:00",
+  "aim": "Cross-size check of the 4B channel diagnosis on the same 20 exposed pages. The original six-page error subgroup is frozen by the 4B mixed-context baseline. Test the observed direction that attention has larger median contribution than recurrent state on the full cohort and the six error pages. This is a mechanistic replication on shared data, not promotion of the failed native method, not an independent data test, and not a 9B unrestricted-accuracy claim.",
+  "model_snapshot": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "gate": "Both attention medians must exceed their corresponding recurrent medians to support replication; also report every component and 9B free answers. Continue a native rescue only under original 4-of-6 native page rule.",
+  "budget": "Up to 12 min for locally cached 4-bit 9B. Original public datasets and all 48 reserved pages unchanged.",
+  "pins": {
+    "probe.py": "f0fb6990e7a4a114dd5b18d35cf4bfc6b766f077d1ccfd76cb2ed9355aa93af3",
+    "score.py": "e36cc06c1cb5b30a781e291454879f8972f9ff3beae86b8af590e14c96eb59eb",
+    "contract.json": "cdad9a0ce413e65f8d53ab8cb609739bf21a456d573c96f66f1a08883ecac40e",
+    "4b_summary.json": "ec3818140ef636b4e3ec0a7b1c6cff00fc42c5a0a5c692c856f70803554b82c2"
+  }
+}

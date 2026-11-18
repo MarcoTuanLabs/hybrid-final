@@ -1,0 +1,52 @@
+{
+  "repository_revision": "9fa43bc428d531a61c417bbbaeaf96eaf70fa9bd",
+  "ground_truth": "DynaQuest evaluation snapshots and original questions. One old and one new answer per independent Wikipedia page. Supplied dates are dataset window cutoffs.",
+  "dataset_license_url": "https://drive.google.com/open?id=14MOtwYRlI6ynoExBGcEquyR175ltf5aP",
+  "wiki": "English Wikipedia, each HTML document checked against its wgRevisionId. Per-edition evidence is retrieved once with no access to answer keys.",
+  "eval_helpers": {
+    "evaluate.py": "4b73c1578757dd08f433b38a7d1ac217fd51d3377337a69ec904b124a0393a7c",
+    "official_utils.py": "9ae70c7467fc1ea1fd909f28db1980e34461afd1fedd81c8d8c7d721db4ec5ff",
+    "party_mapping.json": "cd1cd84d7c0c54c6eb895a2451de2e007d65e4019da273d5d2c1113192e2f9df"
+  },
+  "source_page": "https://github.com/nusnlp/DynaQuest",
+  "paper": "https://aclanthology.org/2025.findings-acl.1380/",
+  "used_official_date_or_party_special_cases": 0,
+  "ground_truth_files": {
+    "2024-08-16_2024-09-01.json": {
+      "sha256": "cbf5c723026c11e676ba4a700ec398084b529472736d42a0a2aa7c9a1f84d51d",
+      "gdrive_id": "18D9_vo0ZCgjr54apdVJb_mnXQR8xuE8D"
+    },
+    "2024-09-01_2024-09-16.json": {
+      "sha256": "9afb1342a882dbc524b775ac58289c663a690c9f24ee3c5a48b679e965a729cb",
+      "gdrive_id": "1KW4XmY3PU-W1TCsSeyB-9Upcx-2mlEYc"
+    },
+    "2024-09-16_2024-10-01.json": {
+      "sha256": "4a61785b4d1882c03b76feca16ebf983721848f2e4d0e254644f803e4f2ad8fb",
+      "gdrive_id": "1UZGkAaYJW8LaJhq7YskBKDMKuNa593fw"
+    },
+    "2024-10-01_2024-10-16.json": {
+      "sha256": "03c5fcb4618984210067b8540f8c0f7c80cefcaa5022f6b06c1ce81130ecc1d0",
+      "gdrive_id": "1nJWIK0wF1O4W2CscDh7y0MtpH-XCx8vB"
+    },
+    "2024-10-16_2024-11-01.json": {
+      "sha256": "5f55d4b322b3b7ef593aa5fa12e4c35fd0013843f9caa4f55350fb3ac1ff9375",
+      "gdrive_id": "1Znjw9J-a27YOfoJHsZx3W1T09Jml_uyP"
+    },
+    "2024-11-01_2024-11-16.json": {
+      "sha256": "37f04ad7ea64f95f68a0db807772b3cdbb4ff408f5efec598bf49e63bc270606",
+      "gdrive_id": "1xTTyIAXab9x5fBwY_W3Jw1tSkPAowMHl"
+    },
+    "2024-11-16_2024-12-01.json": {
+      "sha256": "c3b09d528bf1c15e0bf0f6387cc08204a95dd9680dcf6147a5de096ed0241bc4",
+      "gdrive_id": "1y6AqlnFr3i4UtFcLpVJfNWQOiXWfy6OH"
+    },
+    "2024-12-01_2024-12-16.json": {
+      "sha256": "eed0108eb227c8edd5e2ad99b7cc2d5fe1a04ee140d4826d7457f84a3f85b60c",
+      "gdrive_id": "1VAY7SovKwAAl1ju-_nIe-Eza-5SL1jKK"
+    },
+    "2024-12-16_2025-01-01.json": {
+      "sha256": "a32b1c24da4d2bb458a86decf2c4629f28c2de50fca7bdcc4f0444ea6594fc55",
+      "gdrive_id": "1VLKb40B1VVfj4vmATcspOS0r0dCQR2sp"
+    }
+  }
+}

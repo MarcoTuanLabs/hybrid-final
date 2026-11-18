@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-18T18:36:22.192029+00:00",
+  "source": "Official DynaQuest half-month question archives, August 16 2024 through January 1 2025, from the public folder linked in the authors repository. Use two snapshots where the source question recurs with different labeled answers. Text from archived English Wikipedia revision identified in each row. These are transaction-time as-of questions about article revisions, not claims of real-world validity dates.",
+  "selection": "Group by page name and lowercased whitespace-normalized literal question; keep first and last observations if reference text differs and revision differs. One pair per distinct page, selected by SHA256(asof-revision-pilot-1/page/question). First 20 pages for development, next 48 reserved. Missing public content or infobox is recorded; do not silently substitute another test question. Both revision queries included. No correctness-based selection.",
+  "metric": "Primary: both revision answers correct on a page using the original source scorer where applicable, also report normalized exact separately, single-answer count and per-version. Fixed before opening question labels for grading. Compare strong text date filtering, full-version cached snapshots and a simple structured extraction baseline.",
+  "sources": {},
+  "reserve": "Do not score or inspect reserve answers during development. Test only after a meaningful native gain on development."
+}

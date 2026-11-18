@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-18T18:50:00.442347+00:00",
+  "parent": "asof_revision_4b",
+  "candidate": "tangent",
+  "hypothesis": "The correct old/new pair should be supported by its own dated snapshot and lose its differential support when the target recurrent read direction is grafted toward the other edition. Suppress the radial component removed by head-wise normalization. Give the same short answer-pair proposals to vote, positive teacher forcing, whole-edition and complete recurrent swap comparisons; also benchmark unconstrained generation, matched-revision prompts, individual editions, field lookup and the previous full-history-policy scores.",
+  "gate": "Require >=3 additional complete page pairs against all controls, no fewer correct answers at either date, and stronger results than all published-date pilot controls. Report plain lexical EM and DynaQuest-normalized EM, token F1, and pair proposal ceiling. Only then try a larger model and disjoint pages. Failures in pair generation fall back to the earlier full-source answer, fixed before any new scores.",
+  "budget": "20 pages, 40 questions, cap 3 field alternatives plus complete pre-existing proposals; 17 minutes local Apple silicon; one numerical/engineering repair, no paid compute. Joint and independent answer generators are run online. Shared evaluations do not yield standalone per-policy latency.",
+  "deadline_s": 1020,
+  "pins": {
+    "paired.py": "1357ad7ee18002f99b4b6c608be9175f5d9d13ef1da6b9e3e2d5585c6fd64737",
+    "align.py": "951d96ee4c2802331affd0cc0ab1731f4b1f105d3f5f714e4fb46a8e95e91750",
+    "alignment.json": "d8d05ace3f387c9d4b7d46e8f3063c796ab9b06fac50cd14c7b578fee693b76b",
+    "../asof_revision/ranked.json": "45d618863964a84230513254f44b908130f20a8fd41279f17bb632cac1f4e4b0",
+    "../asof_revision/4b_rows.jsonl": "ba72c4348bf01c0e0562695fc6be308d2345ae20d151174af37438418a3e82e1",
+    "../asof_revision/span_answers.json": "5ea299e1f02fced767b7df4ad5af304e538acb43ece108ebc921b052728b8517",
+    "../asof_revision/score.py": "c817274feae36def5486a63366996db69c83ede491ee64f631f59bedde119fc2",
+    "../bridge_reads/bridge.py": "8000e6f424ff0aa43efa8adef8876c7ee86afb7cf7ff48421a5f8cc11c189a27",
+    "../bridge_reads/engine.py": "f6068086f33947e49d53eb2a080977061c96b9ff359b3b3177726a03f75125c0",
+    "../paired_hops/run.py": "5d6d9e0bb7dd50988f2e92a01640f3ea24db9f8009b7bcce48f75ae25db31c38"
+  }
+}

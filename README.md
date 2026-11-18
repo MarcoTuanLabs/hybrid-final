@@ -35,6 +35,10 @@ A separate balanced MQuAKE-Remastered pilot compared six readers on edited and u
 
 On 96 corrected MQuAKE development questions, a supervised text parser followed by Qwen3.5-9B answered 75 correctly. Ranked retrieval answered 63 and an adaptation of G-Walk with semantic relation matching answered 71. Adding recurrent token reads to the text parser also yielded 75. The 4B comparison yielded 69, 55, 61 and 70, respectively. Both readers used the same questions and graph. [Method, archived answers and reproduction](experiments/remastered_paths/README.md)
 
+## Dated Wikipedia revisions
+
+On 20 DynaQuest pages with changing answers, Qwen3.5-4B answered 28 of 40 dated questions correctly when shown both editions and 25 when shown only the requested edition. A factorial cache probe compared the old and new reference answers directly. On the six pages with two errors in the 4B mixed-context baseline, 9B favored the correct pairing on five but freely produced both answers on zero. The attention cache supplied the larger median contribution to the old/new log-odds difference at both model sizes. [Dated evidence, scope and complete results](experiments/dated_versions/README.md)
+
 ## Build and verify
 
 ```sh
