@@ -1,0 +1,41 @@
+{
+  "full": {
+    "em": 79,
+    "f1": 0.9374046092796092,
+    "seconds": 119.38827153423335,
+    "positions": 18349,
+    "old_em": 77,
+    "decisions": {
+      "replay": 96
+    },
+    "em_difference_vs_checkpointed": 0
+  },
+  "guarded_unique": {
+    "em": 80,
+    "f1": 0.9398351648351648,
+    "seconds": 66.56391020712908,
+    "positions": 10460,
+    "old_em": 77,
+    "decisions": {
+      "whole_span": 60,
+      "unique": 3,
+      "length_replay": 11,
+      "substitution": 20,
+      "replay": 2
+    },
+    "position_saving": 0.42994168619543305,
+    "time_saving": 0.44245854846769794,
+    "gate": true,
+    "paired_current_gains": 2,
+    "paired_current_losses": 1,
+    "ci95_em_difference": [
+      -0.020833333333333332,
+      0.052083333333333336
+    ],
+    "ci95_time_saving": [
+      0.4065186217290431,
+      0.4773987318611277
+    ],
+    "em_difference_vs_checkpointed": 0
+  }
+}

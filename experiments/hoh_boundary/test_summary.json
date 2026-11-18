@@ -1,0 +1,129 @@
+{
+  "n": 96,
+  "cpu": {
+    "full": {
+      "em": 75,
+      "f1": 0.8879253848003849,
+      "seconds": 3.6569403359899297,
+      "positions": 11329,
+      "old_em": 75,
+      "decisions": {
+        "replay": 96
+      }
+    },
+    "guarded_unique": {
+      "em": 77,
+      "f1": 0.8952170514670514,
+      "seconds": 2.0663024187088013,
+      "positions": 6400,
+      "old_em": 75,
+      "decisions": {
+        "whole_span": 83,
+        "length_replay": 12,
+        "unique": 1
+      },
+      "position_saving": 0.4350781181039809,
+      "time_saving": 0.4349641424627029,
+      "gate": true,
+      "paired_current_gains": 2,
+      "paired_current_losses": 0,
+      "ci95_em_difference": [
+        0.0,
+        0.052083333333333336
+      ],
+      "ci95_time_saving": [
+        0.39906027712666403,
+        0.4666666712637607
+      ]
+    },
+    "unique": {
+      "em": 76,
+      "f1": 0.9061297498797499,
+      "seconds": 1.826054285862483,
+      "positions": 5682,
+      "old_em": 75,
+      "decisions": {
+        "whole_span": 95,
+        "unique": 1
+      },
+      "position_saving": 0.49845529172919056,
+      "time_saving": 0.5006606293541915,
+      "gate": true,
+      "paired_current_gains": 2,
+      "paired_current_losses": 1,
+      "ci95_em_difference": [
+        -0.020833333333333332,
+        0.052083333333333336
+      ],
+      "ci95_time_saving": [
+        0.4956578276804584,
+        0.5064382597020267
+      ]
+    }
+  },
+  "qwen": {
+    "guarded_unique": {
+      "em": 80,
+      "f1": 0.9398351648351648,
+      "seconds": 87.02467817498837,
+      "positions": 9853,
+      "old_em": 77,
+      "decisions": {
+        "whole_span": 59,
+        "unique": 3,
+        "length_replay": 11,
+        "substitution": 21,
+        "replay": 2
+      },
+      "position_saving": 0.27969880839242633,
+      "time_saving": 0.33853163619534477,
+      "gate": true,
+      "paired_current_gains": 2,
+      "paired_current_losses": 1,
+      "ci95_em_difference": [
+        -0.020833333333333332,
+        0.052083333333333336
+      ],
+      "ci95_time_saving": [
+        0.30530057308137715,
+        0.3682574382234365
+      ]
+    },
+    "prefix": {
+      "em": 79,
+      "f1": 0.9374046092796092,
+      "seconds": 131.56287274940405,
+      "positions": 13679,
+      "old_em": 77,
+      "decisions": {
+        "replay": 96
+      }
+    },
+    "unique": {
+      "em": 79,
+      "f1": 0.9318490537240537,
+      "seconds": 82.05834804440383,
+      "positions": 9294,
+      "old_em": 77,
+      "decisions": {
+        "whole_span": 67,
+        "unique": 4,
+        "substitution": 23,
+        "replay": 2
+      },
+      "position_saving": 0.32056436874040495,
+      "time_saving": 0.37628035683968797,
+      "gate": false,
+      "paired_current_gains": 2,
+      "paired_current_losses": 2,
+      "ci95_em_difference": [
+        -0.041666666666666664,
+        0.041666666666666664
+      ],
+      "ci95_time_saving": [
+        0.3539085379176312,
+        0.398930939893518
+      ]
+    }
+  }
+}

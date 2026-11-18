@@ -1,0 +1,30 @@
+{
+  "cpu": {
+    "full": {
+      "dense_equivalent_ops": 1951367863296,
+      "saving_vs_reread": 0.0
+    },
+    "unique": {
+      "dense_equivalent_ops": 978735200256,
+      "saving_vs_reread": 0.49843634372309165
+    },
+    "guarded_unique": {
+      "dense_equivalent_ops": 1102455570432,
+      "saving_vs_reread": 0.4350344744481578
+    }
+  },
+  "qwen": {
+    "prefix": {
+      "dense_equivalent_ops": 193034125574144,
+      "saving_vs_reread": 0.0
+    },
+    "unique": {
+      "dense_equivalent_ops": 130768179691520,
+      "saving_vs_reread": 0.32256444655796257
+    },
+    "guarded_unique": {
+      "dense_equivalent_ops": 138669446529024,
+      "saving_vs_reread": 0.28163247759131915
+    }
+  }
+}

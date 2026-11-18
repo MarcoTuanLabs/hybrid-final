@@ -1,0 +1,5 @@
+{
+  "role": "Additional low-cost conventional control. Frozen before inspecting page-scoped answer scores or CPU outputs. No modification of the Qwen gate.",
+  "method": "Pinned RoBERTa SQuAD2, process the two editions in separate CPU invocations in chronological order; use the question with the page title and extract the highest-logit contiguous span of up to 24 tokens. No gold or stale-answer feature. Report online time after model load and accuracy for both answers. Encoder positions are not equivalent to Qwen FLOPs.",
+  "scope": "Single-request warm-model timing, four CPU threads. Independent timed execution after the MLX generator stops."
+}

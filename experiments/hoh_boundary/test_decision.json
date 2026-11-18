@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-18T19:24:50.292782+00:00",
+  "selection": "guarded_unique text-only in both models",
+  "trial": "96 disjoint pages; Qwen3.5-9B 4-bit and RoBERTa on CPU",
+  "annotation": "Fixed before transfer inference; no unique native benefit on dev",
+  "dev_sha256": "ae75b59293dd2d4ca488f05e1875ca0786267a128fc93bdb085d1e98e38cb4e4",
+  "test_inputs_sha256": "db0a3d04c38c47ea01c4af0276acec372b0df9e98cbaec1bbd3b616981f55e2c"
+}

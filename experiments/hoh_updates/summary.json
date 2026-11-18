@@ -1,0 +1,124 @@
+{
+  "n": 32,
+  "measures": {
+    "bm25_direct": {
+      "em": 22,
+      "f1": 0.7876382604323781,
+      "stale": 0
+    },
+    "direct_direct": {
+      "em": 23,
+      "f1": 0.8397215937657114,
+      "stale": 0
+    },
+    "expanded_direct": {
+      "em": 23,
+      "f1": 0.8397215937657114,
+      "stale": 0
+    },
+    "expanded_soft": {
+      "em": 22,
+      "f1": 0.8319090937657114,
+      "stale": 0
+    },
+    "expanded_hard": {
+      "em": 19,
+      "f1": 0.7700884415917983,
+      "stale": 0
+    },
+    "first_edit": {
+      "em": 11,
+      "f1": 0.5524621212121212,
+      "stale": 0
+    },
+    "direct_one": {
+      "em": 22,
+      "f1": 0.7685866013071896,
+      "stale": 0
+    },
+    "direct_four": {
+      "em": 23,
+      "f1": 0.8206699346405228,
+      "stale": 0
+    },
+    "both_editions": {
+      "em": 20,
+      "f1": 0.7548062865497076,
+      "stale": 4
+    },
+    "expanded_four": {
+      "em": 22,
+      "f1": 0.7977532679738562,
+      "stale": 0
+    },
+    "whole": {
+      "em": 22,
+      "f1": 0.8040032679738562,
+      "stale": 0
+    },
+    "attention": {
+      "em": 22,
+      "f1": 0.8040032679738562,
+      "stale": 0
+    },
+    "recurrent": {
+      "em": 22,
+      "f1": 0.7977532679738562,
+      "stale": 0
+    }
+  },
+  "source_recall": {
+    "bm25_1": 25,
+    "direct_1": 25,
+    "direct_4": 30,
+    "expanded_1": 26,
+    "expanded_4": 30
+  },
+  "practical_controls": [
+    "bm25_direct",
+    "both_editions",
+    "direct_direct",
+    "direct_four",
+    "direct_one",
+    "expanded_direct",
+    "expanded_four",
+    "expanded_hard",
+    "first_edit",
+    "whole"
+  ],
+  "best_control_em": 23,
+  "best_control_f1": 0.8397215937657114,
+  "gate": {
+    "expanded_soft": false,
+    "attention": false,
+    "recurrent": false
+  },
+  "paired": {
+    "expanded_soft": {
+      "base": "expanded_direct",
+      "gained": 0,
+      "lost": 1,
+      "answer_changed": 1
+    },
+    "attention": {
+      "base": "expanded_four",
+      "gained": 0,
+      "lost": 0,
+      "answer_changed": 3
+    },
+    "recurrent": {
+      "base": "expanded_four",
+      "gained": 0,
+      "lost": 0,
+      "answer_changed": 0
+    },
+    "whole": {
+      "base": "expanded_four",
+      "gained": 0,
+      "lost": 0,
+      "answer_changed": 3
+    }
+  },
+  "shared_generator_seconds": 195.064345835126,
+  "shared_positions": 35324
+}

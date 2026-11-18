@@ -1,0 +1,6 @@
+{
+  "purpose": "Compare to full fresh generation, which on 4B cost 36.13 seconds versus 37.70 for saving prefix checkpoints, despite processing more positions. Distinguish saved decoder work from checkpointing overhead.",
+  "selection": "Same 96 page-scoped test cases and frozen 1.5 text-only repair rule. Additional cost sensitivity, after observing CPU test results and before scoring 9B transfer. Two independently executed policies rotate order by page. Neither stores prefix-cache checkpoints. Full executes both whole prompts; guarded calls the same fresh decoder only after an unsuccessful patch. Includes both old and new answers, not model loading.",
+  "threshold": "Report both quality metrics, positions, times and page-paired intervals. A conditional efficiency claim requires at least 20% fewer positions and lower elapsed time by at least 20%, with no decline in exact answers or token F1 versus the matched full reader.",
+  "budget": "96 pages, two live lifecycles each, 30 minutes, one repair, local Qwen3.5-9B 4-bit."
+}

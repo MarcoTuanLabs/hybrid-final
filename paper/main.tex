@@ -66,10 +66,8 @@ response but little change after normalization. I therefore optimize
 the normalized contrast across heads sharing a query. I preserve the
 query norm and limit the change in direction to $60$ degrees.
 
-I test this objective against simple readers with the same write and
-query budget. I also ask the converse question. Given the queries a model
-will use, how much of a state change must a receiver obtain to reproduce
-the donor's answers?
+I compare readers at the same write and query budget. I then ask how much
+of a state update a receiver needs to reproduce the donor's answers.
 
 \section{Task and Controlled Interventions}
 Each independent seed specifies eight animal--letter assignments.
@@ -240,11 +238,10 @@ normalized solver's angular cap.
 
 
 \section{Independent Confirmation Results}
-I fixed methods and analyzers before confirmation and checked seeds and
-tokenized prompts against earlier inputs. I average formats within each
-seed and bootstrap paired reader differences over 20,000 replicates.
-I use a 95\% interval for 9B and a 97.5\% interval for each of two
-primary 27B comparisons.
+I froze the methods before confirmation, checked for overlapping seeds
+and prompts, and averaged formats within seed. I bootstrapped paired
+differences 20,000 times, using 95\% intervals for 9B and 97.5\%
+intervals for the two primary 27B comparisons.
 
 \paragraph{9B: a local value write controls more answers.}
 The normalized reader controls 361/512 targets (70.51\%), versus
@@ -275,10 +272,8 @@ control answer. These counts cover nuisance writes and unwritten
 states in the paired task.
 
 \section{A Simpler Solver at Lower Cost}
-A single native initialization preserves the four-start solver's answer
-control while reducing its cost. On the final 27B cohort, both the
-native-start solver and the four-start, 16-step batched reference control
-256/256 targets. Mean total intervention time falls from 0.9108 to
+On 27B, one native start and four batched starts each control 256/256
+targets after 16 iterations. Mean total intervention time falls from 0.9108 to
 0.7120 seconds, a 21.83\% reduction. The paired seed-bootstrap time
 ratio is 0.7817, with a 95\% interval of [0.7808, 0.7827]. No seed loses
 a reference-controlled answer; the one-sided 95\% upper bound on the
@@ -343,21 +338,30 @@ The byte counts cover the recurrent update only. They exclude the
 shared donor cache components and local dense reconstruction.
 
 \paragraph{An edit before the question.}
-I inserted a delayed session into shortened, timestamped LongMemEval
-histories \citep{wu2025}. I retained the earlier evidence sessions and
-512 subsequent user tokens. After replaying the insertion and 16 of
-those tokens, I scaled each head's state difference by the product of its
-stored retention gates. I added the result to its old final state and
-adjusted the cached attention keys for the insertion.
+I inserted a delayed session before a 512-token suffix in shortened
+LongMemEval histories \citep{wu2025}. I replayed the insertion and
+16 suffix tokens, scaled each head's state difference by its remaining
+retention gates, and shifted the cached attention keys. On 34 held-out
+questions, this correction and full replay each scored 21/34 on 4-bit
+9B. Their outputs differed by one period. Including history ingestion,
+the correction cut estimated arithmetic by 25.3\% and elapsed time by
+19.5\%. Reusing the old final state also scored 21/34 at similar cost.
+The correction lowered its mean logit error by 19.2\%, just below the
+20\% criterion. BM25 used fewer operations and scored 19/34.
 
-On 34 held-out questions, this correction and full replay each matched
-21 reference answers. Their outputs differed only by one period.
-Counting the original history, insertion and answer, the correction
-reduced estimated dense-equivalent operations by 25.3\% and measured
-time by 19.5\% on 4-bit 9B. Reusing the old final state also scored
-21/34 at nearly the same cost. The correction reduced its mean logit
-error by 19.2\%, below the prespecified 20\% threshold.
-BM25 retrieval scored 19/34 and used fewer operations than either cache method.
+\paragraph{When the same question returns.}
+A service may already have answered the question about an earlier
+passage. I align the two passages and transfer the old answer through
+the edits. I run the reader again if alignment fails or the longer
+answer has more than 1.5 times as many words as the shorter. I fixed
+this text-only rule on 32 HoH-QAs pages and tested it on 96 other
+pages with dated evidence \citep{ouyang2025}. On 4-bit 9B it matched
+80/96 updated answers, compared with 79/96 for exact prefix reuse and
+regeneration. It recovered two answers and lost one. Counting both
+editions, estimated arithmetic fell 28.2\% and elapsed time fell
+from 131.56 to 87.02 seconds. A CPU span reader using the same rule
+scored 77/96 in 2.07 seconds, versus 75/96 in 3.66 seconds for rereading.
+This experiment supplies the page and repeats its question.
 
 \section{Relation to Prior Work}
 Linear attention stores associations as fast weights \citep{schlag2021}.
@@ -374,11 +378,11 @@ behavioral effect of the runtime write \citep{zhang2024}.
 \section{Discussion and Conclusion}
 The background read and the heads that share a query determine how a
 write survives normalization. Accounting for both improves answer
-control on two synthetic cohorts. The public experiments establish
-fidelity to a reference computation on bounded histories. Their short
-answers and fixed update locations limit conclusions about open-ended chats.
+control on two synthetic cohorts. The public tasks show where a state update preserves a reference
+computation and where updating a saved answer suffices. Generalization
+to new questions about unrestricted conversations remains open.
 
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \bibitem[Afendulev et~al.(2026)]{afendulev2026}
 Afendulev, K.; Dontsov, A.; Tutubalina, E.; and Korznikov, A. 2026.
 What Attention Recalls and Recurrence Controls in Hybrid Language Models.
@@ -406,6 +410,12 @@ How Linear Attention Remembers. \emph{arXiv:2609.33093}.
 Meng, K.; Bau, D.; Andonian, A.; and Belinkov, Y. 2022.
 Locating and Editing Factual Associations in GPT.
 In \emph{Advances in Neural Information Processing Systems}, 35: 17359--17372.
+
+\bibitem[Ouyang et~al.(2025)]{ouyang2025}
+Ouyang, J.; Pan, T.; Cheng, M.; Yan, R.; Luo, Y.; Lin, J.; and Liu, Q.
+2025. HoH: A Dynamic Benchmark for Evaluating the Impact of Outdated
+Information on Retrieval-Augmented Generation. In \emph{Proceedings of
+ACL}, 6036--6063.
 
 \bibitem[Schlag et~al.(2021)]{schlag2021}
 Schlag, I.; Irie, K.; and Schmidhuber, J. 2021.

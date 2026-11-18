@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-18T19:24:00.337756+00:00",
+  "files": {
+    "hoh_boundary/contract.json": "b098d983046b96ddb01d740e81e01aebeb8a58a87feb2b62447f785b470f70df",
+    "hoh_boundary/guard.py": "63adb9ff4087c89330d9c6e36f255e5f10783e6f56f4b1a2230cc2efde54ac82",
+    "hoh_boundary/bench_qwen.py": "313170097cfdb53fe7a3927fc8d3ba69f016aa0313cee7ab527c0022cd61e65f",
+    "hoh_boundary/bench_cpu.py": "c957550726ec5c3232f1fb445f1e136110851baf0c4f02e6fc9b7e8c95b40301",
+    "hoh_boundary/prepare_test.py": "3739efb4826524f73b20dcdebf142dd11bf4cdbe1eb335e14d51db8f1fd76b8d",
+    "hoh_boundary/score_boundary.py": "a677bc4ceea2d78c72c6b45463405c27c7ad73264271277a1ffdaf724888d5fe",
+    "hoh_refresh/repair.py": "aef6d6e9c93ae9aeb2eb4e66717454f10fce413f38dad5c40e19716871f865a7",
+    "hoh_refresh/run.py": "0a961eb48ad222ef9617397b050f9c58c34467cbb253276cb7b7407086e03243",
+    "hoh_refresh/inputs.py": "762ea3f1fadb1ddd3431a395e0ee2b4d9d3fb811930106e74d0890ef86e1609a"
+  },
+  "cpu_dev_gate": true,
+  "full_bank_reserve_opened": false
+}

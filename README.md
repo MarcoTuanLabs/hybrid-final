@@ -39,6 +39,12 @@ On 96 corrected MQuAKE development questions, a supervised text parser followed 
 
 On 20 DynaQuest pages with changing answers, Qwen3.5-4B answered 28 of 40 dated questions correctly when shown both editions and 25 when shown only the requested edition. A factorial cache probe compared the old and new reference answers directly. On the six pages with two errors in the 4B mixed-context baseline, 9B favored the correct pairing on five but freely produced both answers on zero. The attention cache supplied the larger median contribution to the old/new log-odds difference at both model sizes. [Dated evidence, scope and complete results](experiments/dated_versions/README.md)
 
+## Answering the same question after a page changes
+
+On 96 held-out HoH-QAs pages, a text-based update to a saved answer reduced measured Qwen3.5-9B time by 33.9% and estimated arithmetic by 28.2% relative to exact prefix reuse and regeneration. The methods matched 80 and 79 current reference answers, respectively. The faster method recovered two answers and lost one. A CPU span reader using the same rule answered 77/96 in 2.07 seconds, compared with 75/96 in 3.66 seconds for full rereading. Timing includes both editions. [Methods, raw outputs and paired intervals](experiments/hoh_boundary/README.md)
+
+In a separate 32-question full-bank experiment, the best direct readers answered 23 questions correctly. Neither attention-cache nor recurrent-matrix contrast improved the 22/32 score of the matched expanded-retrieval generator. [Full-bank evaluations](experiments/hoh_updates/README.md)
+
 ## Build and verify
 
 ```sh

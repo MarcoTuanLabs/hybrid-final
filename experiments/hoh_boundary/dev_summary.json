@@ -1,0 +1,159 @@
+{
+  "n": 32,
+  "cpu": {
+    "full": {
+      "em": 28,
+      "f1": 0.9626382604323781,
+      "seconds": 1.2566728310193866,
+      "positions": 3628,
+      "old_em": 26,
+      "decisions": {
+        "replay": 32
+      }
+    },
+    "guarded_unique": {
+      "em": 28,
+      "f1": 0.9626382604323781,
+      "seconds": 0.812419791938737,
+      "positions": 2232,
+      "old_em": 26,
+      "decisions": {
+        "whole_span": 24,
+        "length_replay": 7,
+        "overlap": 1
+      },
+      "position_saving": 0.38478500551267913,
+      "time_saving": 0.35351527312027653,
+      "gate": true,
+      "paired_current_gains": 0,
+      "paired_current_losses": 0,
+      "ci95_em_difference": [
+        0.0,
+        0.0
+      ],
+      "ci95_time_saving": [
+        0.2511775437285576,
+        0.4423750891352396
+      ]
+    },
+    "unique": {
+      "em": 25,
+      "f1": 0.924255108258465,
+      "seconds": 0.6383786693913862,
+      "positions": 1842,
+      "old_em": 26,
+      "decisions": {
+        "whole_span": 31,
+        "overlap": 1
+      },
+      "position_saving": 0.49228224917309815,
+      "time_saving": 0.4920088557388904,
+      "gate": false,
+      "paired_current_gains": 0,
+      "paired_current_losses": 3,
+      "ci95_em_difference": [
+        -0.1875,
+        0.0
+      ],
+      "ci95_time_saving": [
+        0.47793181404373564,
+        0.5056034551127873
+      ]
+    }
+  },
+  "qwen": {
+    "guarded_native": {
+      "em": 27,
+      "f1": 0.9548611111111112,
+      "seconds": 25.99823854106944,
+      "positions": 3290,
+      "old_em": 25,
+      "decisions": {
+        "whole_span": 21,
+        "length_replay": 7,
+        "overlap": 1,
+        "native": 1,
+        "substitution": 2
+      },
+      "position_saving": 0.265625,
+      "time_saving": 0.33267270763941215,
+      "gate": true,
+      "paired_current_gains": 2,
+      "paired_current_losses": 0,
+      "ci95_em_difference": [
+        0.0,
+        0.15625
+      ],
+      "ci95_time_saving": [
+        0.25544828605801395,
+        0.40697603359157464
+      ]
+    },
+    "guarded_unique": {
+      "em": 27,
+      "f1": 0.9548611111111112,
+      "seconds": 26.045685876044445,
+      "positions": 3290,
+      "old_em": 25,
+      "decisions": {
+        "whole_span": 21,
+        "length_replay": 6,
+        "overlap": 1,
+        "unique": 1,
+        "substitution": 2,
+        "replay": 1
+      },
+      "position_saving": 0.265625,
+      "time_saving": 0.3314548212226621,
+      "gate": true,
+      "paired_current_gains": 2,
+      "paired_current_losses": 0,
+      "ci95_em_difference": [
+        0.0,
+        0.15625
+      ],
+      "ci95_time_saving": [
+        0.25158036085156554,
+        0.4073892470961019
+      ]
+    },
+    "prefix": {
+      "em": 25,
+      "f1": 0.9131944444444444,
+      "seconds": 38.958752082660794,
+      "positions": 4480,
+      "old_em": 25,
+      "decisions": {
+        "replay": 32
+      }
+    },
+    "unique": {
+      "em": 24,
+      "f1": 0.9164779589371981,
+      "seconds": 22.643435251316987,
+      "positions": 3063,
+      "old_em": 25,
+      "decisions": {
+        "whole_span": 27,
+        "overlap": 1,
+        "unique": 1,
+        "substitution": 2,
+        "replay": 1
+      },
+      "position_saving": 0.3162946428571428,
+      "time_saving": 0.4187843798673725,
+      "gate": false,
+      "paired_current_gains": 2,
+      "paired_current_losses": 3,
+      "ci95_em_difference": [
+        -0.15625,
+        0.09375
+      ],
+      "ci95_time_saving": [
+        0.3734634189198366,
+        0.4576812931812524
+      ]
+    }
+  },
+  "native_advantage": false
+}

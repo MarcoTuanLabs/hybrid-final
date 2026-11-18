@@ -1,0 +1,108 @@
+{
+  "n": 32,
+  "policy": {
+    "full": {
+      "em": 25,
+      "f1": 0.9131944444444444,
+      "old_em": 25,
+      "same_as_full": 32,
+      "positions": 6016,
+      "seconds": 36.12863058154471,
+      "old_seconds": 18.520588168874383,
+      "decisions": {
+        "replay": 32
+      }
+    },
+    "prefix": {
+      "em": 25,
+      "f1": 0.9131944444444444,
+      "old_em": 25,
+      "same_as_full": 32,
+      "positions": 4480,
+      "seconds": 37.703937373822555,
+      "old_seconds": 21.49771412461996,
+      "decisions": {
+        "replay": 32
+      }
+    },
+    "text": {
+      "em": 23,
+      "f1": 0.8852279589371981,
+      "old_em": 25,
+      "same_as_full": 25,
+      "positions": 3083,
+      "seconds": 22.906974791898392,
+      "old_seconds": 21.58375362411607,
+      "decisions": {
+        "whole_span": 27,
+        "overlap": 1,
+        "replay": 2,
+        "substitution": 2
+      },
+      "position_reduction_vs_prefix": 0.3118303571428571,
+      "time_reduction_vs_prefix": 0.39245138870290874
+    },
+    "unique": {
+      "em": 24,
+      "f1": 0.9164779589371981,
+      "old_em": 25,
+      "same_as_full": 24,
+      "positions": 3063,
+      "seconds": 22.468530960963108,
+      "old_seconds": 21.539028206607327,
+      "decisions": {
+        "whole_span": 27,
+        "overlap": 1,
+        "unique": 1,
+        "substitution": 2,
+        "replay": 1
+      },
+      "position_reduction_vs_prefix": 0.3162946428571428,
+      "time_reduction_vs_prefix": 0.4040799840559153
+    },
+    "native": {
+      "em": 24,
+      "f1": 0.9164779589371981,
+      "old_em": 25,
+      "same_as_full": 24,
+      "positions": 3027,
+      "seconds": 22.456633501686156,
+      "old_seconds": 22.223977874498814,
+      "decisions": {
+        "whole_span": 27,
+        "overlap": 1,
+        "native": 2,
+        "substitution": 2
+      },
+      "position_reduction_vs_prefix": 0.3243303571428572,
+      "time_reduction_vs_prefix": 0.40439553357423197
+    },
+    "stale": {
+      "em": 0,
+      "f1": 0.10595238095238095,
+      "old_em": 25,
+      "same_as_full": 0,
+      "positions": 2996,
+      "seconds": 18.520588168874383,
+      "old_seconds": 18.520588168874383,
+      "decisions": {
+        "reuse": 32
+      }
+    }
+  },
+  "efficient": {
+    "text": false,
+    "unique": false,
+    "native": false
+  },
+  "incremental_native_gate": false,
+  "measured_lifecycles": 160,
+  "native_exclusive_repairs": 2,
+  "first_answer_disagreements": 0,
+  "cpu_full": {
+    "current_em": 28,
+    "old_em": 26,
+    "f1": 0.9626382604323781,
+    "wall_s": 1.1890946252970025
+  }
+}
