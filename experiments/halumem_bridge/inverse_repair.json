@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-18",
+  "supersedes_commit": "22c5dccb9c8d8a73b83aa8eea62ad5f9d461bb42",
+  "affected_arm": "bridge",
+  "original_code": "a77bbb7ee0842239632f3936fb47953d6d254d3c9750ecf1907f77d9172fd5f3",
+  "original_rows": "b212e733f721de379a99b99a23b428e463bf595c4652a38e801d5a1fcbbaa355",
+  "problem": "Negative offsets to the pinned MLX RoPE kernel failed inverse rotation on this host. Round-trip key errors changed logits without any edit.",
+  "repair": "Conjugate the native positive-offset rotation by a reflection of the second coordinate in each rotary plane, preserving all nonrotary channels.",
+  "comparison": "Rerun all 48 timed services on the original eight episodes under the original method order and workload. Reuse exact question/reference/answer grades by hash and blind-grade any new responses. The old bridge timing and quality claims are superseded. Other experiments on late insertion use nonnegative position shifts. The earlier persistent-notice bounded16 evaluation had zero skipped positions in each of its 12 recorded cases.",
+  "unchanged_token_sequences_of_16_by_arm": {
+    "notice": 16,
+    "fresh": 16,
+    "splice": 16,
+    "bridge": 12,
+    "checkpoint": 16,
+    "old_rag": 16
+  },
+  "reused_first_run_grades": 52,
+  "freshly_adjudicated": 3
+}

@@ -12,6 +12,7 @@ import sys
 import time
 
 import mlx.core as mx
+from cache_rotary import inverse_rotary
 from mlx_lm import load
 from mlx_lm.models.cache import make_prompt_cache
 import numpy as np
@@ -56,8 +57,7 @@ def date_text(s):
 
 
 def unrotate(rope,k,stop):
-    # Traversing reversed positions applies -stop+1,...,-start using the same RoPE kernel.
-    return rope(k[:,:,::-1,:],offset=1-stop)[:,:,::-1,:]
+    return inverse_rotary(rope,k,stop-k.shape[2])
 
 
 def correction(old,new,length):

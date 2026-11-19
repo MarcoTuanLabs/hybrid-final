@@ -1,7 +1,7 @@
 {
-  "version": 19,
+  "version": 20,
   "branch": "main",
-  "parent_commit": "a6ddbdf186c7d8a48975b91089de1ff106703bfb",
+  "parent_commit": "d3dcb1407ac2fce0a62f08642f0c01d7ebbcd10c",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 13607,
-      "sha256": "11ef0ffb65ba2f339be071e40e823b3b8fd3813ca78b251890ac6673e62c5581",
-      "git_blob_sha1": "bedb48009be68b423afb11ebf25a3c6317556bda"
+      "bytes": 13647,
+      "sha256": "2314ac79b8251faccde83517f935be9a308755dd397bb3c1a8dbc40988034fdf",
+      "git_blob_sha1": "d6aa69e805c4a47341522ce968657093c947aa53"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -1097,21 +1097,27 @@
     },
     {
       "path": "experiments/halumem_bridge/README.md",
-      "bytes": 5403,
-      "sha256": "7b1957256a70379fb61e0937edb7fbd5d7963377bf998ef640c2bce6402d4b2a",
-      "git_blob_sha1": "c23eeafa298242f3c55f39a4620ff046ed92021b"
+      "bytes": 5344,
+      "sha256": "049e1c50abc8d7633164b58fe05be531ca56a364e29af5818c981601bcba0a37",
+      "git_blob_sha1": "7ef6ce8f427a78c29f1955c0d89bf1ac17055787"
     },
     {
       "path": "experiments/halumem_bridge/bundle.json",
-      "bytes": 2058,
-      "sha256": "5bdfdb2356541792baae8218f161d8d17513f9b6e5ecba243a311146f432d713",
-      "git_blob_sha1": "39f174fad34ea5f26070ef538bdc5c2575984b56"
+      "bytes": 2426,
+      "sha256": "ec4fa4f67371df8091d6eba1ff5baf5e852c10e89d92e7e1667b16b16b09b4e0",
+      "git_blob_sha1": "5cb0e9fda6f6c3405e55fde98f74fc103902fd3a"
     },
     {
       "path": "experiments/halumem_bridge/cache_rotary.py",
       "bytes": 678,
       "sha256": "eba94f65b865f84273dd40019b7dc8d645d3dc92d57695811cb13e337e36caf7",
       "git_blob_sha1": "16b05df3321ba761e2e86d0b037266d58d3dd23e"
+    },
+    {
+      "path": "experiments/halumem_bridge/check_rotary.py",
+      "bytes": 912,
+      "sha256": "80fd4aaa290b8d9ec4563f0636e4cb54bdeb9e979873e8840bd74fb0104e0007",
+      "git_blob_sha1": "468ab41a11676588522407b1881cc6d9d4885f60"
     },
     {
       "path": "experiments/halumem_bridge/contract.json",
@@ -1121,27 +1127,39 @@
     },
     {
       "path": "experiments/halumem_bridge/experiment.py",
-      "bytes": 10931,
-      "sha256": "a77bbb7ee0842239632f3936fb47953d6d254d3c9750ecf1907f77d9172fd5f3",
-      "git_blob_sha1": "995935d91dc885a08c82d99fb0147aa9ef288e4f"
+      "bytes": 10873,
+      "sha256": "be57fc44923e0a7d563b65c964516f238e765be83be14bfb835f63f670167472",
+      "git_blob_sha1": "4b91bd1b8bf615d4ca958711a972bf01f1b34fb9"
     },
     {
       "path": "experiments/halumem_bridge/grades.json",
-      "bytes": 1116,
-      "sha256": "fd5bffed936d4a5591854ae415b440608c6b02ce03d61972510c90473cd9eb77",
-      "git_blob_sha1": "d34600d318973615092c4ff93914ee32cdf23ec6"
+      "bytes": 1158,
+      "sha256": "e608848e00cd0f42d7e607cff6710c68494da19e8dd782cb9bb5c889efb16b39",
+      "git_blob_sha1": "9beeed30313327c7852844931c3341268e987e22"
+    },
+    {
+      "path": "experiments/halumem_bridge/inverse-qa.json",
+      "bytes": 342,
+      "sha256": "a55f105506fee85b804b30d50b1160fbc00a7bd7e72fd338a5fa20e7edae6788",
+      "git_blob_sha1": "4d4469ee6eaf5bbc8b99b6ee58504ccfffcf953e"
+    },
+    {
+      "path": "experiments/halumem_bridge/inverse_repair.json",
+      "bytes": 1284,
+      "sha256": "06da9914fc3c81846727c8662ae8706a0dfd3465498fe7fb40d0fe7f3bbedd7b",
+      "git_blob_sha1": "b40d4b4ee8095543d1684d1d7154770e91acd4ec"
     },
     {
       "path": "experiments/halumem_bridge/method.md",
-      "bytes": 1929,
-      "sha256": "a262ae0578918f3ca996918b18c6a39df3fe7a943ffff439f88a09917c4a6a91",
-      "git_blob_sha1": "991bf7b4d74636325d773eb801d8083f1ce1bb41"
+      "bytes": 2283,
+      "sha256": "7493b4967f797574be37e1af1c0eca58749e5254f2d7e2d85449ec8ee46c02ac",
+      "git_blob_sha1": "41d27e89b52f4ce0ce4e655f47504db0fa0c2c2e"
     },
     {
       "path": "experiments/halumem_bridge/observations.json",
-      "bytes": 86288,
-      "sha256": "b212e733f721de379a99b99a23b428e463bf595c4652a38e801d5a1fcbbaa355",
-      "git_blob_sha1": "d368b7bcc1c5f26cb7f2460f2224a4edc9a3bb7f"
+      "bytes": 86270,
+      "sha256": "81f1dcb5902046df28e445f43c2f295784f1d43a5ba71fa039ef1b2227f5f68e",
+      "git_blob_sha1": "d522a9fac1ca13c49f3795d100f4cdcceb83c25f"
     },
     {
       "path": "experiments/halumem_bridge/related_work.md",
@@ -1169,9 +1187,9 @@
     },
     {
       "path": "experiments/halumem_bridge/summary.json",
-      "bytes": 11367,
-      "sha256": "b046be52d720b6474465a8e05cdd114492d6ad06d48f7f341b3b5a4b98b28a1a",
-      "git_blob_sha1": "da1ae04a8a8b87eb7a583e5fec34e748be7546e1"
+      "bytes": 11361,
+      "sha256": "6055667bc43383262b06eef3b9cc41483107e4c1123ffb43f4c25aa904aa542b",
+      "git_blob_sha1": "eebe16ddc83e4fd22add0c15b0f4f37fb3ca8195"
     },
     {
       "path": "experiments/halumem_bridge/verify.py",
@@ -2387,15 +2405,15 @@
     },
     {
       "path": "experiments/persistent_notice/README.md",
-      "bytes": 4552,
-      "sha256": "ff541cc23ff2425604a3f67132322af94a75973338860179cdeb32650e3d6fb7",
-      "git_blob_sha1": "3026a8b304ba358b7f76b1d535ea20b25d43ad17"
+      "bytes": 4861,
+      "sha256": "1db5f444f1121104dc11a7fb215cf152fc7728f955b359f938dce83315c6072c",
+      "git_blob_sha1": "339bbb61e29520e3b33cfc12ca77df1153e6ae00"
     },
     {
       "path": "experiments/persistent_notice/bundle.json",
-      "bytes": 957,
-      "sha256": "946fbb8b03e718872faa88199334736d6a51b6cc7a602992d86807d22129e5ed",
-      "git_blob_sha1": "f7805dff3d7341298c69c8cacf00dc5d9df8f50d"
+      "bytes": 1062,
+      "sha256": "b448f6586c93a9013c6390f15b16a96312ed8c09f87a0a056d7d98049fea097f",
+      "git_blob_sha1": "e308246d0cc2007ee183fb24a8280301cc8bb981"
     },
     {
       "path": "experiments/persistent_notice/contract.json",
@@ -2429,9 +2447,9 @@
     },
     {
       "path": "experiments/persistent_notice/serve.py",
-      "bytes": 9215,
-      "sha256": "62b885fc9ca4f5171e91305c3c5bbe228ed4c33329c571bb36ecfb0f96ad3195",
-      "git_blob_sha1": "d55b32a1b71812397ad47c4480c6be30f5feb3e8"
+      "bytes": 9456,
+      "sha256": "c08320727c8edd730a23d09bfc46658fd41600e4ea05c1ffc22ecd57c45c5595",
+      "git_blob_sha1": "48da3af9a249313e3bc2acc131627c1099f617d2"
     },
     {
       "path": "experiments/persistent_notice/summary.json",

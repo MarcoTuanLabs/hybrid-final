@@ -15,6 +15,8 @@ import mlx.core as mx
 import numpy as np
 from mlx_lm.models.cache import make_prompt_cache
 HERE=Path(__file__).resolve().parent
+sys.path.insert(0,str(HERE.parent/'halumem_bridge'))
+from cache_rotary import inverse_rotary
 sys.path.insert(0,str(HERE.parent/'shared_read_basis'))
 from documents import MARK,document,encoding,message,setup,template
 from cache_service import advance,copy_at,elapsed,size
@@ -70,7 +72,11 @@ def bounded(trial,old,cp,old_ids,ids):
         keys=old[j].keys[:,:,old_at:old[j].offset,:];values=old[j].values[:,:,old_at:old[j].offset,:]
         shift=n-old_at
         if shift:
-            shape=keys.shape;keys=layer.self_attn.rope(keys.reshape(-1,1,1,shape[-1]),offset=shift).reshape(shape)
+            shape=keys.shape
+            flat=keys.reshape(-1,1,1,shape[-1])
+            rope=layer.self_attn.rope
+            moved=rope(flat,offset=shift) if shift>0 else inverse_rotary(rope,flat,-shift).astype(keys.dtype)
+            keys=moved.reshape(shape)
         c[j].keys=mx.concatenate([c[j].keys[:,:,:n],keys],axis=2);c[j].values=mx.concatenate([c[j].values[:,:,:n],values],axis=2);c[j].offset=n+skip
     mx.eval(*[l.state for l in c]);return c,skip
 def matrix_packet(trial,old,new,basis):

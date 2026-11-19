@@ -33,3 +33,5 @@ python "$p/score.py" .
 python experiments/shared_read_basis/fit.py "$QWEN9B" .
 python "$p/serve.py" "$QWEN9B" .
 ```
+
+The runner handles negative position shifts from shorter replacement text using a checked inverse rotary transform. All 12 archived bounded16 requests skipped zero suffix tokens, so none executed this branch and their recorded outputs and timings stand. [Inverse rotation](../halumem_bridge/cache_rotary.py)

@@ -1,6 +1,6 @@
 {
   "complete": true,
-  "parent": "e5052f6cc72da83302162a15427dadbd4295c9c2",
+  "parent": "d3dcb1407ac2fce0a62f08642f0c01d7ebbcd10c",
   "dataset": "IAAR-Shanghai/HaluMem",
   "dataset_revision": "cb04336aa1b732d4b24f5186c552456b4099806e",
   "dev_users": 4,
@@ -12,21 +12,25 @@
     "experiments/late_arrival/suffix_transport/run.py": "ae6ce09d3ce0993e09c7a8eac704d05687ea153942e13b55236eb5b01545a9c6",
     "experiments/halumem_feasibility/run_text.py": "1e83a2a2c93e21c31e842d687d19c460915c8fbba9f8db61cf7984bdc5bbc1c9"
   },
-  "raw_predictions_sha256": "433a8564a2c1b123873ed051e07404b0e8fb6f6dfc1b15123bc5676ddf4ed842",
-  "blinded_material_sha256": "3ee29eaec27c8ab6afee12d722381150d1e7a07ef059aaadcacc9cc9164385e4",
+  "raw_predictions_sha256": "eb5de72851f88a260d63246da7ac581e7fdfd0f26898a150e5c929b740c616d9",
+  "blinded_material_sha256": "c304acffdb297704fdd82f82e7749c1db9ec1ec76c30abf425bc455715afb602",
   "paid_gpu_twd": 0,
   "adaption_credits": 0,
   "sha256": {
     "contract.json": "a0a5dcab4f11ce4c2222e48bfbe8fa9f720ecf30976c622d5e42470200428a1d",
-    "experiment.py": "a77bbb7ee0842239632f3936fb47953d6d254d3c9750ecf1907f77d9172fd5f3",
+    "experiment.py": "be57fc44923e0a7d563b65c964516f238e765be83be14bfb835f63f670167472",
     "rerank.py": "0447e722cc0b5882c8a01d96a1f7e7cdf7a67c4a3fcffb2781512ea4c38ab2c2",
     "score.py": "15672c4d8ac0b103d91b5236194851c83f26ac5caab2a0382ddc5d5b9dc62c14",
     "verify.py": "0b1e6f0ea7aa31c5206adf8d6d0b566a7daa5991efb6d98ebf78c4ed33351cb2",
-    "method.md": "a262ae0578918f3ca996918b18c6a39df3fe7a943ffff439f88a09917c4a6a91",
+    "method.md": "7493b4967f797574be37e1af1c0eca58749e5254f2d7e2d85449ec8ee46c02ac",
     "related_work.md": "a320b3e6c1f8e878b343b97c760af1d5f862db89e60b340f90efc38e18860d85",
-    "observations.json": "b212e733f721de379a99b99a23b428e463bf595c4652a38e801d5a1fcbbaa355",
-    "summary.json": "b046be52d720b6474465a8e05cdd114492d6ad06d48f7f341b3b5a4b98b28a1a",
-    "grades.json": "fd5bffed936d4a5591854ae415b440608c6b02ce03d61972510c90473cd9eb77",
-    "repair.json": "1b21d8ececfb31fa731b57da9c0054d4908a68a133c6d0f8ce5113359ea277f8"
+    "observations.json": "81f1dcb5902046df28e445f43c2f295784f1d43a5ba71fa039ef1b2227f5f68e",
+    "summary.json": "6055667bc43383262b06eef3b9cc41483107e4c1123ffb43f4c25aa904aa542b",
+    "grades.json": "e608848e00cd0f42d7e607cff6710c68494da19e8dd782cb9bb5c889efb16b39",
+    "repair.json": "1b21d8ececfb31fa731b57da9c0054d4908a68a133c6d0f8ce5113359ea277f8",
+    "cache_rotary.py": "eba94f65b865f84273dd40019b7dc8d645d3dc92d57695811cb13e337e36caf7",
+    "check_rotary.py": "80fd4aaa290b8d9ec4563f0636e4cb54bdeb9e979873e8840bd74fb0104e0007",
+    "inverse_repair.json": "06da9914fc3c81846727c8662ae8706a0dfd3465498fe7fb40d0fe7f3bbedd7b",
+    "inverse-qa.json": "a55f105506fee85b804b30d50b1160fbc00a7bd7e72fd338a5fa20e7edae6788"
   }
 }

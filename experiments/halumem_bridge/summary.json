@@ -3,13 +3,13 @@
   "efficiency_gate": false,
   "episodes": 8,
   "grading": {
-    "new": 53,
+    "new": 55,
     "prior": 3,
     "type": "Reference-based method-blind Codex AI review"
   },
   "matched_comparison": {
-    "cold_ratio": 1.0133957668747144,
-    "compute_ratio": 0.9998860528587306,
+    "cold_ratio": 1.0391668493908621,
+    "compute_ratio": 0.9997678551967888,
     "extra_correct": [
       0,
       0
@@ -18,21 +18,21 @@
   "policies": {
     "bridge": {
       "bridge_scalar_ops": 393216000,
-      "cold_s": 20.9669988489768,
+      "cold_s": 20.68536603123357,
       "correct_both": 2,
-      "decoder_positions": 6124.875,
+      "decoder_positions": 6124.25,
       "encoder_positions": 7915.75,
       "exact": [
         1,
         1
       ],
       "f1": [
-        0.2244986263736264,
+        0.22589285714285715,
         0.24737237237237236
       ],
       "logical_old_cache_bytes": 361889792,
-      "macs": 44278372112384,
-      "online_s": 14.776283869839972,
+      "macs": 44273137915904,
+      "online_s": 14.67405417172995,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -88,35 +88,35 @@
       "ratios": {
         "cold_s": {
           "ci95_users": [
-            0.7965746373342193,
-            0.9348011799528009
+            0.7891934116631687,
+            0.8869110500444028
           ],
-          "mean": 0.8669171217394863
+          "mean": 0.8384515190441055
         },
         "macs": {
           "ci95_users": [
-            0.7441160069883862,
-            0.7655123956825148
+            0.7443031444289198,
+            0.7651707692454471
           ],
-          "mean": 0.7553014207378154
+          "mean": 0.7552121357020483
         }
       },
-      "search_s": 1.8722320257656975,
+      "search_s": 1.9190480836259667,
       "semantic": [
         5,
         4
       ],
       "sequence_matches": [
-        3,
-        3
+        2,
+        2
       ],
-      "setup_s": 6.190714979136828,
+      "setup_s": 6.011311859503621,
       "skipped_tokens": 1968,
-      "update_s": 7.700351072853664
+      "update_s": 7.958335072733462
     },
     "checkpoint": {
       "bridge_scalar_ops": 0,
-      "cold_s": 24.1857016353606,
+      "cold_s": 24.670914848858956,
       "correct_both": 2,
       "decoder_positions": 8103.875,
       "encoder_positions": 7915.75,
@@ -130,7 +130,7 @@
       ],
       "logical_old_cache_bytes": 181207040,
       "macs": 58623446079488,
-      "online_s": 19.075014676884166,
+      "online_s": 19.277992312490824,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -199,7 +199,7 @@
           "mean": 1.0
         }
       },
-      "search_s": 1.6730250938708195,
+      "search_s": 1.8032029013702413,
       "semantic": [
         5,
         4
@@ -208,13 +208,13 @@
         8,
         8
       ],
-      "setup_s": 5.110686958476435,
+      "setup_s": 5.392922536368133,
       "skipped_tokens": 0,
-      "update_s": 11.902304723887937
+      "update_s": 12.157977130249492
     },
     "fresh": {
       "bridge_scalar_ops": 0,
-      "cold_s": 7.0645235885021975,
+      "cold_s": 7.169433927265345,
       "correct_both": 2,
       "decoder_positions": 900.75,
       "encoder_positions": 7915.75,
@@ -228,7 +228,7 @@
       ],
       "logical_old_cache_bytes": 52854784,
       "macs": 7056022345728,
-      "online_s": 6.728196448035305,
+      "online_s": 6.797379349256516,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -284,10 +284,10 @@
       "ratios": {
         "cold_s": {
           "ci95_users": [
-            0.24696189691738107,
-            0.35162187058665206
+            0.25180069586193066,
+            0.3154743135392281
           ],
-          "mean": 0.29209504421296345
+          "mean": 0.2906026781409339
         },
         "macs": {
           "ci95_users": [
@@ -297,7 +297,7 @@
           "mean": 0.12036178044123648
         }
       },
-      "search_s": 1.8074801196053158,
+      "search_s": 2.089358036639169,
       "semantic": [
         2,
         4
@@ -306,13 +306,13 @@
         2,
         2
       ],
-      "setup_s": 0.33632714046689216,
+      "setup_s": 0.3720545780088287,
       "skipped_tokens": 0,
-      "update_s": 0.0006339637766359374
+      "update_s": 0.0011709689861163497
     },
     "notice": {
       "bridge_scalar_ops": 0,
-      "cold_s": 20.16150801574986,
+      "cold_s": 19.375191822764464,
       "correct_both": 2,
       "decoder_positions": 6063,
       "encoder_positions": 7915.75,
@@ -326,7 +326,7 @@
       ],
       "logical_old_cache_bytes": 124157952,
       "macs": 44235920570368,
-      "online_s": 14.725332369867829,
+      "online_s": 14.026009890381829,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -382,10 +382,10 @@
       "ratios": {
         "cold_s": {
           "ci95_users": [
-            0.7659395383456692,
-            0.8894154318460206
+            0.7449166872517521,
+            0.8298149351952331
           ],
-          "mean": 0.8336126989292224
+          "mean": 0.7853454945413415
         },
         "macs": {
           "ci95_users": [
@@ -395,7 +395,7 @@
           "mean": 0.7545772814240255
         }
       },
-      "search_s": 1.7424043960199924,
+      "search_s": 1.701141484445543,
       "semantic": [
         5,
         4
@@ -404,13 +404,13 @@
         4,
         3
       ],
-      "setup_s": 5.436175645882031,
+      "setup_s": 5.349181932382635,
       "skipped_tokens": 0,
-      "update_s": 7.653525260495371
+      "update_s": 7.421871687372914
     },
     "old_rag": {
       "bridge_scalar_ops": 0,
-      "cold_s": 12.332478317985078,
+      "cold_s": 11.311958588528796,
       "correct_both": 2,
       "decoder_positions": 3056.875,
       "encoder_positions": 7915.75,
@@ -424,7 +424,7 @@
       ],
       "logical_old_cache_bytes": 124157952,
       "macs": 22343340750848,
-      "online_s": 6.260418593723443,
+      "online_s": 5.796361838496523,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -480,10 +480,10 @@
       "ratios": {
         "cold_s": {
           "ci95_users": [
-            0.44209995855335626,
-            0.5993406803060977
+            0.4344925238793673,
+            0.4821459365104468
           ],
-          "mean": 0.5099078167719737
+          "mean": 0.4585139488271543
         },
         "macs": {
           "ci95_users": [
@@ -493,7 +493,7 @@
           "mean": 0.3811331855270413
         }
       },
-      "search_s": 1.792149442495429,
+      "search_s": 1.750069656773121,
       "semantic": [
         2,
         4
@@ -502,13 +502,13 @@
         2,
         2
       ],
-      "setup_s": 6.072059724261635,
+      "setup_s": 5.515596750032273,
       "skipped_tokens": 0,
-      "update_s": 0.0007726667245151475
+      "update_s": 0.0007775938283884898
     },
     "splice": {
       "bridge_scalar_ops": 0,
-      "cold_s": 20.68984254161478,
+      "cold_s": 19.905721630129847,
       "correct_both": 2,
       "decoder_positions": 6125.5,
       "encoder_positions": 7915.75,
@@ -522,7 +522,7 @@
       ],
       "logical_old_cache_bytes": 361889792,
       "macs": 44283418081280,
-      "online_s": 14.858736161375418,
+      "online_s": 14.0632486143586,
       "paired": {
         "checkpoint": {
           "losses": [
@@ -578,10 +578,10 @@
       "ratios": {
         "cold_s": {
           "ci95_users": [
-            0.7710008297630961,
-            0.9189157508680259
+            0.7635734906839207,
+            0.8567652152867944
           ],
-          "mean": 0.8554576110111805
+          "mean": 0.8068497561633997
         },
         "macs": {
           "ci95_users": [
@@ -591,7 +591,7 @@
           "mean": 0.7553874949834194
         }
       },
-      "search_s": 1.7715631558530731,
+      "search_s": 1.83995507301006,
       "semantic": [
         5,
         4
@@ -600,9 +600,9 @@
         3,
         2
       ],
-      "setup_s": 5.831106380239362,
+      "setup_s": 5.8424730157712474,
       "skipped_tokens": 1968,
-      "update_s": 7.891565328012803
+      "update_s": 7.630858197851921
     }
   },
   "users": 4
