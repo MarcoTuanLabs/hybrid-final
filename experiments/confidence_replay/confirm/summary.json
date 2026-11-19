@@ -1,0 +1,157 @@
+{
+  "requests": 256,
+  "targets": 64,
+  "controls": 192,
+  "methods": {
+    "joint": {
+      "target": 53,
+      "controls": 192,
+      "losses": 0,
+      "mean_seconds": 0.5383776935832429,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "packed": {
+          "ratio": 1.186931526820589,
+          "ci95": [
+            1.1634770398533019,
+            1.213904247001659
+          ]
+        }
+      },
+      "writes_equal_joint": 256,
+      "eligible": false
+    },
+    "packed": {
+      "target": 52,
+      "controls": 192,
+      "losses": 1,
+      "mean_seconds": 0.45358782829316624,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.842508584028163,
+          "ci95": [
+            0.8237787182619136,
+            0.8594699263587001
+          ]
+        },
+        "packed": {
+          "ratio": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "writes_equal_joint": 0,
+      "eligible": false
+    },
+    "residual": {
+      "target": 53,
+      "controls": 192,
+      "losses": 1,
+      "mean_seconds": 0.3927048658711101,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.7294226164115598,
+          "ci95": [
+            0.7203596041629181,
+            0.7398066873764783
+          ]
+        },
+        "packed": {
+          "ratio": 0.8657746997948415,
+          "ci95": [
+            0.8478697149026331,
+            0.8865669310524632
+          ]
+        }
+      },
+      "writes_equal_joint": 0,
+      "eligible": false
+    },
+    "anchored": {
+      "target": 52,
+      "controls": 192,
+      "losses": 1,
+      "mean_seconds": 0.39683467399208894,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.7370934545057096,
+          "ci95": [
+            0.7291867916447761,
+            0.7457045071796978
+          ]
+        },
+        "packed": {
+          "ratio": 0.8748794593659242,
+          "ci95": [
+            0.8585540547687984,
+            0.8937410464016285
+          ]
+        }
+      },
+      "writes_equal_joint": 0,
+      "eligible": false
+    },
+    "conditional": {
+      "target": 52,
+      "controls": 192,
+      "losses": 1,
+      "mean_seconds": 0.42423335893136027,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.7879846509015257,
+          "ci95": [
+            0.7581866610656629,
+            0.8196942017293924
+          ]
+        },
+        "packed": {
+          "ratio": 0.9352838248057367,
+          "ci95": [
+            0.9001501148704658,
+            0.9707016178727677
+          ]
+        }
+      },
+      "writes_equal_joint": 0,
+      "eligible": false,
+      "replays": 12,
+      "targets_replayed": 12
+    },
+    "fixed_conditional": {
+      "target": 52,
+      "controls": 192,
+      "losses": 1,
+      "mean_seconds": 0.41848887319792993,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.7773146588088051,
+          "ci95": [
+            0.7527586223516192,
+            0.8026954821326336
+          ]
+        },
+        "packed": {
+          "ratio": 0.9226192747999603,
+          "ci95": [
+            0.8919777188409215,
+            0.9532368601081446
+          ]
+        }
+      },
+      "writes_equal_joint": 0,
+      "eligible": false,
+      "replays": 13,
+      "targets_replayed": 13
+    }
+  },
+  "selected": null,
+  "pass": false
+}

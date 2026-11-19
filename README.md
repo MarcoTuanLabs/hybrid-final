@@ -29,6 +29,8 @@ On 16 four-bit 9B development seeds, a donor that refreshed MLP outputs at prote
 
 On 32 independent four-bit 9B seeds, donor MLP reuse controlled 52/64 written targets versus 53/64 for two-row prefill and preserved 192/192 controls. Reuse cut full service time by 26.0% against two-row prefill and 11.6% against exact shared-prefix execution. The no-loss and time criterion was not met. [Registered independent results](experiments/write_schedule_confirmation)
 
+In the independent cohort, replaying low-confidence sparse writes controlled 52/64 targets against 53/64 for two-row prefill and retained 192/192 controls. The primary schedule used 21.2% less time than two-row prefill and 6.5% less than shared-prefix execution. On the 64 written targets alone, it took 8.8% longer than shared-prefix execution. All 12 replays fell on written targets. It missed the registered criterion. [Confidence-triggered replay](experiments/confidence_replay)
+
 ## Country–capital bindings before and after a memory edit
 
 On the public CAPITALS templates from Feng and Steinhardt, the fixed answer-time two-head reader controlled 0/24 changed answers. With the update applied *before* any of the three questions, the donor's attention keys and values at the two country tokens and their following punctuation controlled 40/48 changed capitals. Full replay controlled 40/48, with two paired gains and two losses. Replacing all recurrent and convolution states alone controlled 0/48. Predicting the same four local K/V replacements from the old document controlled 35/48 on the development prompts. [Fixed-reader transfer](experiments/binding_transfer/README.md) · [Which cache entries carried the change](experiments/binding_cache/README.md) · [Donor-free estimation](experiments/binding_transport/README.md)
@@ -65,6 +67,10 @@ On eight delayed HaluMem development sessions, I charged the original ingest, ca
 ## Following edits across several facts
 
 On 96 corrected MQuAKE development questions, a supervised text parser followed by Qwen3.5-9B answered 75 correctly. Ranked retrieval answered 63 and an adaptation of G-Walk with semantic relation matching answered 71. Adding recurrent token reads to the text parser also yielded 75. The 4B comparison yielded 69, 55, 61 and 70, respectively. Both readers used the same questions and graph. [Method, archived answers and reproduction](experiments/remastered_paths/README.md)
+
+## Counterfactual sentence completions
+
+On 24 public CounterFact subjects, the two-head, rank-one write selected by normalized read changes answered 0/48 canonical and paraphrased targets correctly. The old document yielded 0/48, and the complete updated document yielded 47/48. The sparse write retained 17/17 previously correct neighborhood answers. [Selection rule, matched controls and all results](experiments/counterfact_reads)
 
 ## Dated Wikipedia revisions
 

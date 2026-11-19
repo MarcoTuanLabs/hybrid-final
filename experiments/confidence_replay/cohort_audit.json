@@ -1,0 +1,9 @@
+{
+  "audited_registration": "1350c259cc4207524e32386caddb7413faac28ed",
+  "files_scanned": 123,
+  "prior_and_pilot_seed_values": 540,
+  "prior_prompt_triples": 2160,
+  "confirmation_prompt_triples": 128,
+  "overlap": 0,
+  "scope": "All tracked JSONL and gzip-compressed JSONL, and contract.json files at registration, excluding the current router protocol. Compare the exact prompt triples generated from recorded seed values and add the registered pilot seeds."
+}

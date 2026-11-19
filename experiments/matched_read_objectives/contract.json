@@ -1,0 +1,71 @@
+{
+  "smoke_seeds": [
+    27112000
+  ],
+  "pilot_seeds": [
+    27112000,
+    27112001,
+    27112002,
+    27112003,
+    27112004,
+    27112005,
+    27112006,
+    27112007
+  ],
+  "confirm_seeds": [
+    97543100,
+    97543101,
+    97543102,
+    97543103,
+    97543104,
+    97543105,
+    97543106,
+    97543107,
+    97543108,
+    97543109,
+    97543110,
+    97543111,
+    97543112,
+    97543113,
+    97543114,
+    97543115,
+    97543116,
+    97543117,
+    97543118,
+    97543119,
+    97543120,
+    97543121,
+    97543122,
+    97543123,
+    97543124,
+    97543125,
+    97543126,
+    97543127,
+    97543128,
+    97543129,
+    97543130,
+    97543131
+  ],
+  "objectives": [
+    "finite",
+    "raw",
+    "first",
+    "raw_own",
+    "first_own",
+    "rows"
+  ],
+  "comparators": [
+    "raw",
+    "first",
+    "raw_own",
+    "first_own",
+    "rows"
+  ],
+  "deadlines": {
+    "smoke": 170,
+    "pilot": 880,
+    "confirm": 2400
+  },
+  "primary": "Finite written-minus-unwritten RMS-normalized read contrast versus raw and first-order contrast. Identical frozen 4-bit checkpoint, 256-coordinate write, four slots, native start, norm, 60-degree cap, 16 iterations, eight step proposals and target per slot. Raw and first-order own-target alternatives separately adapt the target at the native query. Actual arithmetic and solver time differ. The row-gain comparator is a Muir-inspired frozen-state adaptation choosing the exponent of the pooled inverse row RMS over 17 fixed candidates. It is not the trained Muir system.",
+  "gate": "On eight exposed development seeds, advance only with two additional targets over the best of all five comparators, preservation of all 48 controls, and equality of all finite top tokens to the deployed normalized solver. Confirm on 32 new seeds only if that equality, all 192 controls, at least four additional targets and Bonferroni-adjusted one-sided paired seed permutation significance at familywise 0.05 are all met. Conditions with two templates are clustered by seed. No timing superiority claim. Reuse baseline and natural evidence at their original status."
+}

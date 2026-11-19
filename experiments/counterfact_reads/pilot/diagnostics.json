@@ -1,0 +1,25 @@
+{
+  "targets_both_full_endpoints_correct": 47,
+  "by_method_on_both_correct": {
+    "old": 0,
+    "full": 47,
+    "all_recurrent_matrices": 0,
+    "layer_dense": 0,
+    "normalized": 0,
+    "raw": 0,
+    "matrix": 0,
+    "fixed": 0,
+    "pair_dense": 0
+  },
+  "head_matches_primary_of_72": {
+    "fixed": 50,
+    "raw": 12,
+    "matrix": 50
+  },
+  "real_layer_forecast_relative_errors": [
+    9.776824370715231e-07,
+    1.0357002542667616e-06,
+    1.256204843512401e-06
+  ],
+  "relations": 15
+}

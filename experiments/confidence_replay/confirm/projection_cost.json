@@ -1,0 +1,28 @@
+{
+  "requests": 256,
+  "logical_projection_macs": {
+    "anchored": 257717357772800,
+    "packed": 296352350208000,
+    "joint": 356001635106816,
+    "conditional": 272171381030912,
+    "residual": 257717357772800,
+    "fixed_conditional": 272681654288384
+  },
+  "per_joint": {
+    "anchored": 0.723921837312555,
+    "packed": 0.8324465985081259,
+    "joint": 1.0,
+    "conditional": 0.7645228397595666,
+    "residual": 0.723921837312555,
+    "fixed_conditional": 0.7659561850230481
+  },
+  "per_packed": {
+    "anchored": 0.8696315638864232,
+    "packed": 1.0,
+    "joint": 1.2012782583197,
+    "conditional": 0.9184046653920033,
+    "residual": 0.8696315638864232,
+    "fixed_conditional": 0.920126511893689
+  },
+  "scope": "Dense weight-matrix multiplications only. Excludes attention scores, recurrence, convolution, output vocabulary, solver, routing logic, data movement and kernel tiling."
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "After scoring the registered rule, substitute the separately archived two-row output for the packed output on precisely the requests that actually replayed. This is an output counterfactual only. No new schedule latency was measured.",
+  "cohorts": [
+    {
+      "part": "pilot",
+      "registered_losses_to_joint": [],
+      "posthoc_swap_to_joint": {
+        "target": 12,
+        "controls": 48,
+        "loss": 0,
+        "changed_output": 0
+      }
+    },
+    {
+      "part": "confirm",
+      "registered_losses_to_joint": [
+        {
+          "key": [
+            66281005,
+            "table",
+            false,
+            true
+          ],
+          "triggered": true,
+          "first_gap": 0.25,
+          "joint_donor_margin": 0.25,
+          "packed_donor_margin": -0.25
+        }
+      ],
+      "posthoc_swap_to_joint": {
+        "target": 53,
+        "controls": 192,
+        "loss": 0,
+        "changed_output": 1
+      }
+    }
+  ]
+}

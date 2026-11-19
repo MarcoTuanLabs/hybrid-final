@@ -1,0 +1,81 @@
+{
+  "cases": 24,
+  "targets": 48,
+  "neighbors": 24,
+  "old_correct_neighbors": 17,
+  "methods": {
+    "old": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "full": {
+      "canonical": 24,
+      "paraphrase": 23,
+      "neighbor": 10,
+      "changed": 47,
+      "old_correct_stable_lost": 7,
+      "pairwise_preference": 61
+    },
+    "all_recurrent_matrices": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 16,
+      "changed": 0,
+      "old_correct_stable_lost": 1,
+      "pairwise_preference": 21
+    },
+    "layer_dense": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "normalized": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "raw": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "matrix": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "fixed": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    },
+    "pair_dense": {
+      "canonical": 0,
+      "paraphrase": 0,
+      "neighbor": 17,
+      "changed": 0,
+      "old_correct_stable_lost": 0,
+      "pairwise_preference": 23
+    }
+  },
+  "promote": false
+}

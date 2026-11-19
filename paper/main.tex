@@ -177,7 +177,7 @@ denominator. The Jacobian matrix $J_N(x)$ of $N$ at $x$ is
 \begin{equation}
 J_N(x)=\rho^{-1}I_{d_v}-\frac{xx^\top}{d_v\rho^3}.
 \end{equation}
-For nonzero $x$, this derivative scales a perturbation parallel to $x$
+RMS normalization suppresses radial perturbations \citep{chenhe2026}. For nonzero $x$, the derivative scales a perturbation parallel to $x$
 by $\epsilon/\rho^3$ and an orthogonal perturbation by $1/\rho$.
 A write that enlarges the background read can therefore have little effect
 after normalization. Equation~\ref{eq:objective} measures the finite
@@ -269,10 +269,7 @@ On an Apple M5 with four-bit 9B, I separated direction from length \citep{aparin
 On 64 new seeds (128 targets), the complete read controlled 99 answers, compared with 68 for whitened key. Direction alone retained 95 of the 99 successes and added none. Length alone controlled none. Restoring both complete reads reproduced every unwritten vocabulary logit on all 256 target and nuisance presentations. I averaged the angle between written and unwritten reads over heads and positions. Its median rose from 19 degrees with the native query to 90 degrees with the optimized query.
 
 \section{Encoding the State Change a Suffix Reads}
-A sender holds the updated prefix cache and knows the four chat-template
-tokens before the answer. The receiver holds the old cache. Both use
-the donor attention cache and convolution histories. I vary what the
-sender transmits about the recurrent matrices.
+SketchSSM transports queries to a state boundary and reconstructs their reads from a sketch \citep{kwon2026}. I apply its exact-span case to a state difference and a known four-token suffix. The receiver holds the old cache. Both sides have the donor attention cache and convolution histories.
 
 Index the four suffix positions from $t=1$. At the prefix boundary $t=0$, let $\Delta S_{h,0}$ denote the donor state minus the recipient state for head $h$ at a fixed layer. Let $q_{h,t}$ be its
 native query at suffix position $t$, and define the key-space update
@@ -334,17 +331,13 @@ Linear attention stores associations as fast weights \citep{schlag2021}.
 Gated DeltaNet adds retention and delta-rule correction \citep{yang2025}.
 Attention can carry a retrieved value \citep{afendulev2026,lee2026},
 and recurrent layers can construct its address \citep{zeng2026}.
-Curvature-conditioned queries learn to attenuate high-variance key directions
-during pretraining \citep{le2026}. Muir learns a matched-filter read
-gate \citep{gangavarapu2026}. I optimize the normalized effect of a given
-write at inference. On 32 fresh seeds in frozen four-bit 9B, this reader
+CCQ tests covariance-based query correction at inference \citep{le2026}. Muir tests replacement gains in a frozen checkpoint \citep{gangavarapu2026}. GeoSteer optimizes fixed-norm activations against a learned probe \citep{ngo2026}. My objective uses the finite normalized contrast of a specified write. On 32 fresh seeds in frozen four-bit 9B, this reader
 controlled 57/64 targets and state-Gram whitening controlled 30/64.
-Three contractions of the native query by the prefix-key covariance
+Three frozen-model adaptations that contract the native query by prefix-key covariance
 controlled none, even when Equation~\ref{eq:objective} selected the
 strength. Whitening the source key with that covariance also controlled
 none. All seven readers preserved all 192 controls.
 SinkState adapts the SVD rank of recurrent states \citep{jiang2026}.
-My projection targets the directions a known suffix reads.
 ROME edits weights \citep{meng2022}. Paired controls isolate the
 behavioral effect of the runtime write \citep{zhang2024}.
 
@@ -367,6 +360,9 @@ Aparin, G.; and Gaintseva, T. 2026. A Geometric Account of
 Activation Steering through Angle-Norm Decomposition.
 \emph{arXiv:2606.06735}.
 
+\bibitem[Chen and He(2026)]{chenhe2026}
+Chen, H.; and He, J. 2026. Low-Bit Recurrent States in Hybrid Language Models. \emph{arXiv:2609.30950}.
+
 \bibitem[Feng and Steinhardt(2024)]{feng2024}
 Feng, J.; and Steinhardt, J. 2024. How Do Language Models Bind
 Entities in Context? In \emph{ICLR}.
@@ -380,6 +376,9 @@ Readout. \emph{arXiv:2611.08376}.
 Jiang, H.; Li, W.; Zhou, Z.; Pan, J.; Pandey, S.; and Liu, H. 2026.
 SinkState: On-the-Fly SVD of Recurrent States for Efficient Hybrid LLM
 Serving. \emph{arXiv:2611.14246}.
+
+\bibitem[Kwon et~al.(2026)]{kwon2026}
+Kwon, O.; Shin, J.; Kim, M.; Keutzer, K.; Kim, S.; and Lee, J.~W. 2026. SketchSSM: Write to the Full State, Read from a Compact Sketch. \emph{arXiv:2609.33051}.
 
 \bibitem[Le et~al.(2026)]{le2026}
 Le, D.; Nguyen, T.; Nguyen, C.-D.; and Luu, A.-T. 2026.
@@ -398,6 +397,9 @@ Where Fine-Tuned Behaviors Arise. \emph{arXiv:2610.41480}.
 Meng, K.; Bau, D.; Andonian, A.; and Belinkov, Y. 2022.
 Locating and Editing Factual Associations in GPT.
 In \emph{Advances in Neural Information Processing Systems}, 35: 17359--17372.
+
+\bibitem[Ngo et~al.(2026)]{ngo2026}
+Ngo, X.~C.; Vo, H.; and Le, N. 2026. GeoSteer: Geodesic Optimization for Activation Steering in Large Language Models. \emph{arXiv:2609.10658}.
 
 \bibitem[Ouyang et~al.(2025)]{ouyang2025}
 Ouyang, J.; Pan, T.; Cheng, M.; Yan, R.; Luo, Y.; Lin, J.; and Liu, Q.
