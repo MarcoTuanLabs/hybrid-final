@@ -1,0 +1,114 @@
+{
+  "changed": 48,
+  "documents": 24,
+  "double_correct": 34,
+  "layer_token_proxy": {
+    "best_possible_fraction_of_token_positions_saved_if_update_free": 0.15384615384615385,
+    "checkpoint_replay": 432,
+    "original_and_questions": 2376
+  },
+  "methods": {
+    "attention": {
+      "changed": 38,
+      "donor_token_matches": 68,
+      "gained_full": 0,
+      "lost_full": 2,
+      "lost_stable": 0,
+      "stable": 19,
+      "stable_changed": 0
+    },
+    "country": {
+      "changed": 37,
+      "donor_token_matches": 67,
+      "gained_full": 0,
+      "lost_full": 3,
+      "lost_stable": 0,
+      "stable": 19,
+      "stable_changed": 0
+    },
+    "full": {
+      "changed": 40,
+      "donor_token_matches": 72,
+      "gained_full": 0,
+      "lost_full": 0,
+      "lost_stable": 1,
+      "stable": 19,
+      "stable_changed": 2
+    },
+    "keys": {
+      "changed": 0,
+      "donor_token_matches": 25,
+      "gained_full": 0,
+      "lost_full": 40,
+      "lost_stable": 0,
+      "stable": 19,
+      "stable_changed": 0
+    },
+    "local": {
+      "changed": 40,
+      "donor_token_matches": 66,
+      "gained_full": 2,
+      "lost_full": 2,
+      "lost_stable": 0,
+      "stable": 19,
+      "stable_changed": 0
+    },
+    "notice": {
+      "changed": 28,
+      "donor_token_matches": 55,
+      "gained_full": 0,
+      "lost_full": 12,
+      "lost_stable": 4,
+      "stable": 15,
+      "stable_changed": 5
+    },
+    "reassembled": {
+      "changed": 40,
+      "donor_token_matches": 72,
+      "gained_full": 0,
+      "lost_full": 0,
+      "lost_stable": 1,
+      "stable": 19,
+      "stable_changed": 2
+    },
+    "recurrent": {
+      "changed": 0,
+      "donor_token_matches": 27,
+      "gained_full": 0,
+      "lost_full": 40,
+      "lost_stable": 1,
+      "stable": 19,
+      "stable_changed": 2
+    },
+    "stale": {
+      "changed": 0,
+      "donor_token_matches": 25,
+      "gained_full": 0,
+      "lost_full": 40,
+      "lost_stable": 0,
+      "stable": 19,
+      "stable_changed": 0
+    },
+    "swap_values": {
+      "changed": 27,
+      "donor_token_matches": 53,
+      "gained_full": 0,
+      "lost_full": 13,
+      "lost_stable": 1,
+      "stable": 18,
+      "stable_changed": 1
+    },
+    "values": {
+      "changed": 40,
+      "donor_token_matches": 67,
+      "gained_full": 1,
+      "lost_full": 1,
+      "lost_stable": 1,
+      "stable": 18,
+      "stable_changed": 1
+    }
+  },
+  "promote_local": true,
+  "seeds": 12,
+  "stable": 24
+}

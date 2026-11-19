@@ -1,0 +1,86 @@
+{
+  "confirmed": false,
+  "controls": 48,
+  "methods": {
+    "absolute": {
+      "controls": 37,
+      "median_delta_cosine": 0.4277748018503189,
+      "median_relative_delta_error": 3.039979964494705,
+      "prefix_s": 0.35465406647563213,
+      "seconds": 0.4313805833407969,
+      "targets": 6
+    },
+    "joint": {
+      "controls": 48,
+      "median_delta_cosine": 0.9885995388031006,
+      "median_relative_delta_error": 0.12088195979595184,
+      "prefix_s": 0.4304919830774452,
+      "seconds": 0.5079097220877884,
+      "targets": 14
+    },
+    "paired": {
+      "controls": 48,
+      "median_delta_cosine": 0.3260672092437744,
+      "median_relative_delta_error": 2.6565085649490356,
+      "prefix_s": 0.3509412246003194,
+      "seconds": 0.4252799114474328,
+      "targets": 3
+    },
+    "truncated": {
+      "controls": 48,
+      "median_delta_cosine": 1.0,
+      "median_relative_delta_error": 0.0,
+      "prefix_s": 0.4885311880170775,
+      "seconds": 0.5663846139123052,
+      "targets": 13
+    }
+  },
+  "paired": {
+    "absolute": {
+      "accuracy_gain_ci95": [
+        -0.625,
+        0.25
+      ],
+      "calibration_break_even_requests": null,
+      "losses": 5,
+      "time_ratio": 0.9858577967368911,
+      "time_ratio_ci95": [
+        0.9674533138355482,
+        1.0081929749412126
+      ],
+      "wins": 2
+    },
+    "joint": {
+      "accuracy_gain_ci95": [
+        -0.9375,
+        -0.375
+      ],
+      "calibration_break_even_requests": 803,
+      "losses": 11,
+      "time_ratio": 0.8373139811132152,
+      "time_ratio_ci95": [
+        0.8229312699406629,
+        0.8533008846770702
+      ],
+      "wins": 0
+    },
+    "truncated": {
+      "accuracy_gain_ci95": [
+        -0.875,
+        -0.3125
+      ],
+      "calibration_break_even_requests": 470,
+      "losses": 10,
+      "time_ratio": 0.7508676983822163,
+      "time_ratio_ci95": [
+        0.7412886317266298,
+        0.7619232836589855
+      ],
+      "wins": 0
+    }
+  },
+  "phase": "dev",
+  "promote": false,
+  "seeds": 8,
+  "targets": 16
+}

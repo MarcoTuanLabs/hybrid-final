@@ -23,6 +23,12 @@ On eight previously used 4-bit development seeds, the 16-step solver controlled 
 
 On 32 fresh four-bit seeds, the normalized reader controlled 57/64 targets, state-Gram whitening controlled 30/64 and four prefix-key covariance controls each scored 0/64. All seven readers preserved 192/192 controls. The comparisons use a single frozen Qwen checkpoint. [Curvature controls and the fixed-backbone comparison](experiments/covariance_read/README.md)
 
+Predicting the layer-28 donor write from layer 12 reduced complete latency by 24.9% against exact truncation, but controlled only 3/16 targets. Exact truncation controlled 13/16 and two-row batching controlled 14/16. [Pilot with calibration and timings](experiments/shallow_donor/README.md)
+
+## Country–capital bindings before and after a memory edit
+
+On the public CAPITALS templates from Feng and Steinhardt, the fixed answer-time two-head reader controlled 0/24 changed answers. With the update applied *before* any of the three questions, the donor's attention keys and values at the two country tokens and their following punctuation controlled 40/48 changed capitals. Full replay controlled 40/48, with two paired gains and two losses. Replacing all recurrent and convolution states alone controlled 0/48. Predicting the same four local K/V replacements from the old document controlled 35/48 on the development prompts. [Fixed-reader transfer](experiments/binding_transfer/README.md) · [Which cache entries carried the change](experiments/binding_cache/README.md) · [Donor-free estimation](experiments/binding_transport/README.md)
+
 ## Public cache-transfer experiment
 
 The receiver starts with an old, question-conditioned cache and also receives the donor's attention cache and convolution histories. The encoder projects the donor-minus-recipient recurrent matrix onto the directions read during four known suffix tokens. It sends 3 MiB of recurrent-matrix updates, compared with 48 MiB for an FP32 dense transfer. These sizes exclude the common donor components. The receiver reconstructs a dense state locally.

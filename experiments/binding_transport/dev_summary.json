@@ -1,0 +1,89 @@
+{
+  "changed": 48,
+  "documents": 24,
+  "methods": {
+    "centered": {
+      "changed": 33,
+      "gained_full": 3,
+      "losses": 6,
+      "lost_full": 10,
+      "lost_stable": 0,
+      "stable": 19,
+      "wins": 8
+    },
+    "full": {
+      "changed": 40,
+      "gained_full": 0,
+      "losses": 7,
+      "lost_full": 0,
+      "lost_stable": 1,
+      "stable": 19,
+      "wins": 2
+    },
+    "local": {
+      "changed": 40,
+      "gained_full": 2,
+      "losses": 7,
+      "lost_full": 2,
+      "lost_stable": 0,
+      "stable": 19,
+      "wins": 2
+    },
+    "notice": {
+      "changed": 28,
+      "gained_full": 0,
+      "losses": 2,
+      "lost_full": 12,
+      "lost_stable": 4,
+      "stable": 15,
+      "wins": 9
+    },
+    "paired": {
+      "changed": 35,
+      "gained_full": 2,
+      "losses": 0,
+      "lost_full": 7,
+      "lost_stable": 1,
+      "stable": 18,
+      "wins": 0
+    },
+    "project": {
+      "changed": 36,
+      "gained_full": 2,
+      "losses": 1,
+      "lost_full": 6,
+      "lost_stable": 1,
+      "stable": 18,
+      "wins": 0
+    },
+    "recompute": {
+      "changed": 30,
+      "gained_full": 0,
+      "losses": 2,
+      "lost_full": 10,
+      "lost_stable": 1,
+      "stable": 18,
+      "wins": 7
+    },
+    "stale": {
+      "changed": 0,
+      "gained_full": 0,
+      "losses": 0,
+      "lost_full": 40,
+      "lost_stable": 0,
+      "stable": 19,
+      "wins": 35
+    },
+    "swap_values": {
+      "changed": 27,
+      "gained_full": 0,
+      "losses": 6,
+      "lost_full": 13,
+      "lost_stable": 1,
+      "stable": 18,
+      "wins": 14
+    }
+  },
+  "promote": false,
+  "stable": 24
+}

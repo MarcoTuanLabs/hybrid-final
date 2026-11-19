@@ -1,0 +1,101 @@
+{
+  "changed_control_outputs": 1,
+  "clean_pairs": 18,
+  "clean_recipient_target": 20,
+  "confirmed": false,
+  "controls": 72,
+  "methods": {
+    "donor": {
+      "nuisance_changed": 1,
+      "nuisance_correct": 19,
+      "target": 20,
+      "target_margin_median": 10.359375,
+      "target_on_clean": 18
+    },
+    "native": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.5625,
+      "target_on_clean": 0
+    },
+    "normal": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -11.3125,
+      "target_on_clean": 0
+    },
+    "normal_unwritten": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.46875,
+      "target_on_clean": 0
+    },
+    "recipient": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.53125,
+      "target_on_clean": 0
+    },
+    "white": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.46875,
+      "target_on_clean": 0
+    },
+    "white_unwritten": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.46875,
+      "target_on_clean": 0
+    },
+    "wide_native": {
+      "nuisance_changed": 0,
+      "nuisance_correct": 20,
+      "target": 0,
+      "target_margin_median": -10.46875,
+      "target_on_clean": 0
+    }
+  },
+  "paired": {
+    "native": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gain": 0.0,
+      "losses": 0,
+      "wins": 0
+    },
+    "white": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gain": 0.0,
+      "losses": 0,
+      "wins": 0
+    },
+    "wide_native": {
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "gain": 0.0,
+      "losses": 0,
+      "wins": 0
+    }
+  },
+  "phase": "dev",
+  "promote": false,
+  "seeds": 12,
+  "targets": 24,
+  "wide_coordinates": [
+    4096
+  ]
+}

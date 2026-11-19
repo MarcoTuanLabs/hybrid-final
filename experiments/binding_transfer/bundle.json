@@ -1,0 +1,13 @@
+{
+  "model": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "sha256": {
+    "contract.json": "b09d774cbb3563c13b9f1e9965e161ca70807d8a24d8af7faa5678518fdfdab3",
+    "inputs.py": "8bde41ab5825acd745693d62e4b34a7dca5e1f37c603c691df54f312b6cbbe24",
+    "probe.py": "5e1ce07f6c62fc6638dccee399ef0ced1203eb9b05bfb701fa6d7f1b12fda78a",
+    "score.py": "80ac31b10a55746e6da55ff8896603850d4bcc0c6115ac3c6c988b6cf91d1ca5",
+    "dev_rows.jsonl": "7d15afccd5026a38494fc9e44a750356cdd33866ad3c8b4355ab14a30458dd3d",
+    "dev_summary.json": "f846fa138c672cb56b6ae2644cf255f4c351232716071a0b333906ed69ceda44"
+  },
+  "paid_twd": 0,
+  "adaption_credits": 0
+}

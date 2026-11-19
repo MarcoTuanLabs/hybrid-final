@@ -1,0 +1,19 @@
+{
+  "problem": "Negative offsets to the pinned MLX RoPE kernel failed inverse rotation on this host. Round-trip key errors changed logits without any edit. The first fitted model and all candidate scores from that run were invalidated before release.",
+  "original_fit": "002f2f06f0d017fd8d659592019076e0e05ff97efa58e4ded80b7bdc454ebc65",
+  "invalid_rows": "53f19a1351139ba513ab30c610bd0aaaf93837b84fa72ed071530dd5faf63246",
+  "repair": "Conjugate the native positive-offset rotation by a reflection of the second coordinate in each rotary plane, preserving all nonrotary channels. Refit both bases and maps and repeat the entire development comparison. No change to tasks, ranks, comparators or gates.",
+  "old_source": "f905742b4be44b90cb961b6e3c0f5325110d5b8653664e97dfb619b3ba256ebc",
+  "new_source": "5424dd5c7284ca500312147f4eea95644c6e0c84bf400ddb372c14069f105b54",
+  "round_trip": {
+    "seeds": [
+      51973000,
+      51973001
+    ],
+    "template": "DEFAULT",
+    "native_and_local_oracle_reconstructed": true,
+    "tops_agreed": 12,
+    "starting_cases": "Old and true locally transplanted cache, three future questions in each of two development documents.",
+    "pinned_kernel_float_max_abs_in_four_test_windows": 7.152557373046875e-07
+  }
+}
