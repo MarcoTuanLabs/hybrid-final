@@ -45,7 +45,7 @@ On 12 development documents with three-turn conversations, the old cache with a 
 
 In HaluMem-Medium, four simulated users yielded 23 delayed-session episodes with a second grounded question. An eight-episode text-only pilot measured how many official answers lexical retrieval could recover after the delayed session arrived. [Delayed dialogue eligibility and measured text controls](experiments/halumem_feasibility/README.md)
 
-On eight delayed HaluMem development sessions, I charged the original ingest, cache update, neural retrieval and two generated answers. The anchor correction answered 5/8 changed and 4/8 other grounded questions. The matched partial replay answered 5/8 and 4/8. [Chronological cache intervention and matched controls](experiments/halumem_bridge/README.md)
+The HaluMem anchor-correction result is under correction. A round-trip test found that the original implementation did not invert rotary position correctly. The anchor arm's performance estimates are withdrawn pending a new six-method run. [Correction and original observations](experiments/halumem_bridge/README.md)
 
 On all 23 eligible development sessions, keeping one quarter of each incoming session by normalized shallow-state read change preserved the reference phrase for 7/15 attainable dynamic-update questions. Uniform temporal coverage preserved 9/15, and raw read displacement preserved 8/15. The normalized selector failed the criterion for a generation test. [Quarter-budget update selection](experiments/halumem_sieve/README.md)
 
