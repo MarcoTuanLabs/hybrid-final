@@ -29,6 +29,8 @@ Predicting the layer-28 donor write from layer 12 reduced complete latency by 24
 
 On the public CAPITALS templates from Feng and Steinhardt, the fixed answer-time two-head reader controlled 0/24 changed answers. With the update applied *before* any of the three questions, the donor's attention keys and values at the two country tokens and their following punctuation controlled 40/48 changed capitals. Full replay controlled 40/48, with two paired gains and two losses. Replacing all recurrent and convolution states alone controlled 0/48. Predicting the same four local K/V replacements from the old document controlled 35/48 on the development prompts. [Fixed-reader transfer](experiments/binding_transfer/README.md) · [Which cache entries carried the change](experiments/binding_cache/README.md) · [Donor-free estimation](experiments/binding_transport/README.md)
 
+On the 64 prospectively registered documents, the four-position donor attention transplant controlled 98/128 revised capitals. Full replay controlled 105/128, transfer of all recurrent and convolution states controlled 0/128, and the donor-free query redirect controlled 99/128. [Independent CAPITALS confirmation](experiments/binding_confirmation/README.md)
+
 ## Public cache-transfer experiment
 
 The receiver starts with an old, question-conditioned cache and also receives the donor's attention cache and convolution histories. The encoder projects the donor-minus-recipient recurrent matrix onto the directions read during four known suffix tokens. It sends 3 MiB of recurrent-matrix updates, compared with 48 MiB for an FP32 dense transfer. These sizes exclude the common donor components. The receiver reconstructs a dense state locally.

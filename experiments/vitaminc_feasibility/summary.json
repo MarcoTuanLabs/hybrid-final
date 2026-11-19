@@ -1,0 +1,29 @@
+{
+  "source": "tals/vitaminc@be6febb761b0b2807687e61e0b5282e459df2fa0/dev.jsonl",
+  "sha256": "544934677f5d133873e6d38f4557f8966f4efa5d3d70874ffe6913f2091b86b5",
+  "all_rows": 63054,
+  "source_types": {
+    "real": 42290,
+    "synthetic": 20764
+  },
+  "natural_cases": 13645,
+  "natural_page_revision_evidence_pairs": 11839,
+  "counts": {
+    "any_changed": 11815,
+    "any_stable": 66,
+    "changed_and_stable": 46,
+    "compact_replacement_two_changed": 3407,
+    "compact_with_native_stable": 6
+  },
+  "compact_pages": 1252,
+  "same_pair_changed_and_stable_pages": 21,
+  "compact_with_stable_ids": [
+    "2e6c3a716387429c2e1774b18e9f7356a85dcbe50b9ea017ba040bddc925c148",
+    "42007e88e497ebd64a27b76dfcc648c1b416fb5c684ecaa61b633b6a6abe5a68",
+    "96d57f99cece1816d333e4d3cf97bb888f5d4b81fec0e8215e548ca98b1317f5",
+    "a0de2c611cc1f14da81d78fe48ad00560c4a8fffa794d23dae2590f34fe840f6",
+    "a98102290719d289197a179bdf6083010da39b457ea14275f549a433d8c0cdba",
+    "fea28b663e4fc4933949357e245da02b5ab5ff061fca6b22d60c69983c60bcbd"
+  ],
+  "scope": "Groups require exact evidence strings and the same page and revision. No chronological direction is inferred from row order. A native stable claim requires release labels on both texts. No model outputs or test-split rows used."
+}

@@ -1,0 +1,141 @@
+{
+  "both_clean": 81,
+  "changed": 128,
+  "confirmed": true,
+  "documents": 64,
+  "exact_site_sets": 10,
+  "largest_local_overlap": 193,
+  "median_document_tokens": 45.0,
+  "methods": {
+    "full": {
+      "changed": 105,
+      "changed_on_clean": 81,
+      "local_losses": 10,
+      "local_wins": 3,
+      "paired_gain": -0.0546875,
+      "paired_gain_ci95": [
+        -0.125,
+        0.0078125
+      ],
+      "stable": 60,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 1
+    },
+    "largest": {
+      "changed": 96,
+      "changed_on_clean": 70,
+      "local_losses": 0,
+      "local_wins": 2,
+      "paired_gain": 0.015625,
+      "paired_gain_ci95": [
+        0.0,
+        0.0390625
+      ],
+      "stable": 60,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 1
+    },
+    "local": {
+      "changed": 98,
+      "changed_on_clean": 71,
+      "local_losses": 0,
+      "local_wins": 0,
+      "paired_gain": 0.0,
+      "paired_gain_ci95": [
+        0.0,
+        0.0
+      ],
+      "stable": 60,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 1
+    },
+    "notice": {
+      "changed": 75,
+      "changed_on_clean": 56,
+      "local_losses": 6,
+      "local_wins": 29,
+      "paired_gain": 0.1796875,
+      "paired_gain_ci95": [
+        0.078125,
+        0.2890625
+      ],
+      "stable": 55,
+      "stable_original_correct_lost": 4,
+      "stable_token_changes": 4
+    },
+    "outside": {
+      "changed": 0,
+      "changed_on_clean": 0,
+      "local_losses": 0,
+      "local_wins": 98,
+      "paired_gain": 0.765625,
+      "paired_gain_ci95": [
+        0.671875,
+        0.8515625
+      ],
+      "stable": 58,
+      "stable_original_correct_lost": 1,
+      "stable_token_changes": 1
+    },
+    "recurrent": {
+      "changed": 0,
+      "changed_on_clean": 0,
+      "local_losses": 0,
+      "local_wins": 98,
+      "paired_gain": 0.765625,
+      "paired_gain_ci95": [
+        0.671875,
+        0.8515625
+      ],
+      "stable": 60,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 1
+    },
+    "redirect": {
+      "changed": 99,
+      "changed_on_clean": 72,
+      "local_losses": 3,
+      "local_wins": 2,
+      "paired_gain": -0.0078125,
+      "paired_gain_ci95": [
+        -0.0390625,
+        0.0234375
+      ],
+      "stable": 59,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 0
+    },
+    "stale": {
+      "changed": 0,
+      "changed_on_clean": 0,
+      "local_losses": 0,
+      "local_wins": 98,
+      "paired_gain": 0.765625,
+      "paired_gain_ci95": [
+        0.671875,
+        0.8515625
+      ],
+      "stable": 59,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 0
+    },
+    "values": {
+      "changed": 92,
+      "changed_on_clean": 67,
+      "local_losses": 1,
+      "local_wins": 7,
+      "paired_gain": 0.046875,
+      "paired_gain_ci95": [
+        0.0078125,
+        0.09375
+      ],
+      "stable": 60,
+      "stable_original_correct_lost": 0,
+      "stable_token_changes": 1
+    }
+  },
+  "retained_full_changed": 95,
+  "seeds": 32,
+  "stable": 64,
+  "total_selected_positions": 256
+}

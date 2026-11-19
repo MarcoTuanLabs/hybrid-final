@@ -2,23 +2,25 @@
   "named": {
     "file": "output/pdf/hybrid_memory_working_paper.pdf",
     "pages": 4,
-    "bytes": 242278,
-    "sha256": "1e0370b1103d0d59da568bd2ea1cd4b7f8eeb9197aa37e5dee8dd24912bd6658",
+    "bytes": 241667,
+    "sha256": "75e7c1a36fe3bbdfa58c5b5303519c92d82104a225963a6d9618290137470be3",
     "author": "Lu-Yen Marco Tuan",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Inspected all four rendered pages, including the curvature comparison, references, figure and equations.",
-    "related_work_source": "https://arxiv.org/abs/2606.01294"
+    "visual_review": "Reviewed the four rendered pages, all display equations and comparisons, the binding-location paragraph, layout, graph and bibliography.",
+    "related_work_source": "https://arxiv.org/abs/2606.01294",
+    "binding_confirmation_source": "experiments/binding_confirmation/summary.json"
   },
   "review": {
     "file": "output/pdf/hybrid_dai_review.pdf",
     "pages": 4,
-    "bytes": 241984,
-    "sha256": "4d84739a3500e27e276b70286f5a64a97c4be75b24e427a76618b1e8ac40e304",
+    "bytes": 241445,
+    "sha256": "f5d074a1b6b991295d3a2681c2ce39b8650534ddc9fa8c38bb072541554a5ee2",
     "author": "",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Inspected all four rendered pages, including the curvature comparison, references, figure and equations.",
-    "related_work_source": "https://arxiv.org/abs/2606.01294"
+    "visual_review": "Reviewed the four rendered pages, all display equations and comparisons, the binding-location paragraph, layout, graph and bibliography.",
+    "related_work_source": "https://arxiv.org/abs/2606.01294",
+    "binding_confirmation_source": "experiments/binding_confirmation/summary.json"
   }
 }

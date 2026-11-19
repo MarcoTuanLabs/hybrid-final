@@ -1,0 +1,14 @@
+{
+  "registered_commit": "d3dcb1407ac2fce0a62f08642f0c01d7ebbcd10c",
+  "model": "8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "sha256": {
+    "confirm.py": "83e5056dfc2264341a0b80700d58ed7ab0be418f1d2f76c876d8a5691d20eec9",
+    "score.py": "36bb12582110b9f51a99c043fd123c57d05ec155785fc33970007be98ceb91c3",
+    "contract.json": "85b5b51a5ff7b9af844e2b2c3e341a634446ed006bf4b423712e128ede5b7bff",
+    "split.json": "5485faeb1c9a05d879a8dbdd6dae9e4afc9c94dd9866a2c91d8357accbf77abd",
+    "rows.jsonl": "e10aabf0445376bcf7ef9b164b0c8e0bdebfc1602feca631e486944af1f0e628",
+    "summary.json": "b3e1811690d22ae64abdfeff7b376ce922edee95e0917cabfa6f1622148a37dc"
+  },
+  "paid_twd": 0,
+  "adaption_credits": 0
+}

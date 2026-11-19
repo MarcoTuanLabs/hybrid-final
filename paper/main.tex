@@ -47,31 +47,24 @@ to four starts and retains all 256 target successes. On 64 new seeds in four-bit
 \end{abstract}
 
 \section{Introduction}
-A model can receive a new value in its runtime state and still retrieve
-the value it held before the write. What determines which value reaches
-the output? I hold the write fixed and vary the query that reads it.
+Why does a model sometimes return an old answer after a write to its
+memory? To isolate the role of the read, I hold the write fixed and vary the query.
+Hybrid models store token-indexed attention caches and fixed-size
+recurrent states. Attention can supply a recalled value \citep{lee2026},
+while recurrence can help construct its address \citep{zeng2026}.
+I test writes to both values and addresses.
 
-Hybrid models combine recurrent layers, which compress history into
-fixed-size states, with full-attention layers, which retain token-indexed
-caches. Attention can supply a recalled value \citep{lee2026}, while
-recurrence can help construct its address \citep{zeng2026}. I test
-a local write to a value and a distributed write to an address.
-
-A write aligned with the background read can produce a large raw
-response but little change after normalization. I therefore optimize
-the normalized contrast across heads sharing a query. I preserve the
-query norm and limit the change in direction to $60$ degrees.
-
-I compare queries at a fixed write budget, test which part of the read carries the edit, and measure the cost of reusing a cache or a saved answer.
+A write aligned with the background read can have little effect after
+normalization. I optimize the normalized contrast across heads sharing
+a query, preserving its norm and limiting its rotation to $60$ degrees.
 
 \section{Task and Controlled Interventions}
-Each independent seed specifies eight animal--letter assignments.
-A recipient prompt asks for one letter. A paired donor prompt specifies
-the intended change. I render each instance as both a table and prose.
-Prompts contain 84--127 tokens, including a fixed chat-template suffix.
-An intervention succeeds when the highest-scoring token in the full
-vocabulary is the donor's intended letter. I score this token immediately
-after the suffix. I report \emph{answer control} as the fraction of successful target presentations.
+Each seed specifies eight animal--letter assignments, a recipient question
+and a donor prompt with the intended change. I render each instance as
+a table and as prose (84--127 tokens, including a fixed chat suffix).
+\emph{Answer control} is the fraction of target presentations on which
+the donor's letter has the highest score in the full vocabulary
+immediately after the suffix.
 
 \paragraph{Changing a stored value in 9B.}
 The donor exchanges two dictionary assignments, changing the requested
@@ -115,8 +108,8 @@ without a write. All three should return the recipient's original answer.
 
 \section{Normalization-Aware Readout}
 \subsection{Forecasting the State Difference}
-I first forecast the write's effect at each permitted read position.
 At a fixed layer, let $h$ index a value head and $t$ a token position.
+
 Let $d_k$ and $d_v$ be the key and value dimensions. The real-valued
 recurrent state is $S_{h,t}\in\R^{d_k\times d_v}$, with key
 $k_{h,t}\in\R^{d_k}$, value $v_{h,t}\in\R^{d_v}$, scalar retention
@@ -194,11 +187,9 @@ change, including its direction relative to that background.
 \centering
 \includegraphics[width=\textwidth]{../figures/control_and_cost.pdf}
 \caption{Normalized readout improves answer control at fixed within-model
-write and query budgets. Left: the 9B baseline is whitened key; the 27B
-baseline is raw SVD. Right: both normalized 27B solvers control 256/256
-targets, while the native-start solver cuts total time by 21.8\% relative
-to four starts. All displayed readers preserve every tested control
-answer. Table and prose presentations are paired within each seed.}
+write and query budgets. The left panel compares against whitened key in 9B
+and raw SVD in 27B. Both 27B solvers control all 256 targets. One native start
+cuts total time by 21.8\% (right). All readers preserve every tested control.}
 \label{fig:results}
 \end{figure*}
 
@@ -274,30 +265,27 @@ and synchronized continuation. I rotate method order. BF16 runs use
 an NVIDIA RTX PRO 6000 Blackwell for 27B and an NVIDIA GB10 for 9B.
 
 \paragraph{Which part of the read carries the write?}
-On an Apple M5, single- and four-start solvers controlled the same 26/32 development targets in four-bit 9B, versus 15 for whitened key and zero for the native query. All preserved 96/96 controls.
-
-To separate direction from length \citep{aparin2026}, I measured both head reads before RMS normalization at all four suffix positions. I held the optimized query fixed and exchanged the written and unwritten directions or lengths head by head.
+On an Apple M5 with four-bit 9B, I separated direction from length \citep{aparin2026} by measuring both head reads before RMS normalization at all four suffix positions. I held the optimized query fixed and exchanged the written and unwritten directions or lengths head by head.
 On 64 new seeds (128 targets), the complete read controlled 99 answers, compared with 68 for whitened key. Direction alone retained 95 of the 99 successes and added none. Length alone controlled none. Restoring both complete reads reproduced every unwritten vocabulary logit on all 256 target and nuisance presentations. I averaged the angle between written and unwritten reads over heads and positions. Its median rose from 19 degrees with the native query to 90 degrees with the optimized query.
 
 \section{Encoding the State Change a Suffix Reads}
-A receiver holds an old prefix cache. A sender holds the updated cache
-and can run four known chat-template tokens before the answer begins.
-Both sides use the donor attention cache and convolution histories.
-I vary only the information supplied about the recurrent matrices.
+A sender holds the updated prefix cache and knows the four chat-template
+tokens before the answer. The receiver holds the old cache. Both use
+the donor attention cache and convolution histories. I vary what the
+sender transmits about the recurrent matrices.
 
-At the prefix boundary, let $E_h$ denote the donor matrix minus the
-recipient matrix for head $h$ at a fixed layer. Let $q_{h,t}$ be its
+Index the four suffix positions from $t=1$. At the prefix boundary $t=0$, let $\Delta S_{h,0}$ denote the donor state minus the recipient state for head $h$ at a fixed layer. Let $q_{h,t}$ be its
 native query at suffix position $t$, and define the key-space update
 $P_{h,t}=I_{d_k}-\beta_{h,t}k_{h,t}k_{h,t}^{\top}$. With identical
-incoming activations, the part of the read attributable to $E_h$ is
+incoming activations, the part of the read attributable to $\Delta S_{h,0}$ is
 \begin{equation}
-\left(\prod_{j=1}^{t}\alpha_{h,j}\right) E_h^{\top} w_{h,t},
+\left(\prod_{j=1}^{t}\alpha_{h,j}\right) \Delta S_{h,0}^{\top} w_{h,t},
 \qquad w_{h,t}=P_{h,1}\cdots P_{h,t}q_{h,t}.
 \end{equation}
 Here $j$ indexes suffix positions. The vector $w_{h,t}$ transports the suffix query back to the prefix boundary. Let the columns of $V_h$ form an orthonormal
 basis for the span of these four vectors.
-Replacing $E_h$ with $V_hV_h^{\top}E_h$ preserves each of these reads
-in exact arithmetic. The sender transmits $V_h$ and $E_h^{\top}V_h$.
+Replacing $\Delta S_{h,0}$ with $V_hV_h^{\top}\Delta S_{h,0}$ preserves each of these reads
+in exact arithmetic. The sender transmits $V_h$ and $\Delta S_{h,0}^{\top}V_h$.
 The receiver reconstructs the dense matrix and generates freely beyond the four known positions.
 
 I fixed the codec on 24 bAbI QA1 training stories and 24 MQuAKE
@@ -313,12 +301,10 @@ quantization used 3.375 MiB and matched 123. The transported reader
 and dense transfer both answered 53/64 updated questions correctly,
 compared with 54/64 for SVD. The benefit concerns fidelity to the donor.
 
-I also prespecified a twofold reduction in mean centered-logit
-root-mean-square error against each compressed control at the four
-suffix positions. The error ratio to the strongest control was 0.378
-on MQuAKE and 0.508 on bAbI. The latter missed the 0.500 cutoff.
-The byte counts cover the recurrent update only. They exclude the
-shared donor cache components and local dense reconstruction.
+I prespecified a centered-logit RMS error ratio of at most 0.500 against
+each compressed control. The ratio to the strongest control was 0.378
+on MQuAKE and 0.508 on bAbI. The byte counts exclude shared donor caches
+and local dense reconstruction.
 
 \paragraph{When the same question returns.}
 I tested a separate text-only update for repeated questions on a known page. It maps the saved answer through the passage edits. I rerun the reader if alignment fails or one answer
@@ -331,6 +317,17 @@ scored 77/96 in 2.07 seconds with repair and 75/96 in 3.66 seconds
 with rereading. A post-hoc AI review blinded to method judged 96/96
 9B rereads and 95--96/96 repairs consistent with the reference fact.
 One repair repeated a surname.
+
+\paragraph{Where a revised binding is stored.}
+In CAPITALS \citep{feng2024}, I swapped two people's countries and
+asked for the capital of each person's assigned country. On 64 new three-person documents in
+four-bit 9B, full replay answered 105/128 changed questions correctly.
+Copying donor attention keys and values at the two country tokens
+and their following punctuation answered 98, retaining 95 of full replay's
+successes and all 59 previously correct stable answers. Copying all
+recurrent and convolution states alone gave 0 correct answers. Selecting
+four positions by total squared cache change gave 96. These cache transplants \citep{loos2026} require the updated document. Redirecting the query to the
+original holder of the country answered 99 using the known swap and the old cache.
 
 \section{Relation to Prior Work}
 Linear attention stores associations as fast weights \citep{schlag2021}.
@@ -352,27 +349,32 @@ ROME edits weights \citep{meng2022}. Paired controls isolate the
 behavioral effect of the runtime write \citep{zhang2024}.
 
 \section{Discussion and Conclusion}
-On both synthetic cohorts, optimizing the change in the normalized read brought more written answers to the output. In the four-bit value-write test, the change in direction carried most of that effect. On public questions, suffix projection reproduced the donor's sequences and text-only repair reduced the cost of answering a repeated question. Generalization
-to new questions about unrestricted conversations remains open.
+In both synthetic cohorts, optimizing the normalized read brought more
+written answers to the output. Direction carried most of the effect in
+the four-bit value-write test. In CAPITALS, four attention-cache positions
+carried most of the revised bindings. Whether the same positions suffice
+for unrestricted factual updates remains open.
 
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 \bibitem[Afendulev et~al.(2026)]{afendulev2026}
 Afendulev, K.; Dontsov, A.; Tutubalina, E.; and Korznikov, A. 2026.
 What Attention Recalls and Recurrence Controls in Hybrid Language Models.
-In \emph{Findings of the Association for Computational Linguistics:
-EMNLP 2026}, 43888--43900.
-\url{https://aclanthology.org/2026.findings-emnlp.2061/}.
+In \emph{Findings of EMNLP}, 43888--43900.
+
 
 \bibitem[Aparin and Gaintseva(2026)]{aparin2026}
 Aparin, G.; and Gaintseva, T. 2026. A Geometric Account of
 Activation Steering through Angle-Norm Decomposition.
 \emph{arXiv:2606.06735}.
 
+\bibitem[Feng and Steinhardt(2024)]{feng2024}
+Feng, J.; and Steinhardt, J. 2024. How Do Language Models Bind
+Entities in Context? In \emph{ICLR}.
+
 \bibitem[Gangavarapu et~al.(2026)]{gangavarapu2026}
 Gangavarapu, T.; Tabak, G.; and Schaefer, C.~J.~S. 2026.
 Muir: Linear Attention with Sensitivity-Allocated Gating and Matched-Filter
 Readout. \emph{arXiv:2611.08376}.
-\url{https://arxiv.org/abs/2611.08376}.
 
 \bibitem[Jiang et~al.(2026)]{jiang2026}
 Jiang, H.; Li, W.; Zhou, Z.; Pan, J.; Pandey, S.; and Liu, H. 2026.
@@ -387,7 +389,10 @@ Attention. \emph{arXiv:2606.01294}.
 \bibitem[Lee et~al.(2026)]{lee2026}
 Lee, K.; Park, J.; Kim, S.; and Ko, J. 2026.
 How Linear Attention Remembers. \emph{arXiv:2609.33093}.
-\url{https://arxiv.org/abs/2609.33093}.
+
+\bibitem[Loos and Eberle(2026)]{loos2026}
+Loos, J.; and Eberle, O. 2026. KV-Cache Patching: Tracing How and
+Where Fine-Tuned Behaviors Arise. \emph{arXiv:2610.41480}.
 
 \bibitem[Meng et~al.(2022)]{meng2022}
 Meng, K.; Bau, D.; Andonian, A.; and Belinkov, Y. 2022.
@@ -403,8 +408,7 @@ ACL}, 6036--6063.
 \bibitem[Schlag et~al.(2021)]{schlag2021}
 Schlag, I.; Irie, K.; and Schmidhuber, J. 2021.
 Linear Transformers Are Secretly Fast Weight Programmers.
-In \emph{Proceedings of the 38th International Conference on Machine
-Learning}, 139: 9355--9366.
+In \emph{ICML}, 139: 9355--9366.
 
 \bibitem[Weston et~al.(2016)]{weston2016}
 Weston, J.; Bordes, A.; Chopra, S.; Rush, A.~M.; van Merri\"enboer, B.;
@@ -414,20 +418,17 @@ Answering: A Set of Prerequisite Toy Tasks. In \emph{ICLR}.
 \bibitem[Yang et~al.(2025)]{yang2025}
 Yang, S.; Kautz, J.; and Hatamizadeh, A. 2025.
 Gated Delta Networks: Improving Mamba2 with Delta Rule.
-In \emph{International Conference on Learning Representations}.
-\url{https://arxiv.org/abs/2412.06464}.
+In \emph{ICLR}.
 
 \bibitem[Zeng et~al.(2026)]{zeng2026}
 Zeng, W.; Feng, C.; and Chen, Y. 2026.
 Who Asks, Who Answers: Linear Attention Builds the Query in Hybrid
 Language Models. \emph{arXiv:2611.01909}.
-\url{https://arxiv.org/abs/2611.01909}.
 
 \bibitem[Zhang and Nanda(2024)]{zhang2024}
 Zhang, F.; and Nanda, N. 2024.
 Towards Best Practices of Activation Patching in Language Models:
-Metrics and Methods. In \emph{International Conference on Learning
-Representations}. \url{https://arxiv.org/abs/2309.16042}.
+Metrics and Methods. In \emph{ICLR}.
 \bibitem[Zhong et~al.(2023)]{zhong2023}
 Zhong, Z.; Wu, Z.; Manning, C.~D.; Potts, C.; and Chen, D. 2023.
 MQuAKE: Assessing Knowledge Editing in Language Models via Multi-Hop
