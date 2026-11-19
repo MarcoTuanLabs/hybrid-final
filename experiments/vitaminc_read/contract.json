@@ -1,0 +1,10 @@
+{
+  "parent": "cea7d6c4513c6373c67c1aee073fa3a612d501c9",
+  "hypothesis": "For a repeated factual claim after a natural revision, the middle layer can predict the change in the final verdict when anchored to the stored full-depth verdict on the previous version. A ridge map receives only differences in normalized layer-16 reads and is trained on teacher logit differences, with no gold labels. Compare against a direct teacher probe, a gold-trained probe, a prior using only the old answer, the raw lens, full replay, and a direct probe using the calibrated label transition prior.",
+  "checkpoint": "mlx-community/Qwen3.5-9B-4bit@8b2b98c00a6b4d291155e4890773ca8f769aee53",
+  "dataset": "tals/vitaminc@be6febb761b0b2807687e61e0b5282e459df2fa0 natural development evidence only",
+  "scope": "Three-way forced-choice. Two claims per page in both service directions. A version is treated as the prior version for the purpose of an update, without asserting chronological order. One page per example. The enriched change rate is shared by controls. A stored old native verdict and 4096-component early read are required. Accuracy uses all endpoints. No old gold label at inference.",
+  "stages": "64 calibration pages, 24 separate pilot pages, 96 additional locked pages. Confirmation allowed only for primary paired method if pilot matches full replay, beats every prespecified same-or-cheaper classifier by at least four endpoints, and loses at most one correct stable endpoint in aggregate versus full replay. Check falsification alternatives separately. No confirmation or manuscript change for failed pilot.",
+  "comparisons": "Synchronized service costing and a task-trained natural-language inference baseline are required before claiming deployment benefit. Feature collection shares a full pass and is not a service timing. No inference-cost claim from the nominal 16 of 32 layers. Quantify unchanged cases separately.",
+  "budget": "Local Apple M5, one attempt per split, one implementation repair allowance, max 1200 seconds each. No paid service."
+}

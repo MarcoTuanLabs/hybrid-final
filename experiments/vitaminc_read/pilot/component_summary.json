@@ -1,0 +1,80 @@
+{
+  "pages": 24,
+  "endpoints": 96,
+  "stable": 10,
+  "methods": {
+    "direct": {
+      "correct": 79,
+      "changed": 72,
+      "stable": 7,
+      "both": 32
+    },
+    "paired_components": {
+      "correct": 82,
+      "changed": 77,
+      "stable": 5,
+      "both": 37
+    },
+    "shared_mean": {
+      "correct": 80,
+      "changed": 73,
+      "stable": 7,
+      "both": 33
+    },
+    "shared_difference": {
+      "correct": 83,
+      "changed": 78,
+      "stable": 5,
+      "both": 36
+    },
+    "mean_only": {
+      "correct": 50,
+      "changed": 42,
+      "stable": 8,
+      "both": 4
+    },
+    "full": {
+      "correct": 66,
+      "changed": 62,
+      "stable": 4,
+      "both": 22
+    },
+    "paired_labels": {
+      "correct": 79,
+      "changed": 73,
+      "stable": 6,
+      "both": 32
+    },
+    "old_transition": {
+      "correct": 69,
+      "changed": 63,
+      "stable": 6,
+      "both": 24
+    },
+    "absolute_labels": {
+      "correct": 79,
+      "changed": 72,
+      "stable": 7,
+      "both": 32
+    },
+    "full_contrast": {
+      "correct": 69,
+      "changed": 64,
+      "stable": 5,
+      "both": 25
+    },
+    "albert-base-vitaminc-mnli": {
+      "correct": 77,
+      "changed": 71,
+      "stable": 6,
+      "both": 31
+    },
+    "albert-xlarge-vitaminc": {
+      "correct": 81,
+      "changed": 75,
+      "stable": 6,
+      "both": 33
+    }
+  },
+  "promote": false
+}

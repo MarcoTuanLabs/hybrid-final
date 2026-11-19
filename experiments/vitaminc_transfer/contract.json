@@ -1,0 +1,9 @@
+{
+  "question": "Does the paired readout transfer to a task-trained verifier on independent natural revisions? On 44 development pages the Qwen candidate was rejected. The exploratory ALBERT-xlarge comparator improved from 67 to 73 correct of 88. This new registration tests only that specialist observation.",
+  "model": "tals/albert-xlarge-vitaminc@e86807a8bfa4f9cfec822c5855f1c86c4f475f03",
+  "primary": "The six-type, signed-orientation readout from vitaminc_joint/structured.py, refitted with the same archived 240 pairs of ALBERT logits and publisher labels. No new parameters or gate tuning on evaluation cases.",
+  "controls": "Raw three-way specialist; direct fitted single-edition regression; separately fitted mean and difference; fixed full-logit contrast; factorized two-edition posterior using training class transitions and temperature chosen on fit; unrestricted ridge nine-class paired model using both orders.",
+  "split": "224 distinct Wikipedia pages, one official test-split natural claim each, evaluated against both publisher-labeled passages. Exclude all 468 previously used or reserved pages and every page in the entire official training file. Fixed counts by unordered gold labels enrich stable and neutral claims; this is not official aggregate accuracy.",
+  "primary_gate": "At least 4 percentage points more correct endpoints than every control; positive 2.5th percentile for minimum mean paired gain over all controls via 20,000 page bootstrap resamples (seed 765218); no more than one net stable endpoint lost versus raw xlarge. Declare unconfirmed if any condition fails. Report all denominators and methods.",
+  "cost": "Bounded to 900 seconds of local specialist inference. Both editions' logits are needed, and this test makes no speed claim. The model does not receive any prior gold verdict. No paid compute. No claim about Qwen confirmation or four-page manuscript promotion."
+}

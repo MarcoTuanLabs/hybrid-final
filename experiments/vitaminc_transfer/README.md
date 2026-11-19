@@ -1,0 +1,5 @@
+# Independent check of the specialist result
+
+On 44 development pages the hybrid model's paired readout missed its advancement rule. In an exploratory control on the same pages, a paired readout of the published ALBERT-xlarge verifier answered 73/88 endpoints against 67/88 for the original classifier. This independent experiment tests whether that specialist result holds on new pages and against simpler paired classifiers. [Development comparisons](../vitaminc_joint/pilot/summary.json) · [Fixed criteria](contract.json)
+
+I registered the implementation, sampling rule, comparisons and 224 test-page hashes before running the model on those pages. All 240 calibration pages come from the official training split. All evaluation pages come from the publisher's test split and are disjoint from the training file and the 468 pages previously fitted, inspected or reserved. The stratified workload has 448 factual verdicts. Its score applies to those selected natural revision pairs. [Frozen case IDs](split.json) · [VitaminC dataset](https://huggingface.co/datasets/tals/vitaminc/tree/be6febb761b0b2807687e61e0b5282e459df2fa0)

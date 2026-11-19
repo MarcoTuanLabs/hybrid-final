@@ -64,6 +64,8 @@ On 96 corrected MQuAKE development questions, a supervised text parser followed 
 
 ## Dated Wikipedia revisions
 
+On 44 new VitaminC development pages, a reader that jointly predicted the two revised verdicts from Qwen's middle layer scored 65/88, full Qwen replay scored 52/88, and published ALBERT-xlarge scored 67/88. [Earlier paired pilots](experiments/vitaminc_read) · [Stratified natural revision pilot and all comparators](experiments/vitaminc_joint)
+
 On 20 DynaQuest pages with changing answers, Qwen3.5-4B answered 28 of 40 dated questions correctly when shown both editions and 25 when shown only the requested edition. A factorial cache probe compared the old and new reference answers directly. On the six pages with two errors in the 4B mixed-context baseline, 9B favored the correct pairing on five but freely produced both answers on zero. The attention cache supplied the larger median contribution to the old/new log-odds difference at both model sizes. [Dated evidence, scope and complete results](experiments/dated_versions/README.md)
 
 ## Answering the same question after a page changes

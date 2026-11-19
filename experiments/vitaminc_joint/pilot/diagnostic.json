@@ -1,0 +1,61 @@
+{
+  "pages": 44,
+  "type_correct": 28,
+  "stable_or_changed_correct": 35,
+  "correct_if_unordered_gold_pair_supplied": 80,
+  "oriented_changed_pages_if_gold_pair_supplied": 32,
+  "changed_pages": 36,
+  "by_true_type": [
+    {
+      "pair": [
+        "supports",
+        "supports"
+      ],
+      "pages": 7,
+      "predicted_pair_correct": 1,
+      "actual_endpoint_correct": 10,
+      "given_pair_endpoint_correct": 14
+    },
+    {
+      "pair": [
+        "supports",
+        "refutes"
+      ],
+      "pages": 16,
+      "predicted_pair_correct": 13,
+      "actual_endpoint_correct": 26,
+      "given_pair_endpoint_correct": 28
+    },
+    {
+      "pair": [
+        "supports",
+        "insufficient"
+      ],
+      "pages": 16,
+      "predicted_pair_correct": 14,
+      "actual_endpoint_correct": 25,
+      "given_pair_endpoint_correct": 28
+    },
+    {
+      "pair": [
+        "refutes",
+        "insufficient"
+      ],
+      "pages": 4,
+      "predicted_pair_correct": 0,
+      "actual_endpoint_correct": 3,
+      "given_pair_endpoint_correct": 8
+    },
+    {
+      "pair": [
+        "insufficient",
+        "insufficient"
+      ],
+      "pages": 1,
+      "predicted_pair_correct": 0,
+      "actual_endpoint_correct": 1,
+      "given_pair_endpoint_correct": 2
+    }
+  ],
+  "purpose": "Post-hoc diagnostic with access to the true unordered label pair. The service has no such access."
+}

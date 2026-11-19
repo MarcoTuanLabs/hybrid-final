@@ -1,0 +1,134 @@
+{
+  "pages": 44,
+  "endpoints": 88,
+  "stable": 16,
+  "fitted_pages": 240,
+  "label_counts": [
+    46,
+    20,
+    22
+  ],
+  "methods": {
+    "structured": {
+      "correct": 65,
+      "stable": 11,
+      "changed": 54,
+      "both": 24,
+      "wins_vs_primary": 0,
+      "losses_vs_primary": 0
+    },
+    "direct": {
+      "correct": 64,
+      "stable": 13,
+      "changed": 51,
+      "both": 23,
+      "wins_vs_primary": 11,
+      "losses_vs_primary": 12
+    },
+    "components": {
+      "correct": 56,
+      "stable": 7,
+      "changed": 49,
+      "both": 17,
+      "wins_vs_primary": 4,
+      "losses_vs_primary": 13
+    },
+    "full": {
+      "correct": 52,
+      "stable": 4,
+      "changed": 48,
+      "both": 19,
+      "wins_vs_primary": 6,
+      "losses_vs_primary": 19
+    },
+    "previous": {
+      "correct": 14,
+      "stable": 4,
+      "changed": 10,
+      "both": 2,
+      "wins_vs_primary": 7,
+      "losses_vs_primary": 58
+    },
+    "contrast": {
+      "correct": 53,
+      "stable": 4,
+      "changed": 49,
+      "both": 20,
+      "wins_vs_primary": 7,
+      "losses_vs_primary": 19
+    },
+    "explicit": {
+      "correct": 55,
+      "stable": 6,
+      "changed": 49,
+      "both": 18,
+      "wins_vs_primary": 6,
+      "losses_vs_primary": 16
+    },
+    "albert-base-vitaminc-mnli": {
+      "correct": 66,
+      "stable": 9,
+      "changed": 57,
+      "both": 26,
+      "wins_vs_primary": 9,
+      "losses_vs_primary": 8
+    },
+    "albert-base-vitaminc-mnli_structured": {
+      "correct": 67,
+      "stable": 9,
+      "changed": 58,
+      "both": 26,
+      "wins_vs_primary": 10,
+      "losses_vs_primary": 8
+    },
+    "albert-base-vitaminc-mnli_direct": {
+      "correct": 67,
+      "stable": 9,
+      "changed": 58,
+      "both": 26,
+      "wins_vs_primary": 9,
+      "losses_vs_primary": 7
+    },
+    "albert-base-vitaminc-mnli_components": {
+      "correct": 68,
+      "stable": 9,
+      "changed": 59,
+      "both": 27,
+      "wins_vs_primary": 10,
+      "losses_vs_primary": 7
+    },
+    "albert-xlarge-vitaminc": {
+      "correct": 67,
+      "stable": 10,
+      "changed": 57,
+      "both": 28,
+      "wins_vs_primary": 10,
+      "losses_vs_primary": 8
+    },
+    "albert-xlarge-vitaminc_structured": {
+      "correct": 73,
+      "stable": 11,
+      "changed": 62,
+      "both": 31,
+      "wins_vs_primary": 13,
+      "losses_vs_primary": 5
+    },
+    "albert-xlarge-vitaminc_direct": {
+      "correct": 66,
+      "stable": 9,
+      "changed": 57,
+      "both": 27,
+      "wins_vs_primary": 10,
+      "losses_vs_primary": 9
+    },
+    "albert-xlarge-vitaminc_components": {
+      "correct": 68,
+      "stable": 10,
+      "changed": 58,
+      "both": 28,
+      "wins_vs_primary": 11,
+      "losses_vs_primary": 8
+    }
+  },
+  "promote": false
+}

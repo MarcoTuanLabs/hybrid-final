@@ -1,0 +1,111 @@
+{
+  "pages": 24,
+  "claims": 48,
+  "endpoints": 96,
+  "stable": 10,
+  "changed": 86,
+  "label_counts": {
+    "0": 51,
+    "2": 3,
+    "1": 42
+  },
+  "methods": {
+    "full": {
+      "correct": 66,
+      "changed": 62,
+      "stable": 4,
+      "pair_both": 22,
+      "endpoint_wins_vs_full": 0,
+      "endpoint_losses_vs_full": 0
+    },
+    "stale": {
+      "correct": 15,
+      "changed": 11,
+      "stable": 4,
+      "pair_both": 0,
+      "endpoint_wins_vs_full": 4,
+      "endpoint_losses_vs_full": 55
+    },
+    "raw_lens": {
+      "correct": 51,
+      "changed": 43,
+      "stable": 8,
+      "pair_both": 4,
+      "endpoint_wins_vs_full": 15,
+      "endpoint_losses_vs_full": 30
+    },
+    "absolute_teacher": {
+      "correct": 66,
+      "changed": 60,
+      "stable": 6,
+      "pair_both": 21,
+      "endpoint_wins_vs_full": 10,
+      "endpoint_losses_vs_full": 10
+    },
+    "absolute_labels": {
+      "correct": 79,
+      "changed": 72,
+      "stable": 7,
+      "pair_both": 32,
+      "endpoint_wins_vs_full": 15,
+      "endpoint_losses_vs_full": 2
+    },
+    "paired": {
+      "correct": 63,
+      "changed": 56,
+      "stable": 7,
+      "pair_both": 21,
+      "endpoint_wins_vs_full": 4,
+      "endpoint_losses_vs_full": 7
+    },
+    "paired_labels": {
+      "correct": 79,
+      "changed": 73,
+      "stable": 6,
+      "pair_both": 32,
+      "endpoint_wins_vs_full": 15,
+      "endpoint_losses_vs_full": 2
+    },
+    "native_delta": {
+      "correct": 15,
+      "changed": 11,
+      "stable": 4,
+      "pair_both": 0,
+      "endpoint_wins_vs_full": 4,
+      "endpoint_losses_vs_full": 55
+    },
+    "old_transition": {
+      "correct": 69,
+      "changed": 63,
+      "stable": 6,
+      "pair_both": 24,
+      "endpoint_wins_vs_full": 19,
+      "endpoint_losses_vs_full": 16
+    },
+    "prior_absolute": {
+      "correct": 68,
+      "changed": 63,
+      "stable": 5,
+      "pair_both": 25,
+      "endpoint_wins_vs_full": 11,
+      "endpoint_losses_vs_full": 9
+    },
+    "prior_full": {
+      "correct": 61,
+      "changed": 57,
+      "stable": 4,
+      "pair_both": 24,
+      "endpoint_wins_vs_full": 3,
+      "endpoint_losses_vs_full": 8
+    },
+    "full_contrast": {
+      "correct": 69,
+      "changed": 64,
+      "stable": 5,
+      "pair_both": 25,
+      "endpoint_wins_vs_full": 5,
+      "endpoint_losses_vs_full": 2
+    }
+  },
+  "promote": false
+}

@@ -1,7 +1,7 @@
 {
-  "version": 21,
+  "version": 22,
   "branch": "main",
-  "parent_commit": "e92d883fd7d1ecd90d80455b2181893b84b4c517",
+  "parent_commit": "cea7d6c4513c6373c67c1aee073fa3a612d501c9",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 14007,
-      "sha256": "d43f07412f4a74bfa08295f5b4b601a45ebb0ebdebeeb971e09c5c43e321eda4",
-      "git_blob_sha1": "2cb911fa9e5436e2cdb8ad7f73f336c7a04f6600"
+      "bytes": 14353,
+      "sha256": "c1fa4243208497919156458a33de15034da8ecd2f09fcf5a3bd52e6dfeaefdcc",
+      "git_blob_sha1": "585b86e4f336bdbef8a0a72a65713697b9f85170"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -3290,6 +3290,234 @@
       "bytes": 1282,
       "sha256": "061d7e63cc51d8f46d50f7d9f803f0071e1fd4add523283de19e61dedbe03e85",
       "git_blob_sha1": "ad717b18197cf5f220d8602f645c9495cb6def54"
+    },
+    {
+      "path": "experiments/vitaminc_joint/README.md",
+      "bytes": 4150,
+      "sha256": "275f8c8c4393d34a308be19eb3b9242fcff5aecd6412e91ebb5f9750a627c39a",
+      "git_blob_sha1": "0ed191a4e0c50dded5ce5c4b71ca69d8ab6e2b0e"
+    },
+    {
+      "path": "experiments/vitaminc_joint/collect.py",
+      "bytes": 2357,
+      "sha256": "a8e0274702460246a52e2124cca36a50d04afdd038db7c8431f77a7cd33219f0",
+      "git_blob_sha1": "2084cd90a8a3b1f9a6d57090242f7270992af00d"
+    },
+    {
+      "path": "experiments/vitaminc_joint/contract.json",
+      "bytes": 2086,
+      "sha256": "2d9c4a57872d1e79dcd47434a0295604892abf4f041d8cc961f1ef2958443bd3",
+      "git_blob_sha1": "470f52fcd67574427ce39728f73395e58586a2a3"
+    },
+    {
+      "path": "experiments/vitaminc_joint/diagnose.py",
+      "bytes": 2769,
+      "sha256": "9a5b91523006d50258528909371339c96547c06cf1b4a0b16f727bda341dcb33",
+      "git_blob_sha1": "8e547065049055c87bcc453e412983f3f5d36b75"
+    },
+    {
+      "path": "experiments/vitaminc_joint/frozen_files.json",
+      "bytes": 511,
+      "sha256": "5d8cebe2d9a4a19bd06d77519858a8dd2ae0a799c44c452c6aa33b4699166068",
+      "git_blob_sha1": "1b9eb39dc094b830663baad2ef8d0a1136d9cf89"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pairs.py",
+      "bytes": 2929,
+      "sha256": "708550aa7198b2c402ea08c2cf9cc7c3c15ccbd3edaf33712510247c2cd4e789",
+      "git_blob_sha1": "eb7c3f7c5ececf99681aa83867d8f7ba901cc0e6"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/albert-base-vitaminc-mnli-fit.jsonl",
+      "bytes": 54981,
+      "sha256": "47e4d254a564c469a834d70e8d62215177effb5233e186eb27fb288016ff0cff",
+      "git_blob_sha1": "73f840effc5497775012b1b897568f0d1794daac"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/albert-base-vitaminc-mnli-pilot.jsonl",
+      "bytes": 10055,
+      "sha256": "9cda8bd9f063b9970cf9958151afe28f1d7f574be474cacd6e4c9301e1241227",
+      "git_blob_sha1": "2d1e08eb768b883c377ee579c62db6f8dafa55f0"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/albert-xlarge-vitaminc-fit.jsonl",
+      "bytes": 54906,
+      "sha256": "7fc6eaeb0ec5e2a2a6355f8a533c8a2cda521f4257890f83ffc05d4862b29821",
+      "git_blob_sha1": "7afde0181dcec18e46913a1bdeca33605493ef25"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/albert-xlarge-vitaminc-pilot.jsonl",
+      "bytes": 10060,
+      "sha256": "6a13339ebaea061341ba26845c0654cbbc7dedc5899871c79f0a857c314662cd",
+      "git_blob_sha1": "ff4900b7862e2d33f8a97e16e8532d0842ae2190"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/diagnostic.json",
+      "bytes": 1388,
+      "sha256": "e9ba3baf2567cb5d2e3f904a9aa53d8359c169a4278a6d64979d3790d1866342",
+      "git_blob_sha1": "1570a625aa055eba91ec7bb0bd236d63e076ac4a"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/rows.jsonl",
+      "bytes": 29040,
+      "sha256": "f37bb2a20ec9642ea278e1adb138bfb22b4e7f9d900026f3ac0c26247e859031",
+      "git_blob_sha1": "0ba171bf8fc21fe41e2da8cd801c8457c9f57ffd"
+    },
+    {
+      "path": "experiments/vitaminc_joint/pilot/summary.json",
+      "bytes": 2775,
+      "sha256": "9f678e76e23a09ddf3f247b8b9d5a28b0b436bdd89e73327b3c3693d3f7ea343",
+      "git_blob_sha1": "8fc026fd57ce3dd74c6e9f216a86075e7a309103"
+    },
+    {
+      "path": "experiments/vitaminc_joint/special.py",
+      "bytes": 2122,
+      "sha256": "58456828bc3220ca9acf253362b138d087b037d4a7aaf5b9fedb98fdf8af7e9d",
+      "git_blob_sha1": "654f27028e6fd5c7a7891b3e89094a4e1145bf91"
+    },
+    {
+      "path": "experiments/vitaminc_joint/split.json",
+      "bytes": 49451,
+      "sha256": "64a96b22e48d1d5dbe735dd29a42b645aa506baed4c6cb8b74e2ed7f7f9778dc",
+      "git_blob_sha1": "431c7a750bffbece5cebca44e6cf31a0dcb8aa41"
+    },
+    {
+      "path": "experiments/vitaminc_joint/structured.py",
+      "bytes": 4659,
+      "sha256": "0bff6e559d4137b1a0993cef343db173c61859a20b6cb983b4a4ba7f86834c60",
+      "git_blob_sha1": "1c9b881513d31d665b107ddea535d76e8a1c0592"
+    },
+    {
+      "path": "experiments/vitaminc_joint/verify.py",
+      "bytes": 2992,
+      "sha256": "7de45c6254f9665c4ae6da361b6d3cd78ce2dbe9ab2cce0b09e2c18c686bccff",
+      "git_blob_sha1": "d96e0721e6bc58f46d882380350075b6505276c8"
+    },
+    {
+      "path": "experiments/vitaminc_read/README.md",
+      "bytes": 4514,
+      "sha256": "2f49ffc03bfd5bceaf3eb305b90f846ad96708b5545f021b07528a051ed5532d",
+      "git_blob_sha1": "b06d1801a7356f067438d792f074f206d817c6fa"
+    },
+    {
+      "path": "experiments/vitaminc_read/component_contract.json",
+      "bytes": 1185,
+      "sha256": "4d873a2b48f4b2f103fb9dfef2c00bb93d81b5bd3aacf3b3eccac17265d08474",
+      "git_blob_sha1": "5173475ed9bfb1a929e0edd305398abfa5429d82"
+    },
+    {
+      "path": "experiments/vitaminc_read/contract.json",
+      "bytes": 2060,
+      "sha256": "06bb58238ce9c6643bf02405c9a6cb2bd45cfa7f65ee1c5b5212fedcca90b6ea",
+      "git_blob_sha1": "7c3eea044575cf0058e4c5e030947d27f500e9fa"
+    },
+    {
+      "path": "experiments/vitaminc_read/data.py",
+      "bytes": 2997,
+      "sha256": "dc8f1651d09a949bcb5dbd52b74e397775f701909946b0f3fd08c10211df2c5c",
+      "git_blob_sha1": "2f87a34e38331fe0553376e03cce5629a8a1d7ca"
+    },
+    {
+      "path": "experiments/vitaminc_read/decompose.py",
+      "bytes": 3081,
+      "sha256": "3449c0dc357664c15377e3f8d96e345ccfc1913ac7d2f80b8e2a362e6b683229",
+      "git_blob_sha1": "aee3dfeb50eaf3924269f24af241fd9a0d1d7c32"
+    },
+    {
+      "path": "experiments/vitaminc_read/frozen_files.json",
+      "bytes": 687,
+      "sha256": "480b29f840382c4e415383b5b4509e36bf65ff5aef22c0fe07e24cf1d0fad17c",
+      "git_blob_sha1": "c014c7142867b364767417a977603a73a712d870"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/albert-base-vitaminc-mnli-pilot.jsonl",
+      "bytes": 11356,
+      "sha256": "865af8f724deefdf07beea5d1e842f3a2b54a2ff21f98dbc92ada5617a567a56",
+      "git_blob_sha1": "0359c06384b8d6c79ea39c01ae180ca613cefe58"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/albert-xlarge-vitaminc-pilot.jsonl",
+      "bytes": 11372,
+      "sha256": "3ea63b1c988df474f5ce10e8df97e0115340ed0157b7d6802dd891ead732af1a",
+      "git_blob_sha1": "d1207057b5613aec02a11aa26480b76ec836a1f1"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/component_rows.jsonl",
+      "bytes": 8640,
+      "sha256": "99755f0939f247f10bd99979b5096846dac22d91ad129b2394528882b555717c",
+      "git_blob_sha1": "a6e7800ce38c0d45e6db27a94b9603ff536799d1"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/component_summary.json",
+      "bytes": 1397,
+      "sha256": "8bbb2f4aecebf771dd738eded205a5a2742013dd2ee2c87025786679f068b08f",
+      "git_blob_sha1": "7ab511b04d576542cd571f8f1918bea360446912"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/rows.jsonl",
+      "bytes": 24285,
+      "sha256": "9717a0c9b8c3afe90af7cf89c846fcde03b79ad1aefa9bd4801f08aa365ecdf9",
+      "git_blob_sha1": "30cd4c73058b53751450bfeba5b13dd44c2fe036"
+    },
+    {
+      "path": "experiments/vitaminc_read/pilot/summary.json",
+      "bytes": 2365,
+      "sha256": "b5ca665debef78fe331f163b748d509acb84dcae77ba45a2840f9a7a9a133b8e",
+      "git_blob_sha1": "f7f733eb8a03165e5d6605d160e6fdc4d069875a"
+    },
+    {
+      "path": "experiments/vitaminc_read/run.py",
+      "bytes": 3778,
+      "sha256": "8c5f5ed2e17afb47aa6d93efde55d1c72967b90d440c2e36744abbbdc117b3ef",
+      "git_blob_sha1": "c2fe46eacb5b111d00f42005fe6b43d11be28e3a"
+    },
+    {
+      "path": "experiments/vitaminc_read/score.py",
+      "bytes": 4279,
+      "sha256": "8d50b00f61d211fb6aeff18746b187092f36a738faad4a3d8e95b99b43069256",
+      "git_blob_sha1": "8b4bf7b8da43358091aa21618b62aacf7e226a04"
+    },
+    {
+      "path": "experiments/vitaminc_read/specialist.py",
+      "bytes": 2315,
+      "sha256": "735dbed53a7c10a8fe250e9f44706d322ab11e0783c1338faced54c687559a5c",
+      "git_blob_sha1": "3648f74ebaa4a0a6d19bccfdedddf64585e7acfd"
+    },
+    {
+      "path": "experiments/vitaminc_read/split.json",
+      "bytes": 64827,
+      "sha256": "ee516f2f69d4154058e764ae42b6fbacb68e9369d13ad30e02d82ab8d1b3b254",
+      "git_blob_sha1": "a72daa47fd4b0ffb8d6920644d622033191af675"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/README.md",
+      "bytes": 1131,
+      "sha256": "c0ef8b66b697528102f971445e394fa5656096acfd4189a11ffae45abb259efc",
+      "git_blob_sha1": "0ca21c5121f33062ee97cbf7999499ce29729e3c"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/analyze.py",
+      "bytes": 3722,
+      "sha256": "35d34d16633279195834cd8b21e0b1c2cfab19ce321067d4618ed9d5c72fd0df",
+      "git_blob_sha1": "6be8d03a1f245790e2234984b7a76dcf278e21b4"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/contract.json",
+      "bytes": 1918,
+      "sha256": "6d4a322adffb37ae8dd2dbb7751da92cc5079893cdcf3563f233476527276dff",
+      "git_blob_sha1": "6c348bc7d9f9016497895d4c152b69a83722a357"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/split.json",
+      "bytes": 39163,
+      "sha256": "dc72b75874eaaf68b5d60fe087d727587f1169ff125ee13f312db810abe396c1",
+      "git_blob_sha1": "fc769da88743b5f5b896cb14bfeba3f6da20c4a3"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/transfer.py",
+      "bytes": 3161,
+      "sha256": "b9cf866386358add0cfea2dac7dbe874cb24bd53c8dd3b4ecdcd78e58d94d49f",
+      "git_blob_sha1": "981cbcdb694ac382add026ddb5d769c5d524dc97"
     },
     {
       "path": "figures/control_and_cost.pdf",

@@ -1,0 +1,6 @@
+{
+  "hypothesis": "The native layer-16 read contains a large claim-specific component and a smaller version-specific component. Fit the mean and signed half-difference of the two early reads to the mean and signed half-difference of the two one-hot labels with separate fixed ridge scales. Recombine them to score the new edition. Swapping the two inputs swaps the two predictions. The old label is unavailable.",
+  "status_at_freeze": "First pilot outputs for Qwen available. This is a follow-up on the same 24 development pages. All 96 confirmation pages remain unevaluated.",
+  "targets": "Same local model, unchanged split. Primary paired_components must gain >=4 of 96 over the strongest single or paired Qwen comparison, at least match both of the publisher's independent ALBERT checkpoints, and lose at most one correct stable endpoint in aggregate relative to the direct supervised head. Otherwise discard from deployment and do not open the held-out split.",
+  "budget": "No new Qwen feature evaluations for development. Use authors' base VitaminC/MNLI and xlarge VitaminC weights, each under 600 seconds on M5. No paid service. Timing needs separate services if promoted."
+}
