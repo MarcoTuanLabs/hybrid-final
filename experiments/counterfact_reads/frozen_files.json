@@ -1,0 +1,8 @@
+{
+  "contract.json": "68a4debd3672e2cb33d5b81aae22c8071b337e63d5da0db5ca334f3b7a0d64a0",
+  "cases.json": "f390d5d56eee6ee33a2cb87c3e568de5489bbeace3206353e0a9cf3e2155f160",
+  "geometry.py": "5c7881f5de9936dabe7b9d4283e645a0ca75e6d72c4e64b751cbbd9e2ec9a511",
+  "cases.py": "cf29441ba915d5f075cb8bbb09d2d5e69b8481602f54d80f930e1bb12abe55f2",
+  "probe.py": "e24f4d1d0c2a7f39c7e35c6fd962c8803ed2146e46712485bd9ab58305686919",
+  "score.py": "5b8d7015e733c9fe06a5c17b44eea5b91144f0964dd8d0a8d6d98fc0f99f58ef"
+}
