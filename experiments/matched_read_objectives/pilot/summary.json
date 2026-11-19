@@ -1,0 +1,66 @@
+{
+  "phase": "pilot",
+  "targets": 16,
+  "controls": 48,
+  "methods": {
+    "deployed": {
+      "target": 13,
+      "controls": 48,
+      "p_one_sided": 1.0,
+      "finite_wins": 0,
+      "finite_losses": 0,
+      "solver_seconds": null
+    },
+    "finite": {
+      "target": 13,
+      "controls": 48,
+      "p_one_sided": 1.0,
+      "finite_wins": 0,
+      "finite_losses": 0,
+      "solver_seconds": 1.7775341211818159
+    },
+    "raw": {
+      "target": 0,
+      "controls": 48,
+      "p_one_sided": 0.007969920300796992,
+      "finite_wins": 13,
+      "finite_losses": 0,
+      "solver_seconds": 1.4795051263645291
+    },
+    "first": {
+      "target": 14,
+      "controls": 48,
+      "p_one_sided": 1.0,
+      "finite_wins": 0,
+      "finite_losses": 1,
+      "solver_seconds": 1.8171624979004264
+    },
+    "raw_own": {
+      "target": 0,
+      "controls": 48,
+      "p_one_sided": 0.007969920300796992,
+      "finite_wins": 13,
+      "finite_losses": 0,
+      "solver_seconds": 1.4387216727482155
+    },
+    "first_own": {
+      "target": 14,
+      "controls": 48,
+      "p_one_sided": 1.0,
+      "finite_wins": 0,
+      "finite_losses": 1,
+      "solver_seconds": 1.6343674974050373
+    },
+    "rows": {
+      "target": 0,
+      "controls": 48,
+      "p_one_sided": 0.007969920300796992,
+      "finite_wins": 13,
+      "finite_losses": 0,
+      "solver_seconds": 0.15252166846767068
+    }
+  },
+  "finite_agrees_with_deployed": 64,
+  "advantage_over_best": -1,
+  "pass_gate": false
+}

@@ -1,0 +1,33 @@
+{
+  "finite_max_logit_difference": 0.0,
+  "comparisons": {
+    "deployed": {
+      "wins": 0,
+      "losses": 0
+    },
+    "finite": {
+      "wins": 0,
+      "losses": 0
+    },
+    "raw": {
+      "wins": 13,
+      "losses": 0
+    },
+    "first": {
+      "wins": 0,
+      "losses": 1
+    },
+    "raw_own": {
+      "wins": 13,
+      "losses": 0
+    },
+    "first_own": {
+      "wins": 0,
+      "losses": 1
+    },
+    "rows": {
+      "wins": 13,
+      "losses": 0
+    }
+  }
+}

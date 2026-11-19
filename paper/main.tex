@@ -67,18 +67,10 @@ the donor's letter has the highest score in the full vocabulary
 immediately after the suffix.
 
 \paragraph{Changing a stored value in 9B.}
-The donor exchanges two dictionary assignments, changing the requested
-value. I copy its newest convolution-value slot into the recipient at
-layer 28, heads 28 and 29, for a total of 256 scalar coordinates. The
-recipient keeps its own prompt. One shared query can change at each of
-the final four prompt positions.
+The donor swaps two assignments. I copy its newest convolution-value slot at layer 28, heads 28 and 29, into the recipient (256 scalars). I vary one shared query at each of the four suffix positions.
 
 \paragraph{Redirecting a retrieval address in 27B.}
-The donor keeps the dictionary fixed and asks about another key. I
-copy nine recurrent/convolution groups into the recipient, writing
-465,408 coordinates. Queries can change at four positions in four
-selected layers, for a total of 16 slots. The intended answer is the
-value associated with the donor's key.
+The donor asks about a different key in the same dictionary. I copy nine recurrent/convolution groups (465,408 scalars) and vary queries at four positions in four layers. The target is the donor key's value.
 
 \begin{table}[t]
 \centering
@@ -95,16 +87,11 @@ Value heads per shared query & 2 & 3\\
 Query dimension & 128 & 128\\
 \bottomrule
 \end{tabular}
-\caption{Evaluation cohorts and intervention budgets. Each seed has two
-presentations. Readers share the write and available query slots within
-each model. The 27B results use the final single-start confirmation cohort.}
+\caption{Independent cohorts and intervention budgets. Readers share the write and query slots within each model.}
 \label{tab:design}
 \end{table}
 
-I fixed all sites on development inputs and wrote before the four suffix
-positions. All indices are zero-based. A nuisance write changes other
-assignments. Two unwritten controls apply the target and nuisance readers
-without a write. All three should return the recipient's original answer.
+I fixed the sites on development inputs and wrote before the suffix. Indices start at zero. Three controls should preserve the original answer. They comprise a nuisance write to other assignments and unwritten versions of each read.
 
 \section{Normalization-Aware Readout}
 \subsection{Forecasting the State Difference}
@@ -265,8 +252,8 @@ and synchronized continuation. I rotate method order. BF16 runs use
 an NVIDIA RTX PRO 6000 Blackwell for 27B and an NVIDIA GB10 for 9B.
 
 \paragraph{Which part of the read carries the write?}
-On an Apple M5 with four-bit 9B, I separated direction from length \citep{aparin2026} by measuring both head reads before RMS normalization at all four suffix positions. I held the optimized query fixed and exchanged the written and unwritten directions or lengths head by head.
-On 64 new seeds (128 targets), the complete read controlled 99 answers, compared with 68 for whitened key. Direction alone retained 95 of the 99 successes and added none. Length alone controlled none. Restoring both complete reads reproduced every unwritten vocabulary logit on all 256 target and nuisance presentations. I averaged the angle between written and unwritten reads over heads and positions. Its median rose from 19 degrees with the native query to 90 degrees with the optimized query.
+On an Apple M5 with four-bit 9B, I fixed the optimized query and exchanged the directions or lengths of written and unwritten reads before normalization at both heads and all four positions \citep{aparin2026}.
+On 64 new seeds (128 targets), the complete read controlled 99 answers, compared with 68 for whitened key. Direction alone retained 95 of the 99 successes and added none. Length alone controlled none. Restoring both complete reads reproduced every unwritten vocabulary logit on all 256 target and nuisance presentations. The median within-presentation mean angle rose from 19 degrees to 90 degrees under optimization.
 
 \section{Encoding the State Change a Suffix Reads}
 SketchSSM transports queries to a state boundary and reconstructs their reads from a sketch \citep{kwon2026}. I apply its exact-span case to a state difference and a known four-token suffix. The receiver holds the old cache. Both sides have the donor attention cache and convolution histories.
@@ -285,10 +272,7 @@ Replacing $\Delta S_{h,0}$ with $V_hV_h^{\top}\Delta S_{h,0}$ preserves each of 
 in exact arithmetic. The sender transmits $V_h$ and $\Delta S_{h,0}^{\top}V_h$.
 The receiver reconstructs the dense matrix and generates freely beyond the four known positions.
 
-I fixed the codec on 24 bAbI QA1 training stories and 24 MQuAKE
-development cases. I then tested 32 official bAbI test stories and 32
-previously unused MQuAKE-CF-3k-v2 cases, each with an updated and a
-stable or unrelated question \citep{weston2016,zhong2023}. The updates change one character's location in bAbI and replace facts in MQuAKE.
+I fixed the codec on 24 bAbI QA1 training stories and 24 MQuAKE development cases. Testing used 32 official bAbI test stories and 32 unused MQuAKE-CF-3k-v2 cases, each with an updated and a stable or unrelated question \citep{weston2016,zhong2023}.
 
 On 4-bit Qwen3.5-9B, four FP32 directions per head reduced the recurrent
 update from 48 to 3 MiB. All 128 freely generated token sequences
@@ -304,9 +288,7 @@ on MQuAKE and 0.508 on bAbI. The byte counts exclude shared donor caches
 and local dense reconstruction.
 
 \paragraph{When the same question returns.}
-I tested a separate text-only update for repeated questions on a known page. It maps the saved answer through the passage edits. I rerun the reader if alignment fails or one answer
-exceeds 1.5 times the other's word count. I fixed this rule on 32
-HoH-QAs pages and tested 96 others \citep{ouyang2025}. On 4-bit 9B,
+For repeated questions I align the saved answer through the passage edit, rereading if alignment fails or one answer exceeds 1.5 times the other’s word count. I fixed the rule on 32 HoH-QAs pages and tested 96 others \citep{ouyang2025}. On 4-bit 9B,
 repair gained two exact matches and lost one against prefix replay
 (80/96 versus 79/96). Across both editions it cut estimated arithmetic
 by 28.2\% and time from 131.56 to 87.02 seconds. A CPU span reader
@@ -327,26 +309,20 @@ four positions by total squared cache change gave 96. These cache transplants \c
 original holder of the country answered 99 using the known swap and the old cache.
 
 \section{Relation to Prior Work}
-Linear attention stores associations as fast weights \citep{schlag2021}.
-Gated DeltaNet adds retention and delta-rule correction \citep{yang2025}.
-Attention can carry a retrieved value \citep{afendulev2026,lee2026},
-and recurrent layers can construct its address \citep{zeng2026}.
-CCQ tests covariance-based query correction at inference \citep{le2026}. Muir tests replacement gains in a frozen checkpoint \citep{gangavarapu2026}. GeoSteer optimizes fixed-norm activations against a learned probe \citep{ngo2026}. My objective uses the finite normalized contrast of a specified write. On 32 fresh seeds in frozen four-bit 9B, this reader
+Gated DeltaNet extends fast-weight memory with retention and delta updates \citep{schlag2021,yang2025}. Attention can carry a value \citep{afendulev2026,lee2026} and recurrence its address \citep{zeng2026}.
+CCQ ablates covariance-based query correction in a trained checkpoint \citep{le2026}. Muir tests replacement gains in a frozen checkpoint \citep{gangavarapu2026}. GeoSteer optimizes fixed-norm activations against a learned probe \citep{ngo2026}. My objective uses the finite normalized contrast of a specified write. On 32 fresh seeds in frozen four-bit 9B, this reader
 controlled 57/64 targets and state-Gram whitening controlled 30/64.
 Three frozen-model adaptations that contract the native query by prefix-key covariance
 controlled none, even when Equation~\ref{eq:objective} selected the
 strength. Whitening the source key with that covariance also controlled
 none. All seven readers preserved all 192 controls.
+With identical writes and 16-step searches on eight development seeds, a first-order expansion in the write controlled 14/16 targets, finite normalized contrast 13, and raw contrast zero. All kept 48/48 controls. Finite contrast fell short of first order, leaving its registered confirmation cohort unused.
 SinkState adapts the SVD rank of recurrent states \citep{jiang2026}.
 ROME edits weights \citep{meng2022}. Paired controls isolate the
 behavioral effect of the runtime write \citep{zhang2024}.
 
 \section{Discussion and Conclusion}
-In both synthetic cohorts, optimizing the normalized read brought more
-written answers to the output. Direction carried most of the effect in
-the four-bit value-write test. In CAPITALS, four attention-cache positions
-carried most of the revised bindings. Whether the same positions suffice
-for unrestricted factual updates remains open.
+Normalized reads improved control in both synthetic cohorts. Read direction carried most of the four-bit value-write effect. Four attention-cache positions carried most revised CAPITALS bindings. Their reach on unrestricted updates remains open.
 
 \begin{thebibliography}{16}
 \bibitem[Afendulev et~al.(2026)]{afendulev2026}

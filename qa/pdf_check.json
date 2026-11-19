@@ -2,12 +2,12 @@
   "named": {
     "file": "output/pdf/hybrid_memory_working_paper.pdf",
     "pages": 4,
-    "bytes": 242075,
-    "sha256": "208d332c3451a9c4b2e5a443c2ffe4618b1f846baa69c5177f4fbd8a211493e6",
+    "bytes": 241648,
+    "sha256": "9757a6835671721af31a765515d1bd9e65b89626bc8ea6b78a0f5a57e1f3f1ce",
     "author": "Lu-Yen Marco Tuan",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Reviewed all four pages, including equations and first-use definitions, two-column layout, graph and corrected prior-work attributions.",
+    "visual_review": "Reviewed all four rendered pages, displayed equations, figure, references and anonymous author treatment. Verified development status and counts for the matched-objective comparison and the cited prior work.",
     "related_work_source": "https://arxiv.org/abs/2606.01294",
     "binding_confirmation_source": "experiments/binding_confirmation/summary.json",
     "prior_work_sources": [
@@ -16,17 +16,18 @@
       "https://arxiv.org/abs/2609.10658",
       "https://arxiv.org/abs/2606.01294",
       "https://arxiv.org/abs/2611.08376"
-    ]
+    ],
+    "matched_objective_source": "experiments/matched_read_objectives/pilot/summary.json"
   },
   "review": {
     "file": "output/pdf/hybrid_dai_review.pdf",
     "pages": 4,
-    "bytes": 241863,
-    "sha256": "5bf8abc5f59e30f1c2be0d236fdf61d82458043be47a1c308d2f4464af6b550a",
+    "bytes": 241502,
+    "sha256": "2a09c57886bd7e241a6deb75dba0ddc9882d009544a9d7961360bd0c7a03ca4b",
     "author": "",
     "singular_voice_checked": true,
     "numeric_text_checked": true,
-    "visual_review": "Reviewed all four pages, including equations and first-use definitions, two-column layout, graph and corrected prior-work attributions.",
+    "visual_review": "Reviewed all four rendered pages, displayed equations, figure, references and anonymous author treatment. Verified development status and counts for the matched-objective comparison and the cited prior work.",
     "related_work_source": "https://arxiv.org/abs/2606.01294",
     "binding_confirmation_source": "experiments/binding_confirmation/summary.json",
     "prior_work_sources": [
@@ -35,6 +36,7 @@
       "https://arxiv.org/abs/2609.10658",
       "https://arxiv.org/abs/2606.01294",
       "https://arxiv.org/abs/2611.08376"
-    ]
+    ],
+    "matched_objective_source": "experiments/matched_read_objectives/pilot/summary.json"
   }
 }
