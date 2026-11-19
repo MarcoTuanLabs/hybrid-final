@@ -1,0 +1,71 @@
+{
+  "pages": 224,
+  "endpoints": 448,
+  "changed": 392,
+  "stable": 56,
+  "methods": {
+    "structured": {
+      "correct": 373,
+      "changed": 341,
+      "stable": 32,
+      "both": 154,
+      "wins_for_structured": 0,
+      "losses_for_structured": 0
+    },
+    "direct": {
+      "correct": 369,
+      "changed": 338,
+      "stable": 31,
+      "both": 150,
+      "wins_for_structured": 10,
+      "losses_for_structured": 6
+    },
+    "components": {
+      "correct": 367,
+      "changed": 336,
+      "stable": 31,
+      "both": 149,
+      "wins_for_structured": 9,
+      "losses_for_structured": 3
+    },
+    "native": {
+      "correct": 365,
+      "changed": 334,
+      "stable": 31,
+      "both": 146,
+      "wins_for_structured": 14,
+      "losses_for_structured": 6
+    },
+    "contrast": {
+      "correct": 372,
+      "changed": 343,
+      "stable": 29,
+      "both": 155,
+      "wins_for_structured": 14,
+      "losses_for_structured": 13
+    },
+    "transition_prior": {
+      "correct": 370,
+      "changed": 340,
+      "stable": 30,
+      "both": 152,
+      "wins_for_structured": 15,
+      "losses_for_structured": 12
+    },
+    "nine_class": {
+      "correct": 370,
+      "changed": 338,
+      "stable": 32,
+      "both": 152,
+      "wins_for_structured": 8,
+      "losses_for_structured": 5
+    }
+  },
+  "temperature": 2,
+  "minimum_paired_gain": 0.002232142857142857,
+  "minimum_gain_interval": [
+    -0.020089285714285716,
+    0.015625
+  ],
+  "confirmed": false
+}

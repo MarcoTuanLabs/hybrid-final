@@ -1,0 +1,80 @@
+{
+  "(0, 0)": {
+    "pages": 24,
+    "endpoints": 48,
+    "correct": {
+      "structured": 29,
+      "direct": 28,
+      "components": 28,
+      "native": 28,
+      "contrast": 26,
+      "transition_prior": 27,
+      "nine_class": 29
+    }
+  },
+  "(0, 1)": {
+    "pages": 92,
+    "endpoints": 184,
+    "correct": {
+      "structured": 158,
+      "direct": 163,
+      "components": 160,
+      "native": 163,
+      "contrast": 166,
+      "transition_prior": 166,
+      "nine_class": 159
+    }
+  },
+  "(0, 2)": {
+    "pages": 92,
+    "endpoints": 184,
+    "correct": {
+      "structured": 167,
+      "direct": 163,
+      "components": 164,
+      "native": 159,
+      "contrast": 164,
+      "transition_prior": 162,
+      "nine_class": 167
+    }
+  },
+  "(1, 1)": {
+    "pages": 2,
+    "endpoints": 4,
+    "correct": {
+      "structured": 2,
+      "direct": 2,
+      "components": 2,
+      "native": 2,
+      "contrast": 2,
+      "transition_prior": 2,
+      "nine_class": 2
+    }
+  },
+  "(1, 2)": {
+    "pages": 12,
+    "endpoints": 24,
+    "correct": {
+      "structured": 16,
+      "direct": 12,
+      "components": 12,
+      "native": 12,
+      "contrast": 13,
+      "transition_prior": 12,
+      "nine_class": 12
+    }
+  },
+  "(2, 2)": {
+    "pages": 2,
+    "endpoints": 4,
+    "correct": {
+      "structured": 1,
+      "direct": 1,
+      "components": 1,
+      "native": 1,
+      "contrast": 1,
+      "transition_prior": 1,
+      "nine_class": 1
+    }
+  }
+}

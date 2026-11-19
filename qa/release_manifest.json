@@ -1,7 +1,7 @@
 {
-  "version": 22,
+  "version": 23,
   "branch": "main",
-  "parent_commit": "cea7d6c4513c6373c67c1aee073fa3a612d501c9",
+  "parent_commit": "fba83140f8773d5371f35d273c61eb7ebfda74fb",
   "files": [
     {
       "path": ".gitignore",
@@ -11,9 +11,9 @@
     },
     {
       "path": "README.md",
-      "bytes": 14353,
-      "sha256": "c1fa4243208497919156458a33de15034da8ecd2f09fcf5a3bd52e6dfeaefdcc",
-      "git_blob_sha1": "585b86e4f336bdbef8a0a72a65713697b9f85170"
+      "bytes": 14632,
+      "sha256": "e100fc44088e35041fb59f0f90b727d0d923f59c8fb40cf07014b7073e3b2976",
+      "git_blob_sha1": "ff1ef2cf05f5f07082e9a669ac036b9b1685cf44"
     },
     {
       "path": "evidence/27b_receipt.json",
@@ -3491,15 +3491,39 @@
     },
     {
       "path": "experiments/vitaminc_transfer/README.md",
-      "bytes": 1131,
-      "sha256": "c0ef8b66b697528102f971445e394fa5656096acfd4189a11ffae45abb259efc",
-      "git_blob_sha1": "0ca21c5121f33062ee97cbf7999499ce29729e3c"
+      "bytes": 3671,
+      "sha256": "8f84617f4009a848f6345fefe9fed7949531797d7d49b7d575efae6adfcf5336",
+      "git_blob_sha1": "8ddcabdf0fa62ed36b737cc4187934d5de16dc11"
     },
     {
       "path": "experiments/vitaminc_transfer/analyze.py",
       "bytes": 3722,
       "sha256": "35d34d16633279195834cd8b21e0b1c2cfab19ce321067d4618ed9d5c72fd0df",
       "git_blob_sha1": "6be8d03a1f245790e2234984b7a76dcf278e21b4"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/confirmation/by_label_pair.json",
+      "bytes": 1459,
+      "sha256": "bc6043c2cc257ac8183f45d5bf3cf4a9ef5d416f9c1faa47e75b6378de1cbc68",
+      "git_blob_sha1": "996cf4725c64feb5a411be055f17808f9c4e9772"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/confirmation/logits.jsonl",
+      "bytes": 68215,
+      "sha256": "b1c648e4e59904803433c763af13a88e005d27922747e9a2e53dcc0be66bce36",
+      "git_blob_sha1": "46ad997bf4e9331933b5d6c70e05df55654d6fbd"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/confirmation/rows.jsonl",
+      "bytes": 73920,
+      "sha256": "1d504629991aac8478e071003ba5c8572427c5b804228dcb1211b6355bad74b9",
+      "git_blob_sha1": "e2b813020c92b372c9336d9e51a2fe86ad4d5865"
+    },
+    {
+      "path": "experiments/vitaminc_transfer/confirmation/summary.json",
+      "bytes": 1482,
+      "sha256": "c7f7b9298e79c00de1cb566eb9d71b6378944931365a5634a462a4b03e97d8e0",
+      "git_blob_sha1": "91d07ee0caee4ac47b8df48bf13f8145d5722b9f"
     },
     {
       "path": "experiments/vitaminc_transfer/contract.json",
