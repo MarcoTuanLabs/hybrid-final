@@ -1,0 +1,208 @@
+{
+  "part": "pilot",
+  "seeds": 8,
+  "requests": 64,
+  "targets": 16,
+  "controls": 48,
+  "methods": {
+    "joint": {
+      "target": 14,
+      "controls": 48,
+      "loss_of_any_ref": 0,
+      "mean_seconds": 0.519397690817641,
+      "sum_seconds": 33.24145221232902,
+      "target_mean_seconds": 0.5170314323841012,
+      "all_top_agree_joint": 64,
+      "writes_equal_joint": 64,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "window": {
+          "ratio": 1.1554512068301297,
+          "ci95": [
+            1.1420363423434616,
+            1.1686361420315625
+          ]
+        },
+        "packed": {
+          "ratio": 1.2051792170396687,
+          "ci95": [
+            1.164104199963778,
+            1.2614676557583402
+          ]
+        }
+      }
+    },
+    "window": {
+      "target": 14,
+      "controls": 48,
+      "loss_of_any_ref": 0,
+      "mean_seconds": 0.44951936329925957,
+      "sum_seconds": 28.769239251152612,
+      "target_mean_seconds": 0.44831185411749175,
+      "all_top_agree_joint": 64,
+      "writes_equal_joint": 0,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.8654627682145096,
+          "ci95": [
+            0.8556898701689497,
+            0.8756288770530695
+          ]
+        },
+        "window": {
+          "ratio": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        },
+        "packed": {
+          "ratio": 1.043037741373747,
+          "ci95": [
+            1.0144994728024321,
+            1.081951199538316
+          ]
+        }
+      }
+    },
+    "packed": {
+      "target": 14,
+      "controls": 48,
+      "loss_of_any_ref": 0,
+      "mean_seconds": 0.4309713306320191,
+      "sum_seconds": 27.58216516044922,
+      "target_mean_seconds": 0.43844095824169926,
+      "all_top_agree_joint": 64,
+      "writes_equal_joint": 0,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.8297521114381154,
+          "ci95": [
+            0.792727419870978,
+            0.8590164079708479
+          ]
+        },
+        "window": {
+          "ratio": 0.9587380785310188,
+          "ci95": [
+            0.9240495777126659,
+            0.9856330305783843
+          ]
+        },
+        "packed": {
+          "ratio": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ]
+        }
+      }
+    },
+    "reuse": {
+      "target": 0,
+      "controls": 48,
+      "loss_of_any_ref": 14,
+      "mean_seconds": 0.34060895705988514,
+      "sum_seconds": 21.79897325183265,
+      "target_mean_seconds": 0.3401457526779268,
+      "all_top_agree_joint": 50,
+      "writes_equal_joint": 0,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.6557768027880431,
+          "ci95": [
+            0.6464232777251143,
+            0.6638930572493921
+          ]
+        },
+        "window": {
+          "ratio": 0.7577180981926483,
+          "ci95": [
+            0.7460683128736384,
+            0.7697707634990404
+          ]
+        },
+        "packed": {
+          "ratio": 0.790328573736871,
+          "ci95": [
+            0.7643541886232733,
+            0.8216258095315512
+          ]
+        }
+      }
+    },
+    "tail": {
+      "target": 0,
+      "controls": 48,
+      "loss_of_any_ref": 14,
+      "mean_seconds": 0.37757732816135103,
+      "sum_seconds": 24.164949002326466,
+      "target_mean_seconds": 0.37527883849543286,
+      "all_top_agree_joint": 50,
+      "writes_equal_joint": 0,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.7269522657425855,
+          "ci95": [
+            0.71400814597511,
+            0.7381660115091611
+          ]
+        },
+        "window": {
+          "ratio": 0.8399578727601676,
+          "ci95": [
+            0.8254896759504676,
+            0.8542021514411808
+          ]
+        },
+        "packed": {
+          "ratio": 0.8761077624528625,
+          "ci95": [
+            0.847640707229949,
+            0.9105755029069609
+          ]
+        }
+      }
+    },
+    "residual": {
+      "target": 13,
+      "controls": 48,
+      "loss_of_any_ref": 1,
+      "mean_seconds": 0.37983878783052205,
+      "sum_seconds": 24.30968242115341,
+      "target_mean_seconds": 0.38207346356648486,
+      "all_top_agree_joint": 63,
+      "writes_equal_joint": 0,
+      "per_reference_time": {
+        "joint": {
+          "ratio": 0.731306269830688,
+          "ci95": [
+            0.7189027959927232,
+            0.742680527334726
+          ]
+        },
+        "window": {
+          "ratio": 0.844988712038309,
+          "ci95": [
+            0.8296776829776431,
+            0.8593283890529686
+          ]
+        },
+        "packed": {
+          "ratio": 0.8813551176907494,
+          "ci95": [
+            0.8510310642696501,
+            0.9179777053808956
+          ]
+        }
+      }
+    }
+  },
+  "meets_gate": false
+}

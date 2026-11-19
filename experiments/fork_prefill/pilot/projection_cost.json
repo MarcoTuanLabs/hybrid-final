@@ -1,0 +1,16 @@
+{
+  "requests": 64,
+  "logical_macs": {
+    "joint": 89201924112384,
+    "mlp": 78394057293824,
+    "window": 87746080145408,
+    "packed": 74355314786304
+  },
+  "per_joint": {
+    "joint": 1.0,
+    "mlp": 0.8788381873361459,
+    "window": 0.983679231345483,
+    "packed": 0.8335617816116275
+  },
+  "scope": "Logical weight-matrix multiply-accumulates in Q/K/V, gates, output and feed-forward projections. Includes the donor partial projection and final attention K/V in prefix caching. Excludes state updates, attention score products, convolution, output vocabulary, solver, memory traffic and backend tiling. Measures a subset of arithmetic, not total hardware FLOPs."
+}

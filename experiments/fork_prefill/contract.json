@@ -1,0 +1,66 @@
+{
+  "parent": "write_window/pilot/summary.json",
+  "pilot_seeds": [
+    27112000,
+    27112001,
+    27112002,
+    27112003,
+    27112004,
+    27112005,
+    27112006,
+    27112007
+  ],
+  "confirm_seeds": [
+    88213000,
+    88213001,
+    88213002,
+    88213003,
+    88213004,
+    88213005,
+    88213006,
+    88213007,
+    88213008,
+    88213009,
+    88213010,
+    88213011,
+    88213012,
+    88213013,
+    88213014,
+    88213015,
+    88213016,
+    88213017,
+    88213018,
+    88213019,
+    88213020,
+    88213021,
+    88213022,
+    88213023,
+    88213024,
+    88213025,
+    88213026,
+    88213027,
+    88213028,
+    88213029,
+    88213030,
+    88213031
+  ],
+  "pilot_arms": [
+    "joint",
+    "window",
+    "mlp",
+    "packed"
+  ],
+  "confirm_arms": [
+    "joint",
+    "window",
+    "packed"
+  ],
+  "primary": "packed",
+  "hypothesis": "Project the common prefix once per tokenwise operation in the first 28 layers. Temporarily restore the two physical rows for the attention or gated-delta sequence mixer. Retain the complete recipient terminal layer. Sharing the MLP alone controls for the effect of sharing attention and recurrent projections.",
+  "gate": "Across 64 timed requests require at least 20% lower time than joint, faster time than window, no loss of any written target successful under either comparator, and 48/48 controls. Arithmetic projection MACs and per-mode write equality are separate outcomes. Only a passed primary can receive independent confirmation.",
+  "budget": "One local pilot, no paid GPU. End-to-end times include both encodings through full-vocabulary answer, randomized per request. One repair for verified incorrect implementation.",
+  "deadline_seconds": {
+    "pilot": 700,
+    "confirm": 1800
+  }
+}

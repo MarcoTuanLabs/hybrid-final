@@ -1,0 +1,5 @@
+{
+  "stage": "smoke before timed pilot; no pilot rows",
+  "error": "The exact packed control was sent to the approximate donor selector, which rejected its name.",
+  "correction": "Dispatch the exact control to the already tested packed forward. Methods, input data, scoring and advancement criteria are unchanged."
+}

@@ -1,0 +1,76 @@
+{
+  "parent": "fork_prefill/pilot/summary.json",
+  "pilot_seeds": [
+    27112000,
+    27112001,
+    27112002,
+    27112003,
+    27112004,
+    27112005,
+    27112006,
+    27112007
+  ],
+  "confirm_seeds": [
+    88213000,
+    88213001,
+    88213002,
+    88213003,
+    88213004,
+    88213005,
+    88213006,
+    88213007,
+    88213008,
+    88213009,
+    88213010,
+    88213011,
+    88213012,
+    88213013,
+    88213014,
+    88213015,
+    88213016,
+    88213017,
+    88213018,
+    88213019,
+    88213020,
+    88213021,
+    88213022,
+    88213023,
+    88213024,
+    88213025,
+    88213026,
+    88213027,
+    88213028,
+    88213029,
+    88213030,
+    88213031
+  ],
+  "pilot_arms": [
+    "joint",
+    "window",
+    "packed",
+    "reuse",
+    "tail",
+    "residual"
+  ],
+  "confirm_arms": [
+    "joint",
+    "window",
+    "packed",
+    "tail",
+    "residual"
+  ],
+  "primary": "residual",
+  "references": [
+    "joint",
+    "window",
+    "packed"
+  ],
+  "hypothesis": "For the donor branch, reuse the recipient feed-forward residual at all but the two changed tokens, their following three convolution positions, and the last twelve prefix tokens. Preserve the donor sequence-mixer output at every position. Only the lower 28 layers are shared. The donor produces its own 256-coordinate write. The received write can differ from the exact donor; this is an approximation.",
+  "ablation": "Reuse all donor MLP outputs, or refresh the same number at the end of the prompt without locating changes. The exact packed-code baseline shares only identical prefix tokens.",
+  "gate": "At most 0.80 times the joint service time; faster than suffix-fused window and exact packed baselines; retain every successful written target under any of those references; 48/48 preservation. Report intermediate write and output differences. Promote only if all criteria hold. This criterion alone does not establish a gain over the matched cheaper ablations.",
+  "budget": "Local Apple M5 only. One development pilot on previously exposed prompts. End-to-end timing independently randomized per request. One technical repair allowance.",
+  "deadline_seconds": {
+    "pilot": 750,
+    "confirm": 2000
+  }
+}

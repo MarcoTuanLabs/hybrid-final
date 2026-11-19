@@ -1,0 +1,90 @@
+{
+  "confirm_seeds": [
+    88213000,
+    88213001,
+    88213002,
+    88213003,
+    88213004,
+    88213005,
+    88213006,
+    88213007,
+    88213008,
+    88213009,
+    88213010,
+    88213011,
+    88213012,
+    88213013,
+    88213014,
+    88213015,
+    88213016,
+    88213017,
+    88213018,
+    88213019,
+    88213020,
+    88213021,
+    88213022,
+    88213023,
+    88213024,
+    88213025,
+    88213026,
+    88213027,
+    88213028,
+    88213029,
+    88213030,
+    88213031
+  ],
+  "pilot_seeds": [
+    27112000,
+    27112001,
+    27112002,
+    27112003,
+    27112004,
+    27112005,
+    27112006,
+    27112007,
+    81831000,
+    81831001,
+    81831002,
+    81831003,
+    81831004,
+    81831005,
+    81831006,
+    81831007
+  ],
+  "pilot_arms": [
+    "joint",
+    "packed",
+    "residual",
+    "drift",
+    "anchored",
+    "upper"
+  ],
+  "confirm_arms": [
+    "joint",
+    "packed",
+    "residual",
+    "anchored",
+    "drift",
+    "upper"
+  ],
+  "candidates": [
+    "anchored"
+  ],
+  "references": [
+    "joint",
+    "packed"
+  ],
+  "primary": "anchored",
+  "deadline_seconds": {
+    "confirm": 2000,
+    "pilot": 1000
+  },
+  "rule": "Use 32 new seeds with two templates and four conditions each. Confirm if no reference-success written target is lost, all 192 controls return their original answer, the upper two-sided 95% seed-bootstrap time ratio is at most 0.80 to joint and below 1 to packed. Report both full cost comparisons and projected arithmetic. The modified donor generally differs numerically. Do not promote as an exact-native write.",
+  "prior_input_check": {
+    "previous_seeds": 120,
+    "previous_prompt_pairs": 480,
+    "new_prompt_pairs": 128,
+    "overlap": 0
+  },
+  "budget": "One local 2000-second run, one engineering repair allowance. No paid GPU."
+}
