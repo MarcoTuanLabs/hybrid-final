@@ -1,0 +1,10 @@
+{
+  "slots": 384,
+  "median_absolute_drift_difference": 3.8009845049202795e-08,
+  "max_absolute_drift_difference": 0.0038941570014685567,
+  "full_vocab_and_legal_agree_out_of_192": {
+    "original": 192,
+    "guard": 192,
+    "matched": 192
+  }
+}

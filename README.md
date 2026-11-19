@@ -27,6 +27,8 @@ Predicting the layer-28 donor write from layer 12 reduced complete latency by 24
 
 On 16 four-bit 9B development seeds, a donor that refreshed MLP outputs at protected edit sites and positions of large activation change retained all 28/32 controlled targets and all 96 controls. Its mean total time was 25.4% below two-row prefill and 10.1% below exact common-prefix packing. The approximate donor can change the values written into the receiver. [Causal suffix scheduling](experiments/write_window) · [Exact prefix sharing](experiments/fork_prefill) · [Fixed MLP reuse](experiments/mlp_reuse) · [Adaptive selection](experiments/adaptive_reuse) · [Independent confirmation protocol](experiments/write_schedule_confirmation)
 
+On 32 independent four-bit 9B seeds, donor MLP reuse controlled 52/64 written targets versus 53/64 for two-row prefill and preserved 192/192 controls. Reuse cut full service time by 26.0% against two-row prefill and 11.6% against exact shared-prefix execution. The no-loss and time criterion was not met. [Registered independent results](experiments/write_schedule_confirmation)
+
 ## Country–capital bindings before and after a memory edit
 
 On the public CAPITALS templates from Feng and Steinhardt, the fixed answer-time two-head reader controlled 0/24 changed answers. With the update applied *before* any of the three questions, the donor's attention keys and values at the two country tokens and their following punctuation controlled 40/48 changed capitals. Full replay controlled 40/48, with two paired gains and two losses. Replacing all recurrent and convolution states alone controlled 0/48. Predicting the same four local K/V replacements from the old document controlled 35/48 on the development prompts. [Fixed-reader transfer](experiments/binding_transfer/README.md) · [Which cache entries carried the change](experiments/binding_cache/README.md) · [Donor-free estimation](experiments/binding_transport/README.md)
@@ -65,6 +67,8 @@ On eight delayed HaluMem development sessions, I charged the original ingest, ca
 On 96 corrected MQuAKE development questions, a supervised text parser followed by Qwen3.5-9B answered 75 correctly. Ranked retrieval answered 63 and an adaptation of G-Walk with semantic relation matching answered 71. Adding recurrent token reads to the text parser also yielded 75. The 4B comparison yielded 69, 55, 61 and 70, respectively. Both readers used the same questions and graph. [Method, archived answers and reproduction](experiments/remastered_paths/README.md)
 
 ## Dated Wikipedia revisions
+
+On 24 previously used VitaminC pages, the original two-head write controlled 50/86 changed verdicts with the normalized read, 43 with the whitened key and 11 with the native query. Reading the complete donor document yielded 62. Three of four previously correct stable verdicts were lost. Protecting the unwritten read yielded 34/86 changed verdicts and lost 2 of the four. [Sparse write on factual verdicts](experiments/verdict_write) · [Protected read and displacement-matched control](experiments/guarded_read)
 
 On 224 independent VitaminC test pages, a paired readout of ALBERT-xlarge scored 373/448 endpoints, the original specialist scored 365/448, and the strongest simpler comparison scored 372/448. [Registered specialist transfer and every comparison](experiments/vitaminc_transfer)
 

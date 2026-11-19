@@ -1,0 +1,123 @@
+{
+  "pages": 24,
+  "endpoints": 96,
+  "changed": 86,
+  "stable": 10,
+  "both_native_changed": 44,
+  "stable_old_correct_lost": 3,
+  "methods": {
+    "old": {
+      "legal": {
+        "total": 15,
+        "changed": 11,
+        "stable": 4,
+        "both_native_changed": 0
+      },
+      "vocab": {
+        "total": 15,
+        "changed": 11,
+        "stable": 4,
+        "both_native_changed": 0
+      }
+    },
+    "full": {
+      "legal": {
+        "total": 66,
+        "changed": 62,
+        "stable": 4,
+        "both_native_changed": 44
+      },
+      "vocab": {
+        "total": 66,
+        "changed": 62,
+        "stable": 4,
+        "both_native_changed": 44
+      }
+    },
+    "write_native": {
+      "legal": {
+        "total": 15,
+        "changed": 11,
+        "stable": 4,
+        "both_native_changed": 0
+      },
+      "vocab": {
+        "total": 15,
+        "changed": 11,
+        "stable": 4,
+        "both_native_changed": 0
+      }
+    },
+    "white": {
+      "legal": {
+        "total": 46,
+        "changed": 43,
+        "stable": 3,
+        "both_native_changed": 27
+      },
+      "vocab": {
+        "total": 46,
+        "changed": 43,
+        "stable": 3,
+        "both_native_changed": 27
+      }
+    },
+    "normalized": {
+      "legal": {
+        "total": 53,
+        "changed": 50,
+        "stable": 3,
+        "both_native_changed": 33
+      },
+      "vocab": {
+        "total": 53,
+        "changed": 50,
+        "stable": 3,
+        "both_native_changed": 33
+      }
+    },
+    "unwritten": {
+      "legal": {
+        "total": 14,
+        "changed": 10,
+        "stable": 4,
+        "both_native_changed": 0
+      },
+      "vocab": {
+        "total": 14,
+        "changed": 10,
+        "stable": 4,
+        "both_native_changed": 0
+      }
+    },
+    "recurrent": {
+      "legal": {
+        "total": 66,
+        "changed": 61,
+        "stable": 5,
+        "both_native_changed": 43
+      },
+      "vocab": {
+        "total": 66,
+        "changed": 61,
+        "stable": 5,
+        "both_native_changed": 43
+      }
+    },
+    "attention": {
+      "legal": {
+        "total": 20,
+        "changed": 15,
+        "stable": 5,
+        "both_native_changed": 1
+      },
+      "vocab": {
+        "total": 20,
+        "changed": 15,
+        "stable": 5,
+        "both_native_changed": 1
+      }
+    }
+  },
+  "promote": false
+}

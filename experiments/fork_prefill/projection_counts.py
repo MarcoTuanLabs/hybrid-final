@@ -16,8 +16,11 @@ for r in rows:
     base=2*l*sum(mat[:28])+l*sum(mat[28:])+d*(2*kh+vh)
     logical=dict(joint=2*n*(sum(mat[:-1])+kv)+t*sum(mat),window=base,
                  mlp=base-28*c*f,packed=base-c*sum(mat[:28]))
-    for m in ('reuse','tail','residual'):
-        if m in sums:logical[m]=base-28*(l-(r['refresh'] if m!='reuse' else 0))*f
+    for method in ('reuse', 'tail', 'residual', 'anchored', 'drift', 'upper'):
+        if method in sums:
+            sparse_layers = 24 if method == 'upper' else 28
+            refreshed_positions = 0 if method == 'reuse' else r['refresh']
+            logical[method] = base - sparse_layers * (l - refreshed_positions) * f
     for m in sums:sums[m]+=logical[m]
 summary=dict(requests=len(rows),logical_macs=sums,per_joint={k:v/sums['joint'] for k,v in sums.items()},
              scope="Logical weight-matrix multiply-accumulates in Q/K/V, gates, output and feed-forward projections. Includes the donor partial projection and final attention K/V in prefix caching. Excludes state updates, attention score products, convolution, output vocabulary, solver, memory traffic and backend tiling. Measures a subset of arithmetic, not total hardware FLOPs.")

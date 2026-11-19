@@ -1,0 +1,3 @@
+# Replaying uncertain sparse writes
+
+The previous independent schedule lost a reference success on a close verdict. This follow-up uses the gap between the two largest full-vocabulary logits to decide whether to repeat the entire request with shared-prefix computation. Both attempts count toward latency. I fixed one threshold, an edit-aware primary rule, a fixed-position router, two full-computation references and disjoint confirmation prompts. The pilot determines whether to run the 32 new seeds. [Protocol](contract.json) · [Confirmation prompt hashes](prompt_hashes.json) · [Earlier lost target](../write_schedule_confirmation)

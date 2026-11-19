@@ -1,0 +1,52 @@
+{
+  "targets": 64,
+  "all_requests": 256,
+  "target_mean_seconds": {
+    "joint": 0.46450146554889216,
+    "packed": 0.3928842057084694,
+    "residual": 0.342764671848272,
+    "anchored": 0.3423894921597821,
+    "drift": 0.3418773320499895,
+    "upper": 0.350736872303969
+  },
+  "candidate_vs_each": {
+    "joint": {
+      "target_wins": 0,
+      "target_losses": 1,
+      "target_only_time_ratio": 0.7371117586360836
+    },
+    "packed": {
+      "target_wins": 0,
+      "target_losses": 1,
+      "target_only_time_ratio": 0.871476855483074
+    },
+    "residual": {
+      "target_wins": 1,
+      "target_losses": 1,
+      "target_only_time_ratio": 0.9989054306954482
+    },
+    "anchored": {
+      "target_wins": 0,
+      "target_losses": 0,
+      "target_only_time_ratio": 1.0
+    },
+    "drift": {
+      "target_wins": 0,
+      "target_losses": 0,
+      "target_only_time_ratio": 1.0014980815098842
+    },
+    "upper": {
+      "target_wins": 1,
+      "target_losses": 0,
+      "target_only_time_ratio": 0.9762004488169337
+    }
+  },
+  "actual_donor_slots_equal": {
+    "joint": 0,
+    "packed": 0,
+    "residual": 0,
+    "anchored": 256,
+    "drift": 0,
+    "upper": 0
+  }
+}

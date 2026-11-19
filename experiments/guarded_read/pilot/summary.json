@@ -1,0 +1,30 @@
+{
+  "pages": 24,
+  "endpoints": 96,
+  "changed": 86,
+  "stable": 10,
+  "methods": {
+    "original": {
+      "changed": 50,
+      "stable": 3,
+      "stable_old_correct_lost": 3,
+      "sham_agrees_with_old": 91,
+      "median_unwritten_read_displacement": 13.573476417747038
+    },
+    "guard": {
+      "changed": 34,
+      "stable": 3,
+      "stable_old_correct_lost": 2,
+      "sham_agrees_with_old": 93,
+      "median_unwritten_read_displacement": 10.359080965527141
+    },
+    "matched": {
+      "changed": 37,
+      "stable": 3,
+      "stable_old_correct_lost": 2,
+      "sham_agrees_with_old": 94,
+      "median_unwritten_read_displacement": 10.359080946825296
+    }
+  },
+  "promote": false
+}

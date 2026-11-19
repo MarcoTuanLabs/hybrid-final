@@ -1,0 +1,83 @@
+{
+  "primary": "conditional",
+  "pilot_seeds": [
+    81831000,
+    81831001,
+    81831002,
+    81831003,
+    59371000,
+    59371001,
+    59371002,
+    59371003
+  ],
+  "confirm_seeds": [
+    66281000,
+    66281001,
+    66281002,
+    66281003,
+    66281004,
+    66281005,
+    66281006,
+    66281007,
+    66281008,
+    66281009,
+    66281010,
+    66281011,
+    66281012,
+    66281013,
+    66281014,
+    66281015,
+    66281016,
+    66281017,
+    66281018,
+    66281019,
+    66281020,
+    66281021,
+    66281022,
+    66281023,
+    66281024,
+    66281025,
+    66281026,
+    66281027,
+    66281028,
+    66281029,
+    66281030,
+    66281031
+  ],
+  "pilot_arms": [
+    "joint",
+    "packed",
+    "residual",
+    "anchored",
+    "conditional",
+    "fixed_conditional"
+  ],
+  "confirm_arms": [
+    "joint",
+    "packed",
+    "residual",
+    "anchored",
+    "conditional",
+    "fixed_conditional"
+  ],
+  "candidates": [
+    "conditional"
+  ],
+  "references": [
+    "joint",
+    "packed"
+  ],
+  "deadline_seconds": {
+    "pilot": 600,
+    "confirm": 1500
+  },
+  "threshold": 0.5,
+  "origin": "One near-tie in the earlier 32-seed confirmation motivated the 0.5-logit cutoff. Those 32 seeds are development evidence for this new rule. Four router pilot seeds have appeared in earlier screening and four are new.",
+  "rule": "The primary starts with edit neighborhoods plus drift. On a full-vocabulary top-two gap of at most 0.5 it reruns the complete packed request, discarding the first answer. No token identities, labels or separate comparator outputs enter this decision. The fixed-position comparator uses the same rule. Charge all first attempts, duplicate work, fallback and synchronization. Advance only if no reference-success target is lost, all controls survive and mean time ratios are at most 0.8 to two-row and below 1 to packed. Confirm if both upper paired 95% confidence limits satisfy the same speed thresholds and all answer criteria still hold. Never replace the primary with a comparator.",
+  "prior_input_check": {
+    "prior_seeds": 96,
+    "new_prompt_pairs": 128,
+    "overlap": 0
+  },
+  "budget": "Local Apple M5. No paid GPU."
+}
